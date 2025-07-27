@@ -1,0 +1,941 @@
+QUICKSTART RULES
+
+2
+
+OVERVIEW
+Star Wars: Unlimited is a trading card game in which each player
+takes on the role of a leader—an iconic Star Wars character—who
+rallies their forces into battle to defeat their opponent’s base. These
+forces are represented by a 50-card deck containing units, events,
+and upgrades.
+The game is played over a series of rounds. During the action phase
+of each round, you’ll play cards from your hand and use these cards
+to attack your opponent’s base and units. Then in the regroup phase,
+you’ll draw cards, build up your resources, and ready your units for
+the next round of battle. Early in the game your leader will affect the
+battle passively, but eventually they’ll join the fray as a powerful unit.
+
+WINNING THE GAME
+Each base starts the game with 30 HP (hit points). If you deal enough
+damage to the enemy base to reduce it to 0 HP, you win the game!
+
+3
+
+SETUP
+Using the two-player starter: The starter contains two decks: Luke
+Skywalker and Darth Vader. Each player chooses 1 of those decks to
+play. Separate the double-sided leader, base, and token cards from
+the other 50 cards (with the Star Wars:Unlimited card back). Take the
+2 playmats and set them up facing each other—they contain helpful
+rules reminders and indicate how to lay out your cards.
+Follow these steps to set up the game:
+1. Put your base into play, facing your opponent’s.
+2. Put your leader into play below your base, horizontal (non-unit)
+side faceup.
+3. Randomly determine which player starts the game with the
+initiative, and give the initiative counter to that player. Set aside
+all other counters and token cards, out of play.
+4. Shuffle your deck. Draw 6 cards from your deck to form your hand.
+5. You may take a mulligan by shuffling your entire hand into your
+deck, then drawing a new hand of 6 cards. You must keep the
+new hand. Strategy Tip: We recommend taking a mulligan if your
+hand contains no units that cost 1 or 2 to play on the first round.
+6. Choose 2 cards from your hand and put them into play facedown
+near your base. They are now resources—you will use resources
+to pay for cards you play during the game.
+When both players are ready, start the game with the first action
+phase.
+
+4
+
+Base
+BASE
+
+30
+
+Administrator’s Tower
+
+Initiative Counter
+
+CLOUD CITY
+TYLER EDLIN
+
+©LFL ©FFG
+
+SOR EN
+
+C
+
+029/252
+
+LEADER
+
+Luke Skywalker
+FAITHFUL FRIEND
+
+Action [
+ , ]: Give a
+Shield token to a 
+ unit you
+played this phase.
+
+1
+
+FORCE • REBEL
+BORJA PINDADO
+
+Epic Action: If you control 6 or
+more resources, deploy this
+leader. (Flip him, ready him,
+and move him to the ground
+4/ 7
+arena.)
+©LFL ©FFG
+
+SOR EN
+
+S
+
+005/252
+
+Leader
+
+Deck
+
+Resources
+
+Damage Counters
+
+Epic Action Counter
+Hand
+
+5
+
+GAMEPLAY
+ACTION PHASE
+Most of the gameplay happens during the action phase. During this
+phase, players go back and forth taking 1 action at a time. The player
+with the initiative counter takes the first action, then their opponent
+takes an action, and so on until both players have passed.
+The actions available to a player are:
+• Play a card
+• Attack with a unit
+• Use an action ability
+• Take the initiative
+• Pass
+
+PLAY A CARD
+Cards have a cost in the upper left corner. To play
+a card, reveal it from your hand and pay its cost
+by exhausting that many resources (see “Ready &
+Exhausted” on the next page). For example, to play
+a card that costs 2, you must exhaust 2 of your
+resources.
+
+6
+
+2
+Cost
+
+UNIT
+
+
+
+There are 3 types of cards that you can play: Units, Events, and
+Upgrades. Each card type has different rules when played, as
+described in the following pages.
+
+READY & EXHAUSTED
+Units and resources enter play exhausted (turned
+sideways), then become ready (turned upright) at the end of
+the regroup phase each round.
+Many cards must exhaust in order to be used. Resources
+exhaust to pay for the cards you play from your hand. Units
+exhaust to attack or use certain abilities (indicated by an
+ icon). An exhausted card can’t exhaust again until it’s ready.
+Some leaders (including both Luke Skywalker and Darth Vader)
+exhaust to use their action ability. When you deploy your leader
+as a unit, ready it, even if it was exhausted before. This means
+it can attack the same round it’s deployed. (See “Your Leader” on
+page 15 for details.)
+2
+
+UNIT
+
+GROUND
+
+Leia Organa
+DEFIANT PRINCESS
+
+UNIT
+GROUND
+
+DEFIANT PRINCESS
+
+Leia Organa
+
+Ready
+
+2
+
+189/252
+
+SOR EN S
+
+2
+
+SOR EN S
+
+©LFL ©FFG
+
+REBEL • OFFICIAL
+
+©LFL ©FFG
+
+ROBYNN FRAUHN
+
+2
+
+ROBYNN FRAUHN
+
+2
+
+REBEL • OFFICIAL
+
+When Played: Either ready a resource or
+exhaust a unit.
+
+When Played: Either ready a resource or
+exhaust a unit.
+
+2
+
+189/252
+
+Exhausted
+
+7
+
+UNITS
+Units enter play exhausted and remain in play until defeated.
+Units have a power and HP value. Power indicates how much damage
+a unit deals in combat. If a unit ever has damage on it greater than or
+equal to its HP, it’s defeated and put in its owner’s discard pile.
+Many units also have abilities in their text box that are active while
+that unit is in play (see “Card Abilities” on page 19).
+Ground/Space
+
+Cost
+
+Aspect
+Icons
+
+4
+
+UNIT
+
+GROUND
+
+Name
+
+Grand Moff Tarkin
+DEATH STAR OVERSEER
+
+Traits
+Power
+Abilities
+
+2
+
+IMPERIAL • OFFICIAL
+
+When Played: Search the top 5 cards of your
+deck for up to 2 IMPERIAL cards, reveal them,
+and draw them. (Put the other cards on the
+bottom of your deck in a random order.)
+STEVE MORRIS
+
+©LFL ©FFG
+
+Unit Card
+
+8
+
+3
+
+SOR EN S 084/252
+
+HP
+
+GROUND & SPACE
+Combat is divided into 2 separate arenas: ground and
+space. Each unit is either a ground or space unit, as indicated
+at the top of the card. All ground units are played into the ground
+arena on one side of the players’ bases, and all space units are
+played into the space arena on the other side. In combat, ground
+units can’t attack space units, and vice versa.
+
+TIE/ln Fighter
+
+SOR EN
+
+C
+
+023/252
+
+3
+1
+
+Command Center
+
+30
+
+SPACE
+
+©LFL ©FFG
+
+DEATH STAR
+BASE
+
+2
+SOR EN
+
+C
+
+UNIT
+
+UNIT
+
+1
+
+STEPHEN ZAVALA
+©LFL ©FFG
+
+1
+
+Administrator’s Tower
+
+CLOUD CITY
+
+128/252
+
+1
+
+IMPERIAL • TROOPER
+
+Death Star Stormtrooper
+
+UNIT
+
+GROUND
+
+TYLER EDLIN
+
+IMPERIAL • VEHICLE • FIGHTER
+
+SOR EN C
+
+©LFL ©FFG
+
+4
+
+FORCE • JEDI
+
+2
+
+BASE
+
+2
+
+ARIO MURTI
+
+30
+
+OLD MASTER
+
+2
+
+SOR EN C 225/252
+
+GROUND
+
+Yoda
+
+©LFL ©FFG
+
+UNIT
+
+FRENCH CARLOMAGNO
+
+3
+
+SPACE
+
+Alliance X-Wing
+
+3
+
+REBEL • VEHICLE • FIGHTER
+
+029/252
+
+Restore 2 (When this unit attacks, heal
+2 damage from your base.)
+When Defeated: Choose any number of
+players. They each draw a card.
+ALEXANDRIA HUNTINGTON
+
+©LFL ©FFG
+
+SOR EN U 045/252
+
+Ground
+
+FRANCOIS CANNELS
+
+©LFL ©FFG
+
+SOR EN C
+
+237/252
+
+Space
+
+9
+
+EVENTS
+Events have an ability in their text box. When you play an event, use
+its ability and put the event in your discard pile.
+Cost
+
+Aspect
+Icons
+Ability
+
+5
+
+Name
+
+EVENT
+
+Vanquish
+
+Defeat a non-leader unit.
+
+ESLAM ABOSHADY
+
+©LFL ©FFG
+
+Event Card
+
+10
+
+Traits
+
+TACTIC
+
+SOR EN C 078/252
+
+UPGRADES
+Upgrades enter play attached to a unit and remain in play until that
+unit is defeated. Upgrades provide increased power, HP, and/or
+abilities to the attached unit. To attach an upgrade to a unit, slide the
+upgrade partially underneath that unit so that the upgrade’s power,
+HP, and abilities are visible.
+If the unit an upgrade is attached to leaves play, defeat that upgrade
+(put it in its owner’s discard pile).
+Cost
+
+Aspect
+Icons
+
+Abilities
+
+Bonus
+Power
+
+2
+
+Name
+UPGRADE
+
+Vader’s Lightsaber
+
+Attach to a non-VEHICLE unit.
+When Played: If attached unit is Darth Vader,
+you may deal 4 damage to a ground unit.
+
++3
+ARTHUR MOUGNE
+
+Vader’s Lightsaber
+
++1
+
+ITEM • WEAPON • LIGHTSABER
+©LFL ©FFG
+
+SOR EN S
+
+Traits
+Bonus HP
+
+136/252
+
+Upgrade Card
+
+11
+
+ATTACK WITH A UNIT
+Attacking is the primary way to deal damage to the opponent’s base
+and win the game. You can also attack enemy units.
+A unit must be ready in order to attack. Only 1 unit can attack in a
+single action. To attack, follow these steps in order:
+1. Exhaust the attacker and choose what to attack. You may attack
+any enemy unit in the same arena (ground or space) as the
+attacker, or you may attack the opponent’s base directly.
+• If an enemy unit in the same arena as the attacker has
+Sentinel, it must be chosen as the defender unless the
+attacker has Saboteur. (For more details on red keyword
+abilities, see page 24.)
+• Any abilities that are active while the unit is attacking,
+including Raid, become active at this time.
+2. If the attacker has Saboteur, defeat all Shields on the defender.
+3. If the attacker has Restore, heal damage from your base equal
+to its Restore value.
+4. If the attacker has any On Attack abilities, use them now.
+5. Deal damage. If your unit is attacking:
+• a base, it deals damage equal to its power to that base.
+• a unit, the attacker and defender simultaneously deal
+damage equal to their power to each other. If either unit has
+damage on it greater than or equal to its HP, it is immediately
+defeated.
+
+12
+
+ATTACK EXAMPLES
+SOR EN C
+
+©LFL ©FFG
+
+128/252
+
+BASE
+
+ARIO MURTI
+
+Command Center
+
+3
+
+30
+
+1
+
+IMPERIAL • TROOPER
+
+DEATH STAR
+SOR EN
+
+C
+
+023/252
+
+3
+
+3
+
+3
+
+4
+GROUND
+
+Death Star Stormtrooper
+GROUND
+
+7
+
+SOR EN C 046/252
+
+7
+
+SOR EN C 046/252
+
+Consular Security Force
+
+UNIT
+
+REBEL • TROOPER
+
+©LFL ©FFG
+
+GROUND
+
+REBEL • TROOPER
+
+©LFL ©FFG
+
+Consular Security Force
+
+UNIT
+
+REBECCA FARROW
+
+3
+
+4
+
+3
+
+REBECCA FARROW
+
+If Consular Security
+Force attacks the enemy
+base, it deals 3 damage
+to the base and takes no
+damage in return.
+
+UNIT
+
+©LFL ©FFG
+
+1
+
+STEPHEN ZAVALA
+
+If Consular Security
+Force attacks Death Star
+Stormtrooper, each unit
+deals 3 damage to the
+other. Because Death Star
+Stormtrooper has 3 damage
+on it and only 1 HP, it is
+defeated. Consular Security
+Force remains in play with
+3 damage on it and 4 HP
+remaining.
+
+13
+
+USE AN ACTION ABILITY
+Some cards have Action abilities. These abilities often have a cost
+that must be paid in order to use them, found in brackets after the
+word “Action”. This cost may include resources that must be paid
+(indicated by a 
+ icon) and exhausting the card (indicated by an
+ icon). If you can’t pay the cost, you can’t use the ability.
+An Epic Action is an action ability that can only be used once per
+game.
+
+TAKE THE INITIATIVE
+Only 1 player can take this action each round. That player takes
+control of the initiative counter, even if they already have it, meaning
+they will go first in the next round. After taking the initiative, you can’t
+take any further actions for the rest of the action phase. (You are
+considered to pass for all remaining actions this phase.)
+
+PASS
+If you can’t (or don’t want to) take any other actions, you may pass.
+When you pass, you are considered to have done nothing during
+your action, and your opponent is immediately able to take their next
+action. You may still take more actions later in the action phase.
+After a player passes, if their opponent passes or takes the
+initiative as their next action, the action phase immediately ends
+and play proceeds to the regroup phase.
+
+14
+
+YOUR LEADER
+Your leader is the centerpiece of your deck. It begins the
+game on its horizontal (non-unit) side, with an ability that’s
+available from the start of the game.
+Your leader also has an Epic Action ability that’s not available
+at the start of the game, but is unlocked if you have a certain
+number of resources in play. Once you have enough resources,
+you may use this action to deploy your leader: flip it to its unit
+side, move it to the ground arena, and ready it. This action
+doesn’t cost any resources and can be used regardless of
+whether your leader is ready or exhausted.
+While your leader is in play as a unit, it can attack, be attacked,
+and use abilities like any other unit. If your leader is defeated,
+flip it back to its non-unit side, return it to your base, and
+exhaust it. Your leader’s Epic Action can’t be used again this
+game (cover it with the epic action counter as a reminder), but
+you can still use its other ability.
+6
+
+LEADER UNIT
+
+GROUND
+
+Luke Skywalker
+FAITHFUL FRIEND
+
+LEADER
+
+Luke Skywalker
+FAITHFUL FRIEND
+
+Action [
+ , ]: Give a
+Shield token to a 
+ unit you
+played this phase.
+
+1
+
+FORCE • REBEL
+BORJA PINDADO
+
+Epic Action: If you control 6 or
+more resources, deploy this
+leader. (Flip him, ready him,
+and move him to the ground
+4/ 7
+arena.)
+©LFL ©FFG
+
+SOR EN
+
+S
+
+4
+005/252
+
+FORCE • REBEL
+
+7
+
+On Attack: You may give another unit a
+Shield token.
+
+BORJA PINDADO
+
+15
+
+REGROUP PHASE
+After the action phase, play proceeds to the regroup phase. You and
+your opponent complete each of the following steps, in order:
+
+1. DRAW CARDS
+Draw 2 cards from your deck.
+
+2. RESOURCE A CARD
+You may choose 1 card from your hand and put it into play facedown
+as a resource, or you may choose not to put down a resource and
+keep all of your cards in hand. (The player with the initiative chooses
+whether to put down a resource first, followed by the other player.)
+Strategy Tip: We recommend players resource a card each round until
+they have enough resources in play to use their leader’s Epic Action.
+
+3. READY CARDS
+Ready all of your exhausted cards in play, including units, resources,
+and your leader. When both players have readied all their cards, play
+proceeds to the action phase of the next round.
+
+16
+
+OTHER RULES
+ASPECT ICONS
+Most cards have 1 or more icons showing the aspect to which that
+card belongs. Each aspect represents a different philosophy or
+motivation. These icons tell you what that card’s aspects are, and
+may be referenced by card abilities. Aspects are important when
+building your own custom deck (see page 20).
+
+VIGILANCE
+
+COMMAND
+
+AGGRESSION
+
+CUNNING
+
+HEROISM
+
+VILLAINY
+
+TOKEN CARDS
+Token cards are set aside and not shuffled into your deck. Some
+cards may instruct you to give a token to a unit. To do so, take a setaside token of that type and attach it to a unit in play. An Experience
+token gives the attached unit +1/+1. A Shield token prevents any
+amount of damage from being dealt to the attached unit, then is
+defeated. If a token would leave play for any reason, set it aside.
+
+17
+
+TRAITS
+All cards have traits, such as REBEL or IMPERIAL, which appear in a small
+banner near their text box. Traits don’t have their own rules, but some
+card abilities will affect cards with certain traits.
+
+FRIENDLY AND ENEMY
+Cards you control are considered “friendly.” Cards your opponent
+controls are considered “enemy.”
+
+UNIQUE CARDS
+Unique cards represent specific characters or objects in the Star
+Wars universe and are indicated by a  before the card’s name. You
+can only have 1 copy of each unique card in play at a time. If you ever
+have multiple copies of the same unique card in play under your
+control, you must immediately defeat 1 of them.
+
+RUNNING OUT OF CARDS IN YOUR DECK
+If you run out of cards in your deck, you continue playing with the
+cards you already have. Any time you would draw a card from an
+empty deck, you instead deal 3 damage to your base for each card
+you would draw. For instance, when you would draw 2 cards during
+the regroup phase, instead deal 6 damage to your base.
+
+18
+
+CARD ABILITIES
+Several types of abilities can be found in the text box on cards:
+• Action abilities have bold text with the word Action, sometimes
+with a cost in brackets, followed by a colon and an effect. (See
+“Use an Action Ability” on page 14 for details.)
+• Triggered abilities have bold text indicating their triggering
+condition with the word When or On, followed by a colon and
+an effect. They resolve automatically after their triggering
+condition occurs, and are mandatory unless they use the word
+“may”. The 3 conditions that appear most often each have
+specific rules and timing:
+• On Attack: This happens after the unit is chosen as an
+attacker, before damage is dealt (see page 12 for details).
+• When Defeated: This happens after the card is defeated.
+The card is in the discard pile when the ability resolves.
+• When Played: This happens after the card is played. The
+card is in play when the ability resolves.
+• Keyword abilities appear in red text. Each keyword has specific
+rules associated with it, described in detail on page 24.
+• Constant abilities appear on cards that remain in play and have
+no special styling. They are active as long as the card is in play
+(regardless of whether the card is ready or exhausted).
+• Event abilities appear on events. They are one-time abilities
+that resolve when the event is played.
+
+19
+
+CUSTOM DECKBUILDING
+After learning the basics of the game, the next step is
+to start building your own custom deck. Additional cards
+to customize your deck can be found in Star Wars: Unlimited
+booster packs.
+Your deck must include:
+• 1 leader
+• 1 base
+• At least 50 other cards, consisting of units, events, and
+upgrades
+Your deck can’t include more than 3 copies of any card.
+Your leader and base each provide aspect icons that dictate the
+colors of your deck. Your leader provides 2 icons and your base
+provides 1, giving you 3 apect icons total.
+Most cards in your deck have 1 or more aspect icons near their
+cost. You can include cards of any aspect in your deck, but when
+playing a card with icons that are not provided by your leader
+or base, you must pay 2 extra resources for each missing icon.
+This additional cost is called the aspect penalty. In general, you
+should try to only put cards in your deck that match the aspect
+icons provided by your leader and base.
+
+20
+
+For example, if your leader provides a  and a 
+
+icon and your base provides a 
+ icon:
+• A card with a single , 
+ , or  icon would cost no
+extra.
+• A card with 
+ or   icons would cost no extra.
+• A card with a single , 
+ , or  icon would cost 2 extra.
+• A card with 
+ icons would cost 2 extra (because you
+have the 
+ icon but are missing the  icon).
+• A card with  icons would cost 2 extra (because you
+have a single  icon but are missing the second--in order
+to play such a card at no extra cost, you would need your
+leader and base to provide 2  icons).
+• A card with  icons would cost 4 extra (because you
+are missing both the  and the  icon and have to pay 2
+extra for each).
+A good rule of thumb is for your deck to include about 30-40
+units (with a mix of ground and space units), and about 10-20
+events and upgrades. You should make sure to include cards
+with a variety of costs, including plenty of 1-3 cost cards to play
+early in the game.
+
+21
+
+CREDITS
+Lead Game Designer: Daniel Schaefer
+Game Design and Development: Jim Cartwright, Tyler Parrott,
+and Jeremy Zwirn
+Producer: Jason Walden with Eric Stanton
+Editing: Chad Dahlman
+Proofreading: Jeremy Gustafson
+Game Rules Specialist: Alex Werner
+Product Line Manager: Chris Winebrenner-Palo
+Game Design Manager: Colin Phelps
+Graphic Design: Michael Silsby with Ryann Collins and Caitlin Ginther
+Graphic Design Manager: Mercedes Opheim
+Cover Art: Borja Pindado
+Art Direction: Steve Hamilton, Jeff Lee Johnson, and Kate Swazee
+Managing Art Director: Tony Bradt
+Quality Assurance Specialist: Zach Tewalthomas
+Licensing Coordinators: Kira Hartke and Kaitlin Souza
+Licensing Approvals Manager: Dana Cartwright
+Production Coordinators: Jarrett Ford and Thomas Grundmeier
+Production Management: Justin Anger and Austin Litzler
+Visual Creative Director: Brian Schomburg
+Director of Studio Operations: John Franz-Wichlacz
+Executive Game Designer: Nate French
+Head of Studio: Chris Gerber
+
+22
+
+LUCASFILM LIMITED
+Lucasfilm Licensing: Brian Merten with Pascal Guinchard
+
+VISIT US ONLINE
+For complete rules, playtester credits, organized play information,
+and other resources, visit us online at:
+StarWarsUnlimited.com
+© & ™ Lucasfilm Ltd. Fantasy Flight Games and the FFG logo are ® of Fantasy Flight
+Games. Fantasy Flight Games is located at 1995 West County Road B2, Roseville, MN
+55113, USA, 651-639-1905. Actual components may vary from those shown.
+
+23
+
+KEYWORD GLOSSARY
+Ambush After you play this unit, it may ready and attack an enemy
+unit. This unit doesn’t ready if there are no enemy units to attack.
+Grit This unit gets +1/+0 for each damage on it.
+Overwhelm When this unit deals damage to an enemy unit while
+attacking, deal excess damage to that opponent’s base. Example: If
+a 5-power unit with Overwhelm attacks a unit with 3 HP remaining, it
+deals 2 damage to the enemy base.
+Raid While this unit is attacking, it gets extra power equal to the Raid
+value. Example: A unit with Raid 2 gets +2/+0 while attacking.
+Restore When this unit attacks, heal damage from your base equal
+to the Restore value (before dealing damage). Example: A unit with
+Restore 2 heals 2 damage from your base when it attacks.
+Saboteur When this unit attacks, ignore the Sentinel keyword on
+enemy units and defeat all Shield tokens on the defender (before
+dealing damage).
+Sentinel Enemy units in the same arena (ground or space) as this
+unit can’t attack your non-Sentinel units in this arena or your base.
+If you have multiple units with Sentinel in the same arena, your
+opponent may choose which of those units to attack. (Place units
+with Sentinel slightly ahead of other units in that arena as a reminder
+that they must be attacked.)
+Shielded When you play this unit, give a Shield token to it. If any
+amount of damage would be dealt to a unit with a Shield token on it,
+prevent that damage and defeat 1 Shield token on that unit.
+
+24
+
+

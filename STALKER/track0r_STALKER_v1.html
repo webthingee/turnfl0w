@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STALKER - Turn Order</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .navigation button {
+      margin: 0 8px;
+      padding: 8px 16px;
+      font-size: 1.2rem;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .navigation button:hover {
+      background: #357abd;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .tab {
+      padding: 10px 20px;
+      background: #e0e0e0;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px 5px 0 0;
+      margin: 0 2px;
+    }
+    .tab.active {
+      background: #4a90e2;
+      color: white;
+    }
+    .tab:hover:not(.active) {
+      background: #d0d0d0;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 840px;
+      height: 360px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .selector {
+      width: 50%;
+      overflow-y: auto;
+      padding: 15px;
+      border-right: 1px solid #ccc;
+      font-size: 0.85rem;
+    }
+    .details {
+      width: 50%;
+      padding: 15px;
+      overflow-y: auto;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .details h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #4a90e2;
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 5px;
+    }
+    .details p {
+      margin: 0;
+      line-height: 1.6;
+    }
+    .details ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .details li {
+      margin: 5px 0;
+      line-height: 1.5;
+    }
+    .details strong {
+      color: #2c5aa0;
+      font-weight: 600;
+    }
+    .details em {
+      background-color: #f0f7ff;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-style: normal;
+      color: #1a365d;
+    }
+    .page-ref {
+      color: #666;
+      font-size: 0.8em;
+      font-weight: bold;
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 8px;
+    }
+    .step {
+      font-size: 1rem;
+      margin: 8px 0;
+      padding: 8px 15px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 0 3px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .substep {
+      font-size: 0.8rem;
+      margin: 4px 0 0 15px;
+      padding: 6px 12px;
+      background: #f8f8f8;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: #4a90e2;
+      color: white;
+      font-weight: bold;
+    }
+    
+    /* iPhone landscape optimization */
+    @media screen and (max-width: 926px) and (orientation: landscape) {
+      .container {
+        height: calc(100vh - 120px);
+        max-height: 320px;
+      }
+      .step {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin: 6px 0;
+      }
+      .substep {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        margin: 3px 0 0 12px;
+      }
+      .details h2 {
+        font-size: 1rem;
+      }
+      .tab {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navigation">
+    <button id="upButton">↑</button>
+    <button id="downButton">↓</button>
+  </div>
+  <div class="tabs">
+    <button class="tab active" data-tab="turn-flow">Turn Flow</button>
+    <button class="tab" data-tab="setup">Setup</button>
+  </div>
+  <div class="tab-content active" id="turn-flow">
+    <div class="container">
+      <div class="selector" id="list">
+        <div class="step selected" data-detail="STALKER follows a structured round sequence where all players work together to survive the Zone. Each round consists of four main phases that must be completed in order. The game continues until the mission is completed or all Stalkers are eliminated. (Rulebook p. 18, 30, 35)">1. Round Overview</div>
+        
+        <div class="step" data-detail="Draw and read a new Event card to discover what is happening in the Zone and apply any Instant effects immediately. Event cards contain story narrative and may have immediate consequences or ongoing effects that last until the end of the round. This phase sets the conditions for the current round. (Rulebook p. 18)">2. Event Phase</div>
+        <div class="substep" data-detail="Draw a new Event card from the top of the Event deck and read the story narrative aloud to set the atmospheric scene. If the card has any Instant effects marked with the lightning bolt symbol, resolve them immediately before proceeding. Place the Event card in the active Event slot next to the deck for reference during the round. (Rulebook p. 18)">2.1 Draw Event Card and Apply Instant Effects</div>
+
+        <div class="step" data-detail="Each Stalker performs two Turns during this phase, carrying out Actions to survive and complete objectives. Stalkers take turns in clockwise order starting with the Lead Stalker. Each Turn allows 2 Standard Actions which must be completed one at a time. Actions include Basic Actions, Environment card actions, and Equipment card actions. (Rulebook p. 19)">3. Player Phase</div>
+        <div class="substep" data-detail="Players perform their Turns one at a time in clockwise order, starting with the Lead Stalker. Each Stalker has two Turn tokens representing their two Turns per round. The Lead Stalker position rotates between players based on game events and can change during play. (Rulebook p. 19)">3.1 Take Turns in Clockwise Order</div>
+        <div class="substep" data-detail="Before your Turn begins, you may choose to postpone your Turn and allow the next player to act first. This enables tactical coordination and flexible turn order, but you must still complete both of your Turns before the round ends. Postponing can be strategic for timing Actions. (Rulebook p. 19)">3.2 Option to Postpone Turn</div>
+        <div class="substep" data-detail="Each Turn allows you to perform exactly 2 Standard Actions. Actions must be completed one at a time before starting the next. Available Actions include Basic Actions (known to all Stalkers), Environment-specific actions, and Equipment-based actions. Plan your Actions carefully for maximum effectiveness. (Rulebook p. 19)">3.3 Perform 2 Standard Actions per Turn</div>
+        <div class="substep" data-detail="After completing your Turn, if you end in an Enemy's Line of Sight, that Enemy immediately Reacts by performing an Attack or other aggressive action against you. Plan your movement and positioning carefully to avoid ending Turns in dangerous locations where Enemies can see you. (Rulebook p. 19)">3.4 Enemy Reaction Check</div>
+        <div class="substep" data-detail="Continue until all Stalkers have completed both of their Turns (used both Turn tokens). Every player must take exactly two Turns before proceeding to the next phase. Once all players have finished their Turns, advance to the Enemies & Zone Phase. (Rulebook p. 19)">3.5 Complete All Player Turns</div>
+
+        <div class="step" data-detail="During this phase, time passes in the Zone and various environmental effects take place. You suffer from accumulated Radiation exposure, temporary effects dissipate, and most importantly Enemies Activate to hunt down Stalkers. Steps must be resolved in the specified order. (Rulebook p. 30)">4. Enemies & Zone Phase</div>
+        <div class="substep" data-detail="Draw an Enemy Activation card based on the current alert level. The type of card determines Enemy behavior patterns. • Alert Activation: draw if there is at least 1 Alert token anywhere on the Map - Enemies actively hunt Stalkers and investigate Attention sources. • Patrol Activation: draw if there are no Alert tokens on the Map - Enemies follow routine patrol patterns and may ignore some Attention. (Rulebook p. 30)">4.1 Enemy Activation</div>
+        <div class="substep" data-detail="Each Stalker checks their current Radiation dosage level on their Geiger counter and suffers exposure if in contaminated zones. Roll dice based on your dosage threshold and lose HP equal to radiation symbols rolled. Then reduce all Stalkers' Radiation dosage by one level. Artifacts may prevent dosage from going below their base level. (Rulebook p. 30, 35)">4.2 Radiation Exposure and Dosage Reduction</div>
+        <div class="substep" data-detail="Remove all temporary tokens from the Mission Map to represent the passage of time. Radiation tokens and Light tokens are discarded as contamination disperses and illumination fades. This cleanup step prepares the map for the next round. (Rulebook p. 35)">4.3 Discard Radiation and Light Tokens</div>
+        <div class="substep" data-detail="All Enemies on the Map discard their Awareness tokens. This represents Enemies losing track of recent disturbances and returning to a less alert state after investigating suspicious activity. Enemies become less focused on previous Stalker actions. (Rulebook p. 35)">4.4 Enemies Discard Awareness Tokens</div>
+        <div class="substep" data-detail="Reduce the Attention level of each Stalker who is not currently in an Enemy's Line of Sight. Stalkers hidden from enemy view become less noticeable over time. Flip High Attention tokens to Low Attention, and return Low Attention tokens to player PDAs. Stalkers in enemy LoS maintain their current Attention level. (Rulebook p. 35)">4.5 Attention Reduction</div>
+
+        <div class="step" data-detail="Resolve all End of Round effects, primarily found on Event cards but potentially on other cards as well. These effects represent the culmination of the round's events and set up conditions for the next round. After resolving effects, reset Turn tokens and refresh the Lead Stalker position. (Rulebook p. 35)">5. End of Round Effects</div>
+        <div class="substep" data-detail="Resolve End of Round effects in any order, but always resolve Event card effects last. Effects are divided into two types. • Marked Effects: unique to each card, usually cause new Enemies to arrive or add Random Events to the deck. • Unmarked Effects: standard on most Events, contain final instructions and transitions between rounds. (Rulebook p. 35)">5.1 Resolve End of Round Effects</div>
+        <div class="substep" data-detail="After resolving all End of Round effects, reset all Turn tokens to their starting positions and refresh the Lead Stalker token as needed. Players are now ready to begin the next round. Start the new round by returning to the Event Phase and drawing a new Event card. (Rulebook p. 35)">5.2 Reset for Next Round</div>
+      </div>
+      <div class="details" id="details">
+        <h2>Details</h2>
+        <p id="detailText">STALKER follows a structured round sequence where all players work together to survive the Zone. Each round consists of four main phases that must be completed in order. The game continues until the mission is completed or all Stalkers are eliminated. (Rulebook p. 18, 30, 35)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="setup">
+    <div class="container">
+      <div class="selector" id="setup-list">
+        <div class="step selected" data-detail="STALKER setup involves preparing the Mission Map, distributing player components, setting up the Event deck, and placing initial Enemies and environmental elements. Setup varies based on the chosen Mission scenario. Follow the Mission book instructions for your specific scenario. (Rulebook p. varies by mission)">1. Game Setup Overview</div>
+        <div class="substep" data-detail="Choose a Mission from the Mission book and read its briefing. Each Mission has specific setup requirements, victory conditions, and special rules. Set up the Mission Map using the required Map tiles as shown in the Mission diagram. Place the Map in the center of the table where all players can reach it. (Mission book)">1.1 Choose Mission and Set Up Map</div>
+        <div class="substep" data-detail="Each player chooses a Stalker character and takes their corresponding components. • Player PDA board with character stats and inventory slots. • Stalker miniature and plastic base. • Starting Equipment cards as specified in the Mission. • Health and other status trackers. • Attention tokens (High and Low) in your player color. (Rulebook p. varies)">1.2 Choose Stalkers and Take Components</div>
+        <div class="substep" data-detail="Set up the Event deck according to the Mission requirements. Missions specify which Event cards to include and any special setup instructions. • Shuffle the required Event cards to form the Event deck. • Place Random Events if specified by the Mission. • Set aside any Event cards not used in this Mission. (Mission book)">1.3 Prepare Event Deck</div>
+        <div class="substep" data-detail="Place Enemies on the Map as specified in the Mission setup. Each Enemy type has different patrol patterns and abilities. • Place Enemy miniatures in their starting positions. • Give each Enemy any starting tokens or status markers. • Set up Enemy Activation decks (Alert and Patrol) as required. (Mission book)">1.4 Place Initial Enemies</div>
+        <div class="substep" data-detail="Set up environmental elements and special components for the Mission. • Place Anomaly tokens and other environmental hazards. • Set up any Mission-specific objectives or interactive elements. • Place Stalker miniatures in their starting positions as specified. • Determine starting Lead Stalker (usually Player 1). (Mission book)">1.5 Complete Environmental Setup</div>
+        <div class="substep" data-detail="Each player prepares their personal components and starting conditions. • Set Health to starting values. • Set Radiation dosage to starting levels (usually green threshold). • Place Attention tokens on PDAs in starting positions. • Draw starting Equipment or other cards as specified. Begin the first round with the Event Phase. (Mission book)">1.6 Final Player Preparation</div>
+      </div>
+      <div class="details" id="setup-details">
+        <h2>Details</h2>
+        <p id="setup-detailText">STALKER setup involves preparing the Mission Map, distributing player components, setting up the Event deck, and placing initial Enemies and environmental elements. Setup varies based on the chosen Mission scenario. Follow the Mission book instructions for your specific scenario. (Rulebook p. varies by mission)</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentTab = 'turn-flow';
+    let selectedIndex = 0;
+    let selectedSetupIndex = 0;
+
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const upButton = document.getElementById('upButton');
+    const downButton = document.getElementById('downButton');
+
+    function switchTab(tabName) {
+      currentTab = tabName;
+      
+      // Update tab buttons
+      tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.tab === tabName);
+      });
+      
+      // Update tab content
+      tabContents.forEach(content => {
+        content.classList.toggle('active', content.id === tabName);
+      });
+      
+      // Reset selection and update
+      if (tabName === 'turn-flow') {
+        selectedIndex = Math.min(selectedIndex, getTurnFlowSteps().length - 1);
+      } else {
+        selectedSetupIndex = Math.min(selectedSetupIndex, getSetupSteps().length - 1);
+      }
+      updateSelection();
+    }
+
+    function getTurnFlowSteps() {
+      return document.querySelectorAll('#turn-flow .step, #turn-flow .substep');
+    }
+
+    function getSetupSteps() {
+      return document.querySelectorAll('#setup .step, #setup .substep');
+    }
+
+    function getCurrentSteps() {
+      return currentTab === 'turn-flow' ? getTurnFlowSteps() : getSetupSteps();
+    }
+
+    function getCurrentIndex() {
+      return currentTab === 'turn-flow' ? selectedIndex : selectedSetupIndex;
+    }
+
+    function setCurrentIndex(index) {
+      if (currentTab === 'turn-flow') {
+        selectedIndex = index;
+      } else {
+        selectedSetupIndex = index;
+      }
+    }
+
+    function updateSelection() {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const detailText = document.getElementById(currentTab === 'turn-flow' ? 'detailText' : 'setup-detailText');
+      
+      steps.forEach((step, i) => {
+        step.classList.toggle('selected', i === currentIndex);
+      });
+      
+      // Format the detail text for better readability
+      let rawText = steps[currentIndex]?.dataset.detail || '';
+      let formattedText = formatDetailText(rawText);
+      detailText.innerHTML = formattedText;
+      
+      // Scroll the selected item into view
+      const selectedStep = steps[currentIndex];
+      if (selectedStep) {
+        selectedStep.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'nearest'
+        });
+      }
+    }
+
+    function formatDetailText(text) {
+      // Extract page reference
+      let pageMatch = text.match(/\(Rulebook p\. ([^)]+)\)/);
+      let pageRef = pageMatch ? `<span class="page-ref">Rulebook p. ${pageMatch[1]}</span>` : '';
+      let cleanText = text.replace(/\(Rulebook p\. [^)]+\)/, '').trim();
+      
+      // Check for explicit bullet points first
+      if (cleanText.includes('•')) {
+        let parts = cleanText.split('•').filter(part => part.trim());
+        let introText = parts[0].trim();
+        let bulletItems = parts.slice(1);
+        
+        let formattedIntro = introText
+          .replace(/\b(Event Phase|Player Phase|Enemies & Zone Phase|End of Round|Turn|Action|Stalker|Enemy|Activation|Attention|Radiation|Lead Stalker)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|perform|resolve|draw|place|discard)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*Actions?|\d+\s*Turns?|\d+\s*HP|\d+\s*spaces?)\b/g, '<strong>$1</strong>');
+        
+        let bulletPoints = bulletItems.map(item => {
+          let formatted = item.trim()
+            .replace(/\b(Event Phase|Player Phase|Enemies & Zone Phase|End of Round|Turn|Action|Stalker|Enemy|Activation|Attention|Radiation|Lead Stalker|Alert|Patrol|High Attention|Low Attention|Line of Sight|LoS)\b/g, '<em>$1</em>')
+            .replace(/\b(must|cannot|may|immediately|exactly|choose|perform|resolve|draw|place|discard|activate|hunt|investigate|patrol)\b/gi, '<strong>$1</strong>')
+            .replace(/\b(\d+\s*Actions?|\d+\s*Turns?|\d+\s*HP|\d+\s*spaces?|\d+\s*dice)\b/g, '<strong>$1</strong>');
+          return `<li>${formatted}</li>`;
+        }).join('');
+        
+        return `<p>${formattedIntro}</p><ul>${bulletPoints}</ul>${pageRef}`;
+      }
+      
+      // Split into sentences and create bullet points
+      let sentences = cleanText.split(/(?<=[.!?])\s+(?=[A-Z])/);
+      
+      if (sentences.length <= 2) {
+        // Short text - just format as paragraph with emphasis
+        let formatted = cleanText
+          .replace(/\b(Event Phase|Player Phase|Enemies & Zone Phase|End of Round|Turn|Action|Stalker|Enemy|Activation|Attention|Radiation|Lead Stalker)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|perform|resolve|draw|place|discard)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*Actions?|\d+\s*Turns?|\d+\s*HP|\d+\s*spaces?)\b/g, '<strong>$1</strong>');
+        return `<p>${formatted}</p>${pageRef}`;
+      }
+      
+      // Longer text - create bullet list
+      let bulletPoints = sentences.map(sentence => {
+        let formatted = sentence.trim()
+          .replace(/\b(Event Phase|Player Phase|Enemies & Zone Phase|End of Round|Turn|Action|Stalker|Enemy|Activation|Attention|Radiation|Lead Stalker|Alert|Patrol|High Attention|Low Attention|Line of Sight|LoS)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|perform|resolve|draw|place|discard|activate|hunt|investigate|patrol)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*Actions?|\d+\s*Turns?|\d+\s*HP|\d+\s*spaces?|\d+\s*dice)\b/g, '<strong>$1</strong>');
+        return `<li>${formatted}</li>`;
+      }).join('');
+      
+      return `<ul>${bulletPoints}</ul>${pageRef}`;
+    }
+
+    // Tab click handlers
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        switchTab(tab.dataset.tab);
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      
+      if (e.key === 'ArrowUp') {
+        const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      } else if (e.key === 'ArrowDown') {
+        const newIndex = (currentIndex + 1) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      }
+    });
+
+    upButton.addEventListener('click', () => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+      setCurrentIndex(newIndex);
+      updateSelection();
+    });
+
+    downButton.addEventListener('click', () => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const newIndex = (currentIndex + 1) % steps.length;
+      setCurrentIndex(newIndex);
+      updateSelection();
+    });
+
+    // Initialize
+    updateSelection();
+  </script>
+</body>
+</html>

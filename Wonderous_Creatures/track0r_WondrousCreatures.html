@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wondrous Creatures - Turn Order</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .navigation button {
+      margin: 0 8px;
+      padding: 8px 16px;
+      font-size: 1.2rem;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .navigation button:hover {
+      background: #357abd;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .tab {
+      padding: 10px 20px;
+      background: #e0e0e0;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px 5px 0 0;
+      margin: 0 2px;
+    }
+    .tab.active {
+      background: #4a90e2;
+      color: white;
+    }
+    .tab:hover:not(.active) {
+      background: #d0d0d0;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 840px;
+      height: 360px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .selector {
+      width: 50%;
+      overflow-y: auto;
+      padding: 15px;
+      border-right: 1px solid #ccc;
+      font-size: 0.85rem;
+    }
+    .details {
+      width: 50%;
+      padding: 15px;
+      overflow-y: auto;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .details h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #4a90e2;
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 5px;
+    }
+    .details p {
+      margin: 0;
+      line-height: 1.6;
+    }
+    .details ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .details li {
+      margin: 5px 0;
+      line-height: 1.5;
+    }
+    .details strong {
+      color: #2c5aa0;
+      font-weight: 600;
+    }
+    .details em {
+      background-color: #f0f7ff;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-style: normal;
+      color: #1a365d;
+    }
+    .page-ref {
+      color: #666;
+      font-size: 0.8em;
+      font-weight: bold;
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 8px;
+    }
+    .step {
+      font-size: 1rem;
+      margin: 8px 0;
+      padding: 8px 15px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 0 3px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .substep {
+      font-size: 0.8rem;
+      margin: 4px 0 0 15px;
+      padding: 6px 12px;
+      background: #f8f8f8;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: #4a90e2;
+      color: white;
+      font-weight: bold;
+    }
+    
+    /* iPhone landscape optimization */
+    @media screen and (max-width: 926px) and (orientation: landscape) {
+      .container {
+        height: calc(100vh - 120px);
+        max-height: 320px;
+      }
+      .step {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin: 6px 0;
+      }
+      .substep {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        margin: 3px 0 0 12px;
+      }
+      .details h2 {
+        font-size: 1rem;
+      }
+      .tab {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navigation">
+    <button id="upButton">↑</button>
+    <button id="downButton">↓</button>
+  </div>
+  <div class="tabs">
+    <button class="tab active" data-tab="turn-flow">Turn Flow</button>
+    <button class="tab" data-tab="setup">Setup</button>
+  </div>
+  <div class="tab-content active" id="turn-flow">
+    <div class="container">
+      <div class="selector" id="list">
+        <div class="step selected" data-detail="Players take turns in clockwise order until the game ends. Each player must perform exactly 1 Basic Action on their turn - there is no passing. Players can also perform any number of Free Actions before, during, or after their Basic Action. The game continues until all Trophies are depleted from the Main Board. (Rulebook p. 17)">1. Player Turn</div>
+        <div class="substep" data-detail="Choose exactly one of the four Basic Actions available on your turn. You must perform one Basic Action - you cannot pass your turn. • Place a Crew Member: place a worker on the map to gather resources or cards from adjacent Habitats. • Play a Card(s): play up to 2 cards from your hand to your reserve by paying their costs. • Complete an Achievement: claim an achievement slot for immediate rewards and end-game points. • Recharge: return all 3 crew members to your board when they're all deployed on the map. (Rulebook p. 17)">1.1 Choose 1 Basic Action</div>
+        <div class="substep" data-detail="You may perform as many Free Actions as you want at any time during your turn. Free Actions can be used before, during, or after your Basic Action. • Use a Butterfly Net: collect an adjacent Egg or activate an adjacent Special Effect Icon. • Use an Energy: discard an Energy from a card to activate that card's ability. (Rulebook p. 17-19)">1.2 Perform Free Actions (Optional)</div>
+        
+        <div class="step" data-detail="Select a Crew member from your Player Board and place it on the Map following placement rules. The placed Crew member interacts with all adjacent Habitats to gain resources or Creature Cards, and collects any Egg on the hex where it's placed. This is the fundamental action for building your reserve. (Rulebook p. 9)">2. Basic Action: Place a Crew Member</div>
+        <div class="substep" data-detail="Choose one of your available Crew members from your Player Board and place it on the Map. Crew must be placed across two adjoining hexes following placement rules. • Plains: no cost to place Crew members. • Mountains: pay any 1 resource to place Crew members. • Lakes/Habitats: cannot be used for Crew placement. • Each hex can only hold 1 Crew member total. If no Crew members are available, this action cannot be performed. (Rulebook p. 10)">2.1 Select and Place Crew Member</div>
+        <div class="substep" data-detail="If the Crew member was placed on a hex containing an Egg, immediately collect that Egg and place it on your Player Board in the next available numbered slot. Receive any Egg Storage Reward shown on that slot immediately. Eggs are stored Unhatched side up in numerical order. (Rulebook p. 9)">2.2 Collect Egg (if present)</div>
+        <div class="substep" data-detail="From each adjacent Habitat, choose to gain either 1 corresponding resource OR 1 Creature Card with the matching Habitat Icon from the Wilderness. You can choose differently for each adjacent Habitat, but only 1 reward per Habitat. When gaining resources, advance the corresponding Resource Tracker. When gaining cards, add them to your hand (not your reserve). (Rulebook p. 9-10)">2.3 Gain Resources or Cards from Adjacent Habitats</div>
+        <div class="substep" data-detail="If you placed your Captain and your Captain ability is unlocked (after completing your first Achievement), you may activate the Captain's unique ability at any time during this action. Captain abilities vary and can be used before or after gathering from Habitats. If the ability is still locked, no effect occurs. (Rulebook p. 16)">2.4 Use Captain Ability (if unlocked and Captain placed)</div>
+
+        <div class="step" data-detail="Play up to 2 Creature Cards from your hand to your reserve by paying their resource costs. Cards in your hand are not part of your reserve until played. Only played cards can use their abilities and count toward scoring. You must pay the exact resource cost shown on each card to play it. (Rulebook p. 12)">3. Basic Action: Play a Card(s)</div>
+        <div class="substep" data-detail="Select a Creature Card from your hand to play. Pay the resource costs shown on the left side of the card by moving your Resource Trackers left (spending resources). Place the card face-up in your reserve area. If you cannot afford the cost, you cannot play the card. (Rulebook p. 12)">3.1 Choose Card and Pay Cost</div>
+        <div class="substep" data-detail="If the played card is an Energy Card, immediately take the number of Energies shown on the card from the Supply and place them on the card. These Energies can later be used to activate the card's ability as a Free Action. (Rulebook p. 12)">3.2 Place Energies (if Energy Card)</div>
+        <div class="substep" data-detail="Activate the card's ability based on its type. You may choose not to use the ability if desired. • Instant Cards: activate immediately when the card is played to your reserve. • Recharge Cards: activate whenever you perform a Recharge action. • End Cards: activate only at the end of the game during final scoring. • Energy Cards: activate when you use an Energy from the card as a Free Action. • Continuous Cards: activate whenever their specific conditions are met during the game. (Rulebook p. 12-13)">3.3 Activate Card Ability</div>
+        <div class="substep" data-detail="If desired, repeat steps 3.1-3.3 to play a second card. You can play up to 2 cards total with a single Play a Card(s) action. Playing 2 cards is recommended for efficiency. The second card can be one you just gained from the first card's ability. (Rulebook p. 12)">3.4 Play Second Card (Optional)</div>
+
+        <div class="step" data-detail="When you meet the conditions for an Achievement Card, place one of your Achievement Markers on an available slot to claim it. Achievements provide immediate rewards, unlock your Captain ability (if first), and give Trophy and end-game points. Each Achievement can only be completed once per player. (Rulebook p. 15)">4. Basic Action: Complete an Achievement</div>
+        <div class="substep" data-detail="Select an Achievement Card where you meet the requirements shown (species icons, creature cards, eggs, etc.). Each Achievement has upper and lower slots with different requirements and rewards. Choose an available slot that matches your collection. If no Achievement Markers remain on your Player Board, this action is unavailable. (Rulebook p. 15)">4.1 Select Achievement to Complete</div>
+        <div class="substep" data-detail="Take one Achievement Marker from your Player Board and place it in the chosen slot on the Achievement Card. Achievement slots are first-come, first-served - if another player already occupies a slot, you cannot place there. You can complete up to 6 Achievements total during the game. (Rulebook p. 15)">4.2 Place Achievement Marker</div>
+        <div class="substep" data-detail="If you used Eggs to complete the Achievement, hatch all used Eggs by flipping them to their Hatched side. Hatched Eggs cannot be used for future Achievements until flipped back. If you exceeded the requirement, you choose which specific Eggs or icons to count. (Rulebook p. 15)">4.3 Hatch Used Eggs</div>
+        <div class="substep" data-detail="Immediately gain the Achievement Marker Reward corresponding to your chosen marker (resources, nets, cards, etc.). You may choose to take 2 VPs instead of the specific reward. These rewards help you throughout the game and provide immediate benefits. (Rulebook p. 15)">4.4 Gain Achievement Marker Reward</div>
+        <div class="substep" data-detail="Take 1 Trophy from the Main Board and place it next to your Player Board. Trophies are worth 3 VPs at game end and also track game progress. If no Trophies remain, you can still complete Achievements but won't receive a Trophy. (Rulebook p. 15)">4.5 Take Trophy</div>
+        <div class="substep" data-detail="If this was your first Achievement, remove the Lock Token from your Captain Board to unlock your Captain's special ability. This ability can now be used whenever you place your Captain on the Map. If already unlocked or not your first, skip this step. (Rulebook p. 15-16)">4.6 Unlock Captain Ability (if first Achievement)</div>
+
+        <div class="step" data-detail="Return all 3 of your Crew members from the Map to your Player Board, advance the Time Tracker, and activate any Recharge Cards in your reserve. This action can only be performed when all 3 Crew members are currently placed on the Map. This represents rest and preparation for future actions. (Rulebook p. 17)">5. Basic Action: Recharge</div>
+        <div class="substep" data-detail="Take all 3 Crew members (including Captain) from the Map and place them next to your Player Board. This action is only available when all your Crew members are deployed on the Map. If any Crew member is still on your Player Board, you cannot Recharge. (Rulebook p. 17)">5.1 Retrieve All Crew Members</div>
+        <div class="substep" data-detail="Move the Time Tracker one space forward on the Time Track. If there's an icon on the new space, immediately perform its effect. The game doesn't end when reaching the track's end - effects repeat on the final space. • Butterfly Net icon: gain 1 Butterfly Net from the Supply. • Full Sweep icon: discard all cards in the Wilderness and refill from the deck. • Trophy icon: remove 1 Trophy from the Main Board. (Rulebook p. 17)">5.2 Advance Time Tracker</div>
+        <div class="substep" data-detail="If there's a Time Token on the advanced space, flip it to reveal markings, then place Eggs on all empty hexes on the Map with those markings. Skip hexes already containing Eggs, Crew members, or Habitat Tiles. Draw Eggs randomly from the Egg Pouch and place them Unhatched side up. (Rulebook p. 17)">5.3 Place New Eggs (if Time Token present)</div>
+        <div class="substep" data-detail="If you have more than 5 Creature Cards in your hand, discard excess cards to the discard pile until you have exactly 5. You choose which cards to discard. This hand limit only applies during Recharge - you can hold more cards at other times. (Rulebook p. 17)">5.4 Discard to Hand Limit (5 cards)</div>
+        <div class="substep" data-detail="Activate all Recharge Cards in your reserve in any order you prefer. These are cards with the Recharge symbol that trigger whenever you perform a Recharge action. Each card activates once, but you choose the sequence. If you have no Recharge Cards, skip this step. (Rulebook p. 17)">5.5 Activate All Recharge Cards</div>
+
+        <div class="step" data-detail="At the end of each player's turn, refresh the Wilderness if any spaces are empty by drawing cards from the deck. If any player depletes the last Trophy from the Main Board, each remaining player takes one final turn in clockwise order, then the game ends and scoring begins. (Rulebook p. 11, 20)">6. End of Turn / Game End Check</div>
+        <div class="substep" data-detail="If any spaces in the Wilderness are empty, draw cards from the deck to completely refill all 6 spaces before the next player's turn begins. If the deck is empty, shuffle the discard pile to form a new deck. The Wilderness should always have 6 cards available. (Rulebook p. 11)">6.1 Refill Wilderness</div>
+        <div class="substep" data-detail="Check if any player took the last Trophy from the Main Board during their turn. If so, the game will end after each remaining player takes one final turn in clockwise order. The player who took the last Trophy does not get an additional turn. (Rulebook p. 20)">6.2 Check for Game End Trigger</div>
+        <div class="substep" data-detail="Pass turn to the next player in clockwise order. If game end was triggered, remaining players take their final turns. If not triggered, continue normal play. The game ends after the final player's last turn, then proceed to end-game scoring. (Rulebook p. 20)">6.3 Pass to Next Player</div>
+      </div>
+      <div class="details" id="details">
+        <h2>Details</h2>
+        <p id="detailText">Players take turns in clockwise order until the game ends. Each player must perform exactly 1 Basic Action on their turn - there is no passing. Players can also perform any number of Free Actions before, during, or after their Basic Action. The game continues until all Trophies are depleted from the Main Board. (Rulebook p. 17)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="setup">
+    <div class="container">
+      <div class="selector" id="setup-list">
+        <div class="step selected" data-detail="Set up Wondrous Creatures before the first turn begins. The game includes both general setup (boards, cards, tokens) and individual player setup (choosing captains, starting resources). Setup varies slightly based on player count. Use the appropriate Main Board side and component quantities for your group size. (Rulebook p. 3-6)">1. Game Setup</div>
+        <div class="substep" data-detail="Place the double-sided Main Board with the correct side face-up: Side-A for 1-2 players, Side-B for 3-4 players. Place it in the center of the table. Position the Supply Board above the Main Board within easy reach of all players. (Rulebook p. 4)">1.1 Place Main Board and Supply Board</div>
+        <div class="substep" data-detail="Shuffle all 126 Creature Cards and place them face-down as the deck. Draw 6 cards and place them face-up in the Wilderness area on the Supply Board. Place remaining components (Eggs, Energies, Butterfly Nets) in the Supply area. Put 35 Eggs (5 of each species) in the Egg Pouch and mix well. (Rulebook p. 4)">1.2 Set Up Creature Cards and Supply</div>
+        <div class="substep" data-detail="Shuffle all 14 Habitat Tiles and place them face-down as a stack. Draw 3 tiles and place them face-up as the Habitat Tile Pool. These will be available for Discovery rewards during the game. (Rulebook p. 4)">1.3 Set Up Habitat Tiles</div>
+        <div class="substep" data-detail="For 4-player games only: Place 2 additional Time Track pieces over the existing track, draw 1 Habitat Tile and place it on the 4-player icon, and place 2 random Eggs on the 4-player icons on the Map. For 1-3 players, skip this step entirely. (Rulebook p. 4)">1.4 Set Up 4-Player Components (if needed)</div>
+        <div class="substep" data-detail="Shuffle all 5 Time Tokens face-down and randomly select 2. Flip them face-up to see their markings. For each marking type shown, place 1 random Egg from the Egg Pouch on every hex with that marking on the Map. For 3-player games, use only 4 Time Tokens total. (Rulebook p. 5)">1.5 Place Initial Eggs on Map</div>
+        <div class="substep" data-detail="Set up the Time Track: Place selected Time Tokens face-down on yellow spaces (2 rightmost first for 4-players), then remaining tokens on other yellow spaces. Place the Time Tracker on the first space. The track determines when new Eggs appear and provides timing for the game. (Rulebook p. 5)">1.6 Set Up Time Track</div>
+        <div class="substep" data-detail="Place Trophies on the Main Board based on player count. Trophies track game progress and provide end-game scoring. • 2 players: place 10 Trophies. • 3 players: place 14 Trophies. • 4 players: place 16 Trophies. Place Score Tokens near the Score Track for use when players exceed 50 VPs during the game. (Rulebook p. 5)">1.7 Place Trophies and Score Tokens</div>
+        <div class="substep" data-detail="Set up Achievement Cards: Place 3 Main Achievements (brown) randomly in brown spaces, 2 Multi-Species Achievements (yellow) in yellow spaces ensuring no species overlap, and 2 Single-Species Achievements (turquoise) in turquoise spaces using species not in Multi-Species cards. Total of 7 Achievement Cards with 6 different species represented. (Rulebook p. 5-6)">1.8 Set Up Achievement Cards</div>
+        <div class="substep" data-detail="Each player chooses a color and takes the following components in their chosen color. • 1 Player Board and place it in front of you. • 3 Crew Members: 1 magnetic Captain plus 2 regular crew members. • 6 Achievement Markers for completing Achievements during the game. • 4 Resource Trackers, placed on space 1 of each Resource Track on your Player Board. • 1 Score Tracker, placed on the boat icon near the Score Track. • 1 Butterfly Net from the Supply. (Rulebook p. 6)">1.9 Player Component Distribution</div>
+        <div class="substep" data-detail="Each player takes 2 random Captain Boards, chooses 1 to keep, and returns the other to the box. Take the corresponding Captain figure and attach it to the magnetic Crew Member. Place the Captain Board on your Player Board. (Rulebook p. 6)">1.10 Choose Captain Boards</div>
+        <div class="substep" data-detail="Each player draws 8 Creature Cards from the deck, chooses 4 to keep in hand, and discards the remaining 4 to the discard pile face-up. Consider Achievement Cards when choosing which cards to keep, as some may help accomplish Achievements more easily. (Rulebook p. 6)">1.11 Draw Starting Hands</div>
+        <div class="substep" data-detail="Each player places their Lock Token on their Captain Board to indicate the Captain ability is locked until their first Achievement is completed. The Captain ability becomes available after completing any Achievement for the first time. (Rulebook p. 6)">1.12 Place Lock Tokens</div>
+        <div class="substep" data-detail="Determine play order: The player who has befriended the most unusual animal becomes First Player. Players gain additional starting resources based on turn order by moving Resource Trackers accordingly. • 1st Player: no bonus resources, start with 1 of each resource type. • 2nd Player: +1 resource of your choice, move any 1 Resource Tracker right. • 3rd Player: +2 resources of your choice, move any 2 Resource Trackers right. • 4th Player: +3 resources of your choice, move any 3 Resource Trackers right. (Rulebook p. 6)">1.13 Determine Turn Order and Starting Resources</div>
+        <div class="substep" data-detail="Setup is complete! The First Player begins the game by taking the first turn. Each player should have: Player Board with Captain, 3 Crew Members next to board, starting resources on tracks, 4 cards in hand, 1 Butterfly Net, and 6 Achievement Markers ready. Begin playing! (Rulebook p. 6)">1.14 Begin Game</div>
+      </div>
+      <div class="details" id="setup-details">
+        <h2>Details</h2>
+        <p id="setup-detailText">Set up Wondrous Creatures before the first turn begins. The game includes both general setup (boards, cards, tokens) and individual player setup (choosing captains, starting resources). Setup varies slightly based on player count. Use the appropriate Main Board side and component quantities for your group size. (Rulebook p. 3-6)</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentTab = 'turn-flow';
+    let selectedIndex = 0;
+    let selectedSetupIndex = 0;
+
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const upButton = document.getElementById('upButton');
+    const downButton = document.getElementById('downButton');
+
+    function switchTab(tabName) {
+      currentTab = tabName;
+      
+      // Update tab buttons
+      tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.tab === tabName);
+      });
+      
+      // Update tab content
+      tabContents.forEach(content => {
+        content.classList.toggle('active', content.id === tabName);
+      });
+      
+      // Reset selection and update
+      if (tabName === 'turn-flow') {
+        selectedIndex = Math.min(selectedIndex, getTurnFlowSteps().length - 1);
+      } else {
+        selectedSetupIndex = Math.min(selectedSetupIndex, getSetupSteps().length - 1);
+      }
+      updateSelection();
+    }
+
+    function getTurnFlowSteps() {
+      return document.querySelectorAll('#turn-flow .step, #turn-flow .substep');
+    }
+
+    function getSetupSteps() {
+      return document.querySelectorAll('#setup .step, #setup .substep');
+    }
+
+    function getCurrentSteps() {
+      return currentTab === 'turn-flow' ? getTurnFlowSteps() : getSetupSteps();
+    }
+
+    function getCurrentIndex() {
+      return currentTab === 'turn-flow' ? selectedIndex : selectedSetupIndex;
+    }
+
+    function setCurrentIndex(index) {
+      if (currentTab === 'turn-flow') {
+        selectedIndex = index;
+      } else {
+        selectedSetupIndex = index;
+      }
+    }
+
+    function updateSelection() {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const detailText = document.getElementById(currentTab === 'turn-flow' ? 'detailText' : 'setup-detailText');
+      
+      steps.forEach((step, i) => {
+        step.classList.toggle('selected', i === currentIndex);
+      });
+      
+      // Format the detail text for better readability
+      let rawText = steps[currentIndex]?.dataset.detail || '';
+      let formattedText = formatDetailText(rawText);
+      detailText.innerHTML = formattedText;
+      
+      // Scroll the selected item into view
+      const selectedStep = steps[currentIndex];
+      if (selectedStep) {
+        selectedStep.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'nearest'
+        });
+      }
+    }
+
+    function formatDetailText(text) {
+      // Extract page reference
+      let pageMatch = text.match(/\(Rulebook p\. ([^)]+)\)/);
+      let pageRef = pageMatch ? `<span class="page-ref">Rulebook p. ${pageMatch[1]}</span>` : '';
+      let cleanText = text.replace(/\(Rulebook p\. [^)]+\)/, '').trim();
+      
+      // Check for explicit bullet points first
+      if (cleanText.includes('•')) {
+        let parts = cleanText.split('•').filter(part => part.trim());
+        let introText = parts[0].trim();
+        let bulletItems = parts.slice(1);
+        
+        let formattedIntro = introText
+          .replace(/\b(Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?)\b/g, '<strong>$1</strong>');
+        
+        let bulletPoints = bulletItems.map(item => {
+          let formatted = item.trim()
+            .replace(/\b(Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Habitat|Trophy|Energy Card|Instant Card)\b/g, '<em>$1</em>')
+            .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|perform|complete|unlock)\b/gi, '<strong>$1</strong>')
+            .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*players?)\b/g, '<strong>$1</strong>');
+          return `<li>${formatted}</li>`;
+        }).join('');
+        
+        return `<p>${formattedIntro}</p><ul>${bulletPoints}</ul>${pageRef}`;
+      }
+      
+      // Split into sentences and create bullet points
+      let sentences = cleanText.split(/(?<=[.!?])\s+(?=[A-Z])/);
+      
+      if (sentences.length <= 2) {
+        // Short text - just format as paragraph with emphasis
+        let formatted = cleanText
+          .replace(/\b(Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?)\b/g, '<strong>$1</strong>');
+        return `<p>${formatted}</p>${pageRef}`;
+      }
+      
+      // Longer text - create bullet list
+      let bulletPoints = sentences.map(sentence => {
+        let formatted = sentence.trim()
+          .replace(/\b(Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Habitat|Trophy|Energy Card|Instant Card)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|perform|complete|unlock)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*players?)\b/g, '<strong>$1</strong>');
+        return `<li>${formatted}</li>`;
+      }).join('');
+      
+      return `<ul>${bulletPoints}</ul>${pageRef}`;
+    }
+
+    // Tab click handlers
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        switchTab(tab.dataset.tab);
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      
+      if (e.key === 'ArrowUp') {
+        const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      } else if (e.key === 'ArrowDown') {
+        const newIndex = (currentIndex + 1) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      }
+    });
+
+    upButton.addEventListener('click', () => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+      setCurrentIndex(newIndex);
+      updateSelection();
+    });
+
+    downButton.addEventListener('click', () => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const newIndex = (currentIndex + 1) % steps.length;
+      setCurrentIndex(newIndex);
+      updateSelection();
+    });
+
+    // Initialize
+    updateSelection();
+  </script>
+</body>
+</html> 

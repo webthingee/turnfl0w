@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars Unlimited - Round Order</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .navigation button {
+      margin: 0 8px;
+      padding: 8px 16px;
+      font-size: 1.2rem;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .navigation button:hover {
+      background: #357abd;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .tab {
+      padding: 10px 20px;
+      background: #e0e0e0;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px 5px 0 0;
+      margin: 0 2px;
+    }
+    .tab.active {
+      background: #4a90e2;
+      color: white;
+    }
+    .tab:hover:not(.active) {
+      background: #d0d0d0;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 840px;
+      height: 360px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .selector {
+      width: 50%;
+      overflow-y: auto;
+      padding: 15px;
+      border-right: 1px solid #ccc;
+      font-size: 0.85rem;
+    }
+    .details {
+      width: 50%;
+      padding: 15px;
+      overflow-y: auto;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .details h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #4a90e2;
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 5px;
+    }
+    .details p {
+      margin: 0;
+      line-height: 1.6;
+    }
+    .details ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .details li {
+      margin: 5px 0;
+      line-height: 1.5;
+    }
+    .details strong {
+      color: #2c5aa0;
+      font-weight: 600;
+    }
+    .details em {
+      background-color: #f0f7ff;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-style: normal;
+      color: #1a365d;
+    }
+    .page-ref {
+      color: #666;
+      font-size: 0.8em;
+      font-weight: bold;
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 8px;
+    }
+    .step {
+      font-size: 1rem;
+      margin: 8px 0;
+      padding: 8px 15px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 0 3px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .substep {
+      font-size: 0.8rem;
+      margin: 4px 0 0 15px;
+      padding: 6px 12px;
+      background: #f8f8f8;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: #4a90e2;
+      color: white;
+      font-weight: bold;
+    }
+    
+    /* iPhone landscape optimization */
+    @media screen and (max-width: 926px) and (orientation: landscape) {
+      .container {
+        height: calc(100vh - 120px);
+        max-height: 320px;
+      }
+      .step {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin: 6px 0;
+      }
+      .substep {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        margin: 3px 0 0 12px;
+      }
+      .details h2 {
+        font-size: 1rem;
+      }
+      .tab {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navigation">
+    <button id="upButton">↑</button>
+    <button id="downButton">↓</button>
+  </div>
+  <div class="tabs">
+    <button class="tab active" data-tab="turn-flow">Turn Flow</button>
+    <button class="tab" data-tab="setup">Setup</button>
+  </div>
+  <div class="tab-content active" id="turn-flow">
+    <div class="container">
+      <div class="selector" id="list">
+        <div class="step selected" data-detail="The action phase is where players take turns playing cards, attacking, and using abilities. The player with the initiative counter takes the first action. Players alternate taking one action at a time until both players pass consecutively. This is the main gameplay phase where most strategic decisions happen. (Comprehensive Rules 5.4)">1. Action Phase</div>
+        <div class="substep" data-detail="Any lasting effects that expire when the action phase or round starts expire now. Any abilities or effects that trigger at the start of the action phase or round trigger now. This includes effects that say 'at the start of the round' or 'at the start of the action phase'. (Comprehensive Rules 5.4.1.a)">1.1 Start of Action Phase</div>
+        <div class="substep" data-detail="The player with the initiative counter becomes the active player and takes the first action. They must choose one of five actions: Play a Card (pay cost, put unit/upgrade into play or resolve event), Attack With a Unit (exhaust unit to attack enemy unit or base), Use an Action Ability (pay cost and resolve effect), Take the Initiative (gain initiative, end your actions for the round), or Pass (do nothing, opponent becomes active player). (Comprehensive Rules 5.4.1.b)">1.2 Active Player Takes Action</div>
+        <div class="substep" data-detail="After the active player completes their action and any triggered abilities resolve, their opponent becomes the new active player. The new active player must now choose one of the five available actions. Players continue alternating in this way, taking one action each, until both players pass consecutively. (Comprehensive Rules 5.4.1.b)">1.3 Switch Active Player</div>
+        <div class="substep" data-detail="Repeat steps 1.2 and 1.3 until both players pass consecutively. A player may pass even if they have available actions. If a player takes the initiative immediately after their opponent passes, the action phase ends. Players can play multiple cards, make multiple attacks, and use multiple abilities during a single action phase. (Comprehensive Rules 5.4.1.b)">1.4 Continue Until Both Players Pass</div>
+        <div class="substep" data-detail="Any lasting effects that expire when the action phase ends expire now (effects marked 'for this phase'). Any abilities or effects that trigger at the end of the action phase trigger now. After this step, play proceeds to the regroup phase. (Comprehensive Rules 5.4.1.c)">1.5 End of Action Phase</div>
+
+        <div class="step" data-detail="The regroup phase allows players to draw cards, gain resources, and prepare for the next round. Both players complete each step simultaneously (except resourcing, which alternates). This phase builds up your hand and resources for future actions. No attacking or card playing happens during this phase. (Comprehensive Rules 5.5)">2. Regroup Phase</div>
+        <div class="substep" data-detail="Any lasting effects that expire when the regroup phase starts expire now. Any abilities or effects that trigger at the start of the regroup phase trigger now. This is where effects that say 'at the start of the regroup phase' resolve. (Comprehensive Rules 5.5.1.a)">2.1 Start of Regroup Phase</div>
+        <div class="substep" data-detail="Each player draws 2 cards from the top of their deck simultaneously. If a player's deck is empty, they deal 3 damage to their base for each card they would draw instead. For example, if you would draw 2 cards with an empty deck, deal 6 damage to your base. (Comprehensive Rules 5.5.1.b)">2.2 Both Players Draw 2 Cards</div>
+        <div class="substep" data-detail="Starting with the active player (who has the initiative), each player may choose 1 card from their hand to put into play as a resource, facedown and exhausted. The non-active player chooses after seeing the active player's choice. Players may choose not to resource a card. Strategy tip: Resource a card each round until you have enough for your leader's Epic Action. (Comprehensive Rules 5.5.1.c)">2.3 Players Resource Cards (Initiative Player First)</div>
+        <div class="substep" data-detail="Each player readies all exhausted cards they control simultaneously. This includes units, resources, and leaders. Exhausted cards are turned from sideways (exhausted) to upright (ready) position. Ready cards can now be used for actions, attacks, or abilities in the next action phase. (Comprehensive Rules 5.5.1.d)">2.4 Both Players Ready All Cards</div>
+        <div class="substep" data-detail="Any lasting effects that expire when the regroup phase ends or when the round ends expire now (effects marked 'for this phase' and 'for this round'). Any abilities or effects that trigger at the end of the regroup phase or at the end of a round trigger now. After this step, a new round begins with a new action phase. (Comprehensive Rules 5.5.1.e)">2.5 End of Regroup Phase</div>
+
+        <div class="step" data-detail="Check for game end conditions after any damage is dealt to a base. The game ends immediately when a player's base reaches 0 HP. The player whose base is defeated loses the game, and their opponent wins. This check happens throughout the game, not just at specific times. (Comprehensive Rules 5.6)">3. Win Condition Check</div>
+        <div class="substep" data-detail="After any damage is dealt to a base (from attacks, abilities, or empty deck), immediately check if that base has 0 or fewer HP remaining. If so, the game ends immediately and the owner of that base loses. The opponent wins the game. This check happens before any other effects resolve. (Comprehensive Rules 5.6.1)">3.1 Check After Any Base Damage</div>
+      </div>
+      <div class="details" id="details">
+        <h2>Details</h2>
+        <p id="detailText">The action phase is where players take turns playing cards, attacking, and using abilities. The player with the initiative counter takes the first action. Players alternate taking one action at a time until both players pass consecutively. This is the main gameplay phase where most strategic decisions happen. (Comprehensive Rules 5.4)</p>
+      </div>
+    </div>
+  </div>
+
+     <div class="tab-content" id="setup">
+     <div class="container">
+       <div class="selector" id="setup-list">
+         <div class="step selected" data-detail="Set up the game before the first round begins. Each player needs their deck, base, leader, and token cards. Follow these steps in order to prepare for play. Using playmats is recommended as they contain helpful rules reminders and show proper card placement. (Quickstart Rules p. 3)">1. Game Setup</div>
+         <div class="substep" data-detail="Each player chooses a deck to play (50 cards with Star Wars: Unlimited card back). Separate the double-sided leader, base, and token cards from the main deck. Set aside all token cards out of play - they'll be used when card effects reference them. (Quickstart Rules p. 3)">1.1 Choose Decks & Separate Cards</div>
+         <div class="substep" data-detail="Each player puts their base into play facing their opponent's base. Bases start with 30 HP. Put your leader into play below your base with the horizontal (non-unit) side face-up. Leaders start the game as non-unit cards and can be deployed later. (Quickstart Rules p. 3)">1.2 Place Base & Leader</div>
+         <div class="substep" data-detail="Randomly determine which player gets the initiative counter to start the game. This player will take the first action in the first round. The initiative can change during the game when players use the 'Take the Initiative' action. (Quickstart Rules p. 3)">1.3 Determine Starting Initiative</div>
+         <div class="substep" data-detail="Each player shuffles their 50-card deck thoroughly. Draw 6 cards from your deck to form your starting hand. Keep your deck face-down in easy reach - you'll draw from it during the game. (Quickstart Rules p. 3)">1.4 Shuffle Deck & Draw Starting Hand</div>
+         <div class="substep" data-detail="You may take a mulligan by shuffling your entire hand back into your deck, then drawing a new hand of 6 cards. You must keep the new hand - no additional mulligans. Strategy tip: Consider mulliganing if your hand has no units that cost 1 or 2 resources. (Quickstart Rules p. 3)">1.5 Optional Mulligan</div>
+         <div class="substep" data-detail="Choose 2 cards from your hand and put them into play face-down near your base as starting resources. These resources will help you pay for cards during the game. Resources enter play exhausted and will ready at the end of the first round. (Quickstart Rules p. 3)">1.6 Place Starting Resources</div>
+         <div class="substep" data-detail="Setup is complete! The player with the initiative counter starts the first round by taking the first action in the action phase. Both players should have: base (30 HP), leader (non-unit side up), 2 resources (face-down, exhausted), and 4 cards in hand. (Quickstart Rules p. 3)">1.7 Begin First Round</div>
+       </div>
+       <div class="details" id="setup-details">
+         <h2>Details</h2>
+         <p id="setup-detailText">Set up the game before the first round begins. Each player needs their deck, base, leader, and token cards. Follow these steps in order to prepare for play. Using playmats is recommended as they contain helpful rules reminders and show proper card placement. (Quickstart Rules p. 3)</p>
+       </div>
+     </div>
+   </div>
+
+  <script>
+    let currentTab = 'turn-flow';
+    let selectedIndex = 0;
+    let selectedSetupIndex = 0;
+
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const upButton = document.getElementById('upButton');
+    const downButton = document.getElementById('downButton');
+
+    function switchTab(tabName) {
+      currentTab = tabName;
+      
+      // Update tab buttons
+      tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.tab === tabName);
+      });
+      
+      // Update tab content
+      tabContents.forEach(content => {
+        content.classList.toggle('active', content.id === tabName);
+      });
+      
+      // Reset selection and update
+      if (tabName === 'turn-flow') {
+        selectedIndex = Math.min(selectedIndex, getTurnFlowSteps().length - 1);
+      } else {
+        selectedSetupIndex = Math.min(selectedSetupIndex, getSetupSteps().length - 1);
+      }
+      updateSelection();
+    }
+
+    function getTurnFlowSteps() {
+      return document.querySelectorAll('#turn-flow .step, #turn-flow .substep');
+    }
+
+    function getSetupSteps() {
+      return document.querySelectorAll('#setup .step, #setup .substep');
+    }
+
+    function getCurrentSteps() {
+      return currentTab === 'turn-flow' ? getTurnFlowSteps() : getSetupSteps();
+    }
+
+    function getCurrentIndex() {
+      return currentTab === 'turn-flow' ? selectedIndex : selectedSetupIndex;
+    }
+
+    function setCurrentIndex(index) {
+      if (currentTab === 'turn-flow') {
+        selectedIndex = index;
+      } else {
+        selectedSetupIndex = index;
+      }
+    }
+
+    function updateSelection() {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const detailText = document.getElementById(currentTab === 'turn-flow' ? 'detailText' : 'setup-detailText');
+      
+      steps.forEach((step, i) => {
+        step.classList.toggle('selected', i === currentIndex);
+      });
+      
+      // Format the detail text for better readability
+      let rawText = steps[currentIndex]?.dataset.detail || '';
+      let formattedText = formatDetailText(rawText);
+      detailText.innerHTML = formattedText;
+      
+      // Scroll the selected item into view
+      const selectedStep = steps[currentIndex];
+      if (selectedStep) {
+        selectedStep.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'nearest'
+        });
+      }
+    }
+
+    function formatDetailText(text) {
+      // Extract page reference
+      let pageMatch = text.match(/\(Comprehensive Rules ([^)]+)\)/);
+      let pageRef = pageMatch ? `<span class="page-ref">Comprehensive Rules ${pageMatch[1]}</span>` : '';
+      let cleanText = text.replace(/\(Comprehensive Rules [^)]+\)/, '').trim();
+      
+      // Split into sentences and create bullet points
+      let sentences = cleanText.split(/(?<=[.!?])\s+(?=[A-Z])/);
+      
+      if (sentences.length <= 2) {
+        // Short text - just format as paragraph with emphasis
+        let formatted = cleanText
+          .replace(/\b(action phase|regroup phase|initiative counter|active player|Play a Card|Attack With a Unit|Use an Action Ability|Take the Initiative|Pass)\b/g, '<em>$1</em>')
+          .replace(/\b(immediately|must|cannot|may|exhaust|ready|facedown|faceup)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*HP|\d+\s*cards?|\d+\s*damage)\b/g, '<strong>$1</strong>');
+        return `<p>${formatted}</p>${pageRef}`;
+      }
+      
+      // Longer text - create bullet list
+      let bulletPoints = sentences.map(sentence => {
+        let formatted = sentence.trim()
+          .replace(/\b(action phase|regroup phase|initiative counter|active player|Play a Card|Attack With a Unit|Use an Action Ability|Take the Initiative|Pass|Epic Action)\b/g, '<em>$1</em>')
+          .replace(/\b(immediately|must|cannot|may|exhaust|ready|facedown|faceup|alternating|simultaneously)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*HP|\d+\s*cards?|\d+\s*damage)\b/g, '<strong>$1</strong>');
+        return `<li>${formatted}</li>`;
+      }).join('');
+      
+      return `<ul>${bulletPoints}</ul>${pageRef}`;
+    }
+
+    // Tab click handlers
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        switchTab(tab.dataset.tab);
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      
+      if (e.key === 'ArrowUp') {
+        const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      } else if (e.key === 'ArrowDown') {
+        const newIndex = (currentIndex + 1) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      }
+    });
+
+    upButton.addEventListener('click', () => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+      setCurrentIndex(newIndex);
+      updateSelection();
+    });
+
+    downButton.addEventListener('click', () => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      const newIndex = (currentIndex + 1) % steps.length;
+      setCurrentIndex(newIndex);
+      updateSelection();
+    });
+
+    // Initialize
+    updateSelection();
+  </script>
+</body>
+</html>

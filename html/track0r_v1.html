@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Round Order - Version 1</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .navigation button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 1.5rem;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .navigation button:hover {
+      background: #357abd;
+    }
+    .container {
+      display: flex;
+      width: 800px;
+      height: 80vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .selector {
+      width: 400px;
+      overflow-y: auto;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+    .details {
+      width: 400px;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .step {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      padding: 10px 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .substep {
+      font-size: 0.95rem;
+      margin: 5px 0 0 20px;
+    }
+    .selected {
+      background-color: #4a90e2;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="navigation">
+    <button id="upButton">↑</button>
+    <button id="downButton">↓</button>
+  </div>
+  <div class="container">
+    <div class="selector" id="list">
+      <div class="step selected" data-detail="Draw a new Event card. If it has an Instant effect, resolve it immediately. Then place it in the Event slot to apply any ongoing effects. Events may change game conditions, trigger anomalies, or increase enemy threats.">1. Event Phase</div>
+      <div class="substep" data-detail="Draw a new Event card and apply any Instant effects (if present).">1.1 Draw a new Event card and apply any Instant effects (if present).</div>
+
+      <div class="step" data-detail="Each Stalker takes two Turns in clockwise order. Before your Turn, you may postpone and let another player act first. On your Turn, you may perform 2 Actions such as Movement, Attacking, or Drawing. If you end your Turn in an enemy’s Line of Sight, enemies will immediately React. Once all Stalkers have completed both Turns, proceed to the next phase.">2. Player Phase</div>
+      <div class="substep" data-detail="Players carry out their Turns one at a time in clockwise order.">2.1 Players carry out their Turns one at a time in clockwise order.</div>
+      <div class="substep" data-detail="You may decide to postpone your Turn and proceed to the next player’s Turn.">2.2 Before your Turn starts, you may decide to postpone your Turn and proceed to the next player’s Turn.</div>
+      <div class="substep" data-detail="If you end your Turn in Enemies’ Line of Sight, Enemies React.">2.3 After each of your Turns, if you end it in Enemies’ LoS, Enemies React.</div>
+      <div class="substep" data-detail="When all players have finished both Turns, proceed to the Enemies & Zone Phase.">2.4 When all players have finished both of their Turns, proceed to the Enemies & Zone Phase.</div>
+
+      <div class="step" data-detail="Draw an Enemy Activation card. If any Alert tokens (🔺) are on the Map, draw from the Alert deck; otherwise, draw a Patrol card. Then: Apply radiation effects and reduce dosage levels as appropriate. Remove all Radiation (☢️) and Light (🔦) tokens from the Map. Enemies discard any Awareness (👁️) tokens. Reduce Attention of Stalkers not in an enemy’s Line of Sight.">3. Enemies & Zone Phase</div>
+      <div class="substep" data-detail="If there’s at least one 🔺 on the Map, draw a 🔺 card.">3.1.1 If there’s at least one 🔺 on the Map, draw a 🔺 card.</div>
+      <div class="substep" data-detail="Otherwise, draw a ⚠️ card.">3.1.2 Otherwise, draw a ⚠️ card.</div>
+      <div class="substep" data-detail="During the Radiation step, each Stalker located in a zone containing Radiation (☢️) must suffer Exposure. This typically results in gaining Radiation tokens or advancing their personal Radiation tracker, based on the level and type of exposure. Some effects or gear may mitigate damage. After applying effects, reduce all Radiation dosage levels by one, simulating temporary environmental stabilization or protective measures. (See Rulebook p. 30)">3.2 Suffer from Radiation Exposure and reduce Radiation dosage.</div>
+      <div class="substep" data-detail="Discard all ☢️ and 🔦 from the Map.">3.3 Discard all ☢️ and 🔦 from the Map.</div>
+      <div class="substep" data-detail="All Enemies discard their 👁️.">3.4 All Enemies discard their 👁️.</div>
+      <div class="substep" data-detail="Reduce Attention of each Stalker not in an Enemy’s Line of Sight.">3.5 Reduce Attention of each Stalker that isn’t in an Enemy’s LoS.</div>
+
+      <div class="step" data-detail="Apply any effects that trigger at the end of the round. These may come from Event cards, anomalies, or special item conditions.">4. End of Round Effects</div>
+      <div class="substep" data-detail="Resolve End of Round effects.">4.1 Resolve End of Round effects.</div>
+    </div>
+    <div class="details" id="details">
+      <h2>Details</h2>
+      <p id="detailText">Draw a new Event card. If it has an Instant effect, resolve it immediately. Then place it in the Event slot to apply any ongoing effects. Events may change game conditions, trigger anomalies, or increase enemy threats.</p>
+    </div>
+  </div>
+
+  <script>
+    const steps = document.querySelectorAll('.step, .substep');
+    const detailText = document.getElementById('detailText');
+    const upButton = document.getElementById('upButton');
+    const downButton = document.getElementById('downButton');
+    let selectedIndex = 0;
+
+    function updateSelection() {
+      steps.forEach((step, i) => {
+        step.classList.toggle('selected', i === selectedIndex);
+      });
+      detailText.textContent = steps[selectedIndex].dataset.detail || '';
+      
+      // Scroll the selected item into view
+      const selectedStep = steps[selectedIndex];
+      selectedStep.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'nearest'
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowUp') {
+        selectedIndex = (selectedIndex - 1 + steps.length) % steps.length;
+        updateSelection();
+      } else if (e.key === 'ArrowDown') {
+        selectedIndex = (selectedIndex + 1) % steps.length;
+        updateSelection();
+      }
+    });
+
+    upButton.addEventListener('click', () => {
+      selectedIndex = (selectedIndex - 1 + steps.length) % steps.length;
+      updateSelection();
+    });
+
+    downButton.addEventListener('click', () => {
+      selectedIndex = (selectedIndex + 1) % steps.length;
+      updateSelection();
+    });
+
+    updateSelection();
+  </script>
+</body>
+</html>

@@ -1,0 +1,9020 @@
+RULEBOOK
+
+TABLE OF CONTENTS
+
+S.T.A.L.K.E.R. Universe ............................................................... 2
+Credits.......................................................................................... 3
+Component List .......................................................................... 4
+S.T.A.L.K.E.R. The Board Game .................................................. 6
+Starting the Campaign .............................................................. 7
+Zone Exploration in Campaign Binder ..................................... 8
+Mission Setup in Mission Guide ................................................ 10
+Mission Map ................................................................................. 12
+Tiles & Spaces ...................................................................................12
+Range ..................................................................................................14
+Line of Sight (LoS)............................................................................15
+Environment Cards ..........................................................................16
+Tokens on Mission Map ...................................................................17
+Playing the Mission .................................................................... 18
+Event Phase.......................................................................................18
+Players Phase ....................................................................................19
+Turns .................................................................................................19
+Actions .............................................................................................19
+Basic Actions ..................................................................................20
+Map Radiation .................................................................................22
+Attention..........................................................................................22
+PDA & Equipment ..........................................................................23
+Stalker Attack .................................................................................27
+Enemy Wounds ...............................................................................28
+Status tokens..................................................................................29
+Enemies & Zone Phase....................................................................30
+Enemy Activation ..........................................................................30
+Enemies............................................................................................31
+Enemy Movement Rules...............................................................32
+Enemy Attack .................................................................................33
+Radiation Exposure & Dosage Reduction ................................35
+Discarding Tokens .........................................................................35
+Attention Reduction .....................................................................35
+End of Round Effects ....................................................................35
+Anomalies...........................................................................................36
+Single Stalker Mode .........................................................................38
+Lost Territories..................................................................................39
+Entities Comparison................................................................... 40
+Icon Glossary............................................................................... 41
+Standee Glossary ....................................................................... 42
+Index............................................................................................. 43
+Quick Rules Reference............................................................... 44
+
+2
+
+|
+
+S.T.A.L.K.E.R. Universe
+
+|
+
+S.T.A.L.K.E.R. UNIVERSE
+
+S.T.A.L.K.E.R. takes place in an universe similar to ours, where additional events took place,
+setting it apart. Games explore the alternative version of the Chornobyl Nuclear Power Plant
+Exclusion Zone, full of anomalies, mutants, warring factions, and dark secrets.
+The Chornobyl Nuclear Plant Exclusion Zone, or for short – the Zone came to be after the 1986
+Chornobyl Nuclear Power Plant accident, irradiating the area and rendering it nigh-uninhabitable.
+After that, it quickly became a testbed for various clandestine experiments, culminating in
+a second incident in the 2000s. The mutated subjects of those experiments roam the Zone.
+Furthermore, the area is pockmarked with anomalies – spots where the usual laws of physics don’t
+apply. The changed Zone attracts all kinds of people – from scientists seeking to learn its secrets,
+through zealous Monolith – a brain-washed order of warriors supposedly “guarding” the Zone
+against external influence, through Duty and Freedom – opposing factions, each with their own
+view of the Zone and its future, to simple traders and bandits, all trying to make a profit in this
+dangerous place.
+You, the players, will take the role of stalkers – explorers, bounty hunters and adventurers roaming
+the Zone. Most came here because of the promise of easy money, seeking wondrous artifacts –
+products of anomalies affecting mundane objects and giving them various abilities. Others came
+with more personal motivations – searching for a miraculous cure for their loved ones or simply
+showing themselves and the world that they can survive anything the Zone throws at them.
+The Chornobyl Exclusion Zone is a hostile and living microcosmos of its own. Be careful,
+you who dare to enter it.
+
+CREDITS
+
+Dedicated to the memory of Łukasz Orwat, the best of us. May we meet again.
+Game by: Pawe
+
+amborski
+
+Based on: .T.A. . .E.R. games by
+ame orld lobal td.
+Game Design: Pawe
+
+ame
+
+orld
+
+amborski
+
+Tests and Development: icha Orac , onrad ul ycki, Filip Tomas ewski,
+an Truchanowic , Tomas Zawad ki, ojciech Zieli ski
+Internal Testing: Ernest iedrowic , ukas rawiec, Piotr rejner,
+onrad ul ycki, Filip Tomas ewski, an Truchanowic , Paulina odarc yk,
+Tomas Zawad ki, ojciech Zieli ski
+Rulebook & Gameplay Example: onrad ul ycki, Paulina
+Narrative Design:
+
+arcin
+
+Writing:
+
+arcin
+
+Editor:
+
+att lick, Daniel
+
+ortka,
+
+ortka, Pawe
+aciej
+
+owacki,
+
+icha
+
+o kowski
+
+orley
+
+Proofreading: att lick, Daniel
+iktoria lusarc yk
+Art Direction: Patryk
+
+odarc yk
+
+amborski, an Truchanowic
+
+orley, Tyler rown, eremy Freeman,
+
+dras ek, Adrian Rad iun
+
+Graphic Design: Adrian Rad iun, ukas tyrna, icha echowski,
+arolina aski etka, atar yna itka, icha tachowiak
+Illustrations: Ewa abak, Piotr Foksowic , akub D ikowski, Piotr Orlea ski,
+Pamela uniewska, Agnies ka ade, Patryk dras ek, agdalena ieplak
+Character Design: Ewa abak, Agnies ka
+
+ade
+
+3D Modelling: arek ondratowic ,
+Piotr acek, dr ej homicki
+
+isek,
+
+DTP: Patrycja
+
+ar ec, Rafa
+
+icha
+
+anis ewski,
+
+ateus
+
+od elewski,
+
+dr ej ie lak, inga anik
+
+Production: itold hudy, Piotr hmielewski, Anna ajka, acek Pys c ek,
+acek c ypi ski, Olga araniak, Zofia er y ska, Adrianna oci cka,
+ateus
+olski, icha at os
+GSC Game World Team: evgen rygorovych, ariia rygorovych,
+Agostino imonetta, ikita Zakharchenko, Zakhar ocharov, Olga Ry hko,
+lad ovikov, ina olokhova, aksym Tkachenko
+Spiritual Support: Adrian omarski, Anna is
+
+ilkos , ordan uminais
+
+Special Thanks: Paul rogan, Peter roome, ustyna i arcin Olejar , Dominik lski,
+akub asi ski, acob arkson, r egor troc y ski, eronika obota,
+ukas abak, Richard D reault, Francis ek t pniewski anowski, Emily arkson,
+ymon ulka, effrey ampbell, Ashley ustyne ightower, Diego arc a on le ,
+Felipe P re Palencia, r ys tof Piechnik, ohn arcia, Alain oncepci n Romero,
+uba achut, Pr emys aw
+jcik, arolina tefaniak, ymon obota, ichal Plata,
+Rigo arcia, Dennis ukasiewic , r egor ichos ewski with siekier team,
+acek rom owalski, ojciech iwanowski. And everyone who supported us
+during creation and development of the game
+.T.A. . .E.R. A D
+A E
+A R
+T RE ER ED
+
+OR D ARE RE
+
+TERED TRADE AR
+
+.
+
+|
+
+Credits
+
+|
+
+3
+
+COMPONENT LIST
+
+* Contents of the M ss on boxes can be found on pages 4 and 5 of the Scr ptbook (back of the M ss on gu de)
+** Zone Surv va mode components are sted n the Zone Surv va Ru es & Scr pts book et
+
+PAPER
+
+1 Ru ebook
+
+1 M ss on gu de/Scr ptbook
+
+1 Gamep ay Examp e
+
+40 Coupons
+
+4 Zone Map w th st ckers
+
+CARDS
+Standard cards
+III
+
+ACCURATE RANGE
+
+MAX. RANGE
+
+1-3
+4
+4
+
+AMMO
+
+ACCURATE RANGE
+
+AMMO
+
+ENERGY DRI
+
+WHIRLIGIG
+
+6000
+
+11 Anoma y cards
+CHECKING THE
+
+REGARDLESS
+
+WANDER AROUND
++ 1 Enemies closes
+t
+
+Enemies Move up to
+toward
+.
+Enemies Attack
+3
+Enemies have
++2
+
+Enemies Attack a Target in theirduring
+LoS. this Attack.
+during this Attack.
+Enem
+
+ies perform
+
+Discard a
+your Attention
+token to a space
+within Range
+2 of your Stalke
+r.
+
+100
+300
+
+Discard a
+to reduce
+your Radiation dosage by 6.
+
+500
+
+ON THE MAP.
+
+SCOPE
+
+I
+
+ECHO DETECT
+OR
+
+1
+
+their Special.
+
++ 1 Enemies closest to the Lead Stalker
+Move up to
+toward the closest Room
+without an Enemy of the same color.
+
+PS5-M
+
+DEFENSE
+
+during this Attack.
+
+On all spaces with a , without a Human Enemy,
+and within Range 1-2 of a Human Enemy:
+(you may roll for Defense).
+• Stalkers suffer 6
+• Enemies are Attacked for 6
+targeting Torso.
+
+Gain +1
+
+33 Attachment cards
+
+10 Low Attent on Ye ow
+Enemy Act vat on cards
+
+C01b
+
+POLA
+
+TRADER
+
+6
+
+5
+
+2
+-0
+
+Artifact Contai
+
+ner:
+
+DEFENSE
+
+MAP RADIATION
+
+2ner:
+-2
+
+BASIC
+
+BASIC
+
+to Defense rolls.
+
+to Defense rolls.
+
+.
+
+If this Enemy already
+has a , -1 .
+Otherwise, this Enemy
+gains a .
+
+20 Enemy Wound cards
+
+CHORT
+
+PARANOIA
+HALLUC
+Don’t discuss this card with the other
+Stalkers.
+INATIO
+
+TRADER
+
+for stalkers.
+• You may sell
+Armors and Armor
+A fat bastard, but a of
+reliable
+Attachments
+any Tiersource
+for
+of supplies. Warning:
+not cheap!half their value.
+• You
+may buy Tier
+I and II Armor
+and Armor
+Attach
+cards
+of anyxcept
+Tier
+• You may sell Equipment
+ments,
+Detectors, for
+their value.
+value
+for a quarter (1/4) •ofYou
+their
+may buy
+Medical Items
+for their value.
+(round down to next 50).
+
+N
+
+Don’t discuss
+this card with
+They are onto you…
+the other Stalke
+rs
+What is THAT?
+Choose one:
+!
+Resist: Lose 12HP. If you have a Choose
+, one:
+Lose
+you may discard it to Resist:
+lose 6HP
+instead.
+12HP. If you have
+a ,
+discard it
+Shuffle this card back you
+intomay
+the Control
+deck.
+to lose 6HP instead
+Shuffle this card
+.
+back
+OR
+into the Contro
+l deck.
+Traitors: Attack another Stalker withinOR
+your
+Weapon’s max. RangeAppari
+with ation:
+Single
+Shot. all
+Discard
+from your
+currently equipp
+Don’t apply any effects that require
+. ed Weapon.
+Shuffle this
+In this Attack treat each 1 cardasback
+1 into
+. the Contro
+l deck.
+If there is no Single Shot Attack, choose another Attack
+from your Weapon that you can perform.
+If there are no other Stalkers in Range,
+choose your Stalker as the target of this Attack.
+If you don’t have enough , don’t perform this Attack.
+
+• You may buy Tier I Weapons and Armors
+for their value.
+• You may buy Magazines for 500 each.
+• You may buy Items for twice their value.
+• You may buy “Echo Detector” Attachments
+for their value.
+
+Shuffle this card back into the Control deck.
+
+16 Contact cards
+
+3 Contro cards
+
+UP
+
+ORIES SET
+
+RIT
+WINTER
+LOST TERfinish setting up the Map
+OVERLAYs
+ario),
+ival Scen he
+on any 1×1 space outside of a building.
+After you
+Zone Surv Place
+starts,
+Mission or
+gamePlace
+(Campaign first Round of the
+toriehe Winter Lost Territory tile next to the Map.
+s
+before the
+om Lost Terri Place
+instr1uctio
+random L2-01a card on the Winter tile.
+draw 1 rand
+follow the
+you may
+deck) and
+card.
+on the Winter tile as shown below.
+(from this
+side of the Place 6 Map
+r
+othe
+Setup card
+the
+to the
+found on
+s tile next
+.
+Territorie
+one Lost
+space with
+This will add reached from the
+nce
+be
+tories Entra
+that can
+Lost Terri
+the ame
+ties can Move
+Spaces with as adjacent (Enti
+them),
+.
+are counted ure Range between
+een them
+of Sight betw
+and meas
+Line
+a
+cannot draw
+but Entities
+
+2×
+
+4×
+
+Discard this card.
+
+21 Lost Terr tor es cards
+
+Component L st
+
+INSTANT
+End of Round
+
+Lead Stalk
+er:
+Place 1
+ontoward
+Each Human Enemy Moves up to
+the closest space
+one of your
+discard 1
+Turn oken
+with . This Movement
+can’t
+be interrupted.
+s. When you
+instea
+d of sliding
+perform
+your
+Then, each Human Enemy on a space without
+gains
+a Turn token down
+.
+Each Stalker on space without
+increases their Radiation dosage by 6
+(modified by their Armor’s Map Radiation).
+
+,
+
+nd
+
+Resolve 1
+fromEvent
+Start the next Round by drawing and resolving
+a new
+eachcard.
+stack of
+.
+Reset all Turn
+tokens and
+Start the next
+Round by drawiRefresh the Lead Stalk
+er token.
+ng and resolv
+ing a new
+Event card.
+
+DODGE
+
+Once per Turn.
+
+5500
+
+2500
+
+12 Sta ker cards
+GAME ROUND
+
+18 Random Event cards
+
+ORDER
+GAME ROUN
+D ORDER
+STATUS TOKENS
+
+1.t).EVENT
+PHASE
+effects (if presen • Draw
+apply any Instant
+a new Event
+1. EVENT PHASE
+Event card and
+card and apply
+2. PLAYER
+• Draw a new
+any Instant
+PHASE
+effects (if
+PIN inDOWN
+clockwise order.• Playe
+present).
+one at a time
+rs carry out
+2. PLAYER PHASE
+Turnthe following
+ne your
+can nly
+perform
+out their Turns Stalker: You
+to postpo
+Before your Action:their Turns one at
+• Players carry
+you may decide
+a time in clock
+Turn starts
+starts,
+Turn
+Discard
+your
+.
+, you may
+and proceed
+Before your
+s Turn.
+decide to postp wise order.
+to the next
+s’ LoS, don’t Activate
+the next player’Enemy: itEnemies
+with
+when you
+resolve
+Enemy
+one your Turn
+playe
+» After each
+and proceed to
+you end in Enemie
+if
+Turns,
+of your Turns r’s Turn.
+of your
+Activation cards.
+, if you end
+» After each
+Enemies React
+it in Enem
+procee•d to
+.
+Turns,
+their
+ies’
+When
+of
+Enemies React.
+Ifboth
+an Enemy with a
+would React during
+the end of a Stalker’s Turn
+LoS,
+all playe
+have finished
+rs have inish
+or after an unsuccessful meleethe
+Attack
+“Knife” Basic
+Action),
+ed both
+Enem(e.g.
+• When all players
+ies &the
+of their Turns
+Zone Phase
+Zone Phase.
+, proceed to
+.
+discard the
+instead. 3. ENEMIES
+the Enemies &
+& ZONE PHAS
+ZONE PHASE
+E
+• Draw and
+ion card:
+3. ENEMIES &
+resolve an
+card.
+an Enemy ActivatEXPOSED
+a
+Enemy Activ
+» If there’s
+• Draw and resolve one
+on the Map, draw
+ation card:
+least
+least
+one discard
+Stalker: When Attacked, increase
+the at by
+3. Then,
+token.
+» Other
+» If there’s at
+on thethis
+. wise, draw
+card.
+Map, draw
+on• dosage
+draw a
+a
+Radiati
+a
+After
+anyreduce
+Movement,
+discard
+thisr token.
+Suffe
+card.
+card.
+» Otherwise,
+and
+re
+from Radia
+tion Expos
+Radiation Exposu
+• Disca
+If this Enemy would
+suffer
+Wound,
+they ure
+suffer
+Enemy:
+• Suffer from
+rd aallLight and
+the Map.
+and reduce
+from
+and
+Radiation
+All Enem
+a Heavy
+Wound instead. •Then,
+token. from the Map.
+dosage.
+• Discard all
+.
+LoS.ies this
+sdiscard
+discard their
+Enemy’
+discard their
+in an
+• Redu
+that isn’t
+If this Enemy
+would
+suffer
+a Heavy
+Wound,
+suffer .-2 instead.
+ce Atten
+• All Enemies
+tionthey
+on of each Stalker
+of each Stalk
+• Resolve
+Then,
+• Reduce Attenti
+er that isn’t
+. discard this token.
+End of Roun
+in an Enem
+of Round effects
+d effects.
+y’s LoS.
+• Resolve End
+After any Movement, discard this token.
+
+Stalker: You may discard this token to reroll any number of chosen dice
+during an Attack, Defense, or Anomaly Activation roll.
+As long as you have a , you may perform the “Reload” Basic Action as
+Some effects check if you have a
+or require you to discard it.
+ŵĪƄĪøÚŁɷRŊĺƊŵƧ
+
+CRITICAL INJURY
+
+Stalker: Whenever your Stalker’s HP drops to or below 0,
+place a Critical Injury token above one of your Turn tokens.
+This limits the number of
+you can perform during that Turn.
+
+CONTROLL
+
+MUTANT,
+PSIO
+
+RODENT
+
+2
+
+1
+
+5
+1
+2
+
+∞
+
+2
+
+TO HIT HEA
+D
+12
+
+-1
+
+TO HIT TOR
+SO
+7
+
+6
+
+.
+
+ER
+
+NIC
+
+MUTANT
+
+Light Woun
+d
+Heavy Woun
+d
+
+TO HIT TORSO11
+
+FOCUS
+
+5 He p cards
+
+C03a
+
+An ex-stalker,
+
+C01a
+ly
+devot
+SIDOROVICHand producingentire
+various suits ed to mending
+
+Din in the
+Air
+Radioactive Rain
+
+here is a
+a of man
+ad anta
+y, many
+ge of the
+wings.
+com
+et s take
+The clouds look heavy with radioactive rain. motion.
+
+HP 16
+SHOOTING
+2
+
+After rollin
+g for Defen
+se,
+if the Attac
+ker
+you may disca is within Range 1,
+da
+to roll the
+– Gainers,
+, but in whisp
+:
+geniutos that Defen
+al +4
+“Boss” up closeonly a tactic
+– Gain
+se roll.
+They call him
++2
+He is not
+e ery stageto that Defense
+as Palkan.
+roll.
+comm
+NEVER
+MISSands – Deal
+he’s known
+to the Attac
+e,a
+ghter who
+am
+true
+e
+a
+but a so
+youby
+Attack – Redu
+kan eads
+the Attack’s ker.
+aWhenever
+to ceictory
+team
+of combat.
+hisbut
+disca
+by half (roun
+rd all
+guide
+an Enemy
+outside of its
+LoS,
+has
+other Defen
+ded up),
+nesses, and
+not. a kan
+se dice.
+orthat
+ying to
+senses weak
+roll.hidden fear
+gain +1
+ets are
+LESS
+dee yFEAR
+.
+whether bu
+his
+them
+ike
+When ver e see
+nesses
+youat
+a few weak
+SNEAK
+ne er ets anyon
+Attac
+but
+skik s,
+or Defend,
+ifand
+therecomb
+s swam s
+is thisEnem
+Move
+up to 3ce
+spaces.
+During
+of the one
+g resen
+t. Movement,
+y
+andin
+withi
+the assau
+ith his comm thethe
+to ead
+e 1, roll
+maximum
+value nofRang
+Enemies’
+LoS+1is 1,
+guy
+.
+a kan is
+except on the final space of your Move.
+
+100
+
+BASIC
+
+Gain +1
+
+HP 14
+SHOOTING
+2 (RANGE 0-3)
+3 (RANGE 4+)
+
+End of token.
+Reset all Turn tokens and Refresh the Lead Stalker
+Rou
+
+1
+-0
+
+26 Armor cards
+
+HEAVY WOUND
+This Enemy gains
+HEAVY WOUND
+a
+and a .
+HEAVY WOUND-1
+
+12 H gh Attent on Red
+Enemy Act vat on cards
+
+2500
+
+LEATHER JAC
+KET
+Artifact Contai
+
+MAP RADIATION
+
+Artifact Container:
+
+LIGHT WOUND
+LIGHT WOUND
+
+Enemies Attack a Target in their LoS.
+
+Enemies have -2
+
+PSZ-9D
+
+MAP RADIATION
+2000
+
+If this Enemy This Enemy gains
+a
+already
+has a , Push
+LIGHT WOUND
+them Away.
+Other
+If this Enemy alreadywise, this Enemy
+gains a .
+has a , Push them Away.
+Otherwise, this Enemy
+gains a .
+
+Enemies that were already in a Room Move
+to the next closest Room instead.
+
+2
+
+4
+
+6000
+
+DEFENSE
+
+DETECT AN ARTIFA
+THERMAL SCOPE
+CT
+
+(RANGE 0)
+Whenever you
+Roll the
+Attack
+and place
+with a Single
+the Artifact token
+Shot or Aimed
+Shot
+within
+from
+Whenever you
+Attack
+under an Anoma Range 3+, roll +1 .
+ly
+onto chosen
+with this Weapon,
+correspondin
+g
+you may ignore Anoma
+the lyeffect.
+symbol.
+1000
+Whenever you Attack
+with a Single Shot or Aimed Shot
+5000
+within Range 3+, roll +1 .
+
+3000
+
+26 Art fact cards
+
+during this Attack.
+
+LoS.
+
+ONLY
+DURINGtheir
+Enemies
+perform
+Special.
+4
+ENEMY
+ACTIVATION
+OF ZONE & ENEMI
+STEP
+ES PHASE:
+ONLY DURING ENEMY ACTIVATION STEP
+Suppressing
+OF ZONE & ENEMIES PHASE:
+Fire:
+All Stalker in
+Range and LoS
+of at least 2 Human
+Enemies gain
+Throw a grenade:
+a .
+
+4
+
+.
+
+1 Move up to
+
+movement.
+
+a Target in their
+
+CORNERS
+
+to the Lead Stalke
+Move
+r
+with
+and without an closest space
+Enemy
++ 1 Enemies closest
+the Lead Stalker
+of etosame
+color.
+toward the closest .
+Enemies Attack
+2
+a Target in their
+IF THERE IS
+ON THE MAP:
+Enemies have
+LoS.
+-1
+
+.
+
+Around after this
+
+OF ATTENTION
+
+up MAP:
+to
+IF THERE IS NO ATTENTION
+1 ON THE
+toward the
+
+Enemies Move up to 2 spaces toward
+
+1 the closest 2. the Enemies Move up to 2 space
+s toward
+closest
+Enemies Look
+
+I
+
+Stalkers: Lose 9HP, then gain a .
+Enemies: Light Wound, then gain a .
+
+ASSAULT
+Enemies Move
+up to
+toward
+the closes
+FIRE IN1 THE
+HOLE!
+t
+.
+
+as
+
+MILADY
+
+After rolling
+for Attack
+or Defense, you
+may gain +1
+to that roll. If
+you do, gain
+a
+after that roll.
+to move
+
+CHEMICAL
+
+38 tem cards
+
+After an Entity
+finishes Movem
+roll the
+ent,
+for this Anoma
+ly Activation:
+The triggering
+Entity
+After an Entity
+finishes
+Movement,and on all spaces
+with
+the rolled
+Anoma
+for this
+Anomaly
+Activation:ly symbol:
+roll the
+Stalke
+rs: Lose
+6HP, then gain
+a .
+Enemie Light
+The triggering Entity ands: on
+all Wound
+spaces, then gain
+a .
+with the rolled Anomaly symbol:
+
+27 Weapon cards
+
+Enemies have
+4 -2
+
+MEAT CHUNK
+
+• Stalkers:
+= .
+• Enemies: Target Torso.
+Discard this card.
+
+MAN-STOPPER
+1 SINGLE SHOT
+For every 3 : Deal a .
++3
+X UNLOAD
++2X
+1 SINGLEThe
+SHOT +2
+number of rolled
+Pick a Body Part.is equal
+to twice the numbe
+r
+ed Ammo.
+3 BURSTof discard
++3
+You may spread
+and effects
+between the Target and all Enemies
+5000
+adjacent to it and in your LoS.
+
+3
+
+FRAG GRENADE
+GRENADE, BLAST
+
+CHEMICAL
+
+NEURON
+
+FIRE
+
+EYE
+
+FIRE
+
+DRINK
+Gain a .
+Perform the
+next
+HEAL WOUN
+DSDiscar
+(RANG
+THROW (RANGE
+2)
+E 0)card.
+d this
+Choose
+a Stalker.
+on
+the chosen space.
+Place your
+That
+Stalker heals
+8HP.
+all Entities
+Roll 4 . Attack
+Discar
+d this card.
+on that space.
+
+FRUIT PUNCH
+
+BLAST
+2 : This Attack
+hits all Enemie
+s
+on the Target’
+s space.
+
+2 the closest
+
+NK
+
+FIRST AID KIT
+
+MEDICINE
+
+ƾǉǐǕ
+
+GRAVITATIONAL
+
+0-2
+3
+3
+
+SA LAVINA
+
+Overs zed cards
+FOOD
+
+M
+
+DP-12
+
+MAX. RANGE
+
+Small cards
+
+-1
+
+MIND CON
+TROL [RAN
+GED]
+BITE [CHARGE]After rolling for Defen
+DAMAGE
+
+SPECIAL
+
+and resolv
+
+es it.
+
+DAMAGE
+
+5
+
+se, the Attac
+ked
+RANGE
+
+4
+
+1 1 Control card
+
+Stalker draws
+
+RANGE
+
+Chomp: Each Stalker within Range 1 loses 3HP.
+
+17 Enemy cards
+
+…∞
+
+∞
+∞
+
+2
+1
+∞
+
+TOKENS
+
+PLASTIC
+
+24
+
+Unknown tokens
+
+31
+
+Loot tokens
+
+4 Enemy team tokens
+
+5
+
+Artifact tokens
+
+54 Enemy standees
+
+20 Anomaly standees
+
+10
+
+1 Lead Stalker token
+
+4
+
+Focus tokens
+
+10
+
+Pin down tokens
+
+16
+
+Bolt tokens
+
+4
+
+Exposed tokens
+
+No Visibility tokens
+
+Stalker dice
+
+6
+
+Equipment dice
+
+10
+
+Pistol Magazines
+
+10
+
+Rifle
+
+36
+
+Universal/Ammo
+markers
+
+4 Stalker HP markers
+
+13 Anomaly overlays
+
+4 color rings
+
+24 small +3 big standee
+bases
+
+6 sets of plastic pins
+
+4 PDA – Player boards
+
+4 Geiger counters
+
+2 Solo Stalker Turn overlays
+
+15 Map tiles
+
+3 Lost Territory tiles
+
+6 Mission boxes*
+
+1 Campaign binder with
+1 cardholder and 2 dividers
+
+1 Stash
+
+Zone Survival components**
+
+6
+
+1
+
+aga ines
+
+10
+
+Anomaly die
+
+Shotgun Magazines
+
+OTHERS
+4
+
+Attention tokens
+
+8 Critical Injury tokens
+
+9 -X Enemy – HP tokens
+
+8 Turn tokens
+
+1 Pseudogiant carcass token
+
+2 Trap tokens
+
+4 IMPROVED / ADVANCED
+Container tokens
+
+1 Dog Companion token
+
+2 Entrance tokens
+
+MODELS
+
+4 Stalker models
+
+1 Dog Companion model
+
+1 Enemy facing sticker sheet
+
+|
+
+Component List
+
+|
+
+5
+
+S.T.A.L.K.E.R. THE BOARD GAME
+S.T.A.L.K.E.R. The Board Game is a 1-4 player fully co-op, story-based “zone”
+crawler. The Campaign is played by repeating two separate parts of the game:
+Zone Exploration and Missions.
+
+RULEBOOK STRUCTURE
+The rulebook is divided into the following sections:
+
+Zone Exploration — Before each Mission you will have an opportunity to explore
+the Zone, meet new people and manage all your belongings to prepare better
+for the next Mission.
+
+1.
+
+The main gameplay components during Zone Exploration are the Campaign binder,
+your Stash and the Zone Map.
+
+3. Mission Setup in Mission guide – riefly summari es the structure
+of a Mission guide and shows an example of a Mission setup.
+
+n the ampaign binder you can find all the rules for Zone Exploration as well
+as all your Contacts. All your belongings are safely hidden in the Stash.
+
+4. Mission Map – Thoroughly covers rules about elements found on the Map tiles
+and Range rules.
+
+On the Zone ap you can find places to visit throughout the ampaign. ou will
+add stickers, showing additional areas to explore.
+
+5. Playing the Mission – Thoroughly covers the game Round order and
+component rules.
+
+Missions The main part of the gameplay is when your talkers set off for a ission,
+where you will fight against Enemies, struggle with dangerous Anomalies, loot
+valuables, and most importantly, fulfill ission objectives.
+
+6. Entities Comparison – uick reference table outlining differences between
+Entities.
+
+To start a Mission you need to set it up according to the Mission guide, which
+contains some insight about the tasks ahead of you, as well as instructions
+on how to prepare and populate the Mission Map.
+Each Mission has its own unique Map, consisting of tiles, which are divided
+into spaces. Stalkers and Enemies move through those spaces. Various points
+of interest will be shown on the Environment cards overlaid on the Map.
+Reality-bending anomalous areas will be shown as standees residing on the foil
+overlays. ometimes Enemies will fight not only you, but each other as well,
+forming different teams. The Zone is a living, breathing world after all.
+ou will have your Equipment to help you win the day. t is all displayed in your
+trusty PDA-Personal Digital Assistant (a fancy way of saying “player board”), with
+your chosen Stalker in the middle, and their Equipment distributed between various
+slots – Pockets, Backpack, equipped Artifacts, worn Armor and Weapon in hand.
+Each ission is played through several game Rounds, during which different
+Events sway the situation and talkers and Enemies act. ou will sneak, run, loot,
+and fight. All that in order to complete the ission objective.
+ou will find various Actions available to you on different game components,
+from your Basic Actions found on the Help card, through those provided by your
+Equipment, to Environment cards allowing you to interact with your surroundings.
+f you manage to complete the objective, your ission will be successful. ou will
+progress the Campaign and will discover new places in the Zone. But beware, if at
+least one of the Stalkers dies, or the time runs out – the Mission will end in a failure.
+Apart from the Campaign, S.T.A.L.K.E.R. The Board Game can also be played
+in the form of one-shot Scenarios using the Zone Survival mode. All necessary
+information about the differences between the ampaign and the Z mode
+can be found in the Zone Survival Rules & Scripts booklet.
+
+Starting the Campaign – Contains instructions required to start a new Campaign.
+
+2. Zone Exploration in Campaign inder – riefly summari es all steps
+performed during a Zone Exploration.
+
+7.
+
+Glossaries – They cover all identifications of Enemy and Anomaly standees
+and all icons.
+
+GOLDEN RULES
+In the game like this, unclear situations can happen. In that case, follow those rules:
+1.
+
+Cards e ore Rule oo – Whenever a card’s text directly contradicts rules
+found in the Rulebook, the card takes precedence.
+
+2. Limited Components – All components are limited. f an effect would require
+you to use a component that isn’t available and doesn’t specify what to do
+otherwise, that part of the effect is ignored e.g., effect of an Anomaly would
+cause a Stalker to lose 7HP and gain a
+, but all
+tokens are currently
+used, the Stalker would only lose 7HP and not gain a
+).
+3. Uncaring Zone – Stalkers are intruders in the Zone, and the Zone reacts
+almost as if it has a mind of its own. Whenever you have an unclear situation,
+rule it in the player’s disfavor.
+
+CAMPAIGN
+One Campaign playthrough means playing with the group of Stalkers through
+a series of consecutive Missions. Each Campaign playthrough requires a fresh
+Zone Map on which you mark your progress and a separate Stash as two Stalker
+groups don’t share their belongings.
+
+STALKER COUNT
+ome game effects change depending on the number of talkers taking part
+in a Mission. We recommend that each player controls 1 Stalker.
+If you want to add a new Stalker to the Campaign group, because e.g., you have
+a new player joining you for a game night, you simply choose a talker card
+for them. ou will have to equip them using the contents of your tash though.
+
+STORIES
+Each Mission in the game is a part of a Story – they provide an overarching
+narrative, and their outcome will impact your Campaign. Each Story has its letter,
+referred to in the Mission guide and the Zone Map, so you know that the narrative
+in Mission A1 will continue in Mission A2. ou don t have to finish one tory to
+begin another. ou should save the Zone ap and contents of your tash after
+finishing all orebox tories. pcoming tories from the tretch oals and
+expansions will use your Campaign state.
+
+6
+
+|
+
+S.T.A.L.K.E.R. The Board Game |
+
+STARTING THE CAMPAIGN
+To start a new ampaign perform the following tasks
+
+5. Choose Stalkers:
+
+1.
+
+Each player chooses 1 Stalker card and 1 Stalker model to represent
+their Stalker. Provided Stalker models are universal and are meant
+to represent every Stalker, so choose whichever you want.
+
+earn about the game
+
+The rules of the game are explained in the following chapters
+• Zone Exploration – Summarizes information about Zone
+Exploration, which can be found in the ampaign binder.
+• Mission Setup – Summarizes the structure of a Mission
+guide and instructs how to resolve a ission setup.
+• Mission Map – Thoroughly covers the ap structure.
+• Playing the Mission – Thoroughly covers the game Round
+order and component rules.
+
+You may choose any available Stalkers but there are four
+talkers recommended for the first playthrough
+• Borsuk, a Zone explorer
+•
+amon, a lone fighter
+• Milady, a sneaky sniper
+• Velet, a versatile tank
+
+2. Check the Gameplay Example:
+
+Those chosen talkers will remain with you for the whole ampaign.
+
+Play out the short scenario found in the Gameplay Example
+to check your understanding of the game.
+
+Then, each player chooses one color and takes the following
+components in that color:
+• PDA
+• Attention token
+• Plastic ring
+
+3. Take out the ampaign binder, tash plastic envelope and
+Zone Map from the box.
+They will be used during the Zone Exploration part of the game.
+
+Place the plastic ring on the talker s model. Place the talker
+card in the middle of the PDA and the Attention token in the slot
+near Pockets.
+
+Replaying the Campaign
+4.
+
+Before you start your
+second or later ampaign
+playthrough be sure to reset
+all the components. You will
+need a new Zone Map and you
+have to reset the contents
+of all of the Mission boxes.
+Full contents of each Mission
+box are provided in the Mission
+criptbook pages
+.
+
+lot starting cards
+
+Find Contact cards C
+idorovich , C
+uide , and
+C
+Patron in the box, take them out and place in slots
+of the ampaign binder s cardholder. Their exact position
+in the cardholder does not matter.
+Example: Starting components for gray Stalker.
+
+6.
+
+ain starting Equipment
+
+Gain 5000 regardless of the number of talkers in your team
+and place them in your tash. This is the total starting cash,
+to be split between your team. ou will be able to spend it during
+Zone Exploration in the ampaign binder.
+Additionally each Stalker starts with a Leather Jacket Armor card
+– take 1 per Stalker out of the deck and place in your Stash.
+7.
+
+ou re ready to start
+
+Open the ampaign binder on the first page Zone avigation
+and follow the instructions found there to start playing
+the ampaign.
+
+|
+
+S ar
+
+he am a
+
+|
+
+7
+
+•• • • • •
+Locations
+
+MISSIONS
+STASHES
+CONTACTS
+
+ZONE EXPLORATION IN CAMPAIGN BINDER
+
+Achievments
+
+Before each Mission, you perform Zone Exploration using the Campaign binder and the Zone Map. You explore the Zone,
+make use of some of the Contacts gained throughout the Campaign, and manage your Equipment.
+Detailed instructions of Zone Exploration steps are found in the Campaign binder which is the main component you will be using
+in this phase.
+
+Zone Exploration Summary
+
+There are three types o locations ound on the Zone Map
+
+During Zone Exploration each of these steps will be resolved fully,
+in this order:
+1.
+
+Zone Navigation – Here you visit locations on the Zone Map.
+One of these locations will be your next Mission. Choosing
+it gives you the story introduction, but doesn’t start
+the Mission immediately.
+
+• • • • • • • •• •
+• • • •• •• •
+• ••• • •
+
+•••
+•• • •• •
+• • • • • • •• • •• • •
+• •• • •• • • ••
+••
+
+••
+
+2. Contacts – Here you interact with the Contacts you have
+met during the Campaign. They will help you during your
+Missions and allow you to buy and sell Equipment.
+3. Going on a Mission – Here you perform all necessary steps
+to prepare Stalkers for the Mission. It redirects you to
+the Mission guide where you setup the Mission.
+4. Post Mission Cleanup – This step is performed after
+the Mission and contains instructions for clearing the table.
+
+ZONE NAVIGATION
+The Zone is vast and provides many opportunities. Which places
+you visit is your decision. At the beginning your options are
+limited, but after each Mission new stickers with new points
+of interest will be added to your Zone Map. During each Zone
+Navigation you must visit 1 Mission location and you may visit up
+to 1 New Contact or Stash location.
+
+• • • • •• • • •• •
+• ••• • •
+
+•
+• • • • ••
+• ••• • •• •• ••• •
+• ••• •
+
+••
+•••
+• • •• •
+• • • • • •• • •
+• ••• •
+•
+
+New Contacts – Marked in green, they represent new Contacts
+you can meet in the Zone. any of them are traders or offer other
+unique services. Choosing this point of interest will usually result
+in giving you a new Contact card. When you choose this option
+read the specified script which can be found in the criptbook
+(back of the Mission guide).
+Stashes – Marked in blue, they represent well hidden inventories
+of other Stalkers, potentially containing Equipment that’s hard
+to obtain. Choosing this option will usually give you a choice
+of obtaining some Equipment, sometimes at a cost. When you
+choose this option read the specified script which can be found
+in the Scriptbook (back of the Mission guide).
+Missions – Marked in red, they represent your possible next
+ission. hen you choose this option read the specified page
+of the Mission guide which will brief you on what you can expect
+from the next Mission. Choosing a Mission doesn’t immediately
+start it, but you won’t be able to pick another one. Before
+the Mission begins you will have an option to explore the Zone
+more, make use of your Contacts and prepare your gear.
+
+Marking Locations
+Most of the scripts and some Mission Epilogues ask you to mark
+a location. To do so, simply cross out that location using a pen or
+pencil. Do it only when asked to.
+Marked Locations can’t be visited. They are already completed
+and are unavailable in this Campaign.
+
+Stickers
+When you are instructed to update your Zone Map with a sticker,
+find it on the sticker sheet and stick it to the ap in the correct
+place. Each sticker contains one distinctive feature with
+its counterpart on the Zone ap which can help you to find
+the correct place for a sticker.
+
+8
+
+|
+
+Zone Exploration in Campaign Binder |
+
+CONTACTS
+
+Buying and Selling
+
+Contact cards represent various Characters (and animals) met
+throughout the Campaign. During each Zone Management you
+may choose and resolve up to three Contact cards that you
+have slotted in the cardholder of your Campaign binder.
+
+Before the Mission you will have the option to trade with
+different ontacts. e advise to carefully consider your options
+here as correct preparation and better Equipment can make
+a Mission much easier to beat.
+
+There are four types of Contact cards:
+• Loners – They offer small task services sometimes out
+of good will, but usually they demand a considerable payment.
+• Traders – They buy and sell various Equipment. Thanks to
+them you can easily upgrade your gear which is essential to
+survive in the Zone.
+• Companions – ou may take up to
+ompanion on
+a ission. onsider choosing a ompanion if you think you
+might need a helping hand on a Mission.
+• Contracts – ou may take up to
+ontract on a ission.
+They provide you with an additional objective which rewards
+you with on completion.
+
+henever you buy or sell Equipment usually by visiting
+a Trader), you gain or discard Coupons equal to the good’s
+value. Usually this is the value visible on a card, but
+sometimes the Trader modifies it e.g., idorovich sells tems
+for twice their
+value and is willing to buy Equipment cards
+from you for only quarter of their
+value).
+
+ere s an example o a Contact card
+
+SIDOROVICH 1
+TRADER 2
+
+3
+
+A fat bastard, but a reliable source
+of supplies. Warning: not cheap!
+• You may sell Equipment cards of any Tier
+for a quarter (1/4) of their value
+(round down to next 50).
+• You may buy Tier I Weapons and Armors
+for their value.
+• You may buy Magazines for 500 each.
+• You may buy Items for twice their value.
+• You may buy “Echo Detector” Attachments
+for their value.
+
+C01a
+
+4
+
+5
+
+hen you buy something, find it and place it in your tash
+(or if you want you may immediatelly equip it on your PDA).
+hen you sell something, discard it and return it to the correct
+deck or token compartment.
+
+GOING ON A MISSION
+Before you depart on a Mission you should prepare yourself.
+ou want to strike a balance between space for any loot you
+may find and preparing for any number of troubles. After all,
+a prepared talker is a living talker.
+This is the moment when you decide which talker equips what.
+Each talker should have at least Armor and
+eapon at all
+times so be sure to equip yourselves properly. Additionally these
+steps will be performed before each Mission:
+• Each talker sets their P to their ax value.
+• Each talker packs few olts in their Pockets and Focuses
+on the Mission.
+• Each eapon is fully loaded.
+• Each talker sets the Radiation dosage on their eiger counter.
+
+etectors and Arti acts
+Artifacts are the most powerful
+and most precious objects
+in the Zone. To obtain them
+from Anomalies you will need
+at least Detector Attachment
+card in your team. Although it’s
+not necessary for the Mission,
+gathering Artifacts is usually
+worth the trouble.
+
+POST MISSION CLEANUP
+1.
+
+Name – Each Contact has a unique name.
+
+2. Type – Each Contact has one of the four Contact types.
+3. Number – Each Contact has a number in its top right corner.
+Contact numbers start with the letter C.
+4. Story – A bit of lore about that character.
+5. Rules – Depending on the Contact type this can be
+a single use effect, buy sell offer or instructions on how to
+use this during a Mission.
+
+Double Faced Cards
+Companions and Contracts are double faced cards. On their
+“a” side there are instructions you resolve during Zone
+Exploration. On their “b” side there are rules that are applied
+during the ission. During Zone Exploration you may freely look
+at both sides before you decide to choose that Contact.
+
+After each Mission you will have an option to save your
+Campaign or to continue playing.
+
+STASH
+During the Campaign, you may gain loads of Equipment and
+Coupons, either by completing Missions, scavenging them from
+hidden stashes or simply from trading with Contacts. As long as
+you are resolving the Zone Exploration all your belongings are
+available to you.
+After you prepare for a Mission any pieces of Equipment
+that you don t want to take on a ission or simply can t due
+to limits can be safely placed in a tash and will patiently wait
+for your return.
+
+|
+
+Zone Exploration in Campaign Binder |
+
+9
+
+MISSION SETUP IN MISSION GUIDE
+
+During each Zone Exploration you choose one Mission you will embark on. All information about Missions can be found in the Mission
+guide booklet and is split into three sections:
+
+PROLOGUE
+ou read this section when you choose a ission on the Zone ap. ere you will find a story introduction for the ission you are planning
+to undertake. The Prologue contains some useful hints about the task ahead, to help you better prepare for it. Choosing a Mission doesn’t
+immediately start it, but you won t be able to pick another one until you finish it succesfully or not . After reading the Prologue you will
+return to the Campaign binder where you can explore the Zone further, visit various Traders, and meet with other Contacts.
+
+SETUP
+
+Remaining components
+in the Mission ox
+
+This section contains all the information required to prepare the ission ap. ission specific cards mostly ission Events and
+Environment and tokens are unique for a given ission and can be found in the ission box corresponding to the ission you
+just embarked on. Any remaining components can be found in the main box. To prepare the Map follow the instructions found
+on the two pages of setup, step by step. On these two pages you can only see the connection between the setup instructions and
+You approach the enemy camp, a basic one, but surely well-defended.
+the prepared
+Mission
+All rules
+components
+can be found on the following pages of the Rulebook.
+t s sti minutes
+unti theMap.
+dawn breaks,
+and theregarding
+hosti es ha e no
+c ue what is coming.
+
+Not all of the components
+found in the Mission box are
+used during setup. Remember
+to only use the components
+the game asks you to. If you
+ever feel that you’ve misplaced
+some of the components or just
+want to reset the Mission box,
+you can find the full contents
+of each Mission box on pages 4
+and 5 in the Scriptbook.
+
+ou are fu y focused on the rized hostage you must nd and re ease.
+
+ou sneak
+wea ons or
+free.Mission
+hat can ossib
+ere s an example
+o in,
+setup
+A y go wrong
+
+1
+
+1. Map Setup
+
+• Now, set the following cards on
+the Map as shown on the illustration
+A1-02a, A1-03a, A1-05a,
+2B below:
+A1-06a, A1-07a. These are your
+starting overlay cards.
+• Keep the remaining Environment
+Environment cards:
+2C cards as the Environment deck next
+• Take out all Environment cards from
+to the Map, as they will be needed
+during the Mission.
+A Mission box A1.
+• Find the A1-01a (Mission Objective) Anomalies:
+card, read it, and place it next
+• Draw 1 random Gravitational type
+to the Map.
+A Anomaly card and place it face up
+• Find both A1-05a cards, pick one
+next to the Map.
+at random, and return the other
+• Find the Electro Anomaly card and
+to the Mission box.
+place it face up next to the Map.
+• Find both A1-07a cards, pick one
+• Draw 1 random Gravitational Anomaly
+at random, and return the other 3B overlay (3, 5, or 8) and place it
+to the Mission box.
+
+on the Map so the tip of the triangle
+in the Anomaly center points
+to the top of the Map.
+• Draw 1 random Electric Anomaly
+overlay (6, 7, or 11) and place it
+on the Map so the tip of the triangle
+in the Anomaly center points
+to the top of the Map.
+in the center of each
+• Place 1
+Anomaly overlay. Then, place
+matching Anomaly standees
+3C
+on those overlays.
+
+Find Map tiles: 1, 2, 3, 4, and 5
+and place them as shown.
+
+2. Environment Setup
+
+3. Other Setups
+
+A1
+
+env
+
+Event deck:
+• Take out all Mission Event cards
+from Mission box A1.
+• Find both Mission Event cards II,
+return one of them, chosen
+randomly, back to the box.
+• Stack the Mission Event cards in 8
+numerical order, face down. Mission
+Event card I should be on the top
+and number VIII should be on the
+bottom. This is your Event deck.
+• Remember! Leave the Random Event
+card in the Mission box, it may be
+needed later during the Mission.
+Mission begins! Start the first Round.
+
+iro -
+
+• When placing Enemy standees,
+mind their facing. They are marked
+Stalkers:
+with little arrows attached to
+• Place the Stalker models on the space
+icons.
+and
+4 marked as “Starting Point”.
+6
+:
+Loot
+Enemies:
+• Take 16 random Loot tokens and
+• Find the Bandit Rifle Enemy card
+place them in stacks on the Map
+place it next to the Map.
+as shown.
+A and
+Mark it with 1 .
+Unknown tokens :
+• Find the Bandit Shotgun Enemy card • Depending on the number
+7
+and place it next to the Map.
+of Stalkers, take a set of Unknown
+Mark it with 1 .
+tokens and randomly place them
+• Find 3 Bandit Rifle standees.
+on the Map as shown:
+Place 2 of them on spaces marked
+» Single Stalker: 2 × X , 1 × , 1 ×
+5B/C with and 1 next to the Map.
+» 2 Stalkers: 1 × X , 1 × , 2 ×
+• Find 3 Bandit Shotgun standees
+» 3 Stalkers: 1 × , 1 × , 2 ×
+and place them on spaces marked
+» 4 Stalkers: 2 × , 2 ×
+with .
+
+Av1
+4
+
+1
+
+1
+
+2
+
+2
+
+9
+
+1
+
+3
+
+RANGE
+
+SPECIAL
+
+5C
+
+2
+2
+
+3
+
+Light Wound
+
+2
+
+4
+
+RANGE
+
+1
+
+3
+
+1
+1
+
+1
+4
+
+Escape from the Bandit camp.
+If any Stalker dies:
+
+8
+1
+
+A
+
+1
+
+nR¡¡Rxpɷ.Æ.pª
+
+Mission
+Objective
+
+Event deck
+
+3
+
+1
+
+Find and rescue Dalik.
+
+1
+
+1
+
+MISSION OBJECTIVE
+
+The Mission is lost, find and resolve
+Mission Event card VII (A Fatality).
+
+6
+
+1
+
+a
+A1-03
+
+1
+
+1
+
+3
+3
+
+4
+
+1
+
+2
+
+4
+
+3
+
+2a
+
+4
+2
+
+1
+
+Electro
+Anomaly
+
+-0
+
+Gravitational
+type Anomaly
+
+.¡°RpFɷ%fRc
+
+A1-01a
+
+A1
+
+After an Entity finishes Movement,
+for this Anomaly Activation:
+roll the
+The triggering Entity and on all spaces
+with the rolled Anomaly symbol:
+(you can roll for Defense).
+Stalkers: Suffer 10
+Enemies: Light Wound.
+
+pxnfÍ
+
+4
+
+ELECTRIC
+
+1
+
+1
+
+I
+
+ELECTRO
+
+1
+
+2
+2
+
+2
+
+4
+
+3
+
+4
+
+Withdraw: Move up to
+toward the closest space with no LoS
+to any Target. This Movement can’t be interrupted. Turn the model
+toward the last space it moved from.
+
+1
+
+4
+
+1
+
+3
+
+3
+
+-1
+
+7
+
+3
+
+3
+
+Heavy Wound
+
+DAMAGE
+
+2
+
+2
+
+1
+
+-1
+
+TO HIT TORSO
+
+AKM-74S [RANGED]
+
+SPECIAL
+
+A
+
+2
+
+3
+
+3
+
+3
+
+7
+
+2
+
+3
+
+1
+
+TO HIT HEAD
+4
+6
+9
+
+2
+
+3
+
+1
+
+3
+
+3
+
+1
+
+1
+
+1
+
+A
+
+1
+
+GRAVITATIONAL
+TYPE
+
+0
+
+1
+
+1
+
+2
+1
+
+BANDIT
+RIFLE
+HUMAN
+
+3
+
+3C
+
+3
+
+ELECTRO
+
+3B
+2
+
+5B
+1
+
+3
+
+7
+
+1
+
+-1
+
+Withdraw: Move up to
+toward the closest space with no LoS
+to any Target. This Movement can’t be interrupted. Turn the model
+toward the last space it moved from.
+
+3
+
+2
+
+2
+
+1
+
+1
+
+Heavy Wound
+
+for each space between the Bandit and Target.
+
+DAMAGE
+
+3
+
+2
+
+1
+
+1_av_A
+
+Light Wound
+
+1
+
+1
+
+1
+
+-1
+
+4
+6
+9
+
+1
+
+A1-08a
+
+3
+
+2
+
+7
+
+TO HIT TORSO
+
+-2
+
+3
+1
+
+3
+
+Environment
+deck
+
+TO HIT HEAD
+
+SHOTGUN [CHARGE]
+
+1
+
+1
+
+t:
+ches
+Open your
+ase
+by 2
+Incre dosage .
+card
+ation
+Radi flip this
+and
+
+1
+
+2C
+
+3
+
+2
+
+4
+
+1
+
+3
+
+5
+
+5
+
+A1-06a
+
+1
+
+2
+
+2
+
+0
+
+5
+
+2
+
+3
+1
+
+2
+
+SHOTGUN
+HUMAN
+
+1
+
+1
+
+2
+1
+
+BANDIT
+
+5
+
+4
+
+A1-05a
+
+1_01
+
+4_av_A
+
+2B
+
+1
+1
+
+1
+
+A1-07a
+
+1
+
+4
+
+STARTING
+POINT
+
+4
+
+2
+1
+
+5_av_A
+
+1
+
+1
+3_av_A
+
+1
+
+4
+EPILOGUE
+
+Story A/ Mission 1/ Rescuing Dalik
+
+Story A/ Mission 1/ Rescuing Dalik
+
+This section continues the story, describing the events after the Mission. It contains the Mission rewards you get for your success,
+ranging from new Equipment, Coupons, Contacts to stickers adding points of interest to your Zone Map and unlocking new Missions.
+Story A/ Mission 1/ Rescuing Dalik
+
+10
+
+|
+
+Mission Setup in Mission Guide
+
+|
+
+Story A/ Mission 1/ Rescuing Dalik
+
+5
+
+MISSION MAP EXAMPLE AFTER SETUP
+1.
+
+Map tiles – Each Mission Map consists of several Map tiles
+showing you where the Mission will take place. Be careful
+to orient them as shown on the setup diagram. The numbers
+of required tiles will help you find the correct way of placing
+Map tiles.
+
+2B
+
+2. Environment cards – n each ission box you can find
+a dedicated, unique Environment deck. Do not look through
+the contents of those cards (unless instructed) and always
+place them on the side specified by the setup, otherwise
+you might spoil the Mission for yourself! During setup
+the Environment cards are divided into three categories:
+
+1
+5A
+
+5B
+3B
+
+A. Note cards – These cards are placed next to the Map
+and contain your Mission Objectives, new rules and
+information necessary for the Mission.
+
+5C
+
+6
+
+B. Map overlays – These cards are placed directly on the Map,
+changing its contents and allowing you to interact with
+them in various ways. All overlay cards with text have it
+oriented in the same way – this will help you to place them
+correctly on the Mission Map.
+
+7
+
+C. Environment deck – Cards not placed during setup are
+stacked in a deck and placed next to the Map. During
+the ission you will be instructed to find specified cards
+in that deck.
+
+8
+2A
+
+3. Anomalies – Each Mission will contain at least one Anomaly.
+Anomalies consist of the following components:
+
+4
+
+A. Anomaly card – They contain rules regarding Anomaly
+effects and should be placed next to the ap.
+
+2C
+
+B. Anomaly overlay – Setup will instruct you which
+overlays you should use and where to place them,
+marking the exact spot of the Anomaly Centers.
+C. Anomaly standee and Artifact token – Setup will
+instruct you in which Anomaly Centers you should place
+Anomaly standees and .
+4. Stalker’s Starting Point – Each ission specifies a starting
+space or spaces where you place your Stalkers.
+5. Enemies – Each Mission will contain at least one Enemy.
+Enemies are represented by the following components:
+A. Enemy card – Placed next to the Map and marked
+with at least one Enemy team token (
+)
+defined by the setup. The card contains all the Enemy
+rules and statistics, like their Sight Range, Move value,
+and Attack. The color token influences their behaviour
+and decides their team allegiance.
+B. Starting Enemies – Most Enemies are immediately placed
+on the Map. This point tells you where to place the Enemy
+standees. It is important to have them facing in the right
+direction, as shown by the arrows on the setup diagram.
+
+3C
+
+3A
+
+6. Loot tokens ( ) – Piles of stuff ready to be picked up.
+It might be an Item, some Bolts, a lone Artifact stashed away
+or even a Weapon. Most of the time you will be placing those
+tokens in stacks, more than 1 on the space.
+7.
+
+Unknown tokens ( ) – These tokens represent Enemy
+reinforcements and mark spaces where the Enemies might
+come from.
+
+8. Event deck – Deck of Event cards which narrates
+the ission for you. n each ission box you can find
+dedicated, unique Mission Event cards that create your
+starting Event deck for that Mission. Additionally during
+the Mission you will add some Random Events to this
+deck. The Event deck marks the passage of time, limiting
+the number of Rounds that are available during a Mission, so
+every time you are adding Random Events to the deck, you
+gain time to finish that ission.
+
+C. Enemy pool – Some Enemies are placed next to
+the Map and can arrive later when you resolve
+Unknown tokens (
+).
+
+|
+
+Mission Setup in Mission Guide
+
+|
+
+11
+
+1
+
+1
+
+1
+
+4
+
+nviro - Av1
+
+MISSION MAP
+
+3
+
+The ap is the main component of each ission. t s where the Action takes place. The ission guide will instruct you how to prepare
+1
+the ap for each ission, but knowledge about the ap and interaction with it is crucial to ission success.
+5
+
+Spaces with water
+
+SPACE EDGES
+
+1
+
+Each Map tile has its number in one of the corners and is divided
+into several spaces of different si es and properties.
+
+1
+
+2
+
+Two spaces sharing an edge in at least one of the four cardinal
+directions are considered adjacent. There are five different
+types of connections between two spaces, which change how
+an Entity can interact with them.
+1
+
+paces marked with
+are
+water spaces and no Entity
+may enter or move through
+them.
+
+5
+
+1
+
+4
+
+3
+
+4
+
+1
+2
+
+1
+
+1
+
+3
+
+3
+
+Tiles & Spaces
+
+2
+
+3
+
+1
+
+1
+
+1
+
+1
+
+1
+
+8
+3
+
+4
+
+Example: Map tile “1” is divided into 9 spaces.
+2
+
+SPACE SIZE
+
+4
+
+Entities are living beings
+traversing the Zone. There are
+three types of Entities
+• Stalkers – player
+characters.
+• Companions – talkers
+helpers.
+• Enemies – dangerous
+Humans and Mutants
+hostile to talkers.
+More about Entities and their
+differences on page 40.
+
+9
+5
+
+7
+
+Entities
+
+2
+
+28
+
+6
+
+2
+
+2
+
+5
+
+1
+
+3
+
+4
+
+Depending on the space si e, many Entities talkers and
+Enemies may be present on that space at the same time.
+The smallest space si e is
+3grid square. Only one Entity can be
+1 1 All other spaces consist of a few such
+present in such a space.
+1
+squares combined together and their Entity capacity increases
+proportionally. Any fragments that visually enlarge a space, but
+aren t a full
+square do not add Entity capacity to that space.
+
+Open edge– Entities can ove, draw a o , and measure
+Range through an Open Edge. They are the most common
+type of space connection.
+
+2. Impassable Terrain – Entities can t ove but can draw
+a o and measure Range through mpassable Terrain.
+mpassable Terrain can form lone structures e.g., a mesh
+fence) or separate parts of the Map in the form of spaces
+with water
+.
+3. Wall – Entities can t ove, draw a o , nor measure Range
+through a all.1 paces separated by a all aren t considered
+adjacent. alls can form lone structures or separate parts of
+the ap into buildings.
+
+2
+1
+
+1
+
+3
+1
+
+3
+
+Thic ness o the space edge
+
+2
+
+4
+
+3
+
+More information about
+entering fully occupied spaces
+can be found on pages 20
+and 32 talkers and Enemies
+ovement rules .
+
+3
+
+4
+
+2
+
+2
+
+Example: Space 1 has 1 × 1 size so it can hold 1 Entity.
+Space 2 has 1 × 2 size and can hold 2 Entities.
+4
+Space 3 has 1 × 23size and can hold 2 Entities.
+Although space 3 is visually bigger than space 2, part of it
+is not a 1 × 1 square so it’s ignored when checking space size.
+Space 4 has 2 × 3 size and can hold 6 Entities.
+1
+
+A space with a number of Entities equal to its si e is fully occupied.
+Enemies can t end their ovement in such a space 4and talkers that
+end their ovement there Push one of the Entities space Away.
+
+Mission Map
+
+| Tiles & Spaces
+
+|
+
+2
+
+1
+
+Example: The marked edge is considered a Wall as it has higher
+restrictions than Impassable Terrain. So no Entity can Move,
+draw a LoS, nor measure Range through this edge.
+2
+1
+3
+
+3
+
+28_av_B2
+
+28
+
+2
+
+2
+
+|
+
+f two different edges of two ap tiles connect with each other,
+treat them as one edge of the higher restriction in this order:
+all mpassable Terrain Open edge.
+
+1 1
+Fully Occupied
+Space
+
+3
+
+12
+
+5. Window – Entities treat indows differently. talkers
+and uman Enemies treat them like Open edges, Psionic
+Enemies treat them like mpassable Terrain, and all other
+Enemies treat them like alls.
+
+1
+
+ome space edges can be
+visually thicker than others
+especially those on the tile
+edges . The thickness of
+the edge doesn t have any
+gameplay effects.
+
+4. Door – Doors are part of alls that are treated as Open edges,
+so Entities can ove, draw a o , and measure Range through
+a Door. They represent different entrances to the buildings.
+
+2
+
+1
+
+3
+
+3
+
+4
+
+1.
+
+1
+
+1
+
+4
+
+BUILDINGS AND ROOMS
+Rooms are areas fully enclosed by Walls, Doors, and Windows.
+Multiple Rooms neighbouring each other create a building.
+
+Radiation is a dangerous part of the Zone. Not all areas are
+contaminated, but if you find yourself in one, you d better
+quickly get out.
+
+and Map Radiation
+As Free Actions
+don t
+cause you to slide your Turn
+token down, performing them
+doesn t cause you to increase
+your Radiation dosage from
+on your space.
+
+1
+
+ome effects may reference being inside or outside of a building
+(Indoor or Outdoor spaces).
+
+MAP RADIATION
+
+Indoor spaces are all spaces in any Room.
+3
+
+Outdoor spaces are all spaces that do not belong to any Room.
+1
+
+1
+
+23
+
+5
+1
+
+Example: Depending on the Radiation value, the intensity of its visuals
+increases and changes colors. Radiation on the spaces with 1-2
+has yellow colors, 3-4
+orange colors, and 5+
+red colors.
+
+3
+1
+
+2
+
+Each time a Stalker slides their Turn token (after fully resolving
+the effect or tandard Action
+that caused them to slide
+the Turn token), if they are on a space with
+, they increase
+their Radiation dosage (on their Geiger counter) equal to the
+value of the space. This amount can be reduced by their Armor s
+ap Radiation modifier.
+
+3
+6
+
+1
+
+Radiation During Movement
+
+1
+
+If Movement caused you to slide one of your Turn tokens down
+and you moved to, from, or through one or more spaces with
+,
+you increase your Radiation dosage only once, equal to
+the highest value of the
+found on those spaces. This value
+can be reduced by your Armor s ap Radiation modifier.
+
+Example: This building is divided into 6 Rooms.
+
+COVER
+3
+
+2
+
+1
+
+2
+
+4
+
+5
+
+3
+
+1
+
+3
+
+4
+
+1
+Spaces with this icon contain Cover, meaning it is harder
+to hit Targets in that space unless you re close. t represents
+obstacles, hiding spots, and all of the things you could use to
+your advantage when defending.
+Whenever an Entity on a space with
+is Attacked and
+the Attacker isn t on the same space or in the same Room
+in case of fighting in a uilding , reduce the number of
+successes from talkers Attacks and
+(damage) from
+Enemies Attacks equal to the
+value.
+
+2
+
+Example: During the “Movement” Basic Action, the blue Stalker was
+present in 4 spaces. Two with 0
+, one with 2
+, and one with 4
+.
+fter nishing this Mo ement they wou d increase
+their Radiation dosage by 4, but their NBC Suit reduces it by 1
+so they increase their Radiation dosage by 3.
+
+Although it s not lethal immediately, accumulating too much
+Radiation dosage can harm you during each Enemies & Zone Phase.
+
+3
+
+4
+
+2
+
+|
+
+Mission Map
+
+| Tiles & Spaces
+
+|
+
+13
+
+Range
+
+CLOSEST OBJECT AND SHORTEST ROUTE
+
+Range is always measured between two spaces. It is equal to
+the lowest number of edges crossed between those spaces.
+Range doesn’t have to be measured in a straight line. Here are
+examples of different Ranges
+
+To find which object is the closest one to something follow
+these rules
+1.
+
+isuali e the shortest route for each compared object
+(containing the least number of spaces in between).
+A. Human Enemies ignore all routes containing uncovered
+Anomaly symbols (unless there are no other possible
+routes). They will try to avoid Anomalies at all costs.
+
+2.
+
+hoose the object with the shortest route.
+
+3.
+
+hoose the object whose route contains the least number
+of corners.
+
+f it s still tied, ead talker decides.
+to choose the most suitable option.
+
+e encourage you to try
+
+Example: Di erent anges from the b ue ta ker. ange
+green.
+ange
+ye ow, ange
+orange, ange
+red.
+
+Effects with Range
+
+can only be applied on your space.
+
+hen an effect refers to something within Range , all spaces at
+Range and lower may be affected. n the above example an effect
+within Range applies to green, yellow and orange spaces.
+hen an effect refers to something within Range , all spaces
+at Range and higher may be affected. n the above example
+an effect within Range
+applies to orange, red and all
+farther spaces.
+
+Example: et s check which andits are c osest to the
+.
+he b ue andit is at ange so they are indis utab y the c osest one.
+e t both tea and ye ow andits are at ange .
+he ye ow andit s route doesn t contain any corners
+it doesn t matter that they need to rotate twice
+to be ab e to Mo e a ong that ath and the tea andit s route contains
+one corner so the ye ow andit is c oser than the tea .
+One of the ossib e routes for the ink andit is at ange ,
+but it goes through an noma y so it s out of consideration and we need
+to nd another one. andits don t ike to risk their i es ike that.
+he remaining routes of the ast
+andits are a at ange .
+he ink andit s route contains corner, ur e s and red s .
+in this order
+o sum it u , andits are c ose to the
+b ue, ye ow, tea , ink, ur e, and ast y red.
+
+14
+
+|
+
+Mission Map
+
+|
+
+Range
+
+|
+
+Line of Sight (LoS)
+
+Sight
+Back
+
+Line of Sight (LoS) is determining whether two Entities on
+the Map are able to see each other. LoS is always measured
+between two spaces. In order to determine if there is a LoS
+between the spaces of those two Entities you have to:
+• For Stalkers check all cardinal directions (front, back, left and
+right), for Enemies check directions depending on their Sight.
+• LoS in each cardinal direction should be checked individually.
+To do so, check spaces that are horizontally or vertically
+(depending on the cardinal direction checked) connected
+to the Entity’s space. Then, for each such space, repeat
+this process in the same cardinal direction until you reach
+the edge of the Map, the end of Sight Range or you encounter
+a o blocking effect a all or o isibility token ). In other
+words you could compare LoS to all spaces that you could
+reach with Movement without the need to change direction.
+• An Entity always has a LoS to it’s own space.
+• An Entity has Line of Sight to all those spaces and can
+therefore see each Entity present in those spaces.
+• Entities, Anomalies, and most tokens do not block the Line
+of Sight unless it’s clearly stated!
+
+Sides
+
+Sides
+Front
+
+Enemies have different o
+Ranges depending on their
+facing. A talker s o has
+Range in each direction.
+
+Example:
+ta ker has in nite ight ange in a directions.
+Standing on this particular space, the blue Stalker has LoS
+to 10 spaces in front of them, 2 spaces to the left,
+2 spaces to the right and 0 spaces in the back as there’s
+a Wall behind them. So the blue Stalker can see
+a
+andit hotgunners but can t see the
+andit i emen.
+
+Example: A Bandit has the following Sight Ranges: 3 in front, 1 on sides
+and 0 in back. Standing on this particular space and facing downwards
+the Bandit has LoS to 3 spaces in front of them, 2 spaces to the left
+and 2 spaces to the right. So this Bandit has LoS to the green and blue
+Stalkers but doesn’t have LoS to the gray Stalker (reaching that space
+would require changing the direction) and purple Stalker
+(they are on the space to the back of the Bandit where they have LoS 0).
+
+Example: Standing on this particular space, the blue Stalker has LoS
+to 5 spaces in front of them, 1 space to the left and 3 spaces to the right.
+So the blue Stalker sees 2 of 4 Bandits.
+
+|
+
+Mission Map
+
+|
+
+Line of Sight
+
+|
+
+15
+
+3_av_A
+1
+
+Environment Cards
+3
+
+ere s an example o a ote card
+1
+
+A1-03b
+
+2
+
+Each ission has its own unique set of Environment cards. They
+influence the ap, provide hints, and add or change some rules.
+There are two main types of Environment cards
+• Map o erlays – Placed directly on the Map tiles, adding
+new Actions Triggers or changing spaces and connections
+between them.
+•
+otes – Kept next to the Map. Textful cards that provide
+single use instructions, hints about a Mission or additional
+rules.
+
+4
+
+Action Choices and Costs
+
+2
+
+RADIO SHACK
+
+3
+
+Not even a trace of a prisoner.
+If there is an
+
+4
+
+in this building, resolve it.
+
+Find and resolve 1 random card A1-10a
+(Cell Key Location).
+
+2
+
+Discard this card.
+
+Apart from those, a small number of Environment cards
+represent an Anomaly or a eapon.
+
+4
+
+Sometimes a Note card can
+offer you multiple Actions
+to choose from. Some of them
+are marked with
+and require
+you to slide your current Turn
+token down once in order
+to perform them. Remember
+that this may cause you to
+increase your Radiation dosage.
+
+3
+
+A1-03a
+
+4
+
+ere s an example o a Map o erlay card
+1
+
+1.
+
+side:
+Peek in is Action
+rm th
+o
+rf
+e
+p
+nt
+ay
+You m space adjace .
+on a
+g’s
+buildin .
+is
+th
+2 to p this card
+Fli
+
+um er – Each card has a number on its front and back
+so it s easily distinguishable. The first two signs denote
+the Mission. Additionally, front side card numbers end
+with a and back side card numbers end with b .
+
+2.
+
+1_av_A
+
+1
+
+1.
+
+um er – Each card has a number on its front and back
+so it s easily distinguishable. The first two signs denote
+the Mission. Additionally, front side card numbers end
+with a and back side card numbers end with b .
+Action – ome cards contain an Action tandard
+or Free that you can perform on a specific space s found
+on this card.
+
+3.
+
+Trigger – ome cards contain a Triggered effect that should
+be applied when a talker or sometimes an Enemy enters
+a specific space s found on this card.
+
+1
+
+2.
+
+3. Story – Some cards contain bits of story.
+4. Rules – Either instructions you must apply immediately
+or additional rules applied to the game.
+
+Double Faced Cards
+
+1
+
+er
+a Stalk
+When
+g,
+buildin rd.
+is
+th
+enters flip this ca
+ly
+te
+ia
+immed
+
+1
+
+3
+
+ame
+
+ost Environment cards are double faced with a front
+containing a in its number and back containing b in its
+number. Always be sure to follow the instructions of the game
+and keep cards with the correct face showing e.g., when ission
+setup requires you to place overlay card A1-02a on the Map do
+not accidently place it on its b side . y default you should only
+see the front face of the Environment cards and they should be
+stacked in the Environment deck in such a way.
+
+Flipping an Environment Card
+any effects require you to flip an Environment card. hen you do
+
+For easier overlay cards setup remember that text on most
+overlay cards is oriented in the same way and should align
+with the ap.
+
+If it’s an Overlay card, place it back on the Map. It should either
+be placed in the direct neighborhood of where it previously was
+or a visual will help you determine its location.
+f it s a ote card, resolve its effects. Then, you ll usually be
+asked to discard it. If the card is not discarded, place it next to
+the ap as it will contain information or additional rules.
+
+Discarding and Removing an Environment Card
+henever you are instructed to discard an Environment card,
+return it to the Mission box.
+Rarely, an effect may ask you to remove a certain card from
+the game. Store this card separately as it shouldn’t be used
+in this Campaign playthrough again.
+
+16
+
+|
+
+Mission Map
+
+|
+
+Environment Cards
+
+|
+
+Tokens on Mission Map
+NO VISIBILITY
+No Entity can draw LoS to, from, or through a space with
+this token (it’s considered to have a Wall in each of its edges
+for the purpose of drawing LoS). Entities on the same space with
+token can still Target each other.
+placed on the Map are
+removed during the Enemies & Zone Phase.
+BOLT
+Bolts are kept in Pockets. You can place them on the Map
+to cover Anomaly symbols by performing the “Bolts & Nuts”
+Basic Action. Anomaly symbols covered by a
+are ignored
+when rolling for Anomaly Activation.
+placed on the Map are
+removed during the Enemies & Zone Phase.
+ARTIFACT
+Artifacts usually start hidden under the Anomaly standee and can
+be placed on the Map with a Detector Armor Attachment. Anomaly
+symbols covered by a
+are ignored when rolling for Anomaly
+Activation.
+placed on the Map can be gained by performing
+the “Pick Up” Basic Action. When you do, draw an Artifact card
+with the Type corresponding to the Anomaly you pick it from.
+If there’s no such Artifact card available or the
+was picked
+from a non-Anomaly space simply draw a random Artifact card.
+LOOT
+Loot represents Equipment scattered throughout the Zone.
+It ranges from multiple Bolts and Items to Weapons or even
+rarely an Artifact.
+
+Example A: nd of ound e ect on the ent card causes you
+to reso e
+c osest to the ead ta ker b ue ta ker in this case .
+o do it you i the
+in the bui ding. t is
+ointing u wards.
+andit hotgun is the nemy marked with
+so you take
+andit hotgun standee from the nemy oo and ace it
+in the same s ace as
+facing u wards, then you discard that
+.
+
+Resolving multiple or no
+When instructed to resolve
+multiple
+at the same time,
+do so by resolving them one
+by one.
+When instructed to resolve
+and there are no
+on the Map,
+nothing happens.
+
+on the same space are placed in one stack. When additional
+is added to the space, place it on the top of the stack.
+When you resolve the
+(usually by performing the “Pick Up”
+Basic Action), resolve the top
+from the stack. f it s unflipped,
+flip it and gain the visible reward. Then, discard the
+.
+Place the discarded
+to the side. It can’t be used again
+during the same Mission.
+UNKNOWN ENEMY
+Unknown Enemy tokens represent Enemies that can arrive during
+the Mission.
+on one space are usually placed in one stack.
+When you are instructed to resolve an , resolve the top
+from
+the stack. f it s unflipped, flip it. Then, follow these instructions
+If it’s X , discard it.
+If it’s
+/ / / / , place 1 or 2 Enemy standee/-s of
+the corresponding color on its space facing the direction shown
+by the arrow on the token.
+If you placed at least 1 Enemy standee, discard the
+
+Example B: s no andit hotgun standees are a ai ab e in the oo
+a
+are a ready on the Ma , you must draw an nemy cti ation card
+in this case and cti ate
+andit hotgun which is c osest
+to the
+. ccording to the c osest ru es this wou d mean either
+of the andits that are at ange from the
+, so it s u to you to decide
+if it s the one in the bui ding or the one ust outside of it. s you reso e
+ste s on the nemy cti ation card remember that those ste s
+can on y a ect that
+andit if its co or matches the ste s
+and you don t reso e the bottom ste as it s erformed on y
+during the nemy cti ation ste of nemies
+one hase.
+
+.
+
+If there weren’t enough standees in the Enemy pool to place
+at least 1 standee, draw an Enemy Activation card (
+Enemy
+Activation card if there’s at least 1
+token on the Map, otherwise,
+Enemy Activation card). Resolve it, but only Activate 1 Enemy
+that matches the color that should be placed but couldn’t and is
+closest to the resolved . Then, discard the .
+
+Placing Enemies and fully occupied spaces
+If a new Enemy standee should be placed on a fully occupied
+space (e.g, from resolving an
+), place that Enemy on
+the closest available space facing the direction of the space it
+couldn’t be placed on.
+
+|
+
+Mission Map
+
+| Tokens on Mission Map
+
+|
+
+17
+
+PLAYING THE MISSION
+
+Missions are various tasks you will undertake during your Campaign. They have story connections between each other and are played
+on the ap constructed from ap tiles and populated with different components during setup.
+
+MISSION OBJECTIVE
+
+Active Event
+Only one Event can be active
+at any time. henever an effect
+causes you to draw find
+an Event card, place it on top
+of the previous Active Event.
+
+Each Mission has a main Objective card which summarizes your
+goal during that ission. ou have to fulfill it in order to succeed.
+Additionally, it contains information regarding, what happens
+whenever a Stalker dies.
+In most Missions a Stalker’s death is equal to the failure of
+a ission and requires you to go to a specific ission Event card
+which explains the next steps.
+A1-01a
+
+MISSION OBJECTIVE
+Find and rescue Dalik.
+
+Escape from the Bandit camp.
+
+Stalker count
+icon represents the numeric
+value equal to the number
+of Stalkers in your team.
+ome effects refer to it.
+Example: “New Arrival” Mission
+Event card seen to the right
+places 4 –
+Random Events
+on the top of the Event deck.
+In a game with 2 Stalkers this
+effect would place Random
+Events
+.
+
+If any Stalker dies:
+
+The Mission is lost, find and resolve
+Mission Event card VII (A Fatality).
+
+1
+
+New Arrival
+
+he cam is under attack
+and grab their weapons.
+
+andits s ring u
+
+INSTANT
+
+Example: Mission Ob ecti e of the rst Mission A1).
+
+GAME ROUND STRUCTURE
+
+Event Phase – Draw and read a new Event card to find out
+what is happening and apply Instant rules found there.
+
+2. Players Phase – Each player carries out two Turns during
+which they can perform various Actions.
+3. Enemies & Zone Phase – Enemies Activate, talkers suffer
+from accumulated Radiation dosage and End of Round
+effects found mostly on Event cards apply.
+
+Event information
+Part of the Event cards
+is resolved during the
+Enemies & Zone Phase,
+but you may read it as soon
+as the Event becomes Active.
+Plan your Actions accordingly!
+
+o
+
+Here are examples of Mission and Random Event cards:
+III
+
+2
+
+3
+4
+
+from all stacks of
+
+|
+
+E e
+
+ha e
+
+|
+
+1.
+
+1 Quick Gear Check
+
+One of your ammo ouches is undone.
+must ha e fa en out somewhere.
+
+.
+
+End of Round
+
+1.
+
+he
+
+The Event deck consists of two types of Event card:
+• Mission Event – They contain story progression and Mission
+specific situations. They are unique for each ission and are
+added to the Event deck during setup. Some Mission Event
+cards have multiple variants with the same number. In that case
+you pick one at random when building your Event deck.
+• Random Event – They contain small story twists like finding
+extra loot or sudden Radiation spikes. They are added
+to the Event deck during the Mission.
+
+Ongoing fights
+Random Events on the top of the Event deck.
+
+5A
+
+Reset all Turn tokens and Refresh the Lead Stalker token.
+Start the next Round by drawing and resolving a new Event.
+
+5B
+
+Place 4 -
+
+A Game Round consists of the following Phases:
+
+a
+
+Events mark the passage of time during a Mission and narrate
+what happens during Rounds. During this Phase, draw the top
+card of the Event deck, read it, resolve nstant effects present, and
+place it next to the Event deck. Then, proceed to the Players Phase.
+
+Alarm!
+Resolve all
+
+Each Mission is played through several game Rounds, each
+consisting of three Phases. During each Round players will
+reveal and resolve a new Event card, then plan and play out
+their Turns, after which the Zone and Enemies respond. This will
+repeat until either players complete the Mission successfully,
+a Stalker dies, or they run out of time. In each case, players will
+be directed to resolve a specific ission Event card.
+
+|
+
+Event Phase
+
+magazine
+
+3
+
+INSTANT
+
+Lead Stalker:
+Discard 1 Magazine. You may discard a
+or slide 1 of your
+to ignore this effect.
+Turn tokens down as if performing 1
+
+End of Round
+
+4
+
+5B
+
+Reset all Turn tokens and Refresh the Lead Stalker token.
+Start the next Round by drawing and resolving a new Event card.
+
+Name – Each Event card has a unique name.
+
+2. Number – Mission Event cards have a number on their front
+and back. Random Event cards that start in the Mission box
+have the Mission number on their front.
+3. Story – A narrative of what is happening.
+4. Instant – These effects are resolved immediately when you
+draw this card during the Event Phase. Some of them allow
+Stalkers to perform additional Actions like Movement or Attacks,
+but they don t slide their Turn tokens down unless specified.
+5. End of Round – These effects are resolved at the end
+of the Enemies & Zone Phase.
+A.
+
+arked effects don t appear on each Event card and can be
+different from card to card. sually they add new Random
+Events to the deck or cause additional Enemies to arrive.
+
+B.
+
+nmarked effects are always the same and remind you
+of steps required before starting the next Round.
+
+Players Phase
+
+ACTIONS
+
+Lead Stalker
+
+From taking a few steps to headshotting a Bandit, each Action is
+important and can impact the whole Mission.
+
+During this Phase, Stalkers carry out their Turns one at a time
+in a clockwise order. Each Round starts with the Turn of
+the Lead Stalker.
+
+Lead Stalker is a moving title
+tied to one Stalker at a time.
+See more on page 24.
+
+One Action must be finished before the next one can begin.
+
+In a given Round each Stalker carries out two Turns in total
+(each represented by one Turn token) and during each Turn they
+perform 2 Standard Actions (
+).
+hen all talkers have finished both of their Turns, proceed to
+the Enemies & Zone Phase.
+
+Basic Actions are Actions known to every Stalker and are
+explained in detail on the following pages. Other sources
+of Actions are the Environment cards on the Mission Map and
+the Equipment cards you ve obtained e.g., different eapons,
+grenades, med-kits).
+Actions are represented by two different icons
+
+TURNS
+
+Gameplay Example
+ou can check the flow
+of the gameplay in the small
+ameplay Example booklet.
+
+Standard Action – To perform this kind of Action you must
+slide your Turn token one slot down. They are relatively simple
+Actions, like moving a few meters, lobbing a grenade or taking
+a shot from a gun, but there’s a limit to how much you can do
+during a short span of time.
+
+Example: On the left – Turn tokens before performing any
+.
+n the midd e
+urn token after erforming the rst
+of that Turn.
+On the right – Turn token after performing the second
+of that Turn.
+When Stalker decides they don’t want to perform any
+their Turn ends
+and Enemies that have them in their LoS can React.
+
+Free Action – They don’t require you to slide your Turn
+token. You can perform any number of Free Actions during
+your Turn, before, after or in between your two Standard
+Actions. They represent Actions that can be performed without
+any preparation, like taking a peek through a window inside
+a building, opening doors or chugging an energy drink.
+
+markers in Turn tokens
+ome effects can place
+or more on your Turn token.
+They increase the number
+of
+you can perform during
+that Turn. henever you
+perform
+while you have at
+least
+on your current Turn
+token, you must discard
+instead of sliding the Turn token
+down. During the End of Round,
+Stalkers discard any
+remaining on their Turn tokens.
+
+Each Turn is represented by one of the two Turn tokens
+on a Stalker’s PDA. During a Turn, only the Active Stalker
+performs Actions.
+One Turn must be finished before the next one can begin.
+During each Turn, a Stalker must perform 2 Standard Actions (
+and may perform an unlimited number of Free Actions ( ).
+Each time a Stalker performs a Standard Action, they slide
+their Turn token down once. hen a Turn token reaches
+the bottom slot and they don’t want to perform any additional
+Free Actions (
+, their Turn is finished.
+
+)
+
+End of Stalker’s Turn
+After each Stalker’s Turn, Enemies with a Line of Sight to that
+Stalker will have a chance to React by Attacking them. This
+information is reminded on the PDA when a Turn token reaches
+the bottom slot. More about Enemy’s Reaction on page 34.
+Passing the Turn
+A player may decide, before their Stalker’s Turn begins, to pass.
+n that case, proceed with the Turn of the next talker. ou
+don’t lose your Turn when you pass. It means that you can freely
+postpone your Turn and wait for a better situation to utilize your
+Actions, but you have to carry out your Turns eventually.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+ha e
+
+|
+
+BASIC ACTIONS
+
+Prepare:
+
+Each Stalker always has access to the following Actions. They
+are also listed on the Help card.
+Movement:
+ometimes a you can do is run as fast as you can
+Move up to 3 spaces.
+The most common Action used to traverse through the Mission
+Map. This Movement results in moving/placing your Attention
+token.
+Careful Movement:
+ome situations ca for a carefu and si ent a
+
+roach.
+
+You can’t perform this Action to Move from or to Enemy LoS.
+Move 1 space. Don’t move/place your Attention token.
+Stalker Movement Rules
+ovement may come in different forms and from different
+sources. Regardless of the Movement source, all Stalker
+Moves follow the following rules:
+• To Move X spaces, simply Move your Stalker to an adjacent
+space X times. Spaces divided with Impassable Terrain
+or a Wall
+without a Window
+aren’t
+considered adjacent.
+• If you enter a space with an Enemy, your Movement is
+interrupted and you must immediately end it.
+• If you would end your Movement on a fully occupied space,
+Push one of the Entities from that space talkers first,
+if present) to an adjacent space (the one you Moved from,
+if possible). If no Entity could be Pushed to create a slot
+for you, you can’t end your Movement in such a space.
+• You may Move through fully occupied spaces without
+Enemies.
+• If you Move from a space with an Enemy, rotate the Enemy
+standee to face the adjacent space you Move to.
+
+Push
+Push is an involuntary form
+of Movement that can’t be
+interrupted. When an Enemy is
+Pushed, rotate their standee so
+they are facing the space they
+moved from.
+
+• If you Move through a space in an Enemy’s LoS, place
+your
+on the first space you are oving through that is
+no longer in an Enemy’s LoS.
+• If you end your Movement in an Enemy’s LoS, place your
+on your space.
+• If you end your Movement and your
+isn’t placed on
+the Map, move/place your
+on your space.
+
+Some Actions specify that you
+Move without moving or
+placing the Attention token.
+In such cases you only move
+or place your Attention token
+if you end that Movement
+in an Enemy’s LoS.
+
+Radiation
+• If the Movement caused you to slide one of your Turn tokens
+down and you Moved to, from, or through one or more
+spaces with , you increase your Radiation dosage equal to
+the highest value of the
+found on those spaces. This value
+can be reduced by your Armor s ap Radiation modifier.
+Triggers
+During the Movement, check if you’ve entered a space with
+a
+or a space with Anomaly symbols (
+) and
+resolve triggered effects. f the
+effect applies immediately
+and doesn’t specify that it ends the Movement you may
+continue the Movement after fully resolving the
+effect.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+Then, any number of times in any order, Stalkers on your space
+may:
+• Exchange an Artifact, Attachment, Armor, Item, Weapon,
+Magazine,
+, or Personal Important Finding (subtype
+of Note cards found during a Mission) with another Stalker
+on the same space.
+• Move a Weapon from the Weapon slot to the Backpack
+and vice versa. Ammo stays on the Weapon.
+• Move an Armor from the Armor slot to the Backpack
+and vice versa.
+• Install or Uninstall an Attachment from an Armor or a Weapon.
+• Move an Artifact from the Artifact slot to the Backpack and
+vice versa.
+Reload:
+hen your wea on is out of bu ets you ust ha e to ut more
+of them in it.
+If you have a
+
+treat this Action as
+
+(you don’t discard that
+
+).
+
+Discard 1 Magazine from your Pockets of a type matching your
+Weapon (Pistol
+, Rifle
+, or Shotgun
+) to add as many
+to your Weapon to reach its Ammo capacity.
+Pick up:
+here are many things ying on the ground in the one, ust
+waiting for you to ick them u .
+Choose 1
+(Loot) or
+(Artifact) on your space. If its
+an unflipped
+, flip it, gain its rewards, and discard it.
+When you pick up an
+, gain an Artifact card of a type matching
+the Anomaly you picked it from.
+Decoy:
+
+Attention
+
+Moving Carefully
+
+uick gear swa with a comrade or nding a better shooting
+osition.
+• Gain a
+(Focus). See more about Focus on page 29.
+• Gain 1
+(Bolt).
+
+ha e
+
+|
+
+ometimes a itt e distraction is a it takes.
+Throwing a decoy allows you to move your opponents or lure
+them right into a trap. Use it with caution though!
+You can’t perform this Action if you have your
+
+on the Map.
+
+Discard 1
+from your Pockets. Choose a space within Range 3
+of your Stalker. Place your
+on that space. Then, if there are
+any Enemies on the chosen space or adjacent spaces, draw a
+Enemy Activation card and resolve it, but only Activate Enemies
+that are on the chosen space and adjacent spaces. Then,
+if any of those Enemies has LoS to any Attention token move
+that Attention token by 1 toward its owner.
+
+3
+
+1
+
+1_av_A
+
+DOUBLE BARREL +3
+
+1
+
+SINGLE BARREL +1
+
+2
+
+/
+/
+Additional rules
+Your Character, many parts of your Equipment and some
+Environment cards give you access to new abilities. They are
+marked with
+/ /
+icon in color depending on the card’s
+1 color. They can enhance specific Actions or provide you with
+ongoing passive effects.
+
+300
+
+FRAG GRENADE
+
+EYE
+
+GRENADE, BLAST
+
+FIRE
+
+2
+
+5
+
+After you Attack with this Weapon,
+you may immediately use an
+from your Grenade Item as .
+
+2000
+
+You may use an IMPROVED
+Artifact Container regardless of your Armor.
+
+1000
+
+SLIME
+
+CHEMICAL
+
+3
+
+Whenever an Enemy
+within Range 1 Attacks,
+you may increase your Radiation
+dosage by 3 to deal a
+to that Enemy.
+
+2
+
+2
+
+2000
+
+2
+
+4
+
+Apart from Basic Actions, Stalkers may do much more.
+Different Actions can be found on various game components.
+The most common are:
+• Weapons – Each has at least one Attack Action (see: 3Attacks)
+2 that additionally requires Ammo .
+• Environment cards – ost Environment cards can be
+interacted with by performing Actions written on them,
+revealing new secrets or progressing a ission.
+3
+• Items – Each has its own Action. It can be performed if you
+have3 it in your backpack and are discarded after use.
+• Artifacts – Some Artifacts provide you with their own,
+unique Actions.
+
+3
+
+2
+
+3000
+
+IMPROVED
+ARTIFACT
+CONTAINER
+1
+
+Discard a
+to move
+your Attention token to a space
+within Range 2 of your Stalker.
+
+500
+
+GRENADE
+LAUNCHER
+
+1
+
+THROW (RANGE 2)
+on the chosen space.
+Place your
+Roll 4 . Attack all Entities
+on that space.
+= .
+• Stalkers:
+• Enemies: Target Torso.
+Discard this card.
+
+The triggering Entity and on all spaces
+with the rolled Anomaly symbol:
+Stalkers: Lose 9HP, then gain a .
+Enemies: Light Wound, then gain a .
+
+1
+
+1
+
+er
+a Stalk
+When
+ilding,
+.
+this bu
+enters flip this card
+iately
+immed
+
+1
+
+BLAST
+3 : This Attack hits all Enemies
+on the Target’s space.
+
+After an Entity finishes Movement,
+roll the
+for this Anomaly Activation:
+
+1
+
+1
+
+est:
+n ch
+Ope your
+se
+a
+by 2
+e
+r
+Inc dosage .
+card
+tion
+Radia flip this
+and
+
+3_av_A
+
+AMMO
+
+0-1
+2
+2
+
+1
+
+MAX. RANGE
+
+2
+
+ACCURATE RANGE
+
+A1-08a
+
+CHEMICAL
+
+2
+
+_01
+
+_A1
+4_av
+
+SAWED-OFF
+
+ore about talkers Attacks
+on page 27.
+
+4
+
+OTHER ACTIONS AND WHERE TO FIND THEM
+
+Attacks
+
+FRUIT PUNCH
+
+A1-03a
+
+side:
+Peek in is Action
+orm th
+ay perf adjacent
+You m
+e
+c
+a
+.
+on a sp ding’s
+buil
+.
+to this
+is card
+Flip th
+
+Knife is an Attack Action. To perform it you must be 1on the same
+space as the Enemy you wish to Attack. You may pick which
+Body Part you target, then roll 3 . If you kill your target, reduce
+your Attention.
+
+3
+
+Knife:
+ways usefu , whether you are o ening a ourist s De ight can
+or in need of a backu when your
+M is out of bu ets.
+
+Triggers
+Triggers appear on the Environment overlay and Anomaly
+cards. They remind you that something happens when a Stalker
+1 or sometimes an Enemy enters a specific space on the ission
+ap. They specify whether they should be applied immediately
+during the Action or after finishing it. hen applied immediately
+they won’t end that Action unless it’s clearly instructed.
+
+4
+
+ap are removed during the Enemies & Zone
+
+3
+
+placed on the
+Phase.
+
+Although they are not Actions, they are an inseparable part
+of the gameplay. They can happen at any time when their
+condition is met. Some of them help or disrupt Actions, some
+are used to hide information from the player until they perform
+a specific Action and some are used to progress the ission.
+
+4
+
+Place 1
+from your Pockets onto a chosen Anomaly symbol
+within Range 3. An Anomaly symbol covered by
+is ignored
+when rolling for Anomaly Activation.
+
+INSTANT TRIGGERS AND ADDITIONAL RULES
+1
+
+Every Stalker’s (t)rusty friend. Each Stalker carries a few Bolts
+in their ockets that he you nd safe aths through noma ies.
+
+1
+
+Bolts & Nuts:
+
+2
+
+2
+
+4
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+ha e
+
+|
+
+MAP RADIATION
+
+ATTENTION
+
+en after a those years after the rst incident, one is fu of
+radiation hots ots. ise sta ker knows when to cross them and how
+to re are good armor and some odka goes a ong way here.
+
+f you do stu , someone is bound to notice that. nd usua y not
+in a good way
+
+Each time you slide your Turn token down (usually by
+performing
+), if you are/were present during the Action on
+any space with
+(Radiation), increase your Radiation dosage
+by the highest value of the
+found on spaces where you are/
+were present during that Action. Your Armor’s Map Radiation
+modifier can reduce this.
+Geiger Counter & Radiation Dosage
+
+Many Actions will cause you to place your Attention token
+on the Map, attracting Enemies toward you. With passage
+of time, Attention will fade, thus allowing you to use it tactically.
+Placing Attention doesn’t immediately cause Enemies to react,
+but influences their behaviour during the Enemy Activation step.
+Low Attention – Symbolises noises and other signs of your
+presence that Enemies may ignore, like moving a few steps too
+fast or dealing a lethal blow with a silenced Weapon. If there
+are only
+tokens on the Map or none at all, Enemies won’t
+necessarily follow your steps and may continue their own patrols.
+High Attention – Symbolises noises and other signs of your
+presence that Enemies will follow. Shooting with a Weapon
+or moving right before their eyes, these Actions will alert
+Enemies and make them try to find you. f there is at least
+on the ap, Enemies behavior will become more aggressive and
+more focused on the source of the Attention.
+As long as you have your
+your
+.
+
+on the
+
+ap, no effect can place
+
+As long as an Enemy has o to your talker you have
+on
+your space and no effect can move, place, or reduce your
+.
+Attention Reduction
+ome effects reduce Attention. hen you reduce
+flip it
+to
+side. When you reduce
+return it to your PDA.
+
+Keep your Geiger counter near your PDA to easily mark Radiation
+dosage accumulated throughout the ission. henever you
+increase your Radiation dosage, turn the wheel toward higher
+numbers and whenever you reduce, do the opposite.
+During the Enemies & Zone Phase and whenever the game
+instructs you to do so you may suffer from Radiation Exposure
+(see more on page 35).
+Critical Radiation dose
+f you would increase your Radiation dosage above
+(and enter the gray area) immediately roll 4 , lose HP equal
+to the number of
+rolled then set your Radiation dosage to
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+ha e
+
+|
+
+.
+
+PDA & EQUIPMENT
+
+6. Backpack – Here you keep your Items and other Equipment
+cards that you currently aren’t using.
+
+The most important component for each player is their PDA
+(player board). During a Mission you will keep your Equipment
+there and find all information about your talker. ere s a list
+of components found on the PDA:
+
+7.
+
+8. Attention – Here you place your Attention token if it isn’t
+currently placed on the Map.
+9.
+
+9
+5A
+
+3C
+
+2B
+
+3B
+1
+
+When you lose HP move your
+marker to the right that many
+spaces (up to 0).
+
+Whenever your HP drops to 0 (and whenever it would drop
+below 0 if you were already at 0) you gain a Critical Injury.
+When you gain your third Critical Injury, you die.
+
+When you heal HP move your
+marker to the left that many
+spaces (up to your Stalkers HP).
+
+More about Critical Injuries and Stalker’s Death on page 29.
+
+2A
+
+Stalker Card
+
+5C
+
+4A
+
+8
+
+4B
+
+7
+6
+
+1.
+
+Losing and healing HP
+
+HP track – Here you mark your current HP value.
+
+Reaching 0 HP
+3A
+
+5B
+
+Pockets – Here you keep all
+, Magazines and sometimes
+tokens provided by the Mission.
+
+Stalker slot – Here you place your Stalker card.
+
+2. Turn slots– Here you place your Turn tokens. You slide them
+down to mark that you have performed a
+.
+A. Turn tokens – During each Round, Turn tokens start
+at the top of their slots. After you perform two
+the Turn token should end up at the bottom.
+
+Players take the role of Stalkers, exploring the Zone due
+to a vast number of different motivations. Each talker is
+represented by their own unique Stalker card. Although each
+talker is different, there is some universal information that may
+be found on those cards:
+
+MILADY 1
+
+HP 14 2
+SHOOTING 3
+2 (RANGE 0-3)
+3 (RANGE 4+)
+
+B. Critical Injury tokens – f you suffer a ritical njury
+you place a token here, blocking part of the slot limiting
+the number of
+available during that Turn.
+3. Weapon slot
+A. Weapon card – Here you place your currently equipped
+Weapon.
+B. Weapon Attachment – Here you place up to two
+Attachments that match Attachment slots on your
+currently equipped Weapon.
+C. Magazine track – Here you place representing Ammo
+for your currently equipped Weapon.
+4. Armor slot
+A. Armor card – Here you place your currently equipped
+Armor.
+B. Armor Attachment – Here you place up to one Armor
+Attachment.
+5. Artifact slots
+A. Artifact card – Here you place your currently equipped
+Artifact with the highest
+(Artifact’s Base Radiation)
+value.
+
+5
+NEVER MISS
+Whenever you Attack
+an Enemy outside of its LoS,
+to that roll.
+gain +1
+
+4
+
+SNEAK
+Move up to 3 spaces. During this Movement,
+the maximum value of Enemies’ LoS is 1,
+except on the final space of your Move.
+Once per Turn.
+
+1.
+
+Mi ady used to ha e e erything, from cars
+to hunting tri s abroad. er ife was a fairy ta e
+unti she got mau ed by a bear, and succumbed to coma.
+hen she woke u years ater, she earned
+that her husband, a s ecia o s o cer,
+had been de oyed to the one, and ne er came back.
+nd Mi ady, a renowned shot and a ski ed hunter,
+was des erate enough to fo ow.
+he has been ooking years, and sti no trace
+of ieutenant te an ndrukho . eware, though.
+er fa orite way of ooking is through her sni er sco e.
+
+Name – Each Stalker has a unique name.
+
+2. HP – Maximum amount of HP that a Character can have.
+You start each Mission with that much HP and at no point
+during a Mission can you have more.
+3. Shooting skills – Depicts the number of
+rolled during
+each Weapon Attack. Sometimes a Character’s Shooting
+skills depend on the distance to the Target.
+4. Abilities – Each Character has at least one ability. They are
+either new Actions or additional rules impacting the game.
+5. Story – Each Character card contains a story introduction
+for that Character on its back side.
+
+B. Artifact Container – Depending on your Armor,
+here you may place an Artifact container token.
+C. Artifact cards – Here you place up to two additional
+Artifacts so that their
+values are covered by the PDA.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+ha e
+
+|
+
+Lead Stalker
+
+Armor
+
+Every group needs a leader.
+
+Armor provides protection from Enemy Attacks and sometimes
+will even reduce the Radiation dosage you gain. ou may only
+have Armor equipped at a time and you may keep additional
+ones in your ackpack. t is advised for each talker to have
+at least Armor at all times as the Zone can be a merciless place.
+Although Armor comes in different shapes and forms they share
+some common characteristics.
+
+Lead Stalker is a moving title tied to one Stalker at a time. Some
+game effects e.g., found on Events refer to a ead talker.
+The ead talker also has the final voice in case of unresolved
+disputes between players.
+Lead Stal er is represented y the ollo ing to en
+
+LEAD STALKER
+
+ere s an example o an Armor card
+
+Flip this token
+and pass it to the next
+Stalker to choose one:
+• Heal 2HP.
+• Gain a .
+
+PSZ-9D
+
+MAP RADIATION
+
+4
+
+Flip this token and pass it to the next player to choose one
+• Heal 2HP.
+• Gain a
+.
+After you perform this Action the next talker on the left will
+become the ead talker, but they won t be able to perform
+the token s Action and hence pass the ead talker until it is
+unflipped during the End of Round.
+ou may perform this Action even if you would gain nothing
+from its effect simply to pass the token .
+
+Items
+tems are common pieces of Equipment found plentiful in
+the Zone. They range from different grenades and med kits
+to provisions. tems are kept in the ackpack and each offers
+a single use effect.
+ere s an example o an Item card
+
+BREAD 1
+
+5
+
+Gain +1
+
+1.
+2.
+
+1.
+
+III
+8
+
+6
+
+BASIC
+
+to Defense rolls.
+
+7
+
+5500
+
+nx
+
+ame
+e ense alue – Depicts how many
+you roll when
+Defending from Attacks. Each
+rolled reduces
+the incoming
+Damage by .
+
+3. Map Radiation – Depicts a modifier to
+value of spaces
+allowing you to reduce the amount of Radiation dosage
+gained. ome effects may cause you to directly increase
+your Radiation dosage. They will specify whether your Armor
+may protect you against them.
+4. Arti act Container – BASIC , IMPROVED , or ADVANCED .
+t shows how well protected you are from the equipped
+Artifacts base Radiation dosage and if you should use
+the Artifact ontainer token.
+5. Additional rules – ome Armor provides additional rules
+e.g., P Z D Armor will always protect you from at least
+from an Enemy Attack .
+
+7.
+3
+
+Artifact Container:
+
+2
+-2 3
+
+6. Attachment slot – Each Armor has Attachment slot on
+which any Armor Attachment can be installed.
+
+2
+
+EAT
+and heal 2HP.
+Gain a
+Discard this card.
+
+2
+
+DEFENSE
+
+As long as you have this token you can perform the following
+Action
+
+FOOD
+
+1
+
+4
+
+100
+
+ame
+
+2. Type – Each tem has at least one type. ometimes effects
+may reference this type e.g., gain
+ood tem .
+3. E ect – Each tem has a single use Action after which it is
+discarded.
+4. Coupon alue – ow much it is worth. This represents a fair
+price for this tem in the Zone.
+
+Coupon alue – ow much it is worth. This represents a fair
+price for this Armor in the Zone.
+
+8. Tier o the Armor – ow easily obtainable it is in the Zone
+and how powerful it is. n the core game, Armor Tiers range
+from to , with being the most common and weakest.
+
+Armor Attachments
+ECHO DETECTOR
+
+LEATHER JACKET
+DEFENSE
+
+MAP RADIATION
+Artifact Container:
+
+1
+-0
+
+BASIC
+
+100
+
+DETECT AN ARTIFACT
+(RANGE 0)
+and place
+Roll the
+the Artifact token
+from under an Anomaly
+onto a chosen corresponding
+Anomaly symbol.
+
+Armor can have up to Attachment installed. Armor
+Attachments are universal and suit each Armor. These
+Attachments range from Detectors, which provide Actions
+necessary to retrieve Artifacts from Anomalies, to extra
+pouches or defensive plates which provide new abilites.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+ha e
+
+|
+
+1000
+
+Artifacts
+
+Backpack
+
+The real bounty of the Zone. Objects with weird and supernatural
+e ects.
+
+Sturdy backpack is sometimes more important than a loaded gun.
+
+These are special Items that may be obtained during the game,
+mainly by exploring Anomalies. Artifacts give Stalkers access to
+powerful special abilities at the cost of exposing them to Radiation.
+Artifacts can be safely transported in your Backpack, but if you
+want to use their effects you will have to equip them. ou may
+have up to Artifacts equipped at a time and you may keep
+additional ones in your Backpack.
+Although Artifacts come in different shapes and forms they
+share some common characteristics.
+
+ECHINUS 1
+2
+
+4
+
+3
+Lose 1HP and gain a
+
+1.
+
+.
+
+3000
+
+4
+
+5
+
+ame
+
+2. Type – When you pick up an
+from an Anomaly, gain
+the Artifact card with the type corresponding to the Anomaly.
+3. Special e ect – Each Artifact gives you a new ability.
+Either in the form of Actions you may perform or new rules
+influencing you.
+4. Coupon alue – How much it is worth. This represents a fair
+price for this Artifact in the Zone.
+5. Base Radiation dosage
+– Radiation that you’re
+constantly exposed to if you equip this Artifact.
+Artifact’s base Radiation dosage
+Each Artifact has a base Radiation dosage visible in its
+bottom right corner. During the Radiation Exposure step
+of the Enemies & Zone Phase, if your current Radiation dosage
+is lower than your Artifact’s base Radiation dosage, you must
+increase your dosage to match that value.
+f you have multiple Artifacts equipped, only the highest
+applies. Place such an Artifact in the top Artifact slot and
+remaining Artifacts in the bottom slots that cover their
+value.
+An Artifact s base dosage can be lowered by equipping Armor
+with an IMPROVED or ADVANCED Artifact container.
+Artifact containers are represented by the following tokens
+which are placed in the container slot under your Artifact
+with highest
+:
+IMPROVED
+CONTAINER
+
+-2
+
+The following cards are referred to as Equipment cards
+• Armor
+• Artifacts
+• Attachments
+• Items
+• Weapons
+At any point during the ission, if you have more Equipment
+cards than your Backpack capacity allows, you have to discard
+any excess cards. ou decide which cards to discard they can
+be the ones that you ve just gained. During equipping yourself
+(e.g., when performing the “Prepare” Action) ignore this capacity
+and only check it after that Action is finished.
+
+ere s an example o an Arti act card
+CHEMICAL
+
+Backpack is the space under the PDA. During a Mission it’s
+where you keep all your tems and other Equipment cards that you
+aren’t currently using. The base capacity of your Backpack
+is Equipment cards, but some effects can increase this value.
+
+ADVANCED
+CONTAINER
+
+-4
+
+Only Item cards can be used while stored in the Backpack.
+All other Equipment cards have no effect as long as they
+are in the ackpack and must be equipped by performing
+the “Prepare” Basic Action.
+Gaining a ne
+
+E uipment card
+
+henever you gain a new Equipment card e.g., from a
+),
+place it in your Backpack. Alternatively you may immediately
+equip it, replacing any currently equipped card. f it s a eapon
+or Armor card you may install matching Attachments you
+have. Gained Weapons are fully loaded. If you place it in your
+Backpack, place the on the eapon card. f you equip it,
+place the in the slot on the PDA.
+
+Pockets
+Be it trousers or tactical ammo pouches, every stalker needs place
+to store their bolts and spare magazines.
+During a Mission, Pockets are where you keep , Magazines and
+sometimes additional ission specific tokens. f an effect asks you
+to discard a
+or a Magazine it should be one you have in your
+Pockets. ou can use
+in Pockets to perform two Basic Actions –
+olts & uts and Decoy . The first is used to create safe
+passages through Anomalies and the other can distract Enemies.
+
+Tier
+ome Equipment cards have a Tier marking on their back.
+Tier defines the power of the Equipment and its availability.
+ome game effects usually Traders and rewards reference the
+Equipment Tier. f the effect doesn t specify the Equipment Tier,
+Tiers are ignored for this effect e.g., ain Attachment means
+shu e the Attachment deck and gain the top card which can be
+either Tier I or II Attachment).
+
+An Improved Artifact Container lowers the Artifact’s base
+dosage by 2 and Advanced by 4.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+ha e
+
+|
+
+Weapons
+
+E. Attention – You place the required Attention token
+on your space.
+
+To deal with the many dangers of the Zone you will need a trusty
+eapon. ou may only have
+eapon equipped at a time and
+you may keep additional ones in your ackpack.
+t is advised for each talker to have at least
+eapon at
+all times as dealing with Enemies without one can be a real
+challenge. Although eapons come in different shapes and
+forms they share some common characteristics.
+
+AKM-74U
+
+Accurate side
+
+ACCURATE RANGE
+
+ere s an example o a
+
+AKM-74U 1
+
+MAX. RANGE
+AMMO
+
+2
+3 3
+6 4
+
+ACCURATE RANGE
+MAX. RANGE
+AMMO
+
+One side of the
+is specially
+marked and can have additional
+effects during eapon Attacks.
+
+eapon card
+
+2
+
+2
+3
+6
+
+SUPPRESSING
+For
+A every
+B 2 : Deal
+C a
+
+.
+
+1 SINGLE SHOT +2
+Pick a Body Part.
+
+7
+
+1.
+
+7
+
+2 BURST +2
+Gain +1 to the roll.
+You may spread
+and effects
+between the Target and all Enemies
+adjacent to it and in your LoS.
+
+8
+
+ame
+
+9.
+9
+
+I
+
+eapons can have up to Attachment slots. On each slot,
+eapon Attachment can be installed. ot all Attachments work
+for each eapon though. n order to install an Attachment on
+a eapon their slots have to match.
+.D
+
+1 SINGLE SHOT +2
+Pick a Body Part. F
+
+ote that the type is not the only thing to keep in mind – some
+Attachments may only boost a specific Attack type that may
+be unavailable for that eapon. Modify your Weapon smartly,
+Stalker!
+
+E
+
+2 BURST +2
+Gain +1 to the roll.
+1000
+Ç.xp
+and effects
+You may spread
+between the Target and all Enemies
+adjacent to it and in your LoS.
+
+1000
+
+3. Maximum Range – Depicts the maximum distance within
+which this eapon may be used. Each eapon may be used
+to Attack Enemies from Range up to its max. Range.
+
+There are three types
+of aga ines
+
+4. Ammo – Depicts the type Pistol
+, Rifle
+, hotgun
+,
+or Special
+and maximum Ammo capacity of this eapon.
+Ammo is represented by the placed next to the currently
+equipped eapon card in the aga ine track on the PDA
+or directly on the eapon card if it is held in the ackpack.
+Ammo is discarded to perform eapon Attacks. talkers
+start issions with fully loaded eapons.
+
+From the left Pistol
+,
+Rifle
+, and hotgun
+.
+They correspond to the Ammo
+types that different eapons use.
+aga ines are used to
+perform the Reload asic
+Action. hen you do so,
+discard a aga ine matching
+the Ammo type of the eapon
+to add as many to
+that eapon to reach its Ammo
+capacity. You may reload
+either your currently equipped
+eapon or any eapon you
+have in your ackpack.
+
+5.
+
+Attachment slots – eapons can have up to Attachment
+slots. f Attachment slots on eapon and Attachment cards
+match you can install that Attachment, improving the eapon.
+
+6.
+
+eapon trait – arious effects that are sometimes applicable
+during eapon Attacks depending on the number of
+rolled
+and sometimes always in effect.
+
+7.
+
+A. Action cost –
+
+or
+
+he
+
+o
+
+|
+
+AKM-74U
+
+ACCURATE RANGE
+MAX. RANGE
+AMMO
+
+SCOPE
+
+2
+3
+6
+
+Whenever you Attack
+with a Single Shot or Aimed Shot
+within Range 3+, roll +1 .
+
+SUPPRESSING
+For every 2 : Deal a
+
+GRENADE
+LAUNCHER
+
+.
+
+1 SINGLE SHOT +2
+Pick a Body Part.
+2 BURST +2
+Gain +1 to the roll.
+You may spread
+and effects
+between the Target and all Enemies
+adjacent to it and in your LoS.
+
+PTM
+
+ACCURATE RANGE
+MAX. RANGE
+AMMO
+
+dice – umber of
+rolled in addition to a Stalker’s
+dice during the eapon Attack.
+
+a er
+
+ha e
+
+|
+
+2000
+
+1000
+
+0-1
+2
+4
+
+After you Attack with this Weapon,
+you may immediately use an
+from your Grenade Item as .
+
+2000
+
+SILENCER
+
+.
+
+B. Ammo cost – Required number of you must discard
+from this eapon to perform the Attack.
+
+D.
+
+a
+
+ere are all eapon Attachment slots appearing in the core
+game. ote that one of the slots appearing on the eapons can
+accommodate two different types of Attachments.
+
+Attac Actions – Depicts how the eapon may be used to
+Attack. eapons can have or Attack Actions. Each Attack has
+
+C. Attac type – ome cards like eapon Attachments
+may reference or influence only a specific Attack type.
+
+|
+
+Tier o the eapon – ow easily obtainable it is in the Zone
+and how powerful it is. n the core game, eapon Tiers range
+from to , with being the most common and weakest.
+
+Weapon Attachments
+
+2. Accurate Range – Depicts the distance at which this eapon
+works best. ithin this Range
+side of
+is considered
+to be 4
+instead of
+.
+Maga ines
+
+Additional e ects – Some Attacks have additional
+effects. They range from the option to pick a ody Part,
+additional
+or
+to special requirements to perform
+this Attack.
+
+8. Coupon value – ow much it is worth. This represents a fair
+price for this eapon in the Zone.
+
+5
+SUPPRESSING 6
+For every 2 : Deal a
+
+F.
+
+SUPPRESSING
+For every 2 : Deal a
+
+After you Attack with this Weapon,
+if you’re outside of Enemies’ LoS,
+reduce your Attention.
+
+.
+
+1 QUICK SHOT +1
+Once per Turn.
+1 SINGLE SHOT +1
+Pick a Body Part.
+
+100
+
+1000
+
+STALKER ATTACK
+
+Count the
+rolled and compare them to the To Hit value
+of the targeted ody Part. Resolve the effect of the highest
+reached threshold of that Body Part.
+If you’re performing a Weapon Attack within Accurate Range,
+remember to treat
+as 4 .
+f the effect is a ight or eavy ound, draw an Enemy
+Wound card and apply the corresponding outcome.
+If you did not reach any threshold, your Attack misses.
+If you have any unspent , this is the last time you may
+spend them to apply additional effects.
+
+Lead is a currency of its own.
+Attacks are Actions that allow you to engage Enemies. They are
+commonly found on eapons and sometimes on different cards
+e.g., Frag renade tem . Additionally there is one asic Attack
+Action: the Knife Action.
+In order to perform an Attack your Stalker usually has to have
+Range and or o to the target s space.
+nless otherwise stated you may only target Enemy models
+with an Attack.
+
+Attack Sequence
+To perform an Attack follow these steps:
+1.
+
+Choose an Attack Action and a valid Target.
+When Attacking with a Weapon the Target must be within
+the eapon s ax. Range and in o .
+Additionally, some Weapon Attacks state a minimum
+Range to the Target.
+Non-Weapon Attacks specify the Range within which
+they may be performed and if the Target must be in o .
+
+2. Remember to slide the Turn token if the Attack is a
+and spend Ammo if needed.
+3. Place the required Attention token.
+If the Attack places the Attention token and doesn’t
+specify where, place it on your space.
+If the Attack places
+and you have your
+anywhere
+on the Map, do not place the
+.
+Remember that if you re in an Enemy s o you always
+have your
+on your space.
+4. Target a Body Part:
+If the Attack allows you to pick the Body Part, do so now.
+Otherwise, target Torso.
+ody Parts have different To it tables, providing balance
+between the di culty of a it and its effect.
+5. Roll the dice:
+When Attacking with a Weapon, roll
+presented on your
+Stalker card and additional
+specified by the eapon s
+Attack.
+Non-Weapon Attacks specify the number of
+and/or
+rolled.
+Roll any additional
+and/or
+specified by other
+components. The most common sources of additional
+dice are Weapon Attachments.
+6. If you have a
+or another effect that allows you to reroll
+dice you may do so now.
+7.
+
+Resolve the roll results:
+Most Attacks allow you to spend rolled
+to apply
+additional effects. The same effect may be applied more
+than once as long as you have enough .
+
+8.
+
+Masks
+On
+
+dice some sides contain
+symbols. They are spent to
+apply additional effects usually
+found on Weapons. Those
+effects may be applied multiple
+times and you may choose to
+apply different effects if you
+have more than one available
+as long as you are able to pay
+their
+cost. Each time you
+use such an effect, subtract
+the required number of
+from
+the roll result. These effects
+may be used before or after
+the Attack’s Hit is checked.
+
+f you fail to kill the Enemy, rotate that Enemy so that they
+are facing your Stalker.
+
+PALKAN
+HP 16
+SHOOTING
+3
+
+PTM
+
+MUTANT
+
+ACCURATE RANGE
+MAX. RANGE
+AMMO
+
+0-1
+2
+4
+
+3
+
+FAST SHOT
+to perform
+Discard a
+SUPPRESSING
+the next Weapon Attack Action as
+Once per Turn.
+
+: Deal a
+
+.
+
+3
+
+TO HIT HEAD
+6
+
+-1
+
+TO HIT TORSO
+3
+5
+8
+
+.
+
+Light Wound
+Heavy Wound
+-1
+
+JUMP [CHARGE]
+
+1 QUICK SHOT +1
+Once per Turn.
+1 SINGLE SHOT +1
+Pick a Body Part.
+
+1
+3
+
+ONE FOR THE TEAM
+Whenever another Stalker
+within Range 2 is Attacked,
+you may Move up to 2 spaces toward their space.
+If you successfully moved to their space,
+the Attack targets you instead
+to the Defense roll.
+and you gain +1
+
+For every 2
+
+3
+1
+
+SNORK
+
+When Charging, place Snork directly on the Target’s space
+(or adjacent to it) ignoring any Anomalies or Impassable terrain
+during this Movement.
+
+100
+
+8
+
+DAMAGE
+
+RANGE
+
+1
+
+Example: Palkan decides to Attack a Snork with a Single Shot Attack
+from his PTM. He must slide his Turn token once as it is
+and discard 1
+from the PTM. He rolls 3
+(from him shooting skills) and 1
+(from the PTM Attack). Single Shot allows you to pick a Body Part
+so Palkan decides to target the Snork’s Head. Palkan rolls 3
+,2
+,1
+,
+and 2 . There’s only one threshold on Snork’s Head To Hit value: 6
+.
+As Palkan rolled enough it will result in -1 and the Snork will die
+as it only has 1
+. If Palkan rolls below 6
+,
+the Snork wouldn’t be harmed, but Palkan could spend the 2
+rolled
+to use the PTM’s Suppressing trait and deal a
+(Pin down) to the Snork.
+
+Multiple rerolls
+
+Attacking Multiple Enemies
+
+There’s no limit to how many
+times a die can be rerolled
+as long as it comes from
+a different reroll source.
+
+ome Attacks allow you to affect multiple Targets. The most
+common would be a renade explosion, salvo from a Rifle or
+spreading Shotgun shots.
+Burst/Full Auto Attacks – These types of Attack allow you to
+spread
+rolled and additional effects applied during step
+of the Attack equence between the main Target and any Enemy
+adjacent to it and in your o but they don t have to be in o
+in the same cardinal direction).
+Blast e ects – The Shotguns’ trait and Blast Items allow you
+to hit all Enemies on one or more spaces. ith such effects roll,
+the dice only once and apply the same
+result to all Enemies hit.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+ha e
+
+|
+
+ENEMY WOUNDS
+
+Enemy pool
+At the start of each Mission
+and whenever a new Enemy
+appears in a Mission, you will be
+instructed to prepare a specific
+number of Enemy standees.
+Some of them may be placed
+on the Map and some may be
+left next to it.
+
+ometimes a you can do, is shoot and ho e for the best.
+henever an Enemy suffers a ight or eavy ound usually
+caused by Attacks or Anomaly effects , draw the top
+card of the Enemy ounds deck and resolve the effects
+corresponding to the type of the ound that Enemy suffered.
+After you resolve an Enemy Wound card, discard it.
+There are six different possible outcomes from resolving
+an Enemy Wound card:
+
+Overall they create a given
+Enemy’s standee pool. This
+limits how many standees
+of an Enemy there can be at
+the same time on the Map.
+
+1 LIGHT WOUND
+
+HEAVY WOUND
+
+HEAVY WOUND
+
+This Enemy gains a
+
+1.
+to en limits
+
+Entities can only have up
+to 1
+and 1
+. f an effect
+would deal a
+or
+and
+an Entity already has the same
+status, they don’t gain
+the second one.
+
+LIGHT WOUND
+
+3 If this Enemy already
+
+2
+
+and
+
+Enemy Death
+
+This Enemy gains
+a
+and a .
+
+has a , Push them Away.
+Otherwise, this Enemy
+gains a .
+
+.
+
+-1
+
+4
+
+LIGHT WOUND
+
+If this Enemy already
+has a , Push them Away.
+Otherwise, this Enemy
+gains a .
+
+HEAVY WOUND
+
+already
+5 If thishasEnemy
+a , -1 .
+
+Otherwise, this Enemy
+gains a .
+
+6
+
+LIGHT WOUND
+-1
+Then, shuffle this deck.
+
+HEAVY WOUND
+-1
+Then, shuffle this deck.
+
+This Enemy gains a
+– Place a
+token near the Enemy
+standee, marking that it suffered this status.
+
+2. This Enemy gains a
+and a
+– Place both a
+and a
+token near the Enemy standee marking that it suffered those
+statuses. f an Enemy suffered this ound due to the effect
+of a , they will still gain the new . This is the only
+exception of having two
+at the same time one of which
+will be immediately discarded .
+3. I this Enemy already has a
+Push them A ay.
+ther ise this Enemy gains a
+– This will either cause
+you to place a
+token near the Enemy standee, marking
+that it suffered this status, or if the Enemy already had a
+when it suffered this ound, you must ove that Enemy
+space farther from you this can t be interrupted . f there s
+no possible space that would cause that Enemy to be
+farther from you, don’t Move them.
+4.
+
+-1
+
+– This Enemy loses 1 . As most Enemies only have 1
+this usually results in their death. If this Enemy has more
+than 1 , place the -1 token near the Enemy standee or on
+the Enemy card if there s only one standee of that Enemy .
+
+5. I this Enemy already has a , -1 . ther ise this Enemy
+gains a
+– This will either cause you to place a
+token
+near the Enemy standee, marking that it suffered this
+status, or if the Enemy already had a
+when it suffered
+this Wound, this Enemy loses 1 .
+6.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+-1 Then shu e this dec – This Enemy loses 1
+. As most
+Enemies only have 1
+this usually results in their death.
+Then, shu e all Enemy ound cards including this one
+to reset the deck.
+
+a er
+
+ha e
+
+|
+
+Whenever an Enemy’s
+drops to or below 0, they die. When
+this happens, remove their standee from the Map and return
+them to the pool as they could arrive later thanks to
+tokens.
+Leaving Loot
+Humans in the Zone carry various Equipment, so after you kill
+one, you wi be ab e to get some stu from their cor se.
+Mutants on the other hand, do not. ou wou dn t e
+to carry an AKM in their pockets, would you?
+Whenever a Human Enemy dies, place 1
+
+ect a nork
+
+on their space.
+
+Whenever a Mutant Enemy dies, they do not leave any
+
+.
+
+STATUS TOKENS
+During the Mission, Stalkers and Enemies may gain the following
+status effects, which are marked with tokens.
+ŵĪƄĪøÚŁɷRŊĺƊŵƧ
+
+Critical Injury
+Heavy bleeding, broken rib, bad concussion – in the end they all
+ha e the same e ect, getting you to the death s door.
+ritical njury is a negative status obtained whenever your
+talker s P drops to . hen you do, place a ritical njury token
+above one of your Turn tokens. hile having that token, a talker
+can only perform one
+during that Turn.
+
+Pin Down
+etting knocked down, s i ing on autumn ea es or getting
+stunned by a grenade e osion re uire you to com ose yourse f.
+Pin down is a negative status that hinders an Entity s Actions.
+hen a talker gains it, place it on top of their Turn tokens
+and when an Enemy gains it, place it near their standee as
+a reminder. Each Entity can only have
+.
+Stalkers:
+Stalkers with a
+Discard your
+
+may only perform the following Action
+.
+
+hen you lose any more P while having
+P, gain a second
+ritical njury. Place it above the other Turn token.
+
+Stalkers with
+can t perform any other
+nor
+until they get
+rid of the . They must discard the
+as the first thing they do.
+
+A single source of P loss can only cause you to gain
+
+Only the talker affected by the
+can discard it. Other talkers
+should try to cover their position while they do so.
+
+ritical njury.
+
+hen you increase your P above , discard all ritical njury
+tokens from your PDA, but don t slide your Turn tokens up
+lost
+due to a ritical njury can t be recovered during the same Round .
+
+Gaining a
+can be especially dangerous if a talker has a ritical
+njury with Enemies nearby. ooperate with your team, talker
+Enemies:
+f an Enemy with a
+Turn, discard the
+Enemies with a
+Activation card.
+
+would React during the end of a talker s
+instead.
+don t Activate when you resolve an Enemy
+
+f an Enemy gains a
+during one of the Enemy Activation card s
+steps it won t Activate during the remaining steps of that card.
+All Enemies discard their
+during the Discard tokens step
+of the Enemies & Zone Phase.
+Exposed
+hether your attack destroy the iece of furniture they were
+hiding behind, or s ight y in ure an enemy they are e osed.
+t is a good moment to strike.
+Example: ou recei e your rst ritica n ury so you ace it abo e
+your eft urn token. o t it you must s ide you urn token down imiting
+the amount of
+you can erform on your rst urn to .
+
+Exposed is a negative status that makes an Entity more
+susceptible to Attacks. hen an Entity gains it, place it next to
+their standee model. Each Entity can only have
+.
+Stalkers:
+
+Stalker Death
+f you already have two ritical njury tokens and you lose
+P once more, your talker dies. hen any talker dies,
+you fail your current ission. Each Objective card contains
+information on how to proceed in such situations.
+Focus
+f you re focused on the task at hand, e erything is easier.
+Focus is a positive status obtained through many Actions,
+the most common one being the Prepare asic Action. Each
+talker can only have
+.
+
+hen a talker with a
+is Attacked, increase the
+by .
+Then, discard this token. This usually means that they will
+lose
+P more from the Enemy Attack unless they re able
+to compensate for it with other Defense modifiers.
+After a Stalker with a
+oves, discard this token. t doesn t
+matter what the source of the ovement is.
+talkers can easily get rid of this status, but if they don t do so
+they d better be prepared to take a powerful hit.
+Enemies:
+f an Enemy with a
+would suffer a ight ound, they suffer
+a eavy ound instead. Then, discard this token.
+
+f a talker has a
+, they may discard it to reroll any number
+of chosen dice during their Attack, Defense, or Anomaly
+Activation roll.
+
+f an Enemy with a
+would suffer a eavy ound, they suffer
+instead. Then, discard this token. As most Enemies only
+have
+this usually results in their death.
+
+ome Actions check if a talker has a
+or require them to spend
+it in order to perform that Action. E.g., as long as a talker has a ,
+they may perform the Reload asic Action as
+instead of
+.
+
+After an Enemy with a
+oves, discard this token. t doesn t
+matter what the source of the ovement is.
+
+-2
+
+|
+
+a
+
+he
+
+o
+
+|
+
+a er
+
+ha e
+
+|
+
+Enemies & Zone Phase
+
+During this Phase you perform various tasks marking
+the passage of time. ou feel the effects of the Radiation
+you ve accumulated during your adventures, temporary effects
+vanish, new Enemies may appear, but most importantly Enemies
+Activate giving them a chance to hunt you down.
+
+When resolving Enemy Activation cards, conclude each point
+from top to bottom. Each point must be resolved one Enemy at
+a time and must be fully resolved before continuing to the next
+point. If multiple Enemies should be Activated, do so starting
+with those closest to the point of interest (usually it will be
+the closest Attention token). In case of a tie we recommend
+to Activate them in the following order:
+
+During this Phase, steps are resolved in the following order:
+.
+
+ere are the instructions ound on Enemy Acti ation cards.
+Detailed rules of Enemies’ Movement can be found on page 32
+and Enemies’ Attacks on page 33.
+
+Enemy Activation.
+
+. Radiation Exposure & Radiation dosage reduction.
+. Discard tokens (
+Stal ers scaling
+
+,
+
+,
+
+).
+
+/ / / / /
+Enemies Mo e up to to ard . –
+pecified Enemies ove up to spaces toward a point of interest
+(usually an Attention token closest to them) until they reach their
+target or are interrupted.
+
+. Attention reduction.
+
+ome effects on Enemy
+Activation cards are influenced
+by the number of Stalkers.
+icon represents the numeric
+value equal to the number of
+Stalkers in your team.
+
+. End of Round effects.
+
+ENEMY ACTIVATION
+Depending on how much Attention you draw to yourself, Enemies
+will be more or less alert to your Actions and respond accordingly.
+If you are stealthy, you can count on them wandering around
+the area, but if you alert them to your Actions, be sure they will
+try to hunt you down.
+
+All Enemies
+
+During this step, Enemies are Activated according to the Enemy
+Activation card.
+
+This icon found on Enemy
+Activation cards refers to all
+Enemies currently on the Map,
+including those without
+a colored team token.
+
+If there is at least 1
+token anywhere on the Map, draw a
+Activation card and resolve it.
+Otherwise, draw and resolve a
+
+Enemy Activation card.
+
+SWARMING
+1
+
+Enemies Move up to
+the closest
+.
+
+toward
+
+Enemies Move up to 2 spaces toward
+2 the closest .
+
+Target
+
+3
+
+In S.T.A.L.K.E.R. The Board
+Game, not everyone is your
+opponent and sometimes not
+all monsters and bandits like
+each other.
+
+4
+
+during this Attack.
+
+Enemies perform their Special.
+
+IF THERE IS NO ATTENTION ON THE MAP:
+
+1
+
+Exposed:
+
+Enemies in LoS of any Stalker gain a
+
+.
+
+Enemies Move up to
+the closest Room.
+
+toward
+
+Enemies that were already in a Room Move
+to the next closest Room instead.
+
+IF THERE IS
+
+1
+
+ONLY DURING ENEMY ACTIVATION STEP
+OF ZONE & ENEMIES PHASE:
+
+Stalkers may only directly
+Attack and Target Enemies.
+
+CHECKING
+THE DISTURBANCE
+
+Enemies Attack a Target in their LoS.
+
+Enemies have +2
+
+Enemy
+
+ON THE MAP:
+
++ 1 Enemies closest to any Attention
+Move up to
+toward the closest
+Attention.
+to
+
+Enemies with a Target in LoS Move up
+toward the closest space with
+
+2 and no LoS to any Target.
+
+This Movement can’t be interrupted.
+
+Enemies may Target Stalkers
+and Enemies from a different
+team.
+
+Enemy Activation cards focus on Enemies looking for Stalkers,
+checking all sources of . They have one additional part that is
+only resolved during this step.
+
+Companion cards will state
+if they can be Targeted by
+Enemies.
+
+Enemy Activation cards focus on covering different areas of
+the Map, sometimes even ignoring the
+placed by the Stalkers.
+They have two different parts which are resolved depending
+on whether at least 1
+token is on the Map or if there’s no
+Attention on the Map.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+E em e
+
+o e ha e |
+
+/ / / / Enemies Go or ard up to . – pecified
+Enemies ove up to spaces straight ahead rotating before
+if needed untill they ove spaces or are interrupted.
+Enemies Attac a Target in their LoS. – Enemies that can
+see a Target during this point, Attack them, prioritizing Stalkers
+if possible. ometimes different colors of Enemies increase
+or reduce the
+(damage) done by them during this Attack.
+Loo around. – Rotate the Enemy standee in a clockwise
+direction until they either make a full 360º rotation or they see
+a Target in their LoS in which case they stop.
+/ / / Enemies per orm their Special. – All Enemies
+of the specified color perform their pecial if possible . sually
+the Special allows Enemies to retreat to a safer position,
+but sometimes they are more offensively oriented.
+I an Enemy has LoS to any Attention mo e that Attention
+y spaces to ard its o ner. – This effect allows Enemies
+to “catch up” to Stalkers, allowing them to track where Stalkers
+went. ith this effect, when an Enemy sees an Attention token
+without its owner they will deduce where the Stalker responsible
+for the source of Attention is hiding.
+
+ENEMIES
+
+Enemy Types
+Depending on their Type, Enemies have some additional rules:
+
+ere s an example o an Enemy card
+1
+
+CHIMERA
+
+2
+
+MUTANT 3
+
+5
+5
+
+6
+
+SIXTH SENSE
+
+4
+4
+
+4
+3
+
+5
+
+8
+14
+
+7
+
+Light Wound
+
++4
+
+8
+
+-1 , Heavy Wound
+
+POUNCE [CHARGE]
+
+9
+
+if Chimera moved 1 or fewer spaces during this Attack.
+
+DAMAGE
+
+10
+
+RANGE
+
+1
+
+SPECIAL 10
+
+Withdraw: Move up to
+toward the closest space with no LoS
+to any Target. This Movement can’t be interrupted. Turn the model
+toward the last space it moved from.
+
+1.
+
+Name.
+
+2. Category – There are three categories of Enemies.
+A.
+
+Psionic
+
+Mutant
+
+• Treat Windows
+as Open edges.
+
+• Treat Windows
+as Impassable
+Terrain.
+
+• Unless a Psionic,
+treat Windows
+as Walls.
+
+• On death,
+place 1
+on their space.
+
+• Don’t drop
+on death.
+
+• Don’t drop
+on death.
+
+• Sight usually
+limited to long
+Range in front,
+short Range
+on sides and
+nothing on back.
+
+• Sight usually
+high in all
+directions.
+
+• Sight not always
+high but always
+see at least in
+Range 1 on back.
+
+5
+
+Chimera ignores Anomaly effects.
+
+TO HIT TORSO
+
+Human
+
+orde
+– Numerous Enemies that you can easily deal
+with but they won’t stop coming.
+
+B. Elite
+– Tough and hard hitting, but there’s only a few.
+Their spawns are usually limited.
+
+• Special usually
+allows to retreat
+to safer position.
+
+Enemy Tokens and Teams
+Most Enemies, when added to a Mission, are marked with an Enemy
+token in one of four colors, which will differentiate their behavior
+(based on the Enemy Activation cards).
+Enemies are boss-like monsters and lethally dangerous
+individuals.
+
+C. Boss
+– Very rare and dangerous Enemies. Sometimes
+it’s wiser to leave them alone, but if you’re forced to
+fight you d better prepare a good plan.
+
+Enemies are elite guards, enforcers and mutants hunting
+in small groups.
+
+3. Type – Each Enemy has at least 1 type that describes them.
+ome game effects may reference those keywords and they
+incorporate some rules differences between Enemies.
+
+Enemies are pack mutants and groups of humans
+(like bandits).
+Enemies are horde Enemies, with little in the way
+of coordination and relying on numbers.
+
+4. Movement – Base Movement value. When this Enemy
+“Moves up to
+”, Move up to that many spaces.
+5. Hit Points – Most Enemies in Stalker have 1
+and a single
+precise shot is enough to take them down.
+Enemies tend
+to have more
+requiring a more careful approach. When
+an Enemy is reduced to 0
+they die.
+6. Sight – Enemies can detect you from different distances. This
+grid depicts how many spaces in each direction a given Enemy
+sees. If you are in that Range, you are in that Enemy’s LoS.
+The side with a triangle marks the front facing of the Enemy.
+7.
+
+Attack – Each Enemy has one available Attack.
+
+10. Special – Some Enemies have a Special ability which may
+be performed during the resolution of certain
+Enemy
+Activation cards.
+
+2
+1
+
+BANDIT
+RIFLE
+HUMAN
+
+1
+
+0
+
+SHOTGUN
+HUMAN
+
+1
+
+1
+
+7
+
+-1
+
+TO HIT TORSO
+4
+6
+9
+
+Light Wound
+
+TO HIT HEAD
+7
+
+4
+6
+9
+
+-1
+
+DAMAGE
+
+SPECIAL
+
+Light Wound
+
+7
+
+MUTANT
+
+3
+
+3
+
+Withdraw: Move up to
+toward the closest space with no LoS
+to any Target. This Movement can’t be interrupted. Turn the model
+toward the last space it moved from.
+
+-2
+
+3
+
+1
+
+TO HIT HEAD
+6
+
+-1
+
+TO HIT TORSO
+
+Heavy Wound
+
+3
+5
+8
+
+-1
+
+for each space between the Bandit and Target.
+
+DAMAGE
+
+1
+3
+
+SHOTGUN [CHARGE]
+RANGE
+
+3
+1
+
+SNORK
+
+1
+
+2
+
+-1
+
+TO HIT TORSO
+
+Heavy Wound
+
+AKM-74S [RANGED]
+
+0
+3
+
+2
+
+TO HIT HEAD
+
+2
+1
+
+BANDIT
+
+3
+
+A ility – ome Enemies have passive or triggered effects.
+
+8. Body Parts – Each Enemy has at least one targetable
+Body Part represented in this table. The left side shows
+the required amount of
+obtained during an Attack against
+this Enemy to score a hit. The right side shows the effects
+of those hits. Sometimes (like in Chimera’s example) the right
+side contains more than one effect. n such a case, resolve
+those effects one at a time, from left to right.
+9.
+
+Enemy tokens have two sides. One marked with “1” and the other
+marked with “2”. Enemies marked with tokens with the same
+number are considered to be in the same team and won’t Target
+each other. If an Enemy isn’t marked with a token, they are always
+considered to be in an opposing team to Enemies in team 1 and 2.
+
+9
+
+RANGE
+
+3
+
+SPECIAL
+
+Withdraw: Move up to
+toward the closest space with no LoS
+to any Target. This Movement can’t be interrupted. Turn the model
+toward the last space it moved from.
+
+Light Wound
+Heavy Wound
+-1
+
+JUMP [CHARGE]
+
+When Charging, place Snork directly on the Target’s space
+(or adjacent to it) ignoring any Anomalies or Impassable terrain
+during this Movement.
+DAMAGE
+
+8
+
+RANGE
+
+1
+
+Example: As both Bandits share the same team number (“2”),
+they won’t Target each other but if they encounter a Snork they may
+Attack it as it belongs to the other team (“1”).
+
+|
+
+a
+
+he
+
+o
+
+|
+
+E em e
+
+o e ha e
+
+|
+
+ENEMY MOVEMENT RULES
+
+Rotation during Movement
+When an Enemy Moves
+to an adjacent space
+they always do so facing
+that space. To accomplish
+that sometimes the Enemy
+has to be rotated before
+that Movement. Rotation
+doesn’t decrease the number
+of spaces that the Enemy
+is allowed to Move, but may
+cause the Movement to be
+interrupted.
+
+There are two types of Movement that Enemies perform:
+Move – When Enemies Move they do so toward a target,
+choosing the shortest route. Enemies follow the chosen route
+rotating towards the space they will Move to, before performing
+the Movement. They will repeat this as many times as the Move
+Action indicates, stopping when they reach their target
+space or Moving the maximum distance. If they didn’t reach
+their destination and aren’t currently facing in the direction
+that they would continue their Movement, rotate them towards
+that direction.
+Go forward – Go forward means that Enemies are patrolling
+around without paying mind to their surroundings too much.
+When Enemies are asked to Go forward, the Enemy goes directly
+ahead, rotating by 90° only if they can’t proceed farther. In such
+cases, they rotate the least number of times (clockwise in case
+of a tie), until they can Go forward again.
+
+Shortest route
+Shortest route is the one
+requiring to Move the least
+number of spaces. If multiple
+routes require the same number
+of spaces, follow the tiebreakers
+found on page 14.
+
+Move and Go forward keywords are always accompanied by
+the numeric value representing the amount of spaces the model
+can Move. This value is sometimes indicated with the
+icon
+which refers to the Movement value printed on the Enemy card.
+
+1
+1
+
+ZOMBIE
+HUMAN
+
+0
+
+0
+
+0
+
+3
+
+Example: In case of the Zombie, the Action “Move up to
+”
+TO Move
+HIT HEAD
+allows the Zombie to
+only 1 space, but the Action “Move up to 2”
+-1
+7
+allows the Zombie to Move 2 spaces.
+TO HIT TORSO
+Light
+Woundget a sudden rush of Energy!
+3
+Even a Zombie
+can
+8
+
+Heavy Wound
+
+Movement Interruption
+
+RIFLE [RANGED]
+
+Before an Attack, roll the
+and resolve:
+/
+The Attack has 5 .
+•
+•
+The Attack has 8 .
+•
+Go forward 1 instead of Attacking.
+
+When Moving, Enemies are aware of their surroundings. If they
+spot a Target, they won
+t continueRANGE
+to blindly follow the first
+DAMAGE
+?
+3
+thing that got their attention.
+
+Example: The Snork Moves toward the green Stalker’s
+.
+During the Movement, the Snork gains LoS to the green Stalker.
+Its Movement is immediately interrupted and as it now has LoS
+to the green Stalker their
+must be placed on their space.
+
+Enemy Movement and Fully Occupied Spaces
+Enemies can’t end their Movement in a fully occupied space.
+If it would happen, that Enemy ends their Movement in
+an adjacent space along the Movement route. If it’s also a fully
+occupied space, the Enemy chooses the next shortest route to
+perform that Movement instead.
+Enemies can Move through fully occupied spaces without
+possible Targets, but when doing so, they can’t be interrupted
+on that space.
+
+SPECIAL
+
+Go forward 1.
+At any point duringBraindead:
+the Movement,
+if an Enemy gains LoS
+to a possible Target, or if they already had LoS to a Target,
+immediately end their Movement (e.g., if an Enemy should Move
+but they already have a Target in LoS they won’t even rotate).
+Some forms of Movement specify that they can’t be interrupted.
+Interruption doesn’t cause Enemies to immediately Attack or
+perform any other Action.
+
+If an interruption occured during the resolution of an Enemy
+Activation card continue to resolve it normally.
+High Attention
+Whenever an Enemy gains LoS to a Stalker, that Stalker must
+place their
+on their space.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+E em e
+
+o e ha e |
+
+Example: The leftmost Snork wants to Move toward the closest
+.
+The blue Stalker’s Attention is the closest as the path to it doesn’t
+contain any corners. To reach it, the Snork Moves through a space
+that would give it LoS to the green Stalker, but as that space is fully
+occupied by two other Snorks the Movement of the Snork won’t be
+interrupted and it will reach the space with the blue Stalker’s
+.
+
+4
+4
+
+CHIMERA
+MUTANT
+
+5
+
+3
+
+5
+
+5
+
+ENEMY ATTACK
+
+Enemy Attack Sequence
+
+ou aren t the most dangerous thing in the one. our ife may
+end in the b ink of an eye.
+
+Whenever an Enemy Attacks, follow these steps:
+
+Enemies perform an Attack when they are instructed by an Enemy
+SIXTH SENSE
+Activation card Chimera
+or when
+a Anomaly
+Stalker
+ends their Turn in an Enemy’s LoS.
+ignores
+effects.
+
+1.
+
+Choose a Target in LoS:
+If there’s at least one Stalker in LoS, choose the closest one.
+If they are on the same space, players decide.
+
+All Enemy Attacks
+you. Only your Armor, Cover and Defense roll
+TO HIThitTORSO
+can decrease the
+of HP you lose.
+Light Wound
+8 amount
+
+If there aren’t any Stalkers in LoS, but there’s another
+Target in LoS, choose the closest one. If they are on
+the same space, players decide.
+If there aren’t any Targets in LoS, the Attack ends.
+If this Enemy can Charge, they do so now.
+
+, Heavy Wound
+14 one-1 Attack
+Each Enemy has
+Action visible on their card.
+
+POUNCE [CHARGE] 1
++4
+
+3
+
+if Chimera moved 1 or fewer spaces during this Attack.
+
+DAMAGE
+
+10
+
+2
+
+RANGE
+
+14
+
+SPECIAL
+Enemy Attack
+has the following properties:
+
+1.
+
+Withdraw: Move up to
+
+toward the closest space with no LoS
+
+Type – There
+are This
+two
+types
+ofbeEnemy
+to any Target.
+Movement
+can’t
+interrupted. Attacks.
+Turn the model Ranged
+toward the
+last space it moved
+from.
+Attacks allow
+Enemies
+to Attack
+from a distance. Charge
+Attacks allow Enemies to perform extra Movement before
+dealing damage.
+
+2. Additional e ects – Not all Attacks have them. They vary
+from restrictions to applying additional statuses or
+buffs
+if certain conditions are met.
+3. Damage
+
+– How powerful the Attack is.
+
+4. Range – Measured in spaces, how far this Attack can reach.
+Charge
+Enemies with the Charge type Attack will try to get as close
+to you as possible before Attacking.
+If an Enemy with the Charge type Attack is not within Range 1
+of their Target, they Move up to
+toward the Target. This
+Movement can’t be interrupted, but otherwise follows all
+Movement rules.
+In most cases this means that thanks to this extra Movement
+they will be able to reach any Target in their LoS.
+
+2. Rotate the Enemy so they are facing their Target.
+3. Enemy deals
+indicated by their Attack. Check for any
+modifiers to that
+. Covers
+are common modifiers and
+they reduce
+equal to their
+value against Attacks made
+outside of that space or Room (in case of buildings).
+4. Then, depending on the Target, continue:
+Stalkers:
+5A. The Attacked Stalker rolls
+equal to the Defense of their
+Armor. heck for any modifiers to Defense rolls.
+6A. If they have a
+or an effect that allows them to reroll dice
+they may do so now.
+7A. Count your
+
+and subtract them from received
+
+.
+
+8A. Lose HP equal to the remaining
+.
+Enemies:
+5B. Compare the Attacker’s
+with the Torso To Hit value
+of the Attacked Enemy treating
+as the same number of .
+Resolve the effect corresponding to the highest
+threshold
+reached. If they didn’t reach any threshold – the Attack
+misses. f the effect of the hit is a ight or eavy ound,
+draw a Wound card and apply the corresponding outcome.
+6B. If they fail to kill the Enemy, rotate the Target’s standee so
+they are facing each other.
+
+2
+1
+
+BANDIT
+RIFLE
+HUMAN
+
+1
+
+0
+
+MUTANT
+
+1
+
+3
+
+3
+
+7
+
+-1
+
+6
+
+Light Wound
+
+If this Enemy already
+has a , Push them Away.
+Otherwise, this Enemy
+gains a .
+
+-1
+
+3
+5
+8
+
+-1
+
+DAMAGE
+
+LIGHT WOUND
+
+TO HIT TORSO
+
+Heavy Wound
+
+AKM-74S [RANGED]
+
+3
+
+2
+
+TO HIT HEAD
+
+TO HIT TORSO
+4
+6
+9
+
+1
+3
+
+1
+
+TO HIT HEAD
+
+3
+1
+
+SNORK
+
+7
+
+RANGE
+
+3
+
+Light Wound
+Heavy Wound
+-1
+
+JUMP [CHARGE]
+
+When Charging, place Snork directly on the Target’s space
+(or adjacent to it) ignoring any Anomalies or Impassable terrain
+during this Movement.
+
+SPECIAL
+
+Withdraw: Move up to
+toward the closest space with no LoS
+to any Target. This Movement can’t be interrupted. Turn the model
+toward the last space it moved from.
+
+DAMAGE
+
+8
+
+RANGE
+
+HEAVY WOUND
+-1
+
+1
+
+Example: s they be ong to di erent teams, andits and norks can
+arget each other. During nemy cti ation, the andit ttacks a nork.
+he andit s
+is and if no modi ers to this ttack a y it wi resu t
+in the nork su ering a ea y ound. he e ect of the drawn
+ea y ound is -1 so the nork dies as it on y has
+.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+E em e
+
+o e ha e
+
+|
+
+Enemy Reaction
+If you keep standing in your enemy’s view, don’t expect them
+to do nothing.
+After each Stalker Turn, Enemies with LoS to that Stalker will
+have a chance to React, by Attacking. Only the Stalker whose
+Turn just ended can be a Target for an Enemy’s Reaction
+(unless otherwise stated by the Enemy card).
+
+Example 1: The blue Stalker ends their Turn in LoS of a Bandit.
+Even though the green Stalker is closer to the Bandit and also in their LoS,
+only the blue Stalker will be Attacked by the Bandit.
+
+Example: The Snork Attacks the gray Stalker. The Snork’s
+is 8.
+Now it’s Stalker’s time to Defend. Even though gray Stalker
+is on a space with
+they don’t gain its bonus as the Attack
+was made from the same Room. Leather Jacket Armor provides
+gray Stalker with 1
+for Defense rolls. They check for any other
+possible bonuses. Their Stone Flower Artifact allows them
+to roll 2 additional
+, but they will also gain a
+. They decide to do so,
+so they gain a
+and roll the total of 3
+for Defense. The result
+of the roll is 1
+,3
+, and no
+. They decide to spend their
+to reroll the dice with 1
+and no
+. The reroll result is 1
+and 2
+.
+he na outcome is
+rolled for Defense so compared to 8
+it means that the gray Stalker loses 2HP so they reduce their HP
+from to .
+
+Example 2: The blue Stalker ends their Turn in LoS of a Pseudogiant.
+As a part of the Pseudogiant’s Attack it Charges
+to the blue Stalker’s space. Its Attack states that it Attacks all Targets
+on one space so both blue Stalker and green Stalker will be Attacked.
+
+ENEMY FACING
+t s important to properly place Enemies as their facing influences
+their Line of Sight. Enemy standees have an art in front and black
+background in back.
+Additionally you may use provided orange triangle stickers
+(that resemble the front of the Sight cross) to mark the front on
+the standee bases.
+
+Example: ront and back of a andit with a i e.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+E em e
+
+o e ha e |
+
+RADIATION EXPOSURE & DOSAGE REDUCTION
+
+DISCARDING TOKENS
+
+Radiation is a patient killer. The bigger dose, the worse it gets.
+
+This step marks the passage of time as smoke disperses in the air,
+Anomalies disturbed with olts reactivate and Enemies get back
+on their feet. Discard all
+and
+from the ap. All Enemies
+discard their .
+
+During a Mission, Stalkers can accumulate Radiation dosage
+by entering irradiated areas and staying there too long.
+During this step, each Stalker on the yellow, orange, red, or black
+threshold on their eiger counter, suffers from Radiation Exposure.
+Then, each Stalker reduces their Radiation dosage until they
+reach the next lower .
+
+ATTENTION REDUCTION
+Even the most alert enemy will not hunt you forever.
+
+Then, each talker below their Artifact s base Radiation dosage
+increases their Radiation dosage to match that value.
+
+Reduce the Attention token of each talker that currently isn t
+in an Enemy s ine of ight. hen you reduce
+flip it to
+.
+When you reduce
+return it to your PDA.
+
+Radiation Exposure
+
+END OF ROUND EFFECTS
+
+hen instructed to suffer from Radiation Exposure, check
+your current position on your Geiger counter, roll the required
+number of
+and lose P equal to the number of
+rolled.
+0-3: green threshold – no dice rolled.
+4-7: yellow threshold – 1
+
+.
+
+8-11: orange threshold – 2
+12-15: red threshold – 3
+16: black threshold – 4
+
+.
+.
+
+.
+
+During this step, resolve all End of Round effects. ost End
+of Round effects can be found on Event cards, but other cards
+may also include them.
+f there are multiple End of Round effects to be resolved, do so
+in any order, but always resolve those on Event cards last.
+End of Round effects on Event cards are divided into two types
+A. Mar ed e ects – They differ from card to card. sually
+they will cause new Enemies to arriveI or they will add
+A Look
+Random Events to the Events deck.
+B.
+
+from the Shadows
+
+from the twilight of the forest near
+nmar edYou
+eemerge
+ects
+– They appear on most Events and
+the bandits’ camp. You see only a few buildings
+u ahead, decre it and artia y ruined. ight ickers
+are alwaysin athe
+same.
+They
+final instructions
+few windows.
+A sentry
+coughscontain
+outside,
+and another yawns loudly.
+that should
+be carried out between two Rounds. After
+hen you s ot an anoma y swir ing on the outskirts
+of the camp. Great.
+resolving them,
+a new Round begins.
+he air is wet and ed with tension. ou mo e onward.
+
+End of Round
+
+Early birds
+Resolve 1 closest to the Lead Stalker.
+Place 5 Random Events on the top of the Event deck.
+
+A
+
+Reset all Turn tokens and Refresh the Lead Stalker token.
+Start the next Round by drawing and resolving a new Event.
+
+B
+
+Example: During the Enemies & Zone Phase, the gray Stalker’s Radiation
+dosage was at 6. It is the yellow threshold so they must roll 1
+.
+The result is 2
+so they lose 2 HP. Then, they reduce their dosage
+to 3 as it’s the next lower value marked with
+. Lastly they check
+their currently equipped Artifacts. They have a Neuron Artifact equipped
+with
+value of 6 and Armor that provides an IMPROVED Artifact
+Container which reduces the
+value of their Artifacts by 2.
+he na a ue of
+is 4 and as they’re below that value they
+have to increase their dosage to 4.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+E em e
+
+o e ha e |
+
+Anomalies
+
+ere s an example o an Anomaly o erlay on the Map
+
+Anomalies are areas, found exclusively in the Zone, that defy
+the laws of physics. At least the ones we know of. Not all areas
+are a ected e ua y though, and e erienced ta kers are ab e
+to carefully traverse them.
+
+2
+
+hat said, noma ies are e treme y dangerous, but are a so
+the on y ace where ta kers can nd fab ed rtifacts uni ue
+items with powerful abilities.
+
+Anomaly die
+The Anomaly die is a D10 with
+the following sides:
+
+Anomalies are represented by a few game components:
+• Anomaly card – Describes detailed rules of the specific
+Anomaly, explaining the effects of the Anomaly and how it
+affects Entities entering its area.
+• Anomaly o erlay ith Anomaly standee – An Anomaly
+overlay is a foil with Anomaly symbols, which delineates
+the area of effect of said Anomaly. n the center of each
+Anomaly overlay resides a standee dedicated to that Anomaly.
+
+1×
+
+(10%)
+
+2×
+
+(20%)
+
+Anomalies are the main source of Artifacts – powerful and high
+valued items, sought by all talkers.
+
+3×
+
+(30%)
+
+4×
+
+(40%)
+
+Example o an Anomaly card
+1
+
+BUBBLE
+
+As you can see, the number
+of “petals” on each icon
+corresponds to its probability
+during a roll.
+
+3
+1
+
+4
+
+2
+
+CHEMICAL 3
+
+Example: This overlay spreads the Anomaly on 4 spaces.
+, space 3 with
+and
+, and space 4
+Space 1 and 2 both with
+which contains the Anomaly center with 2 × , 2 × , 2 ×
+, and 2 ×
+MOVING ANOMALY
+
+4
+
+Anomaly Center
+
+At the End of Round, place this Anomaly
+on the next empty Anomaly overlay in clockwise order.
+Anomaly overlays without an Anomaly are Inactive.
+
+Range to Anomaly
+When measuring Range to
+an Anomaly you measure
+to any space containing
+that Anomaly’s symbols.
+
+5
+
+After an Entity finishes Movement,
+roll the
+for this Anomaly Activation:
+
+A
+
+The triggering Entity and on all spaces
+with the rolled Anomaly symbol:
+Stalkers: Lose 7HP, then gain a .
+Enemies: Light Wound, then gain a .
+
+B
+C
+
+1.
+
+Inacti e Anomalies
+Anomaly overlays without
+an Anomaly standee on them
+are considered Inactive and are
+considered nonexistent for any
+rules that don’t directly refer
+to them.
+
+This is where the Anomaly standee and an
+are placed.
+It always contains all 4 Anomaly symbols so it’s really dangerous
+to enter it recklessly.
+
+ANOMALY ACTIVATION
+
+ame
+
+2. Arti act – arks if the Anomaly can
+produce Artifacts.
+
+) or can’t (
+
+)
+
+3. Type – hen you gain an Artifact from this Anomaly,
+gain one with the corresponding type. ome effects may
+also reference Anomaly type.
+4. Special rules – Some Anomalies may have a special rule
+e.g., ubble is a moving Anomaly and changes its overlay
+each Round).
+5. Acti ation e ect – When an Entity enters a space with
+an Anomaly it may Activate. f it does so, resolve its effect.
+A. Target – ost Anomalies can affect multiple Entities
+at the same time.
+B. Stal ers – Effect applied to talkers messing with
+the Anomaly.
+C. Enemies – Effect applied to Enemies messing with
+the Anomaly.
+
+|
+
+a
+
+he
+
+o
+
+| A oma e
+
+|
+
+.
+
+Each Anomaly overlay has a spread of Anomaly symbols
+(
+which differentiates the probability of Activating
+that Anomaly when an Entity enters a space with those symbols.
+After an Entity finishes ovement, if they oved to, from,
+or through one or more spaces with Anomaly symbols, roll the .
+f there is a currently uncovered Anomaly symbol, on any of those
+spaces, that matches the roll result, resolve the Activation effect
+of that Anomaly affecting all described targets. Entering multiple
+Anomalies during the same ovement requires a separate
+roll
+for each one of them.
+Stalkers may discard a
+Activation roll.
+
+to reroll the
+
+for their Anomaly
+
+Any symbols currently covered by
+,
+, or Entities are ignored
+(but each instance of a symbol must be covered separately).
+Each different Anomaly symbol an Entity oves through
+increases the chance of the Anomaly Activating. oving through
+the same symbol multiple times does nothing however.
+
+RETRIEVING ARTIFACTS FROM ANOMALIES
+Most rtifacts originate around owerfu noma ies. o nd them,
+Stalkers use various detectors to pinpoint their exact location.
+During the game, Artifacts always start placed under the Anomaly
+standees. They can t be picked up until you use an Action
+from a Detector Attachment card to pinpoint the Artifact s
+location, placing the Artifact token on a specified Anomaly symbol
+where it can be obtained using the Pick up asic Action.
+henever you perform the Pick up asic Action to resolve an
+gain an Artifact card with the Artifact type corresponding to
+the type of an Anomaly from which you pick up the Artifact.
+
+,
+
+Example: The blue Stalker decided to perform a risky Movement.
+They Moved through a space with
+and
+and ended up
+on a space with
+. Fortunatelly two of the same symbols don’t add up
+the di cu ty of the ro but sti there s a who ing
+chance
+(from
+in
+and
+in
+that the noma y wi cti ate.
+
+Blocking Anomaly Symbols
+There are three basic ways to block an Anomaly symbol
+•
+placed on it usually by performing the olts & uts
+asic Action .
+•
+placed on it usually by taking it from under the Anomaly
+with the help of a Detector Attachment .
+• An Entity ends their ovement or is placed on a space with
+an Anomaly symbol. After they roll the
+for the Anomaly
+Activation, the Entity covers the highest uncovered symbol
+possible
+.
+A space is still treated as an Anomaly space, even if all symbols
+are covered. The same way Anomaly symbols are still treated as
+being there – the coverage of them only affects the probability
+of Activating the Anomaly.
+
+Example: On the eft icture, the s ace inside this shack has a
+chance of triggering this Anomaly as it contains all types of symbols
+(2 of each). On the right picture, two Entities and 2
+block 2
+and 2
+symbols so the probability of triggering this Anomaly
+is reduced to ust
+from
+in
+and
+in
+.
+
+Example: The purple Stalker wants to retrieve an Artifact from this Electric Anomaly. To do so they need
+a Detector Armor Attachment card and to be at the right distance. Their Echo Detector allows them to detect
+an rtifact at ange so they ha e to be on an noma y s ace to erform this ction.
+and
+symbo s so entering it wou d be a
+risk of getting hurt.
+The closest Anomaly space has
+They don’t like those odds so they decide to perform the “Bolts & Nuts” Basic Action and throw one of their
+to cover the
+.
+doesn t sound so bad so they decide to enter that s ace. hey ro the
+.
+The result is
+! Luck isn’t on their side today. Fortunately they have a
+which can be discarded now
+to reroll the
+. The result is
+so being cautious aid o f they didn t throw that
+they could be fried
+right now. As they end their Movement they cover the
+and place their
+there.
+As they are on the Anomaly space they decide to detect the Artifact now. They perform the
+from the Echo Detector. They roll the
+and the result is
+. Even though they currently cover it,
+it is still an Anomaly symbol so they place the
+from under the Anomaly on their space.
+As they have performed two
+this Turn (“Movement” and “Bolts & Nuts”) the purple Stalker’s Turn ends.
+During the next Turn they can gain this Artifact by performing the “Pick up” Basic Action.
+
+|
+
+a
+
+he
+
+o
+
+| A oma e
+
+|
+
+Single Stalker Mode
+
+Real stalkers seldom go out in groups. Too many guys to divide
+the loot. Real professionals go into the Zone alone.
+For solo players it is strongly recommended to play with only
+single Stalker. Themes of loneliness in face of uncaring world
+are strong in the whole S.T.A.L.K.E.R. universe and playing more
+than 1 Stalker per player tends to dillute that atmosphere.
+
+TURN OVERLAYS
+While playing with only 1 Stalker in your team, place the special
+Turn overlays on your PDA on which you will slide Turn tokens.
+This overlay allows you to perform 3
+instead of 2 during each
+of your Turns for a total of 6
+during each Round.
+
+Each Enemy with LoS
+to your Stalker
+Attacks your Stalker.
+
+Each Enemy with LoS
+to your Stalker
+Attacks your Stalker.
+
+LEAD STALKER
+You are the Lead Stalker at all times so you never lose it. Still,
+when you perform the
+from the ead talker token, you flip it
+and it is unflipped from the Event card s End of Round effect.
+
+CRITICAL INJURY
+When you gain a Critical Injury you place it in the same spot as
+usual. Notice that on the Turn overlay it covers 2 slots so by
+gaining it you lose 2
+during that Turn!
+
+|
+
+a
+
+he
+
+o
+
+|
+
+S
+
+e S a er
+
+ode
+
+|
+
+Lost Territories
+
+Reaching the Lost Territory
+
+If you think you know the Zone, all its nooks and crannies, that’s
+the moment you have to be extra careful. Experienced Stalkers
+are full of cautionary tales about well trodden paths suddenly
+eading into unknown noma y e ds and ost sou s wandering
+the Red Forest. And for a good reason.
+Lost Territories is an optional expansion adding new areas you
+can access during your Campaign or Zone Survival Scenarios.
+Its use is completely optional, though some Missions may ask
+you to use Lost Territories components.
+You can add Lost Territories to any Campaign Mission or Zone
+Survival Scenario.
+
+Each Lost Territory tile contains an Entrance. Additionally,
+a Setup card will have you place 1 Entrance token on the Map.
+Spaces with a Lost Territories Entrance are counted as adjacent
+for purposes of Movement and measuring Range for all Entities,
+but you can’t draw a Line of Sight “through” the Entrance token.
+So you may throw a Grenade or Bolt between the Lost Territory
+tile and the Map and the Enemies may follow you there, but you
+can’t Attack with a Weapon as it requires LoS.
+
+Lost Territories Setup
+ere s an example o a Lost Territories Setup card
+
+It is advised to add it after you have some experience with
+the game, as some rules interactions can become quite complex!
+Lost Territories mode uses the following components:
+
+LOST TERRITORIES SETUP
+
+L3-01b
+
+L6-01a
+
+1
+
+L1-01a
+
+Search
+
+the cabinet:
+.
+Flip this card
+
+performs
+on the Ruin tile,
+roll the :
+– Ceiling collaps
+es. Flip this card.
+/ / – Nothing
+happens.
+
+3
+
+e
+ur
+ig
+g
+in
+ee
+Discard this card.
+
+8 Setup cards
+
+Place the
+
+CAVE
+
+on any 1×2 space.
+
+2 Place the Cave Lost Territory tile next to the Map.
+
+.
+
+4×
+
+Basement
+
+FALLING APAR
+T
+After a Stalker
+
+OVERLAYS
+
+WINTER
+ng
+OVERLAYs
+ario),
+finish setti
+ival Scen he
+on any 1×1 space outside of a building.
+After you
+BASEMENT
+Zone Surv Place
+starts,
+Mission or
+Place
+gamePlace
+the
+to the
+Map.
+on any space
+(Campaign first Roun of the
+toriethe Winter Lost Territory tile next
+inside a buildin
+Place the Basem
+s
+g.
+before the
+om Lost Terri Place
+ent Lost Territo
+tile.
+random L2-01a card on the Winter
+the instr1uctio
+draw 1 rand
+RUIN
+ry tile next to
+you may
+) and follow
+the Map.
+. 6
+1 Random L1-01a
+Place
+this deck
+card
+theDraw
+the
+Place
+on
+the
+Winter tile as
+shown
+below.
+(from
+of
+on any
+card, if it’s an
+side
+Setup card
+Map
+overlay,
+the other
+inside the biggestplacespace
+it on the Basem
+next to the
+found on
+buildin
+ent tile,
+g.
+otherw
+tories tile with .
+Place
+ise
+Winter
+Terri
+place
+the
+Ruin Lost Territo
+it next to the
+one Lost
+space
+Basement tile.
+next o the Map.
+Place 1 ry tile
+This will add reached from the
+nce
+Place
+on
+Entra
+each
+be
+s
+L6-01a
+space
+can
+torie
+card next to the
+of the Basement
+that
+Lost Terri
+Ruin
+tile.
+the same
+Place L6-02a
+Discardtile.
+ties can Move
+this card.
+card on the Ruin
+Spaces with as adjacent (Enti
+hem),
+tile.
+.
+are counted ure Range between
+Discard this card.
+een them
+Sight betw
+and meas
+a Line of
+cannot draw
+but Entities
+LOS
+
+2×
+
+ms
+Ite
+od
+Fo on .
+om ap es
+nd We azin
+3 ra r II Mag
+n
+ain Tie g rd.
+ke
+: G dom ondin ca
+.
+is
+im
+n to this card
+p th
+tio
+b h a ra es
+en on is
+Ro and corr card
+Att ced ip th
+is
+h2 D
+an la , fl
+wit
+en to/p ace
+Wh ved t sp
+mo en
+is djac
+a
+an
+or
+
+L3-02a
+
+UP
+ORIES SET
+T TERRIT
+up the Map
+
+After you finish setting up the Map
+(Campaign Mission or Zone Survival Scenario),
+before the first Round of the game starts,
+you may draw 1 random Lost Territories
+Setup card (from this deck) and follow the instructios
+found on the other side of the card.
+
+4
+
+This will add one Lost Territories tile next to the Map
+that can be reached from the space with .
+
+Place 1 random L4-01a card on the Cave tile.
+Discard this card.
+
+Spaces with the same Lost Territories Entrance
+are counted as adjacent (Entities can Move
+and measure Range between them),
+but Entities cannot draw a Line of Sight between them.
+
+5
+
+13 Lost Territories
+Environment cards
+
+Where an Entrance token should be placed. If multiple such
+spaces are available, players decide.
+
+E
+OV
+
+RL
+
+AY
+
+2
+
+1.
+
+2. Which Lost Territory tile should be placed next to the Map.
+3. Additional Environment card used for this tile.
+
+3 Lost Territories tiles
+
+2 Entrance tokens
+
+To add ost Territories to your game, after you finish setting
+up the Map for a Campaign Mission or Zone Survival Scenario,
+draw 1 of the Lost Territories Setup cards and resolve it.
+
+4. Reminder instructions on how to use Lost Territories.
+5. Reminder instructions on how to traverse between the Map
+and Lost Territories.
+
+It will explain where the Entrance token is placed, which Lost
+Territory is used and whether any additional Environment cards
+should be used.
+Lost Territories Environment cards numbers start with the letter L.
+
+|
+
+a
+
+he
+
+o
+
+|
+
+Lo
+
+Terr or e
+
+|
+
+ENTITIES COMPARISON TABLE
+
+This table provides a quick overview of the differences between various Entities in the game and their interactions.
+Stalkers
+
+Sight
+
+Facing
+
+Companions
+
+nlimited ight
+Range in all
+directions.
+
+nlimited ight
+Range in all
+directions.
+
+Facing is unimportant.
+
+Enemies
+Humans
+
+Psionics
+
+Mutants
+
+ight usually limited
+to long Range
+in front, short Range
+on sides and nothing
+on back.
+
+ight usually high
+and has the same
+values in all
+directions.
+
+ight not always high but always see
+at least in Range on back.
+
+Their ight Range depends on their facing. They change facing during their ovement,
+Attacks, when they ook Around or when a Target leaves their space.
+
+Attention
+
+Depending on Actions,
+can place
+or
+on the ap.
+
+an t place
+or
+on the ap.
+
+Attacks and Targets
+
+ay only directly
+Attack and Target
+Enemies.
+
+Actions on
+ompanion cards
+specify possible
+Targets.
+
+Statuses
+
+an gain a
+,
+,
+,
+and ritical njury.
+
+an t gain
+any statuses.
+
+Death results
+in losing a ission.
+
+ompanion
+card specifies
+what happens.
+sually, flees
+the battlefield when
+in grave danger.
+
+On death, place
+on their space and
+return the standee
+to the Enemy Pool.
+
+Treat indows as
+mpassable Terrain
+so they can t ove
+but can draw a o
+and measure Range
+through it.
+
+Treats indows as
+Open edges so they
+can ove, draw
+a o , and measure
+Range through it.
+
+Death
+
+Windows
+
+Treats indows as
+Open edges so they
+can ove, draw
+a o , and measure
+Range through it.
+
+Movement
+interruption
+
+ovement is interrupted when entering
+a space with an Enemy.
+an ove through
+fully occupied spaces
+without Enemies.
+
+Fully occupied
+spaces
+
+hen ends
+ovement in fully
+occupied space, Push
+one of the Entities
+from that space to
+an adjacent space.
+
+on the
+
+As long as they see the talker, that talker has their
+
+|
+
+ap.
+on their space.
+
+ay Target talkers and Enemies from a different team.
+ompanion cards will state if they can be Targeted by Enemies.
+
+an gain a
+
+and
+
+.
+
+On death, return the standee to the Enemy Pool.
+Don t place any
+.
+
+Treat indows as
+mpassable Terrain
+so they can t ove
+but can draw a o
+and measure Range
+through it.
+
+Treat
+
+indows as alls unless the
+is also a Psionic.
+
+ovement is interrupted when an Enemy gains o to a possible Target,
+or if they already had o to a Target,
+in that case the ovement doesn t occur at all.
+
+an
+
+ove through fully occupied spaces without possible Targets
+and can t be interrupted in such spaces.
+an t end
+
+ovement in fully occupied space.
+
+Each Entity occupies slot on their space.
+
+Space occupation
+
+Entities Comparison Table
+
+an t end ovement
+in fully occupied
+space.
+
+and
+
+Each Entity can Activate Anomalies and can block an Anomaly symbol when they end their
+or are placed on a space with an Anomaly symbol.
+
+Anomalies
+
+40 |
+
+an ove through
+fully occupied spaces
+without Enemies.
+
+They are attracted to
+
+ovement
+
+utant
+
+ICON GLOSSARY
+Dice:
+
+Tokens:
+
+Enemies:
+
+Equipment dice – Dice rolled on many occasions
+usually coming from an effect of an Equipment
+card. They contain various numbers of
+results
+which determine the effectiveness of the roll.
+
+Artifact – nique items with powerful abilities,
+usually hidden in Anomalies.
+
+Stalker dice – Dice that are usually rolled during
+eapon Attacks. They contain results in addition
+to , which are used to apply additional effects.
+
+Unknown Enemy – Represents Enemies that can
+arrive during the ission.
+
+Anomaly die – Die rolled usually when interacting
+with Anomalies. ontains uneven distribution
+of symbols
+,
+,
+,
+.
+Success – Result of
+or
+roll determining
+the effectiveness of an Action.
+Mask – Result of
+roll, necessary to apply some
+additional effects during eapon Attacks.
+/ / / Anomaly symbol – These icons refer
+to the specific result of an
+roll or a specific
+symbol of an Anomaly overlay.
+Accurate side – One side of the . hen Attacking
+an Enemy within Accurate Range of the eapon
+counts as
+instead of
+.
+
+Map:
+Map Radiation – Appears on ap spaces.
+Represents irradiation of spaces on the ap.
+pending time in such places will cause you to
+increase your Radiation dosage and possibly lose
+P during the Enemies & Zone Phase.
+Trigger – ards with this icon contain an effect
+that should be applied when an Entity enters
+a specific space.
+Window Effects with this icon refer to
+or spaces adjacent to them.
+
+indows
+
+Cover – Appears on ap spaces. Represents
+various elements that Entities may hide behind
+to improve their survival chances. Each point of
+reduces the
+from Enemy Attacks and
+from
+talker Attacks by .
+Water space –Represents impassable terrains
+like deep water or higly contaminated reservoirs.
+Entitie can t enter or ove through water space,
+but may measure Range and draw a o through it.
+
+Loot – arious Equipment scattered throughout
+the Zone that may be picked up.
+
+/X
+
+/ / / /
+Unknown Enemy – pecific type
+of nknown token required to prepare
+stacks.
+/ Lost Territories Entrance – arks a space
+that connects to the ost Territories tile.
+Bolt – olts are commonly found in the Zone.
+They can be used as decoys or to create safe
+passages through Anomalies.
+Focus – A positive status that you may discard to
+reroll any number of chosen dice during an Attack,
+Defense, or Anomaly Activation roll.
+Pin down – A negative status that hinders
+an Entity s Actions.
+Exposed – A negative status that makes an Entity
+more susceptible to Attacks.
+No visibility – This token is placed on the ap and
+obstructs vision. o Entity can draw o to, from,
+or through a space with this token.
+Low Attention – oises and other signs of your
+presence that Enemies may ignore.
+Enemy
+Activation cards focus on covering different
+areas of the ap, sometimes even ignoring the
+placed by the talkers.
+High Attention – oises and other signs of your
+presence that Enemies will follow.
+Enemy
+Activation cards focus on Enemies looking
+for talkers, checking all sources of
+.
+
+Horde Enemy – ost common and numerous
+Enemies that you can easily deal with but they
+won t stop coming.
+Elite Enemy – Tough and hard hitting, but there s
+only a few. Their spawns are usually limited.
+Boss Enemy – The very rare and dangerous
+Enemies. ometimes it s wiser to leave them alone,
+but if you re forced to fight you d better prepare
+a good plan.
+/ / /
+– They refer to Enemy Enemies
+of the specified color.
+All Enemies – Refers to all Enemies even those
+without an Enemy team token .
+1 / 2 / 1 / 2 / 1 / 2 / 1 / 2 Enemy team and color –
+olor differentiates Enemies behavior based on
+the Enemy Activation cards . ides marked with
+and
+define the team to which the Enemy belongs.
+Movement – ase
+Enemy HP –
+
+ovement value of an Enemy.
+
+aximum value of an Enemy s P.
+
+-X Enemy’s HP loss – Tokens that should be applied to
+
+an Enemy, reducing their P. hen an Enemy s P
+drops to they die.
+Damage – trength of an Enemy s Attack.
+
+Other:
+Standard Action – Actions that require you to
+slide down your Turn token once. sually you can
+perform two such Actions during a single Turn.
+Free Action – nlimited Actions that can be
+performed as many times as you want.
+/ / Additional rule – Additional rules
+that enhance specific Actions or provide you with
+ongoing passive effects.
+Universal marker/Ammo – ome effects use
+universal markers to track things. hen applied
+to eapons it refers to the eapon s Ammo.
+Stalker number – umeric value equal
+to the number of talkers in the game.
+– Represents irradiation of Artifacts. During
+the Enemies & Zone Phase you must increase
+your Radiation dosage to match the highest
+of your equipped Artifacts if it s lower .
+/ / Pistol Ri e Shotgun Ammo – Different
+types of eapons and aga ines they use.
+Special Ammo – ost exotic eapons require rare
+and unique ammunition rarely found in the Zone.
+Coupons – The currency of the Zone.
+
+|
+
+Icon Glossary |
+
+41
+
+STANDEE GLOSSARY
+
+ANOMALIES
+
+ENEMIES
+
+ome standees have different names than the Enemy card they represent.
+
+norks
+
+6 Rodents
+
+Ticks
+
+ontrollers
+
+loodsuckers
+
+rawls
+
+himera
+
+Pseudogiant
+
+5 Dogs
+
+Anomaly standees are used by different Anomalies.
+
+Electric
+Electro, Tesla
+
+Fire
+urner, omet, Popper
+
+hemical
+ubble, Fruit Punch
+
+ravitational
+hirligig, pringboard
+
+ravitational
+agnet
+
+ravitational
+Ra or
+
+pecial
+Fridge, False irror
+
+patial
+pace
+
+OVERLAYS
+Anomaly overlays are usually tied to Anomaly type but sometimes an effect may
+require a specified one.
+Poltergeist
+
+lom
+
+Zombies
+
+ilitary Enemies
+ercenary, onolithian
+
+ornhead
+
+Exoskeleton Enemies
+Dalik
+
+pecial
+
+8 Bandits –
+hotgun, Rifle,
+f not specified by the scenario
+all standees can represent
+the same Enemy card
+
+42 |
+
+Standee Glossary |
+
+Fire
+
+ravitational
+
+, ,
+
+, ,
+
+hemical
+
+Electric
+
+, ,
+
+, ,
+
+INDEX
+Accurate Range ...................................... 26
+
+Contract ...................................................... 9
+
+Heavy Wound ........................................... 28
+
+Push ...........................................................20
+
+Actions
+
+Control cards ............................................. 4
+
+Hit Points (Enemy)
+
+Active Event .............................................18
+
+Coupons
+
+............................................ 4, 9
+
+Horde Enemy
+
+Additional rules
+
+Cover
+
+............................31
+
+Radiation Dosage.................................... 22
+
+......................................31
+
+Radiation Exposure ................................ 35
+
+....................................................13
+
+HP (Stalker) .............................................. 23
+
+Random Event cards ..............................18
+
+Adjacent.....................................................12
+
+Critical Injury............................................ 29
+
+Human Enemy ..........................................31
+
+Range..........................................................14
+
+All Enemies
+
+...........................................19
+......................21
+
+.........................................30
+
+Critical Radiation dose .......................... 22
+
+Impassable Terrain ..................................12
+
+Reload Basic Action ...............................20
+
+.................................................... 26
+
+Death (Enemies) ..................................... 28
+
+Inactive Anomalies ................................. 36
+
+Removing an Environment card ..........16
+
+Anomalies ................................................. 36
+
+Death (Stalkers) ...................................... 29
+
+nstant Effect ............................................18
+
+Rerolls ..................................................27, 29
+
+Anomaly Activation................................ 36
+
+Decoy Basic Action ................................20
+
+Item ............................................................ 24
+
+Retrieving Artifact.................................. 37
+
+Anomaly center....................................... 36
+
+Defense .............................................. 24, 33
+
+Knife Basic Action ...................................21
+
+Room...........................................................13
+
+Anomaly die
+
+....................................... 36
+
+Detector ..............................................24, 37
+
+Lead Stalker ............................................. 24
+
+Rotation .................................................... 32
+
+Anomaly overlay ............................. 36 , 42
+
+Discarding an Environment card .........16
+
+Line of Sight (LoS) ...................................15
+
+Round Structure ......................................18
+
+Anomaly standees.................................. 42
+
+Door.............................................................12
+
+Loner ............................................................ 9
+
+Scriptbook .................................................. 8
+
+Armor ......................................................... 24
+
+Elite Enemy
+
+Loot token
+
+........................................... 17
+
+Selling .......................................................... 9
+
+Artifact card............................................. 25
+
+End of Round effects .......................18, 35
+
+Lost Territories ........................................ 39
+
+Shooting .............................................23, 27
+
+Artifact Container ........................... 24, 25
+
+End of Stalker’s Turn...............................19
+
+Magazines
+
+.............................. 26
+
+Shortest route ..........................................14
+
+Artifact token
+
+Enemies & Zone Phase ..........................30
+
+Map overlay cards ...................................16
+
+Single Stalker mode ...............................38
+
+Ammo
+
+..................................... 17
+
+.........................................31
+
+Enemy.........................................................31
+
+Map Radiation
+
+.....................................13
+
+Space ..........................................................12
+
+............... 25, 35
+
+Enemy Activation ...................................30
+
+Map tiles ............................................... 11, 12
+
+Space edge................................................12
+
+Attachment (Armor) .............................. 24
+
+Enemy Attack .......................................... 33
+
+Markers on Turn tokens
+
+.....................19
+
+Space size..................................................12
+
+Attachment (Weapon) ........................... 26
+
+Enemy Facing ..........................................34
+
+Marking Locations .................................... 8
+
+Stalker ....................................................... 23
+
+Attack Sequence (Enemies) ................ 33
+
+Enemy Movement rules ........................ 32
+
+Masks
+
+Stalker Count ................................ 6, 18, 30
+
+Attack Sequence (Stalkers) ................. 27
+
+Enemy pool............................................... 28
+
+Mission .......................................................18
+
+Stalker dice
+
+Attacking Multiple Enemies ................. 27
+
+Enemy Reaction ......................................34
+
+Mission boxes ............................................ 5
+
+Stalker Movement rules ........................20
+
+Attention
+
+Artifact’s base
+Radiation dosage
+
+........................ 20, 22, 30
+
+.................................................... 27
+
+....................................5, 23
+
+Enemy standees ..................................... 42
+
+Mission Epilogue ......................................10
+
+Stash ............................................................ 9
+
+Attention Reduction ....................... 22, 35
+
+Enemy team tokens
+
+........31
+
+Mission Event cards ................................18
+
+Status tokens .......................................... 29
+
+Backpack .................................................. 25
+
+Enemy types .............................................31
+
+Mission guide ............................................10
+
+Stickers ....................................................... 8
+
+Basic Actions ...........................................20
+
+Enemy Wounds ........................................ 28
+
+Mission Map...............................................12
+
+Stories ......................................................... 6
+
+Blast ........................................................... 27
+
+Entities ................................................12, 40
+
+Mission Objective .....................................18
+
+Target ........................................................30
+
+Blocking Anomaly symbols .................. 37
+
+Entities comparison table.....................40
+
+Mission Prologue......................................10
+
+Tier ............................................................. 25
+
+Body Part (Enemy) ..................................31
+
+Environment cards ..................................16
+
+Mission Setup ...........................................10
+
+Tokens on Mission Map .......................... 17
+
+Bolts & Nuts Basic Action......................21
+
+Equipment cards..................................... 25
+
+Movement Basic Action ........................20
+
+Trader .......................................................... 9
+
+Equipment dice
+
+Bolts
+
+...................................................... 17
+
+................................... 5
+
+Movement interruption (Enemies) ..... 32
+
+Trap tokens ................................................ 5
+
+........................................31
+
+Event cards ...............................................18
+
+Movement interruption (Stalkers) ......20
+
+Triggers
+
+Building ......................................................13
+
+Event deck.................................................18
+
+Mutant Enemy ..........................................31
+
+Turn .............................................................19
+
+Buying ......................................................... 9
+
+Event Phase ..............................................18
+
+No Visibility
+
+Turn tokens ...............................................19
+
+Campaign.................................................... 6
+
+Exposed
+
+.............................................. 29
+
+Note cards .................................................16
+
+Unknown Enemy
+
+Campaign binder .................................. 7, 8
+
+Flipping an Environment card ..............16
+
+Passing the Turn ......................................19
+
+Wall ..............................................................12
+
+Careful Movement Basic Action .........20
+
+Focus
+
+................................................... 29
+
+PDA (player board) ................................. 23
+
+Water spaces
+
+Charge ....................................................... 33
+
+Fully occupied space .......... 12, 17, 20, 32
+
+Pick up Basic Action ..............................20
+
+Weapon...................................................... 26
+
+Closest........................................................14
+
+Gaining a new Equipment card ........... 25
+
+Players Phase ...........................................19
+
+Window
+
+Companion .......................................... 9, 40
+
+Geiger counter ........................... 13, 22, 35
+
+Pockets ..................................................... 25
+
+Zone Exploration....................................... 8
+
+Components Limit .................................... 6
+
+Golden Rules .............................................. 6
+
+Prepare Basic Action .............................20
+
+Zone Map .................................................... 8
+
+Contact ....................................................... 9
+
+Healing ...................................................... 23
+
+Psionic Enemy ..........................................31
+
+Zone Navigation ........................................ 8
+
+Boss Enemy
+
+......................................... 17
+
+.........................................20, 21
+
+................................ 17
+......................................12
+
+.................................................12
+
+|
+
+Index
+
+|
+
+43
+
+QUICK RULES REFERENCE
+
+ENEMY TYPES
+
+MAP RADIATION
+
+After you slide the Turn token (usually by performing
+) increase your Radiation
+dosage by the highest value of the
+found on spaces that you were present in
+during that Action. This can be reduced by your Armor s ap Radiation modifier.
+
+RADIATION EXPOSURE
+During the Enemies & Zone Phase and whenever the game instructs you to do so
+you may suffer from Radiation Exposure. hen you do, check your current position
+on the eiger counter. f you re on the yellow, red or black threshold you must roll
+the required amount of
+dice, then lose P equal to the number of
+rolled.
+0-3: green threshold – no dice rolled.
+4-7: yellow threshold – 1
+
+.
+
+8-11: orange threshold – 2
+12-15: red threshold – 3
+16: black threshold – 4
+
+.
+
+Psionic
+
+Mutant
+
+• Treat indows
+as Open edges.
+
+• Treat indows
+as Impassable Terrains
+
+•
+
+• On death, place
+on their space.
+
+• Don’t drop
+on death.
+
+• Don’t drop
+on death.
+
+• Sight usually limited
+to long Range in front,
+short Range on sides
+and nothing on back.
+
+• Sight usually high
+in all directions.
+
+• Sight not always high
+but always see at least
+in Range 1 on back.
+
+nless a Psionic,
+treat indows as
+
+alls.
+
+• Special usually allows
+to retreat to a safer
+position.
+
+.
+
+on the
+
+ap, no effect can place your
+
+As long as an Enemy has LoS to your Stalker you have
+effect can move place or reduce your
+.
+
+If you end your Movement and your
+your
+on your space.
+
+.
+
+on your space and no
+
+f you ove through a space in an Enemy s o , place your
+you are moving through that is no longer in an Enemy’s LoS.
+isn t placed on the
+
+on the first space
+
+ap, move place
+
+To perform an Attack follow these steps:
+1.
+
+Choose an Attack Action and a valid Target.
+
+2. Remember to slide the Turn token if the Attack is a
+if needed.
+
+and spend Ammo
+
+4. Target a Body Part.
+
+ome effects reduce Attention. hen you reduce
+reduce
+return it to your PDA.
+
+flip it to
+
+side.
+
+hen you
+
+After an Entity finishes ovement, if they oved to, from, or through one or more
+spaces with Anomaly symbols, roll the
+. If the rolled Anomaly symbol is present
+on any of those spaces, Activate the Anomaly according to the Anomaly card.
+
+STALKER MOVEMENT RULES
+ovement may come in different forms and from different sources. Regardless
+of the ovement source, all talker oves follow the following rules
+To ove spaces, simply move your talker to an adjacent space
+Spaces divided with Impassable Terrain
+or a all
+a indow
+aren t considered adjacent.
+f you enter a space with an Enemy, your
+immediately end it.
+
+times.
+without
+
+ovement is interrupted and you must
+
+f you would end your ovement on a fully occupied space, Push one
+of the Entities from that space talkers first if present to an adjacent space
+(the one you Move from if possible). If no Entity could be Pushed to create a slot
+for you, you can t end your ovement in such a space.
+f you ove from a space with an Enemy, rotate the Enemy standee to face
+the adjacent space you ove to.
+
+|
+
+5. Roll the dice.
+6. If you have a
+so now.
+
+ANOMALY ACTIVATION
+
+Quick Rules Reference
+
+STALKER ATTACK SEQUENCE
+
+3. Place the required Attention token.
+
+Attention Reduction
+
+44 |
+
+Human
+
+.
+
+ATTENTION
+As long as you have your
+
+Depending on their Type, Enemies have some additional rules
+
+7.
+
+or another effect that allows you to reroll dice you may do
+
+Resolve the roll results:
+Spend
+rolled to apply additional effects.
+Count the rolled
+if you re performing a eapon Attack within Accurate
+Range, remember to treat
+as 4
+and compare them to the To it
+value of the targeted ody Part. Resolve the effect of the highest reached
+threshold of that Body Part.
+f the effect is a ight or eavy ound, draw an Enemy ound card and
+apply the corresponding outcome.
+f you did not reach any threshold, your Attack misses.
+Spend remaining
+to apply additional effects.
+
+8. If you fail to kill the Enemy rotate that Enemy so that they are facing your
+Stalker.
+
+
