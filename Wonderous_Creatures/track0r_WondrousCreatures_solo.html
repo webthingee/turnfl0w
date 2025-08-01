@@ -4,187 +4,267 @@
   <meta charset="UTF-8">
   <title>Wondrous Creatures - Solo Mode Turn Order</title>
   <style>
-    body {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      background-color: #f0f0f0;
+    * {
       margin: 0;
-      padding: 10px;
+      padding: 0;
       box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
     .navigation {
       display: flex;
       justify-content: center;
-      padding: 5px;
-      margin-bottom: 10px;
+      gap: 20px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
     }
+
+    .details .navigation {
+      background: transparent;
+      backdrop-filter: none;
+      padding: 0 0 15px 0;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
     .navigation button {
-      margin: 0 8px;
-      padding: 8px 16px;
-      font-size: 1.2rem;
-      background: #4a90e2;
+      background: #3498db;
       color: white;
       border: none;
-      border-radius: 5px;
+      padding: 10px 20px;
+      border-radius: 8px;
       cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
+
     .navigation button:hover {
-      background: #357abd;
+      background: #2980b9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
+
     .tabs {
       display: flex;
-      justify-content: center;
-      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     }
+
     .tab {
-      padding: 10px 20px;
-      background: #e0e0e0;
+      flex: 1;
+      padding: 15px 20px;
+      background: transparent;
       border: none;
+      color: #ecf0f1;
       cursor: pointer;
-      font-size: 1rem;
-      border-radius: 5px 5px 0 0;
-      margin: 0 2px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
     }
+
     .tab.active {
-      background: #4a90e2;
-      color: white;
+      background: rgba(52, 152, 219, 0.3);
+      border-bottom-color: #3498db;
+      color: #ffffff;
     }
+
     .tab:hover:not(.active) {
-      background: #d0d0d0;
+      background: rgba(255, 255, 255, 0.1);
     }
+
     .tab-content {
       display: none;
+      flex: 1;
+      overflow: hidden;
     }
+
     .tab-content.active {
       display: block;
     }
+
     .container {
       display: flex;
-      width: 100%;
-      max-width: 840px;
-      height: 360px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      background: #fff;
-      border-radius: 8px;
-      overflow: hidden;
+      height: 100%;
+      max-height: calc(100vh - 140px);
     }
+
     .selector {
-      width: 50%;
+      flex: 1;
+      background: rgba(255, 255, 255, 0.95);
+      border-right: 2px solid #bdc3c7;
       overflow-y: auto;
-      padding: 15px;
-      border-right: 1px solid #ccc;
-      font-size: 0.85rem;
+      padding: 20px;
     }
+
     .details {
-      width: 50%;
-      padding: 15px;
+      flex: 1;
+      background: rgba(255, 255, 255, 0.95);
       overflow-y: auto;
-      font-size: 0.85rem;
-      line-height: 1.5;
+      padding: 20px;
     }
-    .details h2 {
-      margin-top: 0;
-      font-size: 1.1rem;
-      color: #4a90e2;
-      border-bottom: 2px solid #4a90e2;
-      padding-bottom: 5px;
+
+    .step {
+      background: white;
+      margin: 8px 0;
+      padding: 12px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-left: 4px solid #3498db;
+      font-weight: 600;
+      font-size: 16px;
     }
-    .details p {
-      margin: 0;
+
+    .step:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .step.selected {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      transform: translateX(10px);
+      box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+    }
+
+    .substep {
+      background: #f8f9fa;
+      margin: 6px 0 6px 20px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border-left: 3px solid #95a5a6;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .substep:hover {
+      transform: translateX(3px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .substep.selected {
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      color: white;
+      transform: translateX(5px);
+      box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4);
+    }
+
+    .player-turn {
+      border-left-color: #3498db;
+    }
+
+    .player-turn.selected {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+    }
+
+    .tingent-turn {
+      border-left-color: #e74c3c;
+    }
+
+    .tingent-turn.selected {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-size: 24px;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
       line-height: 1.6;
+      color: #2c3e50;
     }
-    .details ul {
-      margin: 10px 0;
+
+    ul {
+      margin: 12px 0;
       padding-left: 20px;
     }
-    .details li {
-      margin: 5px 0;
+
+    li {
+      margin-bottom: 8px;
       line-height: 1.5;
     }
-    .details strong {
-      color: #2c5aa0;
-      font-weight: 600;
+
+    strong {
+      color: #e74c3c;
+      font-weight: 700;
     }
-    .details em {
-      background-color: #f0f7ff;
-      padding: 2px 4px;
-      border-radius: 3px;
-      font-style: normal;
-      color: #1a365d;
+
+    em {
+      color: #3498db;
+      font-style: italic;
     }
+
     .page-ref {
-      color: #666;
-      font-size: 0.8em;
-      font-weight: bold;
-      background: #f5f5f5;
-      padding: 2px 6px;
-      border-radius: 3px;
-      margin-left: 8px;
-    }
-    .step {
-      font-size: 1rem;
-      margin: 8px 0;
-      padding: 8px 15px;
-      background: white;
-      border-radius: 6px;
-      box-shadow: 0 0 3px rgba(0,0,0,0.1);
-      cursor: pointer;
-    }
-    .substep {
-      font-size: 0.8rem;
-      margin: 4px 0 0 15px;
-      padding: 6px 12px;
-      background: #f8f8f8;
+      background: #ecf0f1;
+      padding: 4px 8px;
       border-radius: 4px;
-      cursor: pointer;
+      font-size: 12px;
+      color: #7f8c8d;
+      font-weight: 600;
+      margin-top: 10px;
+      display: inline-block;
     }
-    .selected {
-      background-color: #4a90e2;
-      color: white;
-      font-weight: bold;
-    }
-    .player-turn {
-      border-left: 4px solid #2196F3;
-    }
-    .tingent-turn {
-      border-left: 4px solid #FF6B6B;
-    }
-    
-    /* iPhone landscape optimization */
+
     @media screen and (max-width: 926px) and (orientation: landscape) {
+      body {
+        height: 100vh;
+        overflow: hidden;
+      }
+      
       .container {
         height: calc(100vh - 120px);
-        max-height: 320px;
+        max-height: none;
       }
+      
+      .selector, .details {
+        font-size: 12px;
+        padding: 10px;
+      }
+      
       .step {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-        margin: 6px 0;
+        padding: 8px 10px;
+        font-size: 14px;
       }
+      
       .substep {
-        font-size: 0.75rem;
-        padding: 5px 10px;
-        margin: 3px 0 0 12px;
+        padding: 6px 8px;
+        font-size: 12px;
       }
-      .details h2 {
-        font-size: 1rem;
-      }
-      .tab {
+      
+      .navigation button {
         padding: 8px 16px;
-        font-size: 0.9rem;
+        font-size: 14px;
+      }
+      
+      .tab {
+        padding: 10px 15px;
+        font-size: 14px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="navigation">
-    <button id="upButton">↑</button>
-    <button id="downButton">↓</button>
-  </div>
   <div class="tabs">
     <button class="tab active" data-tab="turn-flow">Turn Flow</button>
     <button class="tab" data-tab="setup">Solo Setup</button>
@@ -227,6 +307,10 @@
         <div class="substep" data-detail="If the game continues, make sure the Wilderness has 6 cards by drawing from the deck to fill any empty spaces. If the deck runs out, shuffle the discard pile. Then begin the next round with your turn, following the same alternating sequence. (Rulebook p. 11)">7.2 Refill Wilderness and Continue</div>
       </div>
       <div class="details" id="details">
+        <div class="navigation">
+          <button id="upButton">↑ Previous</button>
+          <button id="downButton">↓ Next</button>
+        </div>
         <h2>Details</h2>
         <p id="detailText">You and Tingent alternate turns until the game ends. You always go first as the First Player. Each player follows their own turn structure: you perform Basic Actions and Free Actions, while Tingent follows its automated card-driven actions. The game ends when all Trophies are depleted. (Rulebook p. 22-23)</p>
       </div>
@@ -256,6 +340,10 @@
         <div class="substep" data-detail="Setup is complete! You are the First Player and begin the game. You and Tingent will alternate turns, with you always going first each round. Your goal is to score more VPs than Tingent by game end. The game ends when all 8 Trophies are depleted. (Rulebook p. 22)">1.14 Begin Solo Game</div>
       </div>
       <div class="details" id="setup-details">
+        <div class="navigation">
+          <button id="setup-upButton">↑ Previous</button>
+          <button id="setup-downButton">↓ Next</button>
+        </div>
         <h2>Details</h2>
         <p id="setup-detailText">Solo mode setup is similar to a 2-player game but with important differences for Tingent (the AI opponent). Tingent doesn't use normal player components and follows special setup rules. You'll choose your difficulty level and set up Target Tokens to guide Tingent's behavior throughout the game. (Rulebook p. 22)</p>
       </div>
@@ -289,6 +377,10 @@
         <div class="substep" data-detail="Based on your result, consider adjusting difficulty for future solo games. If you won easily, try a harder Tingent. If you lost badly, try an easier one. You can also add Scenario Modules for additional challenge variations. (Rulebook p. 26)">4.4 Adjust Future Difficulty</div>
       </div>
       <div class="details" id="scoring-details">
+        <div class="navigation">
+          <button id="scoring-upButton">↑ Previous</button>
+          <button id="scoring-downButton">↓ Next</button>
+        </div>
         <h2>Details</h2>
         <p id="scoring-detailText">At game end, calculate your score using normal rules, then calculate Tingent's score using modified rules. Tingent scores differently than normal players - it gets points for face-up cards, Achievements, Trophies, and Eggs, plus bonus points for face-down cards based on difficulty level. Compare final scores to determine the winner. (Rulebook p. 25)</p>
       </div>
@@ -303,8 +395,8 @@
 
     const tabs = document.querySelectorAll('.tab');
     const tabContents = document.querySelectorAll('.tab-content');
-    const upButton = document.getElementById('upButton');
-    const downButton = document.getElementById('downButton');
+    let upButton = document.getElementById('upButton');
+    let downButton = document.getElementById('downButton');
 
     function switchTab(tabName) {
       currentTab = tabName;
@@ -318,6 +410,22 @@
       tabContents.forEach(content => {
         content.classList.toggle('active', content.id === tabName);
       });
+      
+      // Update button references for current tab
+      switch(tabName) {
+        case 'turn-flow':
+          upButton = document.getElementById('upButton');
+          downButton = document.getElementById('downButton');
+          break;
+        case 'setup':
+          upButton = document.getElementById('setup-upButton');
+          downButton = document.getElementById('setup-downButton');
+          break;
+        case 'scoring':
+          upButton = document.getElementById('scoring-upButton');
+          downButton = document.getElementById('scoring-downButton');
+          break;
+      }
       
       // Reset selection and update
       const currentIndex = getCurrentIndex();
@@ -406,15 +514,15 @@
         let bulletItems = parts.slice(1);
         
         let formattedIntro = introText
-          .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board)\b/g, '<em>$1</em>')
-          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete)\b/gi, '<strong>$1</strong>')
-          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?)\b/g, '<strong>$1</strong>');
+          .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board|Yellow Area|Brown Area|Red Gear|Main Achievement|Single-Species|Multi-Species|End Card|Creature Card|Habitat Tile|Time Track|Score Track|Egg Pouch|Supply Board|Main Board)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?|\d+\s*players?|\d+\s*spaces?|\d+\s*slots?|\d+\s*icons?|\d+\s*points?|\d+\s*levels?|\d+\s*types?|\d+\s*colors?|\d+\s*areas?|\d+\s*gears?|\d+\s*tokens?|\d+\s*markers?|\d+\s*trackers?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
         
         let bulletPoints = bulletItems.map(item => {
           let formatted = item.trim()
-            .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board|Yellow Area|Brown Area|Red Gear)\b/g, '<em>$1</em>')
-            .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance)\b/gi, '<strong>$1</strong>')
-            .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?|\d+\s*players?)\b/g, '<strong>$1</strong>');
+            .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board|Yellow Area|Brown Area|Red Gear|Main Achievement|Single-Species|Multi-Species|End Card|Creature Card|Habitat Tile|Time Track|Score Track|Egg Pouch|Supply Board|Main Board)\b/g, '<em>$1</em>')
+            .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+            .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?|\d+\s*players?|\d+\s*spaces?|\d+\s*slots?|\d+\s*icons?|\d+\s*points?|\d+\s*levels?|\d+\s*types?|\d+\s*colors?|\d+\s*areas?|\d+\s*gears?|\d+\s*tokens?|\d+\s*markers?|\d+\s*trackers?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
           return `<li>${formatted}</li>`;
         }).join('');
         
@@ -427,18 +535,18 @@
       if (sentences.length <= 2) {
         // Short text - just format as paragraph with emphasis
         let formatted = cleanText
-          .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board)\b/g, '<em>$1</em>')
-          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete)\b/gi, '<strong>$1</strong>')
-          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?)\b/g, '<strong>$1</strong>');
+          .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board|Yellow Area|Brown Area|Red Gear|Main Achievement|Single-Species|Multi-Species|End Card|Creature Card|Habitat Tile|Time Track|Score Track|Egg Pouch|Supply Board|Main Board)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?|\d+\s*players?|\d+\s*spaces?|\d+\s*slots?|\d+\s*icons?|\d+\s*points?|\d+\s*levels?|\d+\s*types?|\d+\s*colors?|\d+\s*areas?|\d+\s*gears?|\d+\s*tokens?|\d+\s*markers?|\d+\s*trackers?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
         return `<p>${formatted}</p>${pageRef}`;
       }
       
       // Longer text - create bullet list
       let bulletPoints = sentences.map(sentence => {
         let formatted = sentence.trim()
-          .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board|Yellow Area|Brown Area|Red Gear)\b/g, '<em>$1</em>')
-          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance)\b/gi, '<strong>$1</strong>')
-          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?|\d+\s*players?)\b/g, '<strong>$1</strong>');
+          .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board|Yellow Area|Brown Area|Red Gear|Main Achievement|Single-Species|Multi-Species|End Card|Creature Card|Habitat Tile|Time Track|Score Track|Egg Pouch|Supply Board|Main Board)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?|\d+\s*players?|\d+\s*spaces?|\d+\s*slots?|\d+\s*icons?|\d+\s*points?|\d+\s*levels?|\d+\s*types?|\d+\s*colors?|\d+\s*areas?|\d+\s*gears?|\d+\s*tokens?|\d+\s*markers?|\d+\s*trackers?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
         return `<li>${formatted}</li>`;
       }).join('');
       

@@ -1,0 +1,19 @@
+---
+description: Planning a course of action
+globs:
+alwaysApply: true
+---
+
+# When asked to **plan** a course of action, you should always apply this plan.
+- Do not respond with detail in the chat window, only respond with the a markdown file followin the guidline below:
+- Create (or append if already exsits) a markdown file
+    - Plan markdown files should be placed in the folder called "planning"
+    - The file will be named "course_of_action_<keyword>.md"
+- start with a summary of the course of action
+- then list the steps of the course of action
+- then list the resources needed for the course of action
+- then list the risks of the course of action
+- then list the benefits of the course of action
+- then list the alternatives to the course of action
+- then list the conclusion of the course of action
+- then list the next steps to take
