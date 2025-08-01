@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track0r - Game Turn Order Trackers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .game-section {
+            margin-bottom: 40px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+        }
+
+        .game-title {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .game-description {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .tracker-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .tracker-link {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+        }
+
+        .tracker-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            border-color: #3498db;
+        }
+
+        .tracker-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        .tracker-description {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .file-path {
+            background: #ecf0f1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            font-family: 'Courier New', monospace;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tracker-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Track0r</h1>
+        <p class="subtitle">Game Turn Order Trackers</p>
+
+        <div class="game-section">
+            <h2 class="game-title">🦋 Wondrous Creatures</h2>
+            <p class="game-description">
+                A cooperative board game where players explore a mysterious island, collect creatures, and complete achievements. 
+                Features both multiplayer and solo modes with an AI opponent called Tingent.
+            </p>
+            <div class="tracker-links">
+                <a href="Wonderous_Creatures/track0r_WondrousCreatures.html" class="tracker-link">
+                    <div class="tracker-title">Multiplayer Mode</div>
+                    <div class="tracker-description">
+                        Complete turn order tracker for 2-4 player games. Includes setup, turn flow, and scoring sections.
+                    </div>
+                    <div class="file-path">Wonderous_Creatures/track0r_WondrousCreatures.html</div>
+                </a>
+                <a href="Wonderous_Creatures/track0r_WondrousCreatures_solo.html" class="tracker-link">
+                    <div class="tracker-title">Solo Mode</div>
+                    <div class="tracker-description">
+                        Specialized tracker for solo play against Tingent AI. Includes detailed AI behavior and scoring rules.
+                    </div>
+                    <div class="file-path">Wonderous_Creatures/track0r_WondrousCreatures_solo.html</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="game-section">
+            <h2 class="game-title">⚔️ Lord of the Rings LCG</h2>
+            <p class="game-description">
+                A cooperative living card game where players work together to complete quests and overcome challenges 
+                in Middle-earth. Features complex turn structure with multiple phases and action windows.
+            </p>
+            <div class="tracker-links">
+                <a href="LOTR_LCG/track0r_LOTR_LCG.html" class="tracker-link">
+                    <div class="tracker-title">Complete Turn Order</div>
+                    <div class="tracker-description">
+                        Comprehensive turn order tracker with all phases, action windows, and detailed combat resolution.
+                    </div>
+                    <div class="file-path">LOTR_LCG/track0r_LOTR_LCG.html</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="game-section">
+            <h2 class="game-title">🌌 Star Wars Unlimited</h2>
+            <p class="game-description">
+                A competitive trading card game set in the Star Wars universe. Players build decks and battle 
+                to control the galaxy through strategic card play and resource management.
+            </p>
+            <div class="tracker-links">
+                <a href="SWU/track0r_SWU.html" class="tracker-link">
+                    <div class="tracker-title">Turn Order Tracker</div>
+                    <div class="tracker-description">
+                        Complete turn structure and game flow for Star Wars Unlimited matches.
+                    </div>
+                    <div class="file-path">SWU/track0r_SWU.html</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="game-section">
+            <h2 class="game-title">🏚️ STALKER</h2>
+            <p class="game-description">
+                A survival horror board game based on the STALKER video game series. Players explore the Zone, 
+                manage resources, and face various threats in a post-apocalyptic setting.
+            </p>
+            <div class="tracker-links">
+                <a href="STALKER/track0r_STALKER_v1.html" class="tracker-link">
+                    <div class="tracker-title">Game Flow Tracker</div>
+                    <div class="tracker-description">
+                        Turn order and game flow tracker for STALKER board game sessions.
+                    </div>
+                    <div class="file-path">STALKER/track0r_STALKER_v1.html</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="game-section">
+            <h2 class="game-title">🛠️ Development</h2>
+            <p class="game-description">
+                Template and development files for creating new track0r files.
+            </p>
+            <div class="tracker-links">
+                <a href="html/track0r_template.html" class="tracker-link">
+                    <div class="tracker-title">Template</div>
+                    <div class="tracker-description">
+                        Base template for creating new track0r files with modern styling and functionality.
+                    </div>
+                    <div class="file-path">html/track0r_template.html</div>
+                </a>
+                <a href="html/track0r_v1.html" class="tracker-link">
+                    <div class="tracker-title">Version 1</div>
+                    <div class="tracker-description">
+                        Early version of the track0r template for reference and development.
+                    </div>
+                    <div class="file-path">html/track0r_v1.html</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Track0r - Game Turn Order Trackers</p>
+            <p>Organized by game and mode for easy navigation</p>
+        </div>
+    </div>
+</body>
+</html> 
