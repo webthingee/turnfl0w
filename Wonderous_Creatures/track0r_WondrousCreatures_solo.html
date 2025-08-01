@@ -226,6 +226,27 @@
       display: inline-block;
     }
 
+    .rulebook-image {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .rulebook-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: 2px solid #ecf0f1;
+    }
+
+    .image-caption {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      font-style: italic;
+      text-align: center;
+    }
+
     @media screen and (max-width: 926px) and (orientation: landscape) {
       body {
         height: 100vh;
@@ -269,13 +290,14 @@
     <button class="tab active" data-tab="turn-flow">Turn Flow</button>
     <button class="tab" data-tab="setup">Solo Setup</button>
     <button class="tab" data-tab="scoring">Solo Scoring</button>
+    <button class="tab" data-tab="appendix">Appendix</button>
   </div>
   <div class="tab-content active" id="turn-flow">
     <div class="container">
       <div class="selector" id="list">
         <div class="step selected player-turn" data-detail="You and Tingent alternate turns until the game ends. You always go first as the First Player. Each player follows their own turn structure: you perform Basic Actions and Free Actions, while Tingent follows its automated card-driven actions. The game ends when all Trophies are depleted. (Rulebook p. 22-23)">1. Solo Game Turn Overview</div>
         
-        <div class="step player-turn" data-detail="Your turn works exactly like the multiplayer game. Choose 1 Basic Action (Place Crew Member, Play Cards, Complete Achievement, or Recharge) and perform any number of Free Actions (Use Butterfly Net, Use Energy). You follow all normal rules for resource management, card costs, and abilities. (Rulebook p. 17)">2. Your Turn (Player)</div>
+        <div class="step player-turn" data-detail="Your turn works exactly like the multiplayer game. Choose 1 Basic Action (Place Crew Member, Play Cards, Complete Achievement, or Recharge) and perform any number of Free Actions (Use Butterfly Net, Use Energy). You follow all normal rules for resource management, card costs, and abilities. (Rulebook p. 17)" data-image="Wondrous-Creatures-Base-Game-Rulebook-1,Wondrous-Creatures-Base-Game-Rulebook-2,Wondrous-Creatu[...] (1)/Wondrous-Creatures-Base-Game-Rulebook-24.webp" data-image-caption="Crew Placement and Basic Actions - Place Crew Members to interact with adjacent Habitats">2. Your Turn (Player)</div>
         <div class="substep player-turn" data-detail="Choose exactly one of the four Basic Actions available to you on your turn. You must perform exactly one Basic Action - you cannot pass your turn. • Place a Crew Member: deploy a worker on the map to gather resources or cards from adjacent Habitats. • Play a Card(s): play up to 2 cards from your hand by paying their resource costs. • Complete an Achievement: claim an available achievement slot for immediate rewards and end-game points. • Recharge: return all 3 crew members to your board when they're all deployed on the map. (Rulebook p. 17)">2.1 Choose 1 Basic Action</div>
         <div class="substep player-turn" data-detail="Perform as many Free Actions as desired at any time during your turn. Free Actions can be used before, during, or after your Basic Action. • Use a Butterfly Net: collect an adjacent Egg or activate an adjacent Special Effect Icon. • Use an Energy: discard an Energy from a card to activate that card's ability. (Rulebook p. 17-19)">2.2 Perform Free Actions (Optional)</div>
         <div class="substep player-turn" data-detail="At the end of your turn, refill any empty spaces in the Wilderness by drawing from the deck. If you depleted the last Trophy, each remaining player (including Tingent) takes one final turn, then the game ends. Otherwise, Tingent takes its turn next. (Rulebook p. 20)">2.3 End Turn / Check Game End</div>
@@ -330,7 +352,7 @@
         <div class="substep" data-detail="Draw 8 Creature Cards, choose 4 to keep in hand, discard 4 face-up. Place Resource Trackers on space 1 of each track, Score Tracker on boat icon, Lock Token on Captain Board. Since you're First Player, you start with 1 of each resource (no bonus resources). (Rulebook p. 22)">1.6 Your Starting Hand and Resources</div>
 
         <div class="substep" data-detail="Choose a color for Tingent to represent the AI opponent. Take 2 Crew members (1 magnetic, 1 regular) in that color and place them next to the chosen Tingent Board. Tingent does not get a Player Board, Captain Board, Butterfly Nets, Lock Tokens, or resources. (Rulebook p. 22)">1.7 Choose Tingent Color and Components</div>
-        <div class="substep" data-detail="Select your desired difficulty level for the AI opponent. Higher difficulties give Tingent more VPs for face-down cards collected. • Lazy Tingent: easiest difficulty, 1 VP per face-down card. • Easygoing Tingent: medium difficulty, 2 VPs per face-down card. • Wild Tingent: hard difficulty, 3 VPs per face-down card. • Terrifying Tingent: hardest difficulty, 3 VPs per face-down card. Take the corresponding Tingent Board (found on the back of Captain Boards) and place it near the play area. (Rulebook p. 22)">1.8 Choose Tingent Difficulty Level</div>
+        <div class="substep" data-detail="Select your desired difficulty level for the AI opponent. Higher difficulties give Tingent more VPs for face-down cards collected. • Lazy Tingent: easiest difficulty, 1 VP per face-down card. • Easygoing Tingent: medium difficulty, 2 VPs per face-down card. • Wild Tingent: hard difficulty, 3 VPs per face-down card. • Terrifying Tingent: hardest difficulty, 3 VPs per face-down card. Take the corresponding Tingent Board (found on the back of Captain Boards) and place it near the play area. (Rulebook p. 22)" data-image="Wondrous-Creatures-Base-Game-Rulebook-1,Wondrous-Creatures-Base-Game-Rulebook-2,Wondrous-Creatu[...] (1)/Wondrous-Creatures-Base-Game-Rulebook-22.webp" data-image-caption="Tingent Difficulty Levels - Each level affects how many VPs Tingent gets for face-down cards">1.8 Choose Tingent Difficulty Level</div>
         <div class="substep" data-detail="Set up Tingent's tracking components in the chosen color. • Take 6 Achievement Markers and place them next to the Tingent Board for future Achievement completion. • Take 1 Resource Tracker and place it on the first space of the Tingent Board - this becomes the Tingent Tracker. • Take 1 Score Tracker for Tingent and place it on the boat icon near the Score Track. (Rulebook p. 22)">1.9 Set Up Tingent Trackers and Markers</div>
         <div class="substep" data-detail="Shuffle all Tingent Cards and place them face-down next to the Tingent Board as a deck. These cards will drive all of Tingent's actions throughout the game. Combine the magnetic Crew member with the Tingent meeple to create Tingent's Captain. (Rulebook p. 22)">1.10 Prepare Tingent Cards and Captain</div>
 
@@ -355,7 +377,7 @@
       <div class="selector" id="scoring-list">
         <div class="step selected" data-detail="At game end, calculate your score using normal rules, then calculate Tingent's score using modified rules. Tingent scores differently than normal players - it gets points for face-up cards, Achievements, Trophies, and Eggs, plus bonus points for face-down cards based on difficulty level. Compare final scores to determine the winner. (Rulebook p. 25)">1. Solo Game Scoring Overview</div>
         
-        <div class="step" data-detail="Calculate your final score exactly as in multiplayer games. Add End Card scores, all card Ending Scores, Achievement Slot scores, 3 VPs per Trophy, and 1 VP per 4 resources/Butterfly Nets. Use Score Tokens if you exceed 50 VPs. This is your final score to compare against Tingent. (Rulebook p. 20-21)">2. Your Score Calculation (Normal Rules)</div>
+        <div class="step" data-detail="Calculate your final score exactly as in multiplayer games. Add End Card scores, all card Ending Scores, Achievement Slot scores, 3 VPs per Trophy, and 1 VP per 4 resources/Butterfly Nets. Use Score Tokens if you exceed 50 VPs. This is your final score to compare against Tingent. (Rulebook p. 20-21)" data-image="Wondrous-Creatures-Base-Game-Rulebook-1,Wondrous-Creatures-Base-Game-Rulebook-2,Wondrous-Creatu[...] (1)/Wondrous-Creatures-Base-Game-Rulebook-23.webp" data-image-caption="Scoring Rules - Immediate Scores (brown seal) and Ending Scores (red seal)">2. Your Score Calculation (Normal Rules)</div>
         <div class="substep" data-detail="Activate all End Cards in your reserve and gain their VPs based on your collection. For example, if you have an End Card giving 1 VP per Crustacean and you have 8 Crustaceans total, gain 8 VPs. Add all End Card scores together. (Rulebook p. 20)">2.1 End Card Scores</div>
         <div class="substep" data-detail="Add the Ending Score (red seal number) from every Creature Card in your reserve. These are the base victory points printed on each card that you played during the game. Do not count abilities here, just the printed numbers. (Rulebook p. 20)">2.2 Creature Card Ending Scores</div>
         <div class="substep" data-detail="Add the Ending Score from each Achievement Slot you completed during the game. Each Achievement shows different VP values for upper and lower slots. Count the specific slot you claimed, not the total Achievement card value. (Rulebook p. 20)">2.3 Achievement Slot Scores</div>
@@ -383,6 +405,278 @@
         </div>
         <h2>Details</h2>
         <p id="scoring-detailText">At game end, calculate your score using normal rules, then calculate Tingent's score using modified rules. Tingent scores differently than normal players - it gets points for face-up cards, Achievements, Trophies, and Eggs, plus bonus points for face-down cards based on difficulty level. Compare final scores to determine the winner. (Rulebook p. 25)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="appendix">
+    <div class="container">
+      <div class="selector" id="appendix-list">
+        <div class="step selected" data-detail="The appendix contains additional information that you can refer to when you come across unfamiliar content during gameplay. If conflicts arise between the rulebook and the information on Creature Cards/Captain Boards, always prioritize the information on the Creature Cards/Captain Boards. All descriptions of abilities below assume that you have completed at least one Achievement, unlocking the Captain ability. If the Captain ability has yet to be unlocked, you cannot use the Captain abilities.">1. Appendix Overview</div>
+        
+        <div class="step" data-detail="1. Cabot, Laid-back Wanderer: When placing Cabot on the Map, activate 1 Recharge Card in your reserve immediately. If you have no Recharge Cards in your reserve, placing Cabot will result in no effect. 2. Freya, Egg Nurturer: When placing Freya on the Map, choose one of the following two abilities to apply: 1) Obtain any 1 Egg that is adjacent to Freya, place it face-up in your Egg Storage and receive the corresponding Egg Storage reward. 2) Flip up to 2 Eggs in your reserve. You cannot flip the same Egg twice. If there are no Eggs adjacent to Freya and no Eggs in your Egg Storage, placing Freya will result in no effect. Even after unlocking the Captain ability, you have the option not to use the Captain's ability when placing the Captain. 3. Haoa, Benevolent Creature Guardian: When placing Haoa on the Map, you can immediately play 1 card from your hand by paying its cost. Playing a card through Haoa's ability is part of its effect, so it does not consume an Action. If there are no cards in hand, or if you do not have sufficient resources to play a card, no effects occur with this ability. 4. Helena, Mountain Herbalist: When unlocking Helena's ability, you immediately gain 1 Net. You can hold up to 3 Nets at once. If acquiring a Net would exceed this limit, you do not gain the Net and instead gain 1 VP. When placing Helena on the Mountain(s), no costs need to be paid. 5. Macus, the Viewfinder: When placing Macus on the Map, immediately activate the ability of the adjacent Special Effect Icon that Macus is facing. Even if there is a Special Effect Icon in the direction Macus is facing, if it is not adjacent, you cannot activate the Special Effect Icon. If there are no adjacent Special Effect Icons in the direction Macus is facing, no effects occur with this ability. The Special Effect Icon activated through Macus' ability can be activated again using a Butterfly Net on the same turn. NOTE: When using Nets, only 1 Special Effect Icon can be activated ONCE PER TURN. However, if you activate a Special Effect Icon without a Net, you can activate the same Special Effect Icon multiple times in a turn. 6. Marie, Bountiful Entrepreneur: When placing Marie on the Map, choose 1 of the three Habitat Tiles in the Habitat Tile Pool and activate its Special Effect Icon. If, during the same turn, the Habitat Tile that was activated through Marie's ability is placed adjacent to any of your Crew members on the Map as a reward from the Score Track, you are still able to use a Net to activate the Special Effect Icon of that Habitat Tile again. 7. Octavia, Island's Outlaw: When placing Octavia on the Map, choose one card from your hand to discard and gain 2 of the discarded card's Habitat Resource. If there are no cards in your hand, no effects occur with this ability. 8. Samuel, Veteran Explorer: When placing Samuel on the Map, gain 1 resource among Fruits, Corals, Flowers, and Mushrooms that you possess the least of. Then, you gain an additional unit of the same resource for every 3 Trophies you have. If you have more than one type of resource that you possess the least of, of those, choose the resource you'd like to gain. 9. Tingent, Energetic Robot: When Tingent's ability is unlocked, immediately take 1 Energy from the Supply and place it on its Captain Board. When placing Tingent on the Map, choose one of the following two abilities to apply: 1) Place one Energy on the Tingent Captain Board. There is no limit to the number of Energies that can be placed this way. You CANNOT restore the Energies on the Captain Board through card abilities or Achievement Marker Rewards. NOTE: You can only restore Energy Cards. 2) Distribute the Energies on the Tingent Captain Board to the Energy Cards in your reserve as desired. However, you cannot exceed the Energy Limit of each Energy Card. After dispersing them, any remaining Energies are placed back on the Tingent Captain Board.">2. Captain Boards</div>
+        
+        <div class="step" data-detail="This section contains all 126 Creature Cards with their abilities and effects. Cards are organized by number ranges for easy reference during gameplay. Select any range to view the detailed abilities for those cards.">3. Creature Cards Overview</div>
+        
+        <div class="substep" data-detail="<strong>001. Applet:</strong> Gain 2 VPs for each Fruit Habitat Icon in your reserve, including this card. You can gain a maximum of 10 VPs through one activation of this card.<br><br>
+
+<strong>002. Backactooth:</strong> Refer to #001.<br><br>
+
+<strong>003. Bearmour:</strong> Choose any Fruit Habitat with a Special Effect Icon on the Map and activate the corresponding Special Effect Icon. If any of your Crew members is adjacent to the same Habitat you activated with this card, you can use the Butterfly Net to activate the same Special Effect Icon once more in the same turn.<br><br>
+
+<strong>004. Cavigator:</strong> You can play this card for 1 resource less per Mushroom Habitat Icon in your reserve and immediately obtain 3 VPs. Note that for this resource discount, only consider the Mushroom Habitat Icons in the reserve before playing this card; therefore, the Mushroom Habitat Icon on this card is not counted. If the discount exceeds the card's cost, the remaining balance is null.<br><br>
+
+<strong>005. Curechino:</strong> Refer to #003.<br><br>
+
+<strong>006. Doground:</strong> When you perform a Recharge Action, draw 1 card from the deck. Check the Habitat Icon of the drawn card and count the matching Habitat Icons in your reserve to gain 1 VP for each matching Habitat Icon in your reserve, up to a maximum of 5 VPs.<br><br>
+
+<strong>007. Edenborn:</strong> Gain 1 VP for each Habitat Icon with the highest count in your reserve. If you have two or more Habitat Icons tied for the highest count, of those, select 1 Habitat Icon to apply the ability.<br><br>
+
+<strong>008. Goatitan:</strong> Refer to #003.<br><br>
+
+<strong>009. Pangshroam:</strong> Refer to #001.<br><br>
+
+<strong>010. Pharabog:</strong> Whenever you play a card with a combined cost of 4 or more resources (Fruits, Corals, Flowers, and Mushrooms), immediately gain 2 VPs. Even if you play a card at a cost lower than its original value due to the discount or other abilities, as long as the card's initial cost is 4 or more, you gain 2 VPs. Since Pharabog's cost is also 4 or more resources, playing Pharabog and applying its ability immediately grants you 2VPs.<br><br>
+
+<strong>011. Pinkroak:</strong> When you perform a Recharge Action, gain 2 resources matching the Habitat Icon with the highest count in your reserve. If you have two or more Habitat Icons tied for the highest count, of those, select 1 Habitat Icon and gain 2 resources matching the chosen Icon.<br><br>
+
+<strong>012. Sandraco:</strong> Refer to #004.<br><br>
+
+<strong>013. Sealocanth:</strong> Refer to #003.<br><br>
+
+<strong>014. Shellmit:</strong> Refer to #001.<br><br>
+
+<strong>015. Sunarrow:</strong> At the end of the game, gain 1 VP for any Crustacean icon in your reserve. Count all Crustacean icons on the cards in your reserve, and both Unhatched and Hatched Crustacean Eggs in your Egg Storage.<br><br>
+
+<strong>016. Verieberree:</strong> Refer to #004.<br><br>
+
+<strong>017. Watereo:</strong> Refer to #004.<br><br>
+
+<strong>018. Cryodon:</strong> When you perform a Recharge Action, gain 1 Coral. Additionally, receive 1 additional Coral for every 3 Trophies you possess.<br><br>
+
+<strong>019. Crystalama:</strong> Each time you obtain a Trophy, activate 1 Recharge Card in your reserve immediately. If there are no Recharge Cards in your reserve, no effect occurs.<br><br>
+
+<strong>020. Dracougar:</strong> Refer to #015.<br><br>
+
+<strong>021. Elepharm:</strong> When this card is played, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to gain a resource of your choice. Additionally, exchange one type of resource for another of a different type, selecting the amount you desire. It is not mandatory to exchange the resource obtained through this card's effect.<br><br>
+
+<strong>022. Eucalord:</strong> When you perform a Recharge Action, gain 1 resource among Fruits, Corals, Flowers, and Mushrooms that you possess the least of. Then, you gain an additional unit of the same resource for every 3 Trophies you have. If you have more than one type of resource that you possess the least of, of those, choose the resource you'd like to gain.<br><br>
+
+<strong>023. Globeon:</strong> When this card is played, immediately take 1 Energy from the Supply and place it on this card. Discard 1 Energy from this card to play one Recharge Card from your hand to your reserve without paying its cost. Playing a Recharge Card is the result of using the Energy, so it does not consume an Action.<br><br>
+
+<strong>024. Hamstore:</strong> Refer to #018.<br><br>
+
+<strong>025. Magape:</strong> Refer to #018.">001-025 (Applet - Magape)</div>
+        
+        <div class="substep" data-detail="<strong>026. Mammothog:</strong> Immediately activate 1 Recharge Card from your reserve. Also, gain an Egg from the Supply that matches the species icon of the activated Recharge Card.<br><br>
+
+<strong>027. Mommhog:</strong> Refer to #026.<br><br>
+
+<strong>028. Nutabi:</strong> When this card is played, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to gain a resource of your choice. Then, you gain an additional unit of the same resource for every 3 Trophies you have.<br><br>
+
+<strong>029. Pheoxi:</strong> When this card is played, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to choose a Recharge Card from your reserve to activate.<br><br>
+
+<strong>030. Sugarider:</strong> Select 2 different Recharge Cards from your reserve and activate each one once. You cannot activate the same Recharge Card twice. If you only have one Recharge Card in your reserve, activate it once.<br><br>
+
+<strong>031. Thunderilla:</strong> Each time you gain a Trophy, gain 2 VPs immediately.<br><br>
+
+<strong>032. Triumpithon:</strong> Refer to #018.<br><br>
+
+<strong>033. Vikey:</strong> Each time your Recharge Card is activated through Recharge Actions, card abilities, Special Effect Icons, Captain abilities, etc., gain 1 VP.<br><br>
+
+<strong>034. Wayfinder:</strong> When you perform a Recharge Action, gain 1 of the resource you possess the least among the four types. Additionally, gain VPs equal to the quantity of that resource type in your possession. If you happen to have a tie for the lowest resource, of those, select the resource you prefer to gain.<br><br>
+
+<strong>035. Arbokueen:</strong> Choose 1 card from the Wilderness, pay the required costs, and play it directly to your reserve. Playing a card from the Wilderness through Arbokueen is part of its effect, so it does not consume an Action.<br><br>
+
+<strong>036. Arboqing:</strong> Refer to #035.<br><br>
+
+<strong>037. Florarzei:</strong> Choose 1 card from the Wilderness and add it to your hand. Gain 2 Habitat Resources of the acquired card.<br><br>
+
+<strong>038. Floratzel:</strong> Refer to #037.<br><br>
+
+<strong>039. Gryffling:</strong> Choose 1 End Card from your reserve. Activate its end-game effect and immediately gain those VPs, up to a maximum of 10 VPs. The End Card activated through Gryffling still triggers its effect at the end of the game.<br><br>
+
+<strong>040. Gryphocean:</strong> Refer to #039.<br><br>
+
+<strong>041. Hanguine:</strong> When this card is played, immediately take 1 Energy from the Supply and place it on this card. Discard 1 Energy from this card to play 1 End Card from the Wilderness or from your hand to your reserve without paying the cost. Playing a card is the result of using an Energy, so it doesn't consume an Action.<br><br>
+
+<strong>042. Hawkwaka:</strong> When you perform a Recharge Action, you immediately gain 1 VP for each End Card in your reserve. You can gain a maximum of 5 VPs through one activation of this card.<br><br>
+
+<strong>043. Jumperor:</strong> Declare a species of your choice, then acquire all cards from the Wilderness that feature that species icon and add them to your hand. Gain 1 VP for each acquired card. As long as the declared species icon is present, also acquire cards featuring two or more different species icons.<br><br>
+
+<strong>044. Jumpress:</strong> Refer to #043.<br><br>
+
+<strong>045. Nighthief:</strong> Sweep. Then, choose 1 card from the Wilderness and add it to your hand. (Sweep: see page 11.)<br><br>
+
+<strong>046. Nightogue:</strong> Refer to #045.<br><br>
+
+<strong>047. Owlean:</strong> Choose 1 card from the Wilderness and add it to your hand. Gain 1 Egg matching the species icon of the acquired card. If the acquired card has two different species icons, choose one of the desired species and gain that Egg.<br><br>
+
+<strong>048. Owlite:</strong> Refer to #047.<br><br>
+
+<strong>049. Skyrant:</strong> Refer to #015.<br><br>
+
+<strong>050. Starbeak:</strong> Choose a card from the Wilderness and immediately play it to your reserve without paying the cost. Playing a card from the Wilderness through Starbeak is part of its effect, so it does not consume an Action.">026-050 (Mammothog - Starbeak)</div>
+        
+        <div class="substep" data-detail="<strong>051. Swonder:</strong> When this card is played, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to choose a card from the Wilderness and add it to your hand.<br><br>
+
+<strong>052. Berrong:</strong> Use the ability of the last Instant Card played. Exceptions to the rule: This ability is on 2 different cards, Berrong and Blizard (#53). If you play Berrong and Blizard (#53) in a row and Blizard (#53) triggers Berrong, or vice versa, nothing happens as the ability of the last Instant card played is simply repeated twice.<br><br>
+
+<strong>053. Blizard:</strong> Refer to #052.<br><br>
+
+<strong>054. Chactiva:</strong> Each time you gain a Trophy, gain 1 resource of your choice.<br><br>
+
+<strong>055. Frogain:</strong> Choose 1 Energy Card from your reserve to restore its Energy to its full Energy Limit. You cannot restore Energies on the Captain Board.<br><br>
+
+<strong>056. Frogave:</strong> Refer to #055.<br><br>
+
+<strong>057. Lilizard:</strong> Receive a 1-resource discount for the cost of the next card you play. The Lilizard's effect is only valid for this turn. If you do not play another card after Lilizard in the same turn, the discount effect of Lilizard will expire. If the discount exceeds the card's cost, the remaining balance is null.<br><br>
+
+<strong>058. Metaforma:</strong> Gain an Egg from the Supply in its Unhatched state with the species icon matching the last played Instant Card's species icon.<br><br>
+
+<strong>059. Metamorpha:</strong> Refer to #058.<br><br>
+
+<strong>060. Mushmid:</strong> Choose 1 card from your hand with a combined cost of Fruits, Corals, Flowers, and Mushrooms totaling 2 or less. Play the selected card immediately to your reserve without paying the cost. Playing a card through Mushmid is part of its effect, so it does not consume an Action. When checking the cost of a card, consider the initial cost before applying any discounts from card abilities. For example, with Cavigator (#004), since its initial cost is 4 resources, it cannot be played using Mushmid.<br><br>
+
+<strong>061. Mushmidol:</strong> Refer to #060.<br><br>
+
+<strong>062. Nimfizard:</strong> Refer to #057.<br><br>
+
+<strong>063. Plataurora:</strong> When this card is played, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to take an Egg of your choice from the Supply and place it on top of this card, to add another species icon to this card. Moving forward, this card is treated as having not only the Reptile Icon but also the added Egg's species icon. When adding another species icon to this card, you cannot add the same icon that the card already possesses. The Egg placed on this card is purely for species representation and cannot be counted as an Egg. You cannot hatch/flip the Eggs on this card. Additionally, when completing Achievements using the species on this card, the Egg on the card is not to be considered for hatching.<br><br>
+
+<strong>064. Platazul:</strong> Refer to #063.<br><br>
+
+<strong>065. Rewardino:</strong> Choose one of the Achievement Marker Rewards you have already obtained to gain once again. If you haven't completed any Achievements yet, you do not gain any effects.<br><br>
+
+<strong>066. Stridesert:</strong> Each time you play an Instant Card, immediately gain 1 VP.<br><br>
+
+<strong>067. Torterran:</strong> Refer to #015.<br><br>
+
+<strong>068. Aromalli:</strong> When you perform a Recharge Action, draw 1 card from the deck and gain 1 Habitat Resource of the drawn card.<br><br>
+
+<strong>069. Caprieel:</strong> When you perform a Recharge Action, draw 1 card from the deck and gain an Egg matching the species icon of the drawn card in its Unhatched Side from the Supply. If the drawn card has two different species icons, choose one and gain that Egg.<br><br>
+
+<strong>070. Caregaroo:</strong> Draw 1 card from the deck and gain an Egg matching the species icon of the drawn card from the Supply. If the drawn card has two different species icons, choose one and gain that Egg.<br><br>
+
+<strong>071. Clairgaroo:</strong> Refer to #070.<br><br>
+
+<strong>072. Cucunet:</strong> Gain 1 Net from the Supply.<br><br>
+
+<strong>073. Deepus:</strong> Examine 3 cards from the deck, choose one to add to your hand and place the remaining in the discard pile. Then, immediately gain the score corresponding to the acquired card's Ending Score. If the added card is an End Card, you 'gain' 0 VPs, which is the card's Ending Score. You do not gain the score provided by the card's abilities.<br><br>
+
+<strong>074. Drawanta:</strong> Draw 3 cards from the deck. Then, choose 1 card from your hand and discard it. The discarded card doesn't have to be one of the cards drawn through this card's effect.<br><br>
+
+<strong>075. Drawight:</strong> Refer to #074.">051-075 (Swonder - Drawight)</div>
+        
+        <div class="substep" data-detail="<strong>076. Fishorse:</strong> Each time you draw a card from the deck, gain 1 VP. Note that Deepus (#073), Pondire (#82) and Swampus (#084) do not trigger the effect of Fishorse as they do not involve drawing cards.<br><br>
+
+<strong>077. Gluminor:</strong> Draw 1 card from the deck and immediately gain 1 VP for each Creature Card currently in your hand, including the card you just drew. You can gain a maximum of 10 VPs through one activation of this card.<br><br>
+
+<strong>078. Kilphin:</strong> Draw 1 card from the deck. If you have 5 or more Creature Cards in your hand, including the card you just drew, additionally gain 1 Net.<br><br>
+
+<strong>079. Kilpink:</strong> Refer to #078.<br><br>
+
+<strong>080. Lavarp:</strong> When you play this card, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to draw 1 card from the deck. Choose 2 out of 3 options among 1) an Egg of the same species as the drawn card, 2) a Habitat Resource of the drawn card, and 3) the same VPs as the Ending Score of the drawn card. You cannot choose the same option twice. If the drawn card has two different species icons and you choose to acquire an Egg, of those, select the type to gain. If the drawn card is an End Card and you choose to acquire the same VPs as the Ending Score of the drawn card, you 'gain' 0 VPs, which is the card's Ending Score. You do not gain the score provided by the card's abilities.<br><br>
+
+<strong>081. Mernetid:</strong> Gain 2 Nets from the Supply.<br><br>
+
+<strong>082. Pondire:</strong> When this card is played, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to examine 3 cards from the deck, choose one to add to your hand and place the rest in the discard pile. Gain 1 Habitat Resource of the acquired card.<br><br>
+
+<strong>083. Sharkhon:</strong> Refer to #015.<br><br>
+
+<strong>084. Swampus:</strong> Refer to #073.<br><br>
+
+<strong>085. Centom:</strong> When this card is played, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to flip up to 2 Eggs in your reserve and gain 2 VPs immediately. When flipping 2 Eggs, you must flip 2 DIFFERENT Eggs. You cannot flip the same Egg twice. You can flip 1 Unhatched Egg to its Hatched side and flip another Hatched Egg to its Unhatched side. If you prefer, you can decide not to flip any Eggs at all.<br><br>
+
+<strong>086. Cocoroch:</strong> Flip up to 2 Eggs in your reserve and gain 2 VPs for each Egg flipped in this way. When flipping 2 Eggs, you must flip 2 DIFFERENT Eggs. You cannot flip the same Egg twice. You can flip 1 Unhatched Egg to its Hatched side and flip another Hatched Egg to its Unhatched side.<br><br>
+
+<strong>087. Finhead:</strong> Hatch 1 Egg in your reserve to gain 1 Egg of your choice from the Supply. If there are no Unhatched Eggs to Hatch, no effect occurs.<br><br>
+
+<strong>088. Flareetle:</strong> Refer to #087.<br><br>
+
+<strong>089. Gemantis:</strong> Refer to #015.<br><br>
+
+<strong>090. Glowyrm:</strong> Hatch up to 5 Eggs in your reserve and gain 2 VPs for each Egg hatched in this way.<br><br>
+
+<strong>091. Hoflora:</strong> Hatch 1 Egg in your reserve to choose one type of resource and gain 2 of that resource.<br><br>
+
+<strong>092. Hofume:</strong> Refer to #091.<br><br>
+
+<strong>093. Housilk:</strong> When you perform a Recharge Action, gain 1 resource of your choice and flip up to 2 Eggs in your reserve. When flipping 2 Eggs, you must flip 2 DIFFERENT Eggs. You cannot flip the same Egg twice. You can flip 1 Unhatched Egg to its Hatched side and flip another Hatched Egg to its Unhatched side. If you prefer, you can decide not to flip any Eggs at all.<br><br>
+
+<strong>094. Lunantula:</strong> Each time, you flip Egg(s) from your reserve, gain 1 VP. You only gain 1 VP, even if you flip multiple Eggs at once.<br><br>
+
+<strong>095. Magicadas:</strong> Obtain 1 Insect Egg from the Supply and add it to your reserve in its Unhatched state.<br><br>
+
+<strong>096. Mentimidae:</strong> When you perform a Recharge Action, gain 1 VP for every 2 Hatched Eggs in your reserve.<br><br>
+
+<strong>097. Rosaroch:</strong> Refer to #086.<br><br>
+
+<strong>098. Stellaling:</strong> Gain 1 VP each time you acquire an Egg. In the event you need to gain an Egg when the Egg storage is full, you would gain 3 VPs through Stellaling's effect instead 2VPs. Note that Plataurora (#063) and Platazul (#64) do not trigger the effect of Stellaling as the Egg placed on Plataurora and Platazul is purely for species representation and cannot be counted as an Egg.<br><br>
+
+<strong>099. Wallowyrm:</strong> Refer to #090.<br><br>
+
+<strong>100. Waspike:</strong> Obtain 1 Egg of your choice from the Supply and add it to your reserve in its Unhatched state.<br><br>
+
+<strong>101. Wizadas:</strong> Refer to #095.">076-101 (Fishorse - Wizadas)</div>
+        
+        <div class="substep" data-detail="<strong>102. Behewant:</strong> Discard up to 2 cards from your hand. For each of the cards discarded, immediately gain 2 VPs.<br><br>
+
+<strong>103. Blankin:</strong> Discard 1 card from your hand. Gain 1 VP for each species icon in your reserve that matches the discarded card. Include both Hatched and Unhatched Eggs in the count. If the discarded card displays two different species icons, of those, select 1 species icon to apply the ability.<br><br>
+
+<strong>104. Cyaniu:</strong> Discard up to 5 cards from your hand. For each card discarded this way, receive a 1-resource discount to play this card. Additionally, immediately gain 5 VPs.<br><br>
+
+<strong>105. Doublagon:</strong> Discard 1 card from your hand to gain 2 Habitat Resources of the discarded card.<br><br>
+
+<strong>106. Draksid:</strong> Gain 1 VP each time you discard a Creature Card from your hand. When you perform a Recharge Action and discard excess cards to meet the 5-card hand limit, Draksid's effect also applies. Note that Deepus (#073), Pondire (#82) and Swampus (#084) do not trigger the effect of Draksid as they do not involve discarding cards from your hand.<br><br>
+
+<strong>107. Duplagon:</strong> Refer to #105.<br><br>
+
+<strong>108. Fafkeen:</strong> When this card is played, immediately take an Energy from the Supply and place it on this card. When your hand is empty, discard an Energy from this card to draw 4 cards from the deck and gain their Habitat Resources. Therefore, through Fafkeen's ability, you gain a total of 4 cards and 4 resources. An Energy cannot be spent to activate this ability if your hand is not empty.<br><br>
+
+<strong>109. Goldeniu:</strong> Refer to #104.<br><br>
+
+<strong>110. Healathan:</strong> Discard up to 3 cards from your hand and for each card discarded this way, receive a 1-resource discount to play this card. Additionally, gain 1 Net.<br><br>
+
+<strong>111. Newtyrant:</strong> Refer to #015.<br><br>
+
+<strong>112. Nidknight:</strong> Discard 1 card from your hand to gain 2 Eggs from the Supply that match the species icon of the discarded card. If the discarded card has two different species icons, choose one species, and obtain 2 Eggs of that species.<br><br>
+
+<strong>113. Nidmight:</strong> Refer to #112.<br><br>
+
+<strong>114. Platinodon:</strong> Discard 1 card from your hand to choose 2 cards from the Wilderness and add them to your hand.<br><br>
+
+<strong>115. Revivathan:</strong> Refer to #110.<br><br>
+
+<strong>116. Rockin:</strong> Refer to #103.<br><br>
+
+<strong>117. Throboros:</strong> When this card is played, immediately take an Energy from the Supply and place it on this card. If a card with a cost of 3 resources or less is about to be discarded, instead of discarding the card, discard an Energy from this card to play the card to your reserve without paying its cost. Playing a card is the result of using the Energy, so it does not consume an Action. When checking the cost of a card, consider the initial cost before applying any discounts from card abilities. For example, with Cavigator (#004), since its initial cost is 4 resources, it cannot be played using Throboros.<br><br>
+
+<strong>118. Throiamet:</strong> Refer to #117.<br><br>
+
+<strong>119. Wyfin:</strong> When playing this card, immediately take 2 Energies from the Supply and place them on this card. Discard 1 Energy from this card to discard 1 card from your hand and gain 2 Habitat Resources of the discarded card.<br><br>
+
+<strong>120. Bustosaur:</strong> At the end of the game, choose an End Card from your reserve other than this card and gain the score provided by that card once more.<br><br>
+
+<strong>121. Duckaiser:</strong> At the end of the game, gain 1 VP for each Instant Card in your reserve. You can gain a maximum of 12 VPs through one activation of this card.<br><br>
+
+<strong>122. Eggorgeous:</strong> At the end of the game, gain 1 VP for each Egg in your reserve. Count both Hatched and Unhatched Eggs.<br><br>
+
+<strong>123. Solaroller:</strong> At the end of the game, gain 4 VPs for each full set (Fruit, Coral, Flower, Mushroom) of Habitat Icons in your reserve. You can gain a maximum of 12 VPs through one activation of this card.<br><br>
+
+<strong>124. Swimmah:</strong> At the end of the game, receive 3 VPs for each Recharge Card in your reserve. You can gain a maximum of 12 VPs through one activation of this card.<br><br>
+
+<strong>125. Wolture:</strong> At the end of the game, count up all your Nets, Fruits, Corals, Flowers and Mushrooms. Gain 1 VP for each Net and each resource. You can gain a maximum of 12 VPs through one activation of this card.<br><br>
+
+<strong>126. Yormovent:</strong> At the end of the game, gain 3 VPs for each Energy Card in your reserve. You can gain a maximum of 12 VPs through one activation of this card.">102-126 (Behewant - Yormovent)</div>
+      </div>
+      <div class="details" id="appendix-details">
+        <div class="navigation">
+          <button id="appendix-upButton">↑ Previous</button>
+          <button id="appendix-downButton">↓ Next</button>
+        </div>
+        <h2>Details</h2>
+        <p id="appendix-detailText">The appendix contains additional information that you can refer to when you come across unfamiliar content during gameplay. If conflicts arise between the rulebook and the information on Creature Cards/Captain Boards, always prioritize the information on the Creature Cards/Captain Boards. All descriptions of abilities below assume that you have completed at least one Achievement, unlocking the Captain ability. If the Captain ability has yet to be unlocked, you cannot use the Captain abilities.</p>
       </div>
     </div>
   </div>
@@ -425,6 +719,10 @@
           upButton = document.getElementById('scoring-upButton');
           downButton = document.getElementById('scoring-downButton');
           break;
+        case 'appendix':
+          upButton = document.getElementById('appendix-upButton');
+          downButton = document.getElementById('appendix-downButton');
+          break;
       }
       
       // Set up navigation buttons for the new tab
@@ -451,20 +749,28 @@
       return document.querySelectorAll('#scoring .step, #scoring .substep');
     }
 
+    function getAppendixSteps() {
+      return document.querySelectorAll('#appendix .step, #appendix .substep');
+    }
+
     function getCurrentSteps() {
       switch(currentTab) {
         case 'turn-flow': return getTurnFlowSteps();
         case 'setup': return getSetupSteps();
         case 'scoring': return getScoringSteps();
+        case 'appendix': return getAppendixSteps();
         default: return getTurnFlowSteps();
       }
     }
+
+    let selectedAppendixIndex = 0;
 
     function getCurrentIndex() {
       switch(currentTab) {
         case 'turn-flow': return selectedIndex;
         case 'setup': return selectedSetupIndex;
         case 'scoring': return selectedScoringIndex;
+        case 'appendix': return selectedAppendixIndex;
         default: return selectedIndex;
       }
     }
@@ -474,6 +780,7 @@
         case 'turn-flow': selectedIndex = index; break;
         case 'setup': selectedSetupIndex = index; break;
         case 'scoring': selectedScoringIndex = index; break;
+        case 'appendix': selectedAppendixIndex = index; break;
       }
     }
 
@@ -481,7 +788,8 @@
       const steps = getCurrentSteps();
       const currentIndex = getCurrentIndex();
       const detailTextId = currentTab === 'turn-flow' ? 'detailText' : 
-                          currentTab === 'setup' ? 'setup-detailText' : 'scoring-detailText';
+                          currentTab === 'setup' ? 'setup-detailText' : 
+                          currentTab === 'scoring' ? 'scoring-detailText' : 'appendix-detailText';
       const detailText = document.getElementById(detailTextId);
       
       steps.forEach((step, i) => {
@@ -491,7 +799,24 @@
       // Format the detail text for better readability
       let rawText = steps[currentIndex]?.dataset.detail || '';
       let formattedText = formatDetailText(rawText);
-      detailText.innerHTML = formattedText;
+      
+      // Check if the current step has an associated image
+      const currentStep = steps[currentIndex];
+      const imageSrc = currentStep?.dataset.image;
+      const imageCaption = currentStep?.dataset.imageCaption;
+      
+      if (imageSrc) {
+        // Add image to the details
+        const imageHtml = `
+          <div class="rulebook-image">
+            <img src="${imageSrc}" alt="Rulebook Image" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+            ${imageCaption ? `<p class="image-caption">${imageCaption}</p>` : ''}
+          </div>
+        `;
+        detailText.innerHTML = formattedText + imageHtml;
+      } else {
+        detailText.innerHTML = formattedText;
+      }
       
       // Scroll the selected item into view
       const selectedStep = steps[currentIndex];
@@ -509,6 +834,15 @@
       let pageMatch = text.match(/\(Rulebook p\. ([^)]+)\)/);
       let pageRef = pageMatch ? `<span class="page-ref">Rulebook p. ${pageMatch[1]}</span>` : '';
       let cleanText = text.replace(/\(Rulebook p\. [^)]+\)/, '').trim();
+      
+      // Check for creature card references (e.g., "Refer to #001")
+      if (cleanText.includes('Refer to #')) {
+        let formatted = cleanText
+          .replace(/\b(Tingent|Basic Action|Free Action|Crew Member|Captain|Achievement|Recharge|reserve|Wilderness|Time Tracker|Target Token|Tingent Card|Tingent Board|Yellow Area|Brown Area|Red Gear|Main Achievement|Single-Species|Multi-Species|End Card|Creature Card|Habitat Tile|Time Track|Score Track|Egg Pouch|Supply Board|Main Board|Applet|Backactooth|Bearmour|Cavigator|Curechino|Doground|Edenborn|Goatitan|Pangshroam|Pharabog|Pinkroak|Sandraco|Sealocanth|Shellmit|Sunarrow|Verieberree|Watereo|Cryodon|Crystalama|Dracougar|Elepharm|Eucalord|Globeon|Hamstore|Magape|Mammothog|Mommhog|Nutabi|Pheoxi|Sugarider|Thunderilla|Triumpithon|Vikey|Wayfinder|Arbokueen|Arboqing|Florarzei|Floratzel|Gryffling|Gryphocean|Hanguine|Hawkwaka|Jumperor|Jumpress|Nighthief|Nightogue|Owlean|Owlite|Skyrant|Starbeak|Swonder|Berrong|Blizard|Chactiva|Frogain|Frogave|Lilizard|Metaforma|Metamorpha|Mushmid|Mushmidol|Nimfizard|Plataurora|Platazul|Rewardino|Stridesert|Torterran|Aromalli|Caprieel|Caregaroo|Clairgaroo|Cucunet|Deepus|Drawanta|Drawight|Fishorse|Gluminor|Kilphin|Kilpink|Lavarp|Mernetid|Pondire|Sharkhon|Swampus|Centom|Cocoroch|Finhead|Flareetle|Gemantis|Glowyrm|Hoflora|Hofume|Housilk|Lunantula|Magicadas|Mentimidae|Rosaroch|Stellaling|Wallowyrm|Waspike|Wizadas|Behewant|Blankin|Cyaniu|Doublagon|Draksid|Duplagon|Fafkeen|Goldeniu|Healathan|Newtyrant|Nidknight|Nidmight|Platinodon|Revivathan|Rockin|Throboros|Throiamet|Wyfin|Bustosaur|Duckaiser|Eggorgeous|Solaroller|Swimmah|Wolture|Yormovent)\b/g, '<em>$1</em>')
+          .replace(/\b(must|cannot|may|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*VPs?|\d+\s*cards?|\d+\s*resources?|\d+\s*Eggs?|\d+\s*Trophies?|\d+\s*players?|\d+\s*spaces?|\d+\s*slots?|\d+\s*icons?|\d+\s*points?|\d+\s*levels?|\d+\s*types?|\d+\s*colors?|\d+\s*areas?|\d+\s*gears?|\d+\s*tokens?|\d+\s*markers?|\d+\s*trackers?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
+        return `<p>${formatted}</p>${pageRef}`;
+      }
       
       // Check for explicit bullet points first
       if (cleanText.includes('•')) {
