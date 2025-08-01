@@ -427,6 +427,9 @@
           break;
       }
       
+      // Set up navigation buttons for the new tab
+      setupNavigationButtons();
+      
       // Reset selection and update
       const currentIndex = getCurrentIndex();
       const steps = getCurrentSteps();
@@ -553,6 +556,34 @@
       return `<ul>${bulletPoints}</ul>${pageRef}`;
     }
 
+    // Function to set up navigation button event listeners
+    function setupNavigationButtons() {
+      // Remove existing event listeners by cloning and replacing buttons
+      const newUpButton = upButton.cloneNode(true);
+      const newDownButton = downButton.cloneNode(true);
+      upButton.parentNode.replaceChild(newUpButton, upButton);
+      downButton.parentNode.replaceChild(newDownButton, downButton);
+      upButton = newUpButton;
+      downButton = newDownButton;
+      
+      // Add event listeners to new buttons
+      upButton.addEventListener('click', () => {
+        const steps = getCurrentSteps();
+        const currentIndex = getCurrentIndex();
+        const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      });
+
+      downButton.addEventListener('click', () => {
+        const steps = getCurrentSteps();
+        const currentIndex = getCurrentIndex();
+        const newIndex = (currentIndex + 1) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      });
+    }
+
     // Tab click handlers
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
@@ -575,21 +606,8 @@
       }
     });
 
-    upButton.addEventListener('click', () => {
-      const steps = getCurrentSteps();
-      const currentIndex = getCurrentIndex();
-      const newIndex = (currentIndex - 1 + steps.length) % steps.length;
-      setCurrentIndex(newIndex);
-      updateSelection();
-    });
-
-    downButton.addEventListener('click', () => {
-      const steps = getCurrentSteps();
-      const currentIndex = getCurrentIndex();
-      const newIndex = (currentIndex + 1) % steps.length;
-      setCurrentIndex(newIndex);
-      updateSelection();
-    });
+    // Set up initial navigation buttons
+    setupNavigationButtons();
 
     // Initialize
     updateSelection();
