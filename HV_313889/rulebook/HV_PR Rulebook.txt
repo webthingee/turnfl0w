@@ -1,0 +1,379 @@
+                                                        Rulebook
+
+
+
+
+Introduction
+The heavens have split open, and new evils have come rushing out. Pluto’s deadly games with the realm of mankind have just
+changed forever.
+Pandora’s Ruin brings a wealth of new content to the world of Hoplomachus: Victorum, adding to the vast options offered
+by the core game. This expansion features new scions, new arena rules, new primus events, scion-specific events, and an
+expedited play mode.
+The content of this box is broken up into five different modules, as detailed in this book. The modules can be added to your
+game of Hoplomachus: Victorum individually or all together.
+
+
+
+                    chiptheorygames.com
+                    ©2024 All Rights Reserved Chip Theory Games                                                           v1.0
+    Faces of Evil
+    Faces of Evil adds four new scions to your game, some from the franchise’s existing mythologies and some from
+    lands and myths previously unexplored in Hoplomachus.
+
+
+    Components
+
+    THE CHAOS DRAGON
+
+
+
+
+    Scion Unit Chip (Thick)        Centaur Unit Chips (3)           Scion Bane Chip             Scion Reference Card
+
+    SET
+
+
+
+
+                 10 Scion Unit Chips (Thick)                        Scion Bane Chip             Scion Reference Card
+
+    CROM DUBH
+
+
+
+
+           2 Scion Unit Chips (Thick)                               Scion Bane Chip             Scion Reference Card
+
+    HUNDUN
+
+
+
+
+    Scion Unit Chip (Thick)                                         Scion Bane Chip             Scion Reference Card
+
+
+    Rules
+    Add the components for the four new scions from this expansion in with the components for the existing scions
+    from Hoplomachus: Victorum. When choosing a scion during Rival Setup, you may choose any of the four scions from
+    this expansion in place of a scion from the base game box. Gather all of the components for the chosen scion as listed
+    in the Contents section. Carry out the rest of setup and the game as normal.
+
+
+2
+Dark Days
+The world is changing. Evil is seeping through the cracks that separate the gods from the mortals, and that evil is
+working its way across the land, infecting everywhere you’ve ever been or might wish to go. Dark Days introduces
+scion-specific event cards to shuffle into your existing event decks. Your chosen scion’s presence will be felt throughout
+your game, providing extra challenges and difficult scenarios well before you come face-to-face with your foe.
+
+
+Components
+
+
+
+
+Special Unit Chips (10)     Special Tactic Chips (7)           Event Cards (117)              Prowess Cards (13)
+                                                            • 39 Sport Event Cards
+                                                         • 39 Bloodshed Event Cards
+                                                       • 39 Opportunity Event Cards
+Rules
+Place the new special units and tactics in any empty space available in a chip tray, and add the new special prowesses
+in with the existing ones. Keep the event cards from this expansion sorted by scion and separate from the rest of
+your event cards. The name of the scion is listed at the top of the card. After selecting the scion you will face in Rival
+Setup, find the nine event cards associated with the selected scion. There should be three of each event type—Sport,
+Opportunity, and Bloodshed. Shuffle these events into the appropriate decks. Carry out the rest of setup and the
+game as normal.
+
+
+
+Strange Sands
+Step into once-familiar arenas to discover new secrets in each locale. This set of arena cards adds a brand-new way to
+play each arena, featuring the arena’s original rules on one side and its new rules on the other. The new arena rules
+will challenge you to diversify your tactics as you reckon with a plethora of new, diabolical forces.
+
+
+Components
+
+
+
+
+  Double-Sided Arena Reference Cards (8)                    2 Arena Elite Chips (Thick)            Arena Chips (7)
+
+
+
+Rules
+Replace the four arena references that came in Hoplomachus: Victorum with the eight from this expansion. Each time
+you move into a new region, take that region’s arena reference and place it with side A face up. When you enter into
+a combat, use the side of the arena reference that is face up. At the end of each combat, flip the arena reference to its
+other side. Therefore, until you leave that region, your combats will alternate between side A and side B.
+
+
+
+                                                                                                                             3
+    The Rivals
+    Spice up your act-ending battles against the would-be heroes of the ancient world. The Rivals adds a Primus Event
+    deck to the game, making each primus combat more varied and unique.
+
+
+    Components
+
+
+
+
+                                                 Primus Event Cards (15)
+
+
+    Rules
+    Add the Primus Event deck to your game in addition to the existing event decks. During game setup, shuffle the
+    Primus Event deck and place it face up to the right of the stadium seating. As with the other decks, the top card of
+    the Primus Event deck is meant to be visible, and you may use that information to your advantage leading up to the
+    primus combat. Each time you move to a capital to face a primus, draw the top card from this deck. It is the event
+    card for the primus combat.
+    The following rules regarding primus combats are altered when using this deck:
+        •   Use the lineups on the event card rather than the prescribed lineups in the Hoplomachus: Victorum rulebook.
+        •   Use the Health printed on the primus chips rather than that shown in the rulebook.
+        •   Act modifiers are not ignored in primus combats.
+    Additionally, you may now enter any region’s capital, even if not initiating a primus or scion combat. If you do not
+    initiate a combat, you must spectate. Carry out the steps of spectating as normal, with the primus deck being the
+    deck that corresponds to capital locations. This allows you to cycle the top card and have more control over which
+    primus combats you face.
+
+
+
+
+4
+Mercury’s Boots Rules
+The Mercury’s Boots module for Hoplomachus: Victorum introduces an accelerated way to experience your epic,
+gladiatorial campaign, trimming the journey to a maximum of 24 weeks and speeding things up accordingly in
+a variety of ways. It is recommended that players be familiar with the rules of Hoplomachus: Victorum before
+attempting this way to play, as these rules build off of that understanding.
+
+
+Setup
+The setup steps for Mercury’s Boots are very similar to those of a standard game of Hoplomachus: Victorum. For your
+convenience, we have provided the setup in its entirety so you don’t have to switch between this rulebook and the
+rules for Victorum. Setup steps that differ from Victorum’s normal setup are highlighted in blue.
+
+
+Component Setup                                                10. Hero Tracking Pad. Place the new Mercury’s
+                                                                   Boots hero tracking pad at the top of the game
+    1.   Game Mat and Stadium Seating. Place the                   mat, to the left of the health chips. The base
+         game mat in front of you and the stadium                  game tracking pad is not used.
+         seating directly above it.                            11. Special Prowess. Place the Special Prowess
+    2.   Opportunity Chips. Place face down in the                 cards face down above the game mat, to the
+         center chip slot of the stadium seating. No               right of stadium seating. No randomization
+         randomization is needed.                                  is needed.
+    3.   Faction Unit Chips. Separate by color, not            12. To the Side. Place the following items off the
+         including the heroes, and randomize them.                 game mat but within reach:
+         Stack each group face up in the remaining                      •    A pen or pencil.
+         stadium seating chip slots. Order the factions
+         as follows from left to right: Lamosians,                      •    The Unit Skills reference sheet.
+         Atlanteans, Pluto’s Refugees, New Argonauts,                   •    All of the game’s dice. The Stadium
+         Vesuvians, Amazons, Parthians, and Kunlun.                          Seating also has a dice channel where
+         This matches the order of the regions on the                        you may store the dice you roll most
+         map of the ancient world.                                           frequently.
+    4.   Event Cards. Separate into three separate
+         decks—Sport, Opportunity, and Bloodshed—          Hero Setup
+         and shuffle each one separately. Place the
+         decks face up in the three deck slots in the      Refer to “Hero Details” in the Victorum rulebook for
+         stadium seating, with the Sport deck on the       information and stats for each of the heroes. You’ll need
+         left, the Opportunity deck in the middle, and     information from that section to complete the steps
+         the Bloodshed deck on the right. Draw the top     below.
+         three cards from the Opportunity deck and
+                                                               1.   Hero. Select your troop’s hero. Place your
+         place them face up in your camp.
+                                                                    hero’s chip in your camp—the empty area
+    5.   Chip Trays. Place two on the game mat,                     below the hero tracking pad—with the full art
+         one in the top left corner and one in the top              side face up. The back side of a hero chip, with
+         right corner.                                              stats on it, is ignored. It’s used when that chip is
+    6.   Tactic Chips. Place face up in one row of the              being used as a primus rather than as a hero.
+         left chip tray. No randomization is needed.           2.   Difficulty Level. Choose one of the following
+    7.   Arena Chips. Place face up in another row of               difficulty levels:
+         the left chip tray. No randomization is needed.                •    Chosen: The basic difficulty level. It is
+    8.   Bane Chips. Ensure you have only the                                recommended that players start here
+         standard banes, not the scion banes with red                        and only move up in difficulty when
+         backs. Randomize and place face down in the                         they feel ready for a new challenge.
+         final row of the left chip tray.                               •    Valiant: A higher level of difficulty
+    9.   Health Chips. Place all of the red and blue                         for experienced players looking for a
+         health chips in the right chip tray, sorted                         tougher campaign.
+         by color.
+
+
+
+                                                                                                                           5
+             •   Fearless: The hardest difficulty, for        The Hero Elevation step is critical to your success on this
+                 expert players who want a heightened         quickened journey. Your acts are much shorter and the
+                 challenge.                                   difficulty will rise much faster, so you’ll need some amount
+    3.   Hero Prowess. If playing with a hero that has        of strength when starting the game. However, blessings
+         additional starting prowesses (such as Aprilis       still provide important protection from failure, so spending
+         or neutral heroes from Pandora’s Might), gain        too many is a risky choice. Think carefully about your
+         those prowesses now.                                 decisions during this step!
+
+    4.   Hero Tracking Pad. Fill in the following
+         information for your hero on your tracking           Rival Setup
+         pad: Name, Movement, Range, Class, Health,
+         Leadership, and Attack. Set your hero’s                  1.   Scion. Review all of the Scion reference
+         Opportunity Capacity, indicated by the       icon,            cards and choose which one you will face in
+         to 3, and their Navigation Stat, indicated by the             your campaign. Place the chip for the chosen
+            icon, to 1. Start with a number of blessings               scion in the rightmost individual chip slot in
+         according to your chosen difficulty level:                    the stadium seating, and its card with your
+                                                                       reference sheets. Return the other scion chips
+             •   Chosen: Start with ten blessings.                     and cards to the box.
+             •   Valiant: Start with eight blessings.             2.   Scion Banes. Under the scion’s name on the
+             •   Fearless: Start with six blessings.                   scion reference card is the name of the scion
+                                                                       bane(s) associated with it. Place the identified
+    5.   Hero Health. Place a number of red health
+                                                                       scion bane chip(s) into the draw bag. Return all
+         chips under your hero chip equal to your hero’s
+                                                                       other scion bane chips to the box.
+         Health stat.
+                                                                  3.   Primuses. Place all seven unused primuses
+    6.   Neutral Units. From the supply of neutral
+                                                                       in easy reach near the stadium seating with
+         units, find one of each of the neutral units
+                                                                       their stat sides face up. The order in which
+         listed in your hero’s details and place them in
+                                                                       they are placed does not matter. If playing with
+         your camp.
+                                                                       expansions (including using Remastered heroes
+    7.   Tactics. From the supply of tactics, find one                 as primuses), use seven primuses total and
+         of each of the three tactics listed in your hero’s            include no more than one primus from each
+         details, and place them in your camp.                         region. Return the rest of the hero chips
+    8.   Arena. Find the arena reference card that                     to the box.
+         matches your hero’s home region and place it             4.   Bag Units. Place the remaining neutral units
+         on the marked spot on the left side of the game               into the draw bag. Then, place the first unit
+         mat. Then, find the arena mat depicted and                    from each faction stack into the draw bag.
+         place it in the center of the game mat. Note
+         that the cards and mats are double-sided, so
+         you may need to look at both sides to find the
+         arena you are looking for. Place the remaining
+         arena mats and cards to the side within reach.
+    9.   Encampment. On the game mat’s map of the
+         ancient world, place the brass encampment
+         token on the capital space (depicting a unique
+         structure) of your hero’s home region. This is
+         your starting location.
+    10. Hero Elevation. You may spend any number
+        of your blessings at this time. For each blessing
+        spent, take one of the following rewards:
+             •   Gain a hero stat upgrade
+                 (Health, Attack, Leadership,
+                 Navigation, or Opportunity Capacity).
+             •   Gain a hero prowess.
+             •   Recruit the front unit of any faction
+                 stack.
+
+
+
+6
+Gameplay
+The goal of Mercury’s Boots remains the same as Victorum’s goal: to grow strong and defeat the scion lurking atop
+Vesuvius before your time is up. A number of aspects of that journey, however, have changed. These changes are
+outlined below.
+
+
+The Structure of Play
+You now have a maximum of 24 weeks to complete this journey, with each act taking six weeks instead of 12.
+As an additional structural change, you no longer face primuses at the end of each act, instead facing them whenever
+you wish. See the Primuses section for more details on this.
+You must play through the full six weeks of Acts I, II, and III, and you simply move into the next act once you’ve
+finished the previous one. You can end an act on any location.
+Scion influence gain is still tied to your current act, but difficulty modifiers within the game are not and are instead
+tied to the number of primuses you have defeated.
+As normal, you must wait until Act IV to face the scion, and you must face and defeat the scion before the end of Act
+IV in order to win the game!
+
+
+Navigation
+Your Navigation Stat determines how many map spots you can travel during each Travel Phase. This allows you to
+traverse the land faster. It can be upgraded to a maximum of 4.
+You must move at least one spot during the Travel Phase, but you are not required to use your full Navigation. As
+normal, you cannot travel back along the path you most recently traveled. There is no exception to this at the start
+of each act, unlike in the base game. You also cannot move onto or through the same location twice in the same
+Travel Phase.
+You may move over capital locations. Only finishing your Travel Phase on a capital location triggers a primus/scion
+fight. You cannot land on a capital location if there is not a primus/scion to fight there.
+You must land on a harbor in order to use it; you cannot use a harbor mid-navigation.
+
+
+Opportunities
+When you accept an Opportunity event, draw up to three cards from the Opportunity Deck, ensuring you do not
+exceed your Opportunity Capacity as indicated on your hero tracking pad. Your Opportunity Capacity can be
+upgraded to a maximum of 5. Keep all Opportunity cards in your camp face up. Ignore all text on the face of the card
+with the exception of the reward text. Opportunities can be used in two different, new ways in Mercury’s Boots.
+First, you may discard an Opportunity card during combat directly after any die roll. This causes the entire roll to be
+re-rolled. You must either accept the new roll or spend another Opportunity for another re-roll. This re-roll happens
+before any skill or effect is triggered off of the die roll. Any die roll during combat can be re-rolled, whether on behalf
+of the player, the rival, or even rolls not tied to a specific troop. This includes attacks as well as die rolls as part of
+skill or event resolution.
+The second use of Opportunity cards is that they can be spent when collecting primus rewards in order to obtain the
+reward on the card. See the Primus Rewards section for more details.
+
+
+Sport Events
+When the tribune is defeated, your hero’s HP is not reduced. Instead, you immediately gain scion influence equal to
+the current act.
+When you win a Sport event, you are granted both rewards of recruiting a rival unit and gaining tactics, rather than
+only one of these rewards.
+
+
+
+
+                                                                                                                              7
+    Bloodshed Events
+    Bloodshed events are carried out as normal. When you win a Bloodshed event, increasing your Navigation Stat or
+    Opportunity Capacity are new reward options you may choose, in addition to the already existing upgrade options.
+    You still only get one reward in total.
+
+
+    Primuses
+    You may challenge any number of primuses, up to all seven, during your journey. Challenging a primus requires
+    landing on a capital location containing an undefeated primus, as normal.
+    Defeating a primus grants massive rewards which help your hero take a big step forward. However, doing so
+    also marks an increase in difficulty for the rest of the game. Be sure to look over the reference sheet carefully to
+    understand the risks and rewards.
+    For events that require a random unused primus, if you have no unused primuses (from Hoplomachus: Remastered
+    or expansions), use a random defeated primus. If none are defeated, use a random undefeated primus but return it
+    with the other undefeated primuses at the end of the event.
+
+    PRIMUS LINEUP                                                 Hero Stat Upgrade
+    The reference sheet dictates the lineups for each primus      The stats that can be upgraded match those that can be
+    fight you take on. Use the lineup shown in the first          upgraded in successful Bloodshed events: Attack (add
+    circle not covered. Use the Health Stat printed on the        or upgrade a die), Leadership, Health, Navigation, or
+    primus chip for primuses. After defeating a primus,           Opportunity Capacity.
+    place their chip on the circle you referred to on the
+    reference sheet. This acts as a reminder of how many
+                                                                  Opportunity Reward
+    primuses you have defeated and is an easy indication of
+    which lineup to use for the next primus fight.                To gain an opportunity reward, discard any Opportunity
+                                                                  in your camp and collect the reward listed on it.
+    PRIMUS MODIFIERS
+                                                                  Recruit a Rival
+    Each time you defeat a primus, you add a modifier
+    which applies to all combats for the remainder of the         You may recruit a rival unit in the same way as you
+    game, including primus combats, with the exception of         would when resolving a Sport event reward, recruiting
+    the scion combat. Primus modifiers are cumulative.            any non-elite rival unit from among the rival’s defeated
+    If an event card instructs you to ignore act modifiers,       units or those still in the arena from that combat.
+    ignore primus modifiers for that event instead.
+                                                                  SCION COMBAT
+    PRIMUS REWARDS
+                                                                  In Mercury’s Boots, ignore the “Pluto’s Domain” section
+    When you would gain your reward for defeating a               on the Vesuvians arena reference which adds banes equal
+    primus, see the reference sheet which outlines your           to the number of Vesuvians left in the faction stack.
+    reward options. These replace the normal reward.              Instead, gain one bane for each primus you have left
+    You receive four total rewards each time you defeat           undefeated.
+    a primus, with several rewards offering two options.
+    Working down the list from top to bottom, select your
+    four rewards in order.
+
+    Integrating Expansions
+    All expansions compatible with Hoplomachus: Victorum, such as Aprilis and the Fool, Pandora’s Might, and the
+    other modules from the Pandora’s Ruin expansion, are also compatible with Mercury’s Boots. Simply follow the
+    expansion instructions for details on how to integrate the various modules, as the instructions are the same for
+    Mercury’s Boots as they are for the base game. You can also integrate Hoplomachus: Remastered with Mercury’s Boots
+    using the instructions found in the Integrating Hoplomachus PDF. This document can be found and printed at
+    chiptheorygames.com/support.
+
+
+8
+

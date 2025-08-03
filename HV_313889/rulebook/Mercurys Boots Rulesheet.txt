@@ -1,0 +1,198 @@
+The Mercury’s Boots expansion for                       begins with 10 blessings. Your hero’s
+Hoplomachus: Victorum introduces an                     Opportunity Capacity, indicated by the
+accelerated way to experience the epic,                     icon, starts at 3. Your hero’s starting
+gladiatorial campaign, trimming the journey             Navigation Stat, indicated by the        icon,
+to a maximum of 24 weeks and speeding                   is 1.
+things up accordingly in a variety of ways. It
+is recommended that players be familiar with          • Tactics. Follow the instructions for
+the rules of Hoplomachus: Victorum before               Chosen/Valiant difficulty, taking the
+attempting this way to play, as these rules build       three tactics listed for your hero.
+off of that understanding.
+                                                    Rival Setup
+Components                                            • Scion Banes. Rather than placing the
+                                                        scion’s bane(s) in the bane stack, place
+  • 1 Hero Tracking Pad                                 them directly in the draw bag.
+  • 1 Reference Sheet                                 • Primuses. Rather than selecting three
+                                                        primuses, place all seven unused
+                                                        primuses near the stadium seating in
+Setup
+                                                        easy reach. If playing with expansions
+Carry out setup as normal with the following            (including using Remastered heroes as
+changes to the indicated steps:                         primuses), use seven primuses total and
+                                                        include no more than one primus from
+                                                        each region.
+Component Setup
+Hero Tracking Pad. Use the new hero                   • Bag units. As normal, place the five
+tracking pad included with this expansion.              remaining neutral units into the draw
+                                                        bag. Then, place the first unit from each
+                                                        faction stack into the draw bag.
+Hero Setup
+  • Difficulty Level. Do not choose a
+    difficulty level.
+  • Hero Prowess. Skip gaining hero
+    prowess for the time being.
+  • Hero Tracking Pad. Fill in your hero’s
+    name, Movement, Range, Class, Health,
+    Leadership, and Attack as normal. Skip
+    all difficulty level adjustments. Your hero
+New Setup Steps
+  • Opportunities. Gain the top three cards
+    from the Opportunity deck and place
+    them face up in your camp.
+  • Hero Ascension. You may spend any
+    number of your blessings at this time.
+    For each blessing spent, take one of the
+    following rewards:
+     ◊ Gain a hero stat upgrade (Health,
+       Attack, Leadership, Navigation, or
+       Opportunity Capacity).
+     ◊ Gain a hero prowess.
+     ◊ Recruit the front unit of any faction
+       stack.
+The Hero Ascension step is critical to your
+success on this quickened journey. Your acts
+are much shorter and the difficulty will rise
+much faster, so you’ll need some amount of
+strength when starting the game. However,
+blessings still provide important protection
+from failure, so spending too many is a risky
+choice. Think carefully about your decisions
+during this step!
+
+
+Gameplay
+The goal of Mercury’s Boots remains the same    See “Primuses” below for more details on this.
+as Victorum: Grow strong and defeat the         Instead, you can end an act on any location,
+scion lurking at Vesuvius before your time      and you simply move into the next act once
+is up. A number of aspects of that journey,     you’ve finished the previous one.
+however, have changed. These changes are
+outlined below.                                 Scion influence gain is still tied to your current
+                                                act, but difficulty modifiers within the game
+The Structure of Play                           are not and are instead tied to the defeat of
+You now have a maximum of 24 weeks to           primuses.
+complete this journey, with each act taking 6
+weeks instead of 12.                            As normal, you must wait until Act IV to face
+                                                the scion, and you must face and defeat the
+As an additional structural change, you no      scion before the end of Act IV in order to win
+longer face primuses at the end of each act.    the game!
+Navigation                                      You may move over capital locations. Only
+Your Navigation Stat determines how many        finishing your Travel Phase on a capital
+map spots you can travel during each Travel     location will trigger a primus/scion fight. You
+Phase. This allows you to traverse the land     cannot land on a capital location if there is not
+faster. It can be upgraded to a maximum of 4.   a primus/scion to fight there.
+
+
+You must move at least one spot during the      You must land on a harbor in order to use it;
+Travel Phase, but are not required to use       you cannot use a harbor mid-navigation.
+your full Navigation. As normal, except at
+the start of each act when you can move in      Opportunities
+any direction, you cannot travel back along     When you accept an Opportunity event, draw
+the path you most recently traveled. You        up to three cards from the Opportunity Deck,
+also cannot move onto or through the same       ensuring you do not exceed your Opportunity
+location twice in the same Travel Phase.        Capacity as indicated on your hero tracking
+                                                pad. Your Opportunity Capacity can be
+                                                upgraded to a maximum of 5.
+
+                                                Keep all Opportunity cards in your camp
+                                                face up. Ignore all text on the face of the
+                                                card with the exception of the reward text.
+                                                Opportunities can be used in two different,
+                                                new ways in Mercury’s Boots. First, you may
+                                                discard an Opportunity card during combat
+                                                directly after the die roll of any non-scion unit
+                                                – yours or a rival. This causes the entire roll
+                                                to be re-rolled. You must accept the new roll
+                                                (or spend another Opportunity for another
+                                                re-roll). This re-roll happens before any skill
+                                                or effect is triggered off of the die roll. Any die
+                                                roll can be re-rolled including attacks, die rolls
+                                                as part of skill resolution, or as part of an event
+                                                resolution.
+
+                                                Second, Opportunities can be spent when
+                                                collecting primus rewards for the reward
+                                                on the card. See “Primus Rewards” for more
+                                                details.
+Sport Events                                       Primus Lineup
+When the tribune is defeated, your hero’s HP       The Primus Sheet dictates the lineups
+is not reduced. Instead, you immediately gain      for each primus fight you take on. Use
+scion influence equal to the current act.          the lineup shown in the first circle not
+                                                   covered. Use the Health stat printed
+When you win a Sport event, you are granted        on the primus chip for primuses. After
+both rewards of recruiting a rival unit and        defeating a primus, place their chip on
+gaining tactics, rather than only one of these     that circle. This acts as a reminder of how
+rewards.                                           many primuses you have defeated, and an
+                                                   easy indication of which lineup to use for
+                                                   the next primus fight.
+Bloodshed Events
+Bloodshed events are carried out as normal.
+When you win a Bloodshed event, increasing
+your Navigation Stat or Opportunity Capacity
+are new reward options you may choose,
+in addition to the already existing upgrade
+options. You still only get one reward in total.
+
+Primuses
+You may challenge any number of primuses,
+up to all 7, during your journey.
+Challenge a primus as normal,
+by landing on a capital location
+containing an undefeated
+primus.
+
+Defeating a primus grants
+massive rewards which will help
+your hero take a big step forward.
+However, doing so also marks an
+increase in difficulty for the rest of the
+game. Be sure and look over the Primus
+Sheet carefully to understand the risks and
+rewards.
+
+For events that require a random
+unused primus, if you have
+no unused primuses (from
+Remastered or expansions), use
+a random defeated primus. If none
+are defeated, use a random undefeated
+primus but return it with the other
+undefeated primuses at the end of the event.
+Primus Modifiers                                 Scion Combat
+Each time you defeat a primus, you add a         In Mercury’s Boots, ignore the “Pluto’s
+modifier which will apply to all combats for     Domain” section on the Vesuvians arena
+the remainder of the game, including primus      reference which adds banes equal to the
+combats, with the exception of the scion         number of Vesuvians left in the faction stack.
+combat. Primus modifiers are cumulative.
+If an event card instructs you to ignore act     Instead, gain 1 bane for each primus you have
+modifiers, ignore primus modifiers for that      left undefeated.
+event.
+
+Primus Rewards
+When you would gain your reward for
+defeating a primus, see the Primus Sheet which
+outlines your reward options. This replaces
+the normal reward. You will receive four total
+rewards each time you defeat a primus, with
+several rewards offering two options. Working
+down the list, select your four rewards.
+
+Hero Stat Upgrade
+The stats that can be upgraded match
+those that can be upgraded in successful
+Bloodshed events: Attack (add or upgrade
+a die), Leadership, Health, Navigation, or
+Opportunity Capacity.
+
+   Opportunity Reward
+   To collect an opportunity reward, discard
+   any opportunity in your camp and collect
+   the reward listed on it.
+
+   Recruit a Rival
+   You may recruit a rival unit in the same
+   way as you would when resolving a Sport
+   event reward, recruiting any non-elite
+   rival unit from among the rival’s defeated
+   units or those still in the arena from that
+   combat.
+

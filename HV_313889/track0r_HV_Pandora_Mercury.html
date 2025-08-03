@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoplomachus Victorum - Pandora Expansion (Mercury Boots)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .details .navigation {
+      background: transparent;
+      backdrop-filter: none;
+      padding: 0 0 15px 0;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    .navigation button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .navigation button:hover {
+      background: #2980b9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .tabs {
+      display: flex;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .tab {
+      flex: 1;
+      padding: 15px 20px;
+      background: transparent;
+      border: none;
+      color: #ecf0f1;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab.active {
+      background: rgba(52, 152, 219, 0.3);
+      border-bottom-color: #3498db;
+      color: #ffffff;
+    }
+
+    .tab:hover:not(.active) {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .tab-content {
+      display: none;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      height: 100%;
+      max-height: calc(100vh - 140px);
+    }
+
+    .selector {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.95);
+      border-right: 2px solid #bdc3c7;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .details {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.95);
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .step {
+      background: white;
+      margin: 8px 0;
+      padding: 12px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-left: 4px solid #3498db;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .step:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .step.selected {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      transform: translateX(10px);
+      box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+    }
+
+    .substep {
+      background: #f8f9fa;
+      margin: 6px 0 6px 20px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border-left: 3px solid #95a5a6;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .substep:hover {
+      transform: translateX(3px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .substep.selected {
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      color: white;
+      transform: translateX(5px);
+      box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4);
+    }
+
+    .player-turn {
+      border-left-color: #3498db;
+    }
+
+    .player-turn.selected {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+    }
+
+    .tingent-turn {
+      border-left-color: #e74c3c;
+    }
+
+    .tingent-turn.selected {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-size: 24px;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+      color: #2c3e50;
+    }
+
+    ul {
+      margin: 12px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    strong {
+      color: #e74c3c;
+      font-weight: 700;
+    }
+
+    em {
+      color: #3498db;
+      font-style: italic;
+    }
+
+    .page-ref {
+      background: #ecf0f1;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #7f8c8d;
+      font-weight: 600;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .rulebook-image {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .rulebook-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: 2px solid #ecf0f1;
+    }
+
+    .image-caption {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      font-style: italic;
+      text-align: center;
+    }
+
+    .skill-type {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    .skill-type.innate {
+      background: #e74c3c;
+      color: white;
+    }
+
+    .skill-type.special {
+      background: #3498db;
+      color: white;
+    }
+
+    .skill-type.ability {
+      background: #f39c12;
+      color: white;
+    }
+
+    @media screen and (max-width: 926px) and (orientation: landscape) {
+      body {
+        height: 100vh;
+        overflow: hidden;
+      }
+      
+      .container {
+        height: calc(100vh - 120px);
+        max-height: none;
+      }
+      
+      .selector, .details {
+        font-size: 12px;
+        padding: 10px;
+      }
+      
+      .step {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+      
+      .substep {
+        padding: 6px 8px;
+        font-size: 12px;
+      }
+      
+      .navigation button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+      
+      .tab {
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" data-tab="setup">Setup</button>
+    <button class="tab" data-tab="turn-flow">Turn Flow</button>
+    <button class="tab" data-tab="key-terms">Key Terms</button>
+    <button class="tab" data-tab="unit-skills">Unit Skills</button>
+    <button class="tab" data-tab="appendix">Appendix</button>
+  </div>
+  
+  <div class="tab-content active" id="setup">
+    <div class="container">
+      <div class="selector" id="list">
+        <div class="step selected" data-detail="Begin setup for Hoplomachus Victorum with Pandora expansion using Mercury Boots ruleset. This accelerated mode features 24-week maximum campaign with 6-week acts instead of 12-week acts. You start with 10 blessings and must defeat the scion before time runs out. (Mercury Boots Rulesheet p. 1)">1. Game Setup Overview</div>
+        
+        <div class="substep" data-detail="Use the new hero tracking pad included with Mercury Boots expansion. This pad is specifically designed for the accelerated gameplay and includes sections for tracking blessings, navigation stats, and opportunity capacity. (Mercury Boots Rulesheet p. 2)">1.1 Component Setup - Hero Tracking Pad</div>
+        
+        <div class="substep" data-detail="Do not choose a difficulty level for Mercury Boots mode. The difficulty will increase automatically as you defeat primuses throughout the game. Skip gaining hero prowess during initial setup - you'll gain these during Hero Ascension. (Mercury Boots Rulesheet p. 3)">1.2 Hero Setup - Difficulty & Prowess</div>
+        
+        <div class="substep" data-detail="Fill in your hero's name, Movement, Range, Class, Health, Leadership, and Attack as normal on the tracking pad. Skip all difficulty level adjustments since Mercury Boots doesn't use difficulty levels. Your hero starts with base stats. (Mercury Boots Rulesheet p. 3)">1.3 Hero Setup - Basic Stats</div>
+        
+        <div class="substep" data-detail="Your hero begins with 10 blessings for protection from failure. Your Opportunity Capacity starts at 3 (indicated by the icon). Your Navigation Stat starts at 1 (indicated by the icon). These can be upgraded during gameplay. (Mercury Boots Rulesheet p. 2)">1.4 Hero Setup - Blessings & Stats</div>
+        
+        <div class="substep" data-detail="Follow the instructions for Chosen/Valiant difficulty when selecting tactics. Take the three tactics listed for your hero. These provide your starting combat abilities and can be upgraded throughout the campaign. (Mercury Boots Rulesheet p. 3)">1.5 Hero Setup - Tactics</div>
+        
+        <div class="substep" data-detail="Rather than placing the scion's bane(s) in the bane stack, place them directly in the draw bag. This makes them immediately available for drawing during combat. The scion's influence will still be felt throughout the game. (Mercury Boots Rulesheet p. 4)">1.6 Rival Setup - Scion Banes</div>
+        
+        <div class="substep" data-detail="Rather than selecting three primuses, place all seven unused primuses near the stadium seating in easy reach. If playing with expansions (including Remastered heroes as primuses), use seven primuses total and include no more than one primus from each region. (Mercury Boots Rulesheet p. 4)">1.7 Rival Setup - Primuses</div>
+        
+        <div class="substep" data-detail="Place the five remaining neutral units into the draw bag as normal. Then, place the first unit from each faction stack into the draw bag. This ensures a good mix of units available for recruitment during the campaign. (Mercury Boots Rulesheet p. 4)">1.8 Rival Setup - Bag Units</div>
+        
+        <div class="substep" data-detail="Gain the top three cards from the Opportunity deck and place them face up in your camp. These represent immediate opportunities available to your hero. You can hold up to your Opportunity Capacity (starting at 3) in your camp. (Mercury Boots Rulesheet p. 5)">1.9 New Setup - Opportunities</div>
+        
+        <div class="substep" data-detail="You may spend any number of your 10 blessings at this time. For each blessing spent, take one of the following rewards: Gain a hero stat upgrade (Health, Attack, Leadership, Navigation, or Opportunity Capacity), Gain a hero prowess, or Recruit the front unit of any faction stack. This step is critical for success in the accelerated journey. (Mercury Boots Rulesheet p. 5)">1.10 New Setup - Hero Ascension</div>
+      </div>
+      <div class="details" id="details">
+        <div class="navigation">
+          <button id="upButton">↑ Previous</button>
+          <button id="downButton">↓ Next</button>
+        </div>
+        <h2>Details</h2>
+        <p id="detailText">Begin setup for Hoplomachus Victorum with Pandora expansion using Mercury Boots ruleset. This accelerated mode features 24-week maximum campaign with 6-week acts instead of 12-week acts. You start with 10 blessings and must defeat the scion before time runs out. (Mercury Boots Rulesheet p. 1)</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="turn-flow">
+    <div class="container">
+      <div class="selector" id="list2">
+        <div class="step" data-detail="The goal remains the same as Victorum: grow strong and defeat the scion lurking at Vesuvius before your time is up. You have a maximum of 24 weeks to complete this journey, with each act taking 6 weeks instead of 12. The structure has changed significantly from the base game. (Mercury Boots Rulesheet p. 6)">2. Gameplay Overview</div>
+        
+        <div class="substep" data-detail="Your Navigation Stat determines how many map spots you can travel during each Travel Phase. This allows you to traverse the land faster. It can be upgraded to a maximum of 4. You must move at least one spot during the Travel Phase, but are not required to use your full Navigation. (Mercury Boots Rulesheet p. 7)">2.1 Travel Phase - Navigation</div>
+        
+        <div class="substep" data-detail="As normal, except at the start of each act when you can move in any direction, you cannot travel back along the path you most recently traveled. You also cannot move onto or through the same location twice in the same Travel Phase. You may move over capital locations. (Mercury Boots Rulesheet p. 7)">2.2 Travel Phase - Movement Rules</div>
+        
+        <div class="substep" data-detail="Only finishing your Travel Phase on a capital location will trigger a primus/scion fight. You cannot land on a capital location if there is not a primus/scion to fight there. You must land on a harbor in order to use it; you cannot use a harbor mid-navigation. (Mercury Boots Rulesheet p. 7)">2.3 Travel Phase - Capital Locations</div>
+        
+        <div class="substep" data-detail="When you accept an Opportunity event, draw up to three cards from the Opportunity Deck, ensuring you do not exceed your Opportunity Capacity as indicated on your hero tracking pad. Your Opportunity Capacity can be upgraded to a maximum of 5. (Mercury Boots Rulesheet p. 8)">2.4 Event Phase - Opportunities</div>
+        
+        <div class="substep" data-detail="Keep all Opportunity cards in your camp face up. Ignore all text on the face of the card with the exception of the reward text. Opportunities can be used in two different, new ways in Mercury Boots. (Mercury Boots Rulesheet p. 8)">2.5 Event Phase - Opportunity Management</div>
+        
+        <div class="substep" data-detail="You may discard an Opportunity card during combat directly after the die roll of any non-scion unit – yours or a rival. This causes the entire roll to be re-rolled. You must accept the new roll (or spend another Opportunity for another re-roll). This re-roll happens before any skill or effect is triggered off of the die roll. (Mercury Boots Rulesheet p. 8)">2.6 Combat - Opportunity Re-rolls</div>
+        
+        <div class="substep" data-detail="Opportunities can be spent when collecting primus rewards for the reward on the card. See Primus Rewards section for more details. This provides additional strategic options when defeating primuses. (Mercury Boots Rulesheet p. 8)">2.7 Combat - Opportunity Rewards</div>
+        
+        <div class="substep" data-detail="When the tribune is defeated, your hero's HP is not reduced. Instead, you immediately gain scion influence equal to the current act. When you win a Sport event, you are granted both rewards of recruiting a rival unit and gaining tactics, rather than only one of these rewards. (Mercury Boots Rulesheet p. 9)">2.8 Events - Sport Events</div>
+        
+        <div class="substep" data-detail="Bloodshed events are carried out as normal. When you win a Bloodshed event, increasing your Navigation Stat or Opportunity Capacity are new reward options you may choose, in addition to the already existing upgrade options. You still only get one reward in total. (Mercury Boots Rulesheet p. 9)">2.9 Events - Bloodshed Events</div>
+        
+        <div class="substep" data-detail="You may challenge any number of primuses, up to all 7, during your journey. Challenge a primus as normal by landing on a capital location containing an undefeated primus. Defeating a primus grants massive rewards which will help your hero take a big step forward. (Mercury Boots Rulesheet p. 10)">2.10 Combat - Primuses</div>
+        
+        <div class="substep" data-detail="Each time you defeat a primus, you add a modifier which will apply to all combats for the remainder of the game, including primus combats, with the exception of the scion combat. Primus modifiers are cumulative. If an event card instructs you to ignore act modifiers, ignore primus modifiers for that event. (Mercury Boots Rulesheet p. 11)">2.11 Combat - Primus Modifiers</div>
+        
+        <div class="substep" data-detail="When you would gain your reward for defeating a primus, see the Primus Sheet which outlines your reward options. This replaces the normal reward. You will receive four total rewards each time you defeat a primus, with several rewards offering two options. Working down the list, select your four rewards. (Mercury Boots Rulesheet p. 12)">2.12 Combat - Primus Rewards</div>
+        
+        <div class="substep" data-detail="The stats that can be upgraded match those that can be upgraded in successful Bloodshed events: Attack (add or upgrade a die), Leadership, Health, Navigation, or Opportunity Capacity. These upgrades help your hero grow stronger for the challenges ahead. (Mercury Boots Rulesheet p. 12)">2.13 Rewards - Hero Stat Upgrade</div>
+        
+        <div class="substep" data-detail="To collect an opportunity reward, discard any opportunity in your camp and collect the reward listed on it. This provides strategic flexibility in choosing which opportunities to use for rewards. (Mercury Boots Rulesheet p. 12)">2.14 Rewards - Opportunity Reward</div>
+        
+        <div class="substep" data-detail="You may recruit a rival unit in the same way as you would when resolving a Sport event reward, recruiting any non-elite rival unit from among the rival's defeated units or those still in the arena from that combat. This expands your available forces. (Mercury Boots Rulesheet p. 12)">2.15 Rewards - Recruit a Rival</div>
+        
+        <div class="substep" data-detail="In Mercury Boots, ignore the Pluto's Domain section on the Vesuvians arena reference which adds banes equal to the number of Vesuvians left in the faction stack. Instead, gain 1 bane for each primus you have left undefeated. This creates a different strategic challenge. (Mercury Boots Rulesheet p. 13)">2.16 Scion Combat - Bane Generation</div>
+        
+        <div class="substep" data-detail="You no longer face primuses at the end of each act. Instead, you can end an act on any location, and you simply move into the next act once you've finished the previous one. Scion influence gain is still tied to your current act, but difficulty modifiers within the game are not and are instead tied to the defeat of primuses. (Mercury Boots Rulesheet p. 6)">2.17 Game Structure - Act Progression</div>
+        
+        <div class="substep" data-detail="As normal, you must wait until Act IV to face the scion, and you must face and defeat the scion before the end of Act IV in order to win the game! The accelerated timeline makes this more challenging but also more rewarding. (Mercury Boots Rulesheet p. 6)">2.18 Victory Condition - Scion Defeat</div>
+      </div>
+      <div class="details" id="details2">
+        <h2>Details</h2>
+        <p id="detailText2">Select a step to see detailed information.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="key-terms">
+    <div class="container">
+      <div class="selector" id="list4">
+        <div class="step selected" data-detail="An Ability is type of unit skill. Units can only use their Abilities during the Abilities Step of their troop's turn in combat. (Rulebook p. 35)">Ability</div>
+        
+        <div class="substep" data-detail="A campaign is divided into four acts, each of which can last up to 12 weeks. Acts I, II, and III each end with a battle against a primus. Act IV ends with a battle against the campaign's scion. (Rulebook p. 35)">Act</div>
+        
+        <div class="substep" data-detail="Two hexes that share a side are considered adjacent to each other. Units (or other chips) that are on adjacent hexes are adjacent to each other. (Rulebook p. 35)">Adjacent</div>
+        
+        <div class="substep" data-detail="All units belonging to the same troop are allies. The game may define other units as allies as well. Units cannot mark, target, or attack allied units. Units that are not allies are opponents. (Rulebook p. 35)">Ally</div>
+        
+        <div class="substep" data-detail="Units can attack during the Engage Step of their troop's turn. Only opponents can be attacked. When a unit attacks, it rolls all of the dice in its Attack, adds up the number of hits rolled, and deals that amount of damage. (Rulebook p. 35)">Attack</div>
+        
+        <div class="substep" data-detail="A unit's Attack defines the dice it will roll when it attacks. Non-elite units generally have their Attack depicted on their chips. Your hero's Attack is found on the hero tracking pad, while scions have their Attacks defined on their scion reference. (Rulebook p. 35)">Attack (Stat)</div>
+        
+        <div class="substep" data-detail="The dice rolled for attacks. These dice can also be rolled to resolve various skills and other game effects. (Rulebook p. 35)">Attack Dice</div>
+        
+        <div class="substep" data-detail="Banes are chips with negative effects, and are usually accumulated as a result of gaining scion influence. (Rulebook p. 35)">Bane</div>
+        
+        <div class="substep" data-detail="A hex is blocked if it is occupied by a unit, or if the game text defines a hex to be blocked another way. Units cannot move onto or deploy onto blocked hexes. (Rulebook p. 35)">Blocked</div>
+        
+        <div class="substep" data-detail="Your camp is the area where your units, tactics, opportunities, prowesses, etc., are placed when they are not in combat. The rival camp is where rival units and tactics are placed when setting the rival's lineup and where they remain until deployed in combat. (Rulebook p. 35)">Camp</div>
+        
+        <div class="substep" data-detail="A unit's type: Archer, Attacker, Beast, Defender, or Tactician. (Rulebook p. 35)">Class</div>
+        
+        <div class="substep" data-detail="Combat takes place in the Event Phase when you accept a Bloodshed or Sport event or when you face a primus or scion. Combat entails a fight in the arena between your units and rival units. Your troop is victorious in combat by completing an objective. (Rulebook p. 35)">Combat</div>
+        
+        <div class="substep" data-detail="The compass is depicted on the game mat to the right of the arena map. The compass is referred to in skills where a randomized direction is needed, and this is determined by rolling an arena die. The rolled result determines the direction for the skill's effect, as shown on the compass. (Rulebook p. 35)">Compass</div>
+        
+        <div class="substep" data-detail="Units are dealt damage when they are targeted in an attack and hits are rolled. The amount of damage dealt is equal to the number of hits rolled. Units can also be dealt damage from skills and other game effects. Units must remove 1 HP from its stack of health chips for each damage they are dealt unless a skill or game effect allows them to avoid doing so. (Rulebook p. 35)">Damage</div>
+        
+        <div class="substep" data-detail="A unit that is dazed cannot move, attack, use Abilities, or use Specials. Innate skills are unaffected. Units are automatically dazed on the turn they are deployed. (Rulebook p. 35)">Dazed</div>
+        
+        <div class="substep" data-detail="When comparing units, the deadliest unit is the one with the most attack dice in its Attack, regardless of the strength of those dice. This is determined after accounting for any modifiers. (Rulebook p. 35)">Deadliest</div>
+        
+        <div class="substep" data-detail="A unit is defeated when it has no remaining HP or an effect otherwise says that it is defeated. Units are removed from the arena when defeated. Defeated troop units are placed in to their camp face down while defeated arena units are returned to the supply. If your hero is ever defeated, you lose the game. (Rulebook p. 35)">Defeated</div>
+        
+        <div class="substep" data-detail="Deployment is the act of putting a unit from a troop's camp into combat. Each troop deploys a single unit from their lineup during the Deployment Step of their turn. Units must deploy onto one of their troop's deployment hexes. (Rulebook p. 35)">Deployment</div>
+        
+        <div class="substep" data-detail="When a component is discarded, it is returned to its appropriate place in the supply. Unless otherwise noted, a discarded card is placed at the back of its deck, and a discarded chip is placed at the back of its chip stack. Discarded components are placed facing the same direction as the rest of the deck or stack, so they may cycle back into play when the original deck or stack runs out. (Rulebook p. 35)">Discard</div>
+        
+        <div class="substep" data-detail="A unit is displaced if it is moved to a different hex by something other than its own movement or one of its own skills. Displacement is not considered to be movement and will therefore not trigger skills that are triggered by movement. (Rulebook p. 35)">Displace</div>
+        
+        <div class="substep" data-detail="Heroes, primuses, and scions are elite units. These units have thicker chips than non-elite units. Elite units cannot have tactics played on them. (Rulebook p. 35)">Elite</div>
+        
+        <div class="substep" data-detail="Your encampment represents your troop's current location and region on the map of the ancient world. It is marked with the brass encampment chip. (Rulebook p. 35)">Encampment</div>
+        
+        <div class="substep" data-detail="Some chips and dice are identified in game text as being able to be equipped. An example of this is the trident in the Atlantean arena. When a unit equips a chip by moving onto its hex, the unit places the chip beneath its top unit chip but above its HP. When a unit equips a die, it is simply placed on top of the unit. When the unit moves, the equipped chip/die moves with it. Units cannot unequip chips/dice. If the unit is defeated, the equipped chip/die is dropped on the hex that the unit occupied when it was defeated. (Rulebook p. 35)">Equip, Equipped</div>
+        
+        <div class="substep" data-detail="All of the units from a given region make up that region's faction (for example, all Atlantean units are collectively a faction). (Rulebook p. 35)">Faction</div>
+        
+        <div class="substep" data-detail="An event fails when you surrender it or when your entire lineup is defeated. (Rulebook p. 35)">Fail</div>
+        
+        <div class="substep" data-detail="When comparing units, the fastest unit is the one with the highest Movement, after accounting for any modifiers. (Rulebook p. 35)">Fastest</div>
+        
+        <div class="substep" data-detail="A unit that is fatigued cannot move or attack, and all of its skills are ignored including Innate skills. (Rulebook p. 35)">Fatigued</div>
+        
+        <div class="substep" data-detail="The leader of your troop and your most important unit. Your hero is represented by the full-art side of its chip, and its stats and abilities are tracked through the hero tracking pad and gained prowess cards. The campaign is lost if your hero is defeated. Heroes are elite units. (Rulebook p. 35)">Hero</div>
+        
+        <div class="substep" data-detail="Healing allows a unit to recover HP. When healing, a unit cannot exceed its Health. When a unit fully heals, it sets its HP equal to its Health. Note that gaining HP is not considered healing and units can exceed their Health when HP is gained. (Rulebook p. 36)">Heal</div>
+        
+        <div class="substep" data-detail="A unit's Health determines how much HP it is deployed with and the maximum amount of HP that it can heal to. (Rulebook p. 36)">Health (Stat)</div>
+        
+        <div class="substep" data-detail="The face of an attack die with the icon is a hit. When a unit attacks, it rolls the dice in its Attack and deals damage equal to the hits rolled. (Rulebook p. 36)">Hit</div>
+        
+        <div class="substep" data-detail="A unit's HP is how much damage it can take before it is defeated. HP is represented with health chips stacked underneath unit chips. (Rulebook p. 36)">HP</div>
+        
+        <div class="substep" data-detail="Innate is a type of unit skill. Innate skills are active at all times while the unit is in combat. Innate skills may provide passive effects or effects that are triggered by a specific occurrence. (Rulebook p. 36)">Innate</div>
+        
+        <div class="substep" data-detail="A unit is isolated when it has no allies in combat. (Rulebook p. 36)">Isolated</div>
+        
+        <div class="substep" data-detail="Each arena has specific key hexes that are used in King of the Hill events. Occupying a key hex with a unit grants you a point at the start of your turn in these events. In some arenas, the key hexes are permanent and printed on the arena map itself. In others, the key hexes are tied to the location of a specific arena chip. (Rulebook p. 36)">Key Hex</div>
+        
+        <div class="substep" data-detail="Your hero's Leadership determines the maximum number of units, including your hero, that you can have in your troop at once. This encompasses units in your camp (including those defeated), and units in combat. (Rulebook p. 36)">Leadership (Stat)</div>
+        
+        <div class="substep" data-detail="When comparing units, the least deadly unit is the one with the fewest attack dice in its Attack, regardless of the strength of those dice. This is determined after accounting for any modifiers. (Rulebook p. 36)">Least Deadly</div>
+        
+        <div class="substep" data-detail="A lethal combat is one where your defeated units are lost after combat is resolved. Bloodshed, Primus and Scion events are lethal. (Rulebook p. 36)">Lethal</div>
+        
+        <div class="substep" data-detail="A troop's lineup consists of the units that it will use in a particular combat. The rival's lineup is preset by the event, and rival units will deploy in order. Your lineup determines the maximum number of units you can deploy in a given combat and whether your hero is included. However, you are not required to set your lineup in advance; you may choose any unit from your camp to deploy as long as there is space in your lineup for it. (Rulebook p. 36)">Lineup</div>
+        
+        <div class="substep" data-detail="A unit is local if its faction matches the current arena. Local units are granted differing benefits depending on the arena. (Rulebook p. 36)">Local</div>
+        
+        <div class="substep" data-detail="A rival unit's mark is the unit or hex that it moves towards. Its mark is determined by the priority list. Rival units will mark the highest priority in the list that they can reach and move towards it. If they cannot reach any of their priorities, they will move to get as close as possible to the highest priority they can. (Rulebook p. 36)">Mark</div>
+        
+        <div class="substep" data-detail="A unit moves when it changes the hex it occupies. Units most commonly move during the Movement Step of their troop's turn. However, units that change their position due to other skills and effects are still considered to have moved. (Rulebook p. 36)">Move</div>
+        
+        <div class="substep" data-detail="A unit's Movement determines the maximum number of hexes it can move during its troop's Movement Step. (Rulebook p. 36)">Movement (Stat)</div>
+        
+        <div class="substep" data-detail="Units that are not allies oppose each other and are considered opponents. (Rulebook p. 36)">Opponent, Oppose</div>
+        
+        <div class="substep" data-detail="A unit is outnumbered if there are more opponents in the combat than there are units from its own troop (including itself). (Rulebook p. 36)">Outnumbered</div>
+        
+        <div class="substep" data-detail="Primuses are special rival units. Each of the first three acts of your campaign will end with a combat against a primus, which you must successfully complete to continue your campaign. Primuses are represented by the backside of hero chips, which show the primuses' stats. Primuses are elite units. (Rulebook p. 36)">Primus</div>
+        
+        <div class="substep" data-detail="Rival units use a priority list (found on the Arena reference card, or the Scion reference card for scion combat) to determine where they will move and which units they will attack. (Rulebook p. 36)">Priority</div>
+        
+        <div class="substep" data-detail="Prowess cards feature unique powers that heroes can acquire. Each hero has a prowess deck that corresponds only to that hero. There are also Special Prowess cards that can be acquired by completing specific Opportunity cards. (Rulebook p. 36)">Prowess</div>
+        
+        <div class="substep" data-detail="A unit's Range indicates the maximum number of hexes away a target of this unit's attack can be. Range 1 indicates the unit's target must be in an adjacent hex. (Rulebook p. 36)">Range (Stat)</div>
+        
+        <div class="substep" data-detail="A unit can reach a marked unit if it can move onto a hex that is within Range of the mark. It can reach a marked hex if it can move onto the mark. Rival units must determine the highest priority that they can reach when determining their mark. (Rulebook p. 36)">Reach</div>
+        
+        <div class="substep" data-detail="Recruiting a unit adds it to your camp. (Rulebook p. 36)">Recruit</div>
+        
+        <div class="substep" data-detail="A region is a collection of locations on the map of the ancient world that is associated with a given faction (for example, the Atlanteans region). Regions are divided by borders. (Rulebook p. 36)">Region</div>
+        
+        <div class="substep" data-detail="The rival is your figurative enemy in Victorum, as well as a word to describe this enemy's forces (for example, 'rival unit,' 'rival lineup,' etc.). (Rulebook p. 36)">Rival</div>
+        
+        <div class="substep" data-detail="A round of Victorum consists of the Travel Phase, Event Phase, and Cleanup Phase. A round is not the same as a week, as you will not always mark off a week for each round. (Rulebook p. 36)">Round</div>
+        
+        <div class="substep" data-detail="To sacrifice a card or chip is to remove it from your camp. Sacrificed units are placed in the bag and Prowess cards are removed from the game so they cannot be gained again. When sacrificing Prowess cards with levels, you must sacrifice the highest level card of that set that you have. Elite units and camp banes cannot be sacrificed. (Rulebook p. 36)">Sacrifice</div>
+        
+        <div class="substep" data-detail="The scion is the ultimate enemy of the Victorum campaign. You must defeat the scion at the end of your campaign in order to be victorious. Scions are elite units. (Rulebook p. 36)">Scion</div>
+        
+        <div class="substep" data-detail="Scion influence represents the scion's growing effect on you as you proceed further on your quest. Scion influence is tracked on the bottom of the hero tracking pad. Scion influence is most commonly gained when you spectate or fail an event, but it can be gained through other effects as well. Each time a scion influence is gained, cross off the next uncrossed space. Every fourth space contains a bane icon. When those spaces are crossed off, you must gain a bane. (Rulebook p. 36)">Scion Influence</div>
+        
+        <div class="substep" data-detail="Skills are specific exceptional powers that units can have. There are three types of skills: I Innate, A Ability, and S Special. (Rulebook p. 36)">Skill</div>
+        
+        <div class="substep" data-detail="When comparing units, the slowest unit is the one with the lowest Movement, after accounting for any modifiers. (Rulebook p. 36)">Slowest</div>
+        
+        <div class="substep" data-detail="Special is a type of unit skill. Units can only use their Specials during the Engage Step of their troop's turn in combat. Units must choose between using their Special or attacking but cannot do both on the same turn. Specials are not considered attacks, and any damage dealt from a Special is not considered attack damage. (Rulebook p. 37)">Special</div>
+        
+        <div class="substep" data-detail="When comparing units, the strongest unit is the one with the most HP. When comparing dice, the strongest die is the one with the most hit faces. Red dice have the most hit faces, followed by black, green, blue, and yellow, in that order. (Rulebook p. 37)">Strongest</div>
+        
+        <div class="substep" data-detail="To surrender is to quit a Sport or Bloodshed event. Doing so incurs consequences but may be necessary to preserve your units, especially your hero. Events can be surrendered at the start of any turn. A surrendered event is considered to be failed. (Rulebook p. 37)">Surrender</div>
+        
+        <div class="substep" data-detail="Tactics are advantages or hindrances that are applied to units during combat. A troop can play one tactic per turn during their Tactic Placement Step. A troop can play a tactic on any of their own units or on an opponent that is adjacent to one of their units. Tactics cannot be played on elite units. In addition to the four basic tactics of Adrenaline, Bolster Health, Hamstring, and Stun, there are also special tactics that can be acquired by completing specific Opportunity cards. (Rulebook p. 37)">Tactic</div>
+        
+        <div class="substep" data-detail="The maximum number of tactics you may hold in your camp at once is your Tactic Capacity. By default, players have a tactic capacity of 3. The rival does not have a Tactic Capacity. (Rulebook p. 37)">Tactic Capacity</div>
+        
+        <div class="substep" data-detail="A unit's target is the opponent that is the aim of its attack. Some skills may also refer to a target. A unit's target must be within its Range. Rival units will use their priority list in determining which unit to target. (Rulebook p. 37)">Target</div>
+        
+        <div class="substep" data-detail="The tribune is the leader of the rival team during a Sport event. If the tribune is defeated, your hero is immediately reduced to 1 HP. (Rulebook p. 37)">Tribune</div>
+        
+        <div class="substep" data-detail="A troop is a group of units that are all allies. All of the units you control are part of your troop, and all of the rival units make up the rival's troop. (Rulebook p. 37)">Troop</div>
+        
+        <div class="substep" data-detail="When comparing units, the weakest one is the one with the fewest health chips. When comparing dice, the weakest die is the one with the fewest hit faces. Yellow dice have the fewest hit faces, followed by blue, green, black, and red, in that order. (Rulebook p. 37)">Weakest</div>
+      </div>
+      <div class="details" id="details4">
+        <div class="navigation">
+          <button id="upButton4">↑ Previous</button>
+          <button id="downButton4">↓ Next</button>
+        </div>
+        <h2>Details</h2>
+        <p id="detailText4">An Ability is type of unit skill. Units can only use their Abilities during the Abilities Step of their troop's turn in combat. (Rulebook p. 35)</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="unit-skills">
+    <div class="container">
+      <div class="selector" id="list5">
+        <div class="step selected" data-detail="Unit skills are special abilities that units can use during combat. There are three types of skills: Innate skills that are always active, Special skills that replace normal attacks, and Ability skills that are used during the Abilities Step. Each skill has specific rules and conditions for use.">Unit Skills Overview</div>
+        
+        <div class="substep" data-detail="Innate skills are always active and provide continuous effects. These skills modify how the unit behaves or responds to certain situations. Examples include Absorb, Agile, Beastmaster, and many others.">Innate Skills</div>
+        
+        <div class="substep" data-detail="Special skills replace the unit's normal attack. When a unit uses a Special skill, it cannot make a regular attack that turn. Examples include Agile, Heave, Long Shot, Reposition, and Whirlwind.">Special Skills</div>
+        
+        <div class="substep" data-detail="Ability skills are used during the Abilities Step of the unit's troop's turn. These skills provide tactical options and can be triggered based on specific conditions. Examples include Fury Aura, Hook, Hurl, Regen, Shove, and Swap.">Ability Skills</div>
+        
+        <div class="substep" data-detail="This unit is dealt damage to an opponent, it ignores all but 1 of the damage dealt.">Absorb -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit rolls dice equal to its Attack and deals the rolled damage to its target. This unit always uses Agile instead of attacking.">Agile -- <em>'Special'</em></div>
+        
+        <div class="substep" data-detail="Beasts allied with this unit ignore their Roaming skill.">Beastmaster -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="Whenever this unit is dealt damage from an elite opponent, that damage is increased by 1. This unit's highest priority is your hero.">Blasphemous -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="Opponents that are adjacent to this unit at the start of their turn cannot move during the Movement Step that turn.">Combat Lock -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit adds <img> to its Attack while outnumbered.">Confidence -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit cannot be targeted by attacks if it has already been dealt damage from an attack this turn.">Deflect -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="If this unit does not move during the Movement Step of its turn, it adds <img> to its Attack that turn.">Dig In -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="When this unit is attacked by a non-elite unit, the attacker rolls <img> in place of any <img> and <img> attack dice it would roll.">Dodge -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit can attack or use a Special the turn it is deployed.">First Strike -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit may move through blocked hexes (but not end its move on such a hex).">Flight -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit deals 1 damage to an opponent within # hexes. Triggers if it would deal damage to an opponent. This unit uses Fury Aura on the weakest opponent possible.">Fury Aura (#) -- <em>'Ability'</em></div>
+        
+        <div class="substep" data-detail="This unit rolls its strongest attack die against an opponent within three hexes and deals the resulting damage to it. Triggers if a weaker opponent can be damaged with Heave than would be targeted with this unit's attack.">Heave -- <em>'Special'</em></div>
+        
+        <div class="substep" data-detail="This unit chooses a unit exactly two hexes away and displaces it by one hex so it is adjacent to this unit. Triggers if this movement allows a rival unit to get an Attack or Special when it otherwise would get neither.">Hook -- <em>'Ability'</em></div>
+        
+        <div class="substep" data-detail="This unit chooses an adjacent unit and displaces it to any available hex that is no more than the # hexes away from this unit. Triggers if this movement allows a rival unit to get an Attack or Special when it otherwise would get neither.">Hurl (#) -- <em>'Ability'</em></div>
+        
+        <div class="substep" data-detail="Allies adjacent to this unit add <img> to their Attacks.">Inspire -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="When an ally adjacent to this unit is attacked, the damage dealt may be applied to this unit instead of the target unit. Triggers if it would prevent an ally from being defeated.">Intercept Blow -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit rolls its weakest attack die against an opponent within # hexes and deals the resulting damage to it. Triggers if this unit cannot make an attack.">Long Shot (#) -- <em>'Special'</em></div>
+        
+        <div class="substep" data-detail="If this unit has HP equal to or above its Health, it ignores all attack damage dealt to it if the attacker rolls any misses on its attack dice.">Nimble -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="When attacking, if this unit rolls hits on all of its attack dice, it doubles the total damage dealt by the attack.">Perfect Strike -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="When this unit is the target of an attack and the attacker is within this unit's Range, this unit deals its attacker 1 damage before the attack is resolved.">Quickstrike -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit heals for # HP.">Regen (#) -- <em>'Ability'</em></div>
+        
+        <div class="substep" data-detail="This unit may immediately move a number of hexes up to its Movement. Triggers if this unit cannot make an attack. This unit identifies a mark for this movement.">Reposition -- <em>'Special'</em></div>
+        
+        <div class="substep" data-detail="After this unit is dealt damage from an attack, if this unit is not defeated and its attacker is within its Range, this unit deals its attacker 1 damage.">Retaliate -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="For this unit's movement, roll an arena die a number of times equal to its Movement. For each roll, this unit moves in the corresponding direction according to the compass. This unit does not move during its troop's Movement Step if already adjacent to an opponent, and stops moving if it becomes adjacent to one.">Roaming -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit displaces an adjacent unit one hex away from it and simultaneously moves onto the hex that unit vacated. Triggers if this movement allows a rival unit to get an Attack or Special when it otherwise would get neither.">Shove -- <em>'Ability'</em></div>
+        
+        <div class="substep" data-detail="This unit may switch hexes with an adjacent unit. Triggers if this allows a rival unit to get an Attack or Special when it otherwise would get neither.">Swap -- <em>'Ability'</em></div>
+        
+        <div class="substep" data-detail="This unit can move during the turn it is deployed. This unit's troop can play tactics on non-adjacent opponents (not including elite units).">Tactical -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="When an opponent adjacent to this unit attacks, it must attack a unit that has Taunt. If a rival unit is adjacent to multiple opponents with Taunt, it attacks the strongest of those opponents.">Taunt -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit cannot be sacrificed and is always returned to your camp during the Cleanup Phase.">Undying -- <em>'Innate'</em></div>
+        
+        <div class="substep" data-detail="This unit counts the number of opponents it is adjacent to and rolls its weakest attack die that many times. This unit deals damage to each adjacent opponent equal to its rolled hits. Triggers if this unit is adjacent to two or more opponents.">Whirlwind -- <em>'Special'</em></div>
+      </div>
+      <div class="details" id="details5">
+        <div class="navigation">
+          <button id="upButton5">↑ Previous</button>
+          <button id="downButton5">↓ Next</button>
+        </div>
+        <h2>Details</h2>
+        <p id="detailText5">Unit skills are special abilities that units can use during combat. There are three types of skills: Innate skills that are always active, Special skills that replace normal attacks, and Ability skills that are used during the Abilities Step. Each skill has specific rules and conditions for use.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="appendix">
+    <div class="container">
+      <div class="selector" id="list3">
+        <div class="step" data-detail="The Pandora expansion adds four new scions: The Chaos Dragon, SET, CROM DUBH, and HUNDUN. Each comes with scion unit chips, scion bane chips, and scion reference cards. When choosing a scion during Rival Setup, you may choose any of the four scions from this expansion in place of a scion from the base game box. (HV_PR Rulebook p. 2)">3. Pandora Expansion - New Scions</div>
+        
+        <div class="substep" data-detail="Dark Days introduces scion-specific event cards to shuffle into your existing event decks. Your chosen scion's presence will be felt throughout your game, providing extra challenges and difficult scenarios well before you come face-to-face with your foe. After selecting the scion you will face in Rival Setup, find the nine event cards associated with the selected scion. (HV_PR Rulebook p. 3)">3.1 Pandora Expansion - Dark Days Events</div>
+        
+        <div class="substep" data-detail="There should be three of each event type—Sport, Opportunity, and Bloodshed—for your chosen scion. Shuffle these events into the appropriate decks. This creates a more thematic and challenging experience as your chosen scion's influence permeates the entire campaign. (HV_PR Rulebook p. 3)">3.2 Pandora Expansion - Event Integration</div>
+        
+        <div class="substep" data-detail="Strange Sands adds double-sided arena reference cards featuring the arena's original rules on one side and its new rules on the other. The new arena rules will challenge you to diversify your tactics as you reckon with a plethora of new, diabolical forces. (HV_PR Rulebook p. 4)">3.3 Pandora Expansion - Strange Sands Arenas</div>
+        
+        <div class="substep" data-detail="The Primus Sheet dictates the lineups for each primus fight you take on. Use the lineup shown in the first circle not covered. Use the Health stat printed on the primus chip for primuses. After defeating a primus, place their chip on that circle. This acts as a reminder of how many primuses you have defeated, and an easy indication of which lineup to use for the next primus fight. (Mercury Boots Rulesheet p. 10)">3.4 Mercury Boots - Primus Lineup System</div>
+        
+        <div class="substep" data-detail="For events that require a random unused primus, if you have no unused primuses (from Remastered or expansions), use a random defeated primus. If none are defeated, use a random undefeated primus but return it with the other undefeated primuses at the end of the event. (Mercury Boots Rulesheet p. 10)">3.5 Mercury Boots - Random Primus Selection</div>
+        
+        <div class="substep" data-detail="The other modules from the Pandora's Ruin expansion, are also compatible with Mercury Boots. Simply follow the setup instructions for each module as they are for the base game. You can also integrate Hoplomachus: Remastered with Mercury Boots. (HV_PR Rulebook p. 13)">3.6 Module Compatibility</div>
+        
+        <div class="substep" data-detail="Your hero starts with 10 blessings, 3 Opportunity Capacity, and 1 Navigation Stat. These can be upgraded through gameplay. The accelerated timeline means you need to make strategic decisions about when to spend blessings and how to prioritize upgrades. (Mercury Boots Rulesheet p. 2)">3.7 Starting Stats Summary</div>
+        
+        <div class="substep" data-detail="The maximum campaign length is 24 weeks with 6-week acts instead of 12-week acts. You must defeat the scion before the end of Act IV to win. The accelerated pace requires careful resource management and strategic planning. (Mercury Boots Rulesheet p. 6)">3.8 Timeline Summary</div>
+        
+        <div class="substep" data-detail="Opportunities can be used for re-rolling combat dice or for primus rewards. Navigation determines travel distance. Primus defeats increase difficulty but provide massive rewards. The scion combat uses undefeated primus count for bane generation instead of Vesuvians faction stack. (Mercury Boots Rulesheet p. 8-13)">3.9 Key Rule Changes</div>
+        
+        <div class="step" data-detail="The accelerated gameplay mode that reduces campaign length to 24 weeks maximum with 6-week acts instead of 12-week acts. Players start with 10 blessings and must defeat the scion before time runs out. Difficulty increases through primus defeats rather than act progression. (Mercury Boots Rulesheet p. 1)">4. Mercury Boots Terms</div>
+        
+        <div class="substep" data-detail="Protection tokens that prevent failure. In Mercury Boots, you start with 10 blessings and can spend them during Hero Ascension for rewards. Each blessing spent grants one reward: hero stat upgrade, hero prowess, or recruit a unit. (Mercury Boots Rulesheet p. 2, 5)">4.1 Blessings</div>
+        
+        <div class="substep" data-detail="Your hero's ability to travel map spots during each Travel Phase. Starts at 1, can be upgraded to maximum of 4. Determines how many locations you can move through in a single Travel Phase. (Mercury Boots Rulesheet p. 7)">4.2 Navigation Stat</div>
+        
+        <div class="substep" data-detail="The maximum number of Opportunity cards you can hold in your camp. Starts at 3, can be upgraded to maximum of 5. When you accept an Opportunity event, you draw up to this limit from the Opportunity Deck. (Mercury Boots Rulesheet p. 8)">4.3 Opportunity Capacity</div>
+        
+        <div class="substep" data-detail="Cards gained from Opportunity events that provide strategic options. In Mercury Boots, they can be used for re-rolling combat dice or for primus rewards. Keep face up in your camp and ignore all text except reward text. (Mercury Boots Rulesheet p. 8)">4.4 Opportunity Cards</div>
+        
+        <div class="substep" data-detail="Powerful enemies that can be challenged during your journey. In Mercury Boots, all 7 primuses are available from the start. Defeating them grants massive rewards but increases difficulty for all future combats. (Mercury Boots Rulesheet p. 10)">4.5 Primuses</div>
+        
+        <div class="substep" data-detail="Modifiers that apply to all combats after defeating a primus. Each primus defeat adds a cumulative modifier that affects all future combats except scion combat. These replace act modifiers from the base game. (Mercury Boots Rulesheet p. 11)">4.6 Primus Modifiers</div>
+        
+        <div class="substep" data-detail="The critical setup step in Mercury Boots where you can spend blessings for immediate rewards. For each blessing spent, gain: hero stat upgrade (Health, Attack, Leadership, Navigation, or Opportunity Capacity), hero prowess, or recruit a unit. (Mercury Boots Rulesheet p. 5)">4.7 Hero Ascension</div>
+        
+        <div class="substep" data-detail="The system that determines primus lineups in Mercury Boots. Use the lineup shown in the first circle not covered. After defeating a primus, place their chip on that circle as a reminder and indicator for next lineup. (Mercury Boots Rulesheet p. 10)">4.8 Primus Lineup System</div>
+        
+        <div class="substep" data-detail="The modified bane generation for scion combat in Mercury Boots. Ignore the Pluto's Domain section and instead gain 1 bane for each primus you have left undefeated. Creates different strategic challenges. (Mercury Boots Rulesheet p. 13)">4.9 Bane Generation</div>
+        
+        <div class="substep" data-detail="The four reward options when defeating a primus in Mercury Boots. You receive four total rewards: Hero Stat Upgrade, Opportunity Reward, Recruit a Rival, and additional options. This replaces normal primus rewards. (Mercury Boots Rulesheet p. 12)">4.10 Primus Rewards</div>
+      </div>
+      <div class="details" id="details3">
+        <h2>Details</h2>
+        <p id="detailText3">Select a step to see detailed information.</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Global variables
+    let currentTab = 'setup';
+    let currentIndex = 0;
+    let upButton = document.getElementById('upButton');
+    let downButton = document.getElementById('downButton');
+    let detailText = document.getElementById('detailText');
+    const tabs = document.querySelectorAll('.tab');
+
+    // Helper functions
+    function getCurrentSteps() {
+      const activeContent = document.querySelector('.tab-content.active');
+      return activeContent.querySelectorAll('.step, .substep');
+    }
+
+    function getCurrentIndex() {
+      const steps = getCurrentSteps();
+      return Array.from(steps).findIndex(step => step.classList.contains('selected'));
+    }
+
+    function setCurrentIndex(index) {
+      const steps = getCurrentSteps();
+      steps.forEach((step, i) => {
+        step.classList.remove('selected');
+        if (i === index) {
+          step.classList.add('selected');
+        }
+      });
+      currentIndex = index;
+    }
+
+    function switchTab(tabName) {
+      // Update tab states
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.dataset.tab === tabName) {
+          tab.classList.add('active');
+        }
+      });
+
+      // Update content visibility
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+        if (content.id === tabName) {
+          content.classList.add('active');
+        }
+      });
+
+      // Update current tab and reset selection
+      currentTab = tabName;
+      currentIndex = 0;
+      
+             // Update references based on current tab
+       const activeContent = document.querySelector('.tab-content.active');
+       detailText = activeContent.querySelector('#detailText, #detailText2, #detailText3, #detailText4, #detailText5');
+       upButton = activeContent.querySelector('#upButton, #upButton2, #upButton3, #upButton4, #upButton5');
+       downButton = activeContent.querySelector('#downButton, #downButton2, #downButton3, #downButton4, #downButton5');
+      
+      updateSelection();
+      setupSelectorClickListeners();
+    }
+
+    function updateSelection() {
+      const steps = getCurrentSteps();
+      const currentStep = steps[currentIndex];
+      
+      if (currentStep) {
+        let rawText = currentStep?.dataset.detail || '';
+        let formattedText = formatDetailText(rawText);
+        
+        // Update the details header with the current step's title (without type info)
+        const activeContent = document.querySelector('.tab-content.active');
+        const detailsHeader = activeContent.querySelector('h2');
+        if (detailsHeader) {
+          // Remove the type information from the header (everything after --)
+          let titleText = currentStep.textContent.trim();
+          if (titleText.includes(' -- ')) {
+            titleText = titleText.split(' -- ')[0];
+          }
+          detailsHeader.textContent = titleText;
+        }
+        
+        // Check if the current step has an associated image
+        const imageSrc = currentStep?.dataset.image;
+        const imageCaption = currentStep?.dataset.imageCaption;
+        
+        if (imageSrc) {
+          // Add image to the details
+          const imageHtml = `
+            <div class="rulebook-image">
+              <img src="${imageSrc}" alt="Rulebook Image" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+              ${imageCaption ? `<p class="image-caption">${imageCaption}</p>` : ''}
+            </div>
+          `;
+          detailText.innerHTML = formattedText + imageHtml;
+        } else {
+          detailText.innerHTML = formattedText;
+        }
+        
+        // Scroll the selected item into view
+        currentStep.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'nearest'
+        });
+      }
+    }
+
+    function formatDetailText(text) {
+      // Extract page reference
+      let pageMatch = text.match(/\(([^)]+)\)$/);
+      let pageRef = pageMatch ? `<span class="page-ref">${pageMatch[1]}</span>` : '';
+      let cleanText = text.replace(/\([^)]+\)$/, '').trim();
+      
+      // Check for explicit bullet points first
+      if (cleanText.includes('•')) {
+        let parts = cleanText.split('•').filter(part => part.trim());
+        let introText = parts[0].trim();
+        let bulletItems = parts.slice(1);
+        
+        let formattedIntro = introText
+          .replace(/\b(travel phase|event phase|combat phase|cleanup phase|navigation|blessings|opportunities|primuses|scions|hero|tactics|units|factions|banes|rewards|upgrades|prowess|statistics|movement|range|class|health|leadership|attack|capacity|tracking|ascension|expansion|campaign|acts|weeks|difficulty|modifiers|lineups|targets|achievements|sport|bloodshed|opportunity|tribune|influence|re-rolls|face-up|face-down|draw bag|stadium seating|faction stacks|neutral units|hero tracking pad|opportunity deck|camp|arena reference|vesuvians|pluto's domain|bane generation|act progression|victory condition|scion defeat|pandora|chaos dragon|set|crom dubh|hundun|dark days|strange sands|scion-specific|event cards|arena rules|double-sided|reference cards|elite chips|arena chips|special units|special tactics|special prowesses|sport events|bloodshed events|opportunity events|primus rewards|hero stat upgrade|opportunity reward|recruit a rival|primus modifiers|primus lineup|random primus|module compatibility|starting stats|timeline summary|key rule changes)\b/g, '<em>$1</em>')
+          .replace(/\b(must|may|cannot|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*weeks?|\d+\s*blessings?|\d+\s*opportunities?|\d+\s*navigation|\d+\s*acts?|\d+\s*primuses?|\d+\s*units?|\d+\s*tactics?|\d+\s*upgrades?|\d+\s*rewards?|\d+\s*modifiers?|\d+\s*lineups?|\d+\s*targets?|\d+\s*achievements?|\d+\s*events?|\d+\s*re-rolls?|\d+\s*cards?|\d+\s*stacks?|\d+\s*chips?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
+        
+        let bulletPoints = bulletItems.map(item => {
+          let formatted = item.trim()
+            .replace(/\b(travel phase|event phase|combat phase|cleanup phase|navigation|blessings|opportunities|primuses|scions|hero|tactics|units|factions|banes|rewards|upgrades|prowess|statistics|movement|range|class|health|leadership|attack|capacity|tracking|ascension|expansion|campaign|acts|weeks|difficulty|modifiers|lineups|targets|achievements|sport|bloodshed|opportunity|tribune|influence|re-rolls|face-up|face-down|draw bag|stadium seating|faction stacks|neutral units|hero tracking pad|opportunity deck|camp|arena reference|vesuvians|pluto's domain|bane generation|act progression|victory condition|scion defeat|pandora|chaos dragon|set|crom dubh|hundun|dark days|strange sands|scion-specific|event cards|arena rules|double-sided|reference cards|elite chips|arena chips|special units|special tactics|special prowesses|sport events|bloodshed events|opportunity events|primus rewards|hero stat upgrade|opportunity reward|recruit a rival|primus modifiers|primus lineup|random primus|module compatibility|starting stats|timeline summary|key rule changes)\b/g, '<em>$1</em>')
+            .replace(/\b(must|may|cannot|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+            .replace(/\b(\d+\s*weeks?|\d+\s*blessings?|\d+\s*opportunities?|\d+\s*navigation|\d+\s*acts?|\d+\s*primuses?|\d+\s*units?|\d+\s*tactics?|\d+\s*upgrades?|\d+\s*rewards?|\d+\s*modifiers?|\d+\s*lineups?|\d+\s*targets?|\d+\s*achievements?|\d+\s*events?|\d+\s*re-rolls?|\d+\s*cards?|\d+\s*stacks?|\d+\s*chips?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
+          return `<li>${formatted}</li>`;
+        }).join('');
+        
+        return `<p>${formattedIntro}</p><ul>${bulletPoints}</ul>${pageRef}`;
+      }
+      
+      // Split into sentences and create bullet points
+      let sentences = cleanText.split(/(?<=[.!?])\s+(?=[A-Z])/);
+      
+      if (sentences.length <= 2) {
+        // Short text - just format as paragraph with emphasis
+        let formatted = cleanText
+          .replace(/\b(travel phase|event phase|combat phase|cleanup phase|navigation|blessings|opportunities|primuses|scions|hero|tactics|units|factions|banes|rewards|upgrades|prowess|statistics|movement|range|class|health|leadership|attack|capacity|tracking|ascension|expansion|campaign|acts|weeks|difficulty|modifiers|lineups|targets|achievements|sport|bloodshed|opportunity|tribune|influence|re-rolls|face-up|face-down|draw bag|stadium seating|faction stacks|neutral units|hero tracking pad|opportunity deck|camp|arena reference|vesuvians|pluto's domain|bane generation|act progression|victory condition|scion defeat|pandora|chaos dragon|set|crom dubh|hundun|dark days|strange sands|scion-specific|event cards|arena rules|double-sided|reference cards|elite chips|arena chips|special units|special tactics|special prowesses|sport events|bloodshed events|opportunity events|primus rewards|hero stat upgrade|opportunity reward|recruit a rival|primus modifiers|primus lineup|random primus|module compatibility|starting stats|timeline summary|key rule changes)\b/g, '<em>$1</em>')
+          .replace(/\b(must|may|cannot|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*weeks?|\d+\s*blessings?|\d+\s*opportunities?|\d+\s*navigation|\d+\s*acts?|\d+\s*primuses?|\d+\s*units?|\d+\s*tactics?|\d+\s*upgrades?|\d+\s*rewards?|\d+\s*modifiers?|\d+\s*lineups?|\d+\s*targets?|\d+\s*achievements?|\d+\s*events?|\d+\s*re-rolls?|\d+\s*cards?|\d+\s*stacks?|\d+\s*chips?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
+        return `<p>${formatted}</p>${pageRef}`;
+      }
+      
+      // Longer text - create bullet list
+      let bulletPoints = sentences.map(sentence => {
+        let formatted = sentence.trim()
+          .replace(/\b(travel phase|event phase|combat phase|cleanup phase|navigation|blessings|opportunities|primuses|scions|hero|tactics|units|factions|banes|rewards|upgrades|prowess|statistics|movement|range|class|health|leadership|attack|capacity|tracking|ascension|expansion|campaign|acts|weeks|difficulty|modifiers|lineups|targets|achievements|sport|bloodshed|opportunity|tribune|influence|re-rolls|face-up|face-down|draw bag|stadium seating|faction stacks|neutral units|hero tracking pad|opportunity deck|camp|arena reference|vesuvians|pluto's domain|bane generation|act progression|victory condition|scion defeat|pandora|chaos dragon|set|crom dubh|hundun|dark days|strange sands|scion-specific|event cards|arena rules|double-sided|reference cards|elite chips|arena chips|special units|special tactics|special prowesses|sport events|bloodshed events|opportunity events|primus rewards|hero stat upgrade|opportunity reward|recruit a rival|primus modifiers|primus lineup|random primus|module compatibility|starting stats|timeline summary|key rule changes)\b/g, '<em>$1</em>')
+          .replace(/\b(must|may|cannot|immediately|exactly|choose|place|gain|activate|draw|collect|complete|follow|advance|shuffle|reveal|discard|return|move|take|count|add|multiply|round|compare|determine|check|resolve|trigger|forfeit|block|occupy|reach|match|target|guide|drive|automate|simplify|represent|indicate|track|mark|score|calculate|total|final|end|begin|start|continue|proceed|stop|finish)\b/gi, '<strong>$1</strong>')
+          .replace(/\b(\d+\s*weeks?|\d+\s*blessings?|\d+\s*opportunities?|\d+\s*navigation|\d+\s*acts?|\d+\s*primuses?|\d+\s*units?|\d+\s*tactics?|\d+\s*upgrades?|\d+\s*rewards?|\d+\s*modifiers?|\d+\s*lineups?|\d+\s*targets?|\d+\s*achievements?|\d+\s*events?|\d+\s*re-rolls?|\d+\s*cards?|\d+\s*stacks?|\d+\s*chips?|\d+\s*boards?|\d+\s*decks?|\d+\s*piles?|\d+\s*hexes?|\d+\s*tiles?|\d+\s*effects?|\d+\s*abilities?|\d+\s*requirements?|\d+\s*objectives?|\d+\s*targets?|\d+\s*goals?|\d+\s*results?|\d+\s*outcomes?|\d+\s*consequences?|\d+\s*rewards?|\d+\s*penalties?|\d+\s*bonuses?|\d+\s*multipliers?|\d+\s*rounders?|\d+\s*counters?|\d+\s*scorers?|\d+\s*calculators?|\d+\s*totals?|\d+\s*finals?|\d+\s*endings?|\d+\s*beginnings?|\d+\s*starts?|\d+\s*stops?|\d+\s*finishes?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*checks?|\d+\s*resolves?|\d+\s*triggers?|\d+\s*forfeits?|\d+\s*blocks?|\d+\s*occupies?|\d+\s*reaches?|\d+\s*matches?|\d+\s*targets?|\d+\s*guides?|\d+\s*drives?|\d+\s*automates?|\d+\s*simplifies?|\d+\s*represents?|\d+\s*indicates?|\d+\s*tracks?|\d+\s*marks?|\d+\s*scores?|\d+\s*calculates?|\d+\s*totals?|\d+\s*finals?|\d+\s*ends?|\d+\s*begins?|\d+\s*starts?|\d+\s*continues?|\d+\s*proceeds?|\d+\s*stops?|\d+\s*finishes?)\b/g, '<strong>$1</strong>');
+        return `<li>${formatted}</li>`;
+      }).join('');
+      
+      return `<ul>${bulletPoints}</ul>${pageRef}`;
+    }
+
+    // Function to set up navigation button event listeners
+    function setupNavigationButtons() {
+      // Remove existing event listeners by cloning and replacing buttons
+      const newUpButton = upButton.cloneNode(true);
+      const newDownButton = downButton.cloneNode(true);
+      upButton.parentNode.replaceChild(newUpButton, upButton);
+      downButton.parentNode.replaceChild(newDownButton, downButton);
+      upButton = newUpButton;
+      downButton = newDownButton;
+      
+      // Add event listeners to new buttons
+      upButton.addEventListener('click', () => {
+        const steps = getCurrentSteps();
+        const currentIndex = getCurrentIndex();
+        const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      });
+
+      downButton.addEventListener('click', () => {
+        const steps = getCurrentSteps();
+        const currentIndex = getCurrentIndex();
+        const newIndex = (currentIndex + 1) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      });
+    }
+
+    // Function to set up click event listeners for all selector items
+    function setupSelectorClickListeners() {
+      const activeContent = document.querySelector('.tab-content.active');
+      const selectorItems = activeContent.querySelectorAll('.step, .substep');
+      
+      selectorItems.forEach((item, index) => {
+        // Remove existing event listeners by cloning and replacing
+        const newItem = item.cloneNode(true);
+        item.parentNode.replaceChild(newItem, item);
+        
+        // Add click event listener
+        newItem.addEventListener('click', () => {
+          setCurrentIndex(index);
+          updateSelection();
+        });
+        
+        // Add cursor pointer style
+        newItem.style.cursor = 'pointer';
+      });
+    }
+
+    // Tab click handlers
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        switchTab(tab.dataset.tab);
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      const steps = getCurrentSteps();
+      const currentIndex = getCurrentIndex();
+      
+      if (e.key === 'ArrowUp') {
+        const newIndex = (currentIndex - 1 + steps.length) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      } else if (e.key === 'ArrowDown') {
+        const newIndex = (currentIndex + 1) % steps.length;
+        setCurrentIndex(newIndex);
+        updateSelection();
+      }
+    });
+
+    // Set up initial navigation buttons
+    setupNavigationButtons();
+
+    // Initialize
+    updateSelection();
+    setupSelectorClickListeners();
+  </script>
+</body>
+</html> 

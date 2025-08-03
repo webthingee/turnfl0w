@@ -1,0 +1,17 @@
+# Disable Jekyll processing
+disable_jekyll: true
+
+# Set the site title
+title: Track0r - Game Turn Order Trackers
+
+# Set the site description
+description: A collection of game turn order trackers for various board games and card games
+
+# Disable plugins
+plugins: []
+
+# Set the base URL (leave empty for root domain)
+baseurl: ""
+
+# Set the site URL (update this to your actual GitHub Pages URL)
+url: "" 
